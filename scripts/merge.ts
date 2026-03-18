@@ -79,18 +79,27 @@ function mergeIntoProviderMap(
     const entry = entries[i];
     const baseKey = deriveModelKey(entry, i);
 
-    // Always store under type-qualified key when type is known
+    // Type-qualified key: "modelId::type"
+    // When same modelId + same type appears from different sections,
+    // keep the one with higher section priority (lower _sectionPriority number).
+    // Priority order: text(0) > image(1) > audio(2) > imageGen/video/embedding(3) >
+    //                 transcription(4) > legacy(5) > fineTuning(6)
     if (entry.modelType) {
       const qualifiedKey = `${baseKey}::${entry.modelType}`;
-      map[qualifiedKey] = entry;
+      const existingQualified = map[qualifiedKey];
+      if (!existingQualified ||
+          (entry._sectionPriority ?? 99) < (existingQualified._sectionPriority ?? 99)) {
+        map[qualifiedKey] = entry;
+      }
     }
 
-    // For the base key, prefer higher-priority types
+    // For the base key, prefer higher-priority types first,
+    // then within same type prefer higher section priority
     const existing = map[baseKey];
     if (!existing) {
       map[baseKey] = entry;
     } else if (typePriority(entry.modelType) < typePriority(existing.modelType)) {
-      // New entry has higher priority — it takes the base key,
+      // New entry has higher type priority — it takes the base key,
       // demote existing to qualified key if it has a type
       if (existing.modelType) {
         const demotedKey = `${baseKey}::${existing.modelType}`;
@@ -98,6 +107,10 @@ function mergeIntoProviderMap(
           map[demotedKey] = existing;
         }
       }
+      map[baseKey] = entry;
+    } else if (typePriority(entry.modelType) === typePriority(existing.modelType) &&
+               (entry._sectionPriority ?? 99) < (existing._sectionPriority ?? 99)) {
+      // Same type but new entry from higher-priority section — replace
       map[baseKey] = entry;
     }
   }

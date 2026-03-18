@@ -756,22 +756,25 @@ function convertToModelPricing(
 ): ModelPricing[] {
   const results: ModelPricing[] = [];
 
-  // Text models
+  // Text models — highest priority (0)
   for (const mp of convertTextModels(textModels, 'chatCompletion', extractionMethod.text)) {
+    mp._sectionPriority = 0;
     results.push(mp);
   }
 
-  // Image token models (vision input)
+  // Image token models (vision input) — priority 1
   for (const mp of convertTextModels(imageModels, 'chatCompletion', extractionMethod.image)) {
+    mp._sectionPriority = 1;
     results.push(mp);
   }
 
-  // Audio token models
+  // Audio token models — priority 2
   for (const mp of convertTextModels(audioModels, 'audio', extractionMethod.audio)) {
+    mp._sectionPriority = 2;
     results.push(mp);
   }
 
-  // Video models
+  // Video models — priority 3
   for (const [modelId, data] of Object.entries(videoModels)) {
     const entry: ModelPricing = {
       displayName: modelId,
@@ -779,6 +782,7 @@ function convertToModelPricing(
       pricingUnit: 'per-second',
       sourceUrl: SOURCE_URL,
       extractionMethod: extractionMethod.video,
+      _sectionPriority: 3,
     };
     if (data.perSecond != null) entry.costPerSecond = data.perSecond;
     const variants: Array<{ resolution: string; costPerSecond: number }> = [];
@@ -794,13 +798,14 @@ function convertToModelPricing(
     results.push(entry);
   }
 
-  // Transcription models
+  // Transcription models — priority 4
   for (const [modelId, data] of Object.entries(transcriptionModels)) {
     const entry: ModelPricing = {
       displayName: modelId,
       sourceUrl: SOURCE_URL,
       extractionMethod: extractionMethod.transcription,
       pricingUnit: 'per-token',
+      _sectionPriority: 4,
     };
     if (data.text || data.audio) {
       entry.modelType = 'transcription';
@@ -818,7 +823,7 @@ function convertToModelPricing(
     results.push(entry);
   }
 
-  // Fine-tuning models
+  // Fine-tuning models — priority 6
   for (const [modelId, data] of Object.entries(fineTuningModels)) {
     const entry: ModelPricing = {
       displayName: modelId,
@@ -826,6 +831,7 @@ function convertToModelPricing(
       pricingUnit: 'per-token',
       sourceUrl: SOURCE_URL,
       extractionMethod: extractionMethod.fineTuning,
+      _sectionPriority: 6,
     };
     if (data.trainingPerMTok != null) entry.trainingCostPerToken = toPerToken(data.trainingPerMTok);
     if (data.trainingPerHour != null) entry.trainingCostPerHour = data.trainingPerHour;
@@ -834,7 +840,7 @@ function convertToModelPricing(
     results.push(entry);
   }
 
-  // Image generation models
+  // Image generation models — priority 3
   for (const [modelId, data] of Object.entries(imageGenModels)) {
     const entry: ModelPricing = {
       displayName: modelId,
@@ -842,6 +848,7 @@ function convertToModelPricing(
       pricingUnit: 'per-image',
       sourceUrl: SOURCE_URL,
       extractionMethod: extractionMethod.imageGeneration,
+      _sectionPriority: 3,
     };
     if (data.variants && data.variants.length > 0) {
       entry.costPerImage = Math.min(...data.variants.map((v) => v.perImage));
@@ -854,7 +861,7 @@ function convertToModelPricing(
     results.push(entry);
   }
 
-  // Embedding models
+  // Embedding models — priority 3
   for (const [modelId, data] of Object.entries(embeddingModels)) {
     const entry: ModelPricing = {
       displayName: modelId,
@@ -862,12 +869,13 @@ function convertToModelPricing(
       pricingUnit: 'per-token',
       sourceUrl: SOURCE_URL,
       extractionMethod: extractionMethod.embedding,
+      _sectionPriority: 3,
     };
     if (data.input != null) entry.inputCostPerToken = toPerToken(data.input);
     results.push(entry);
   }
 
-  // Legacy models
+  // Legacy models — priority 5
   for (const [modelId, data] of Object.entries(legacyModels)) {
     const entry: ModelPricing = {
       displayName: modelId,
@@ -876,6 +884,7 @@ function convertToModelPricing(
       sourceUrl: SOURCE_URL,
       extractionMethod: extractionMethod.legacy,
       deprecated: true,
+      _sectionPriority: 5,
     };
     if (data.input != null) entry.inputCostPerToken = toPerToken(data.input);
     if (data.output != null) entry.outputCostPerToken = toPerToken(data.output);

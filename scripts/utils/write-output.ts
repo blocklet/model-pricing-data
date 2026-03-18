@@ -11,7 +11,24 @@
 
 import { writeFile, rename, mkdir } from 'node:fs/promises';
 import { resolve, dirname } from 'node:path';
-import type { PricingData, LiteLLMPricingData } from '../lib/schema.js';
+import type { PricingData, LiteLLMPricingData, ModelPricing } from '../lib/schema.js';
+
+/**
+ * Strip internal fields (prefixed with _) from ModelPricing entries.
+ * These are used during merge but should not appear in output.
+ */
+function stripInternalFields(data: PricingData): PricingData {
+  const cleanProviders: Record<string, Record<string, ModelPricing>> = {};
+  for (const [provider, models] of Object.entries(data.providers)) {
+    const cleanModels: Record<string, ModelPricing> = {};
+    for (const [key, model] of Object.entries(models)) {
+      const { _sectionPriority, ...clean } = model;
+      cleanModels[key] = clean;
+    }
+    cleanProviders[provider] = cleanModels;
+  }
+  return { ...data, providers: cleanProviders };
+}
 
 /**
  * Atomically write content to a file: write to .tmp first, then rename.
@@ -37,10 +54,13 @@ export async function writeOutput(
 ): Promise<void> {
   const baseDir = outputDir ?? resolve(import.meta.dirname!, '..', '..', 'data');
 
+  // Strip internal _sectionPriority fields before serialization
+  const cleanData = stripInternalFields(data);
+
   // 1. Full pricing data
   await atomicWrite(
     resolve(baseDir, 'pricing.json'),
-    JSON.stringify(data, null, 2) + '\n',
+    JSON.stringify(cleanData, null, 2) + '\n',
   );
 
   // 2. LiteLLM format
@@ -51,7 +71,7 @@ export async function writeOutput(
 
   // 3. Per-provider files
   const providersDir = resolve(baseDir, 'providers');
-  for (const [provider, models] of Object.entries(data.providers)) {
+  for (const [provider, models] of Object.entries(cleanData.providers)) {
     // Skip empty providers
     const modelCount = Object.keys(models).length;
     if (modelCount === 0) continue;

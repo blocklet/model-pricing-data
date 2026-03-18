@@ -84,6 +84,13 @@ export interface ModelPricing {
   sourceUrl: string;
   extractionMethod?: string; // "regex" | "llm"
   deprecated?: boolean;
+
+  /**
+   * Section priority for deduplication when same model appears in multiple sections.
+   * Lower = higher priority: text(0) > image(1) > audio(2) > legacy(5) > fineTuning(6).
+   * Not serialized to JSON — stripped during output.
+   */
+  _sectionPriority?: number;
 }
 
 // Provider source metadata
