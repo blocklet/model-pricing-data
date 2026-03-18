@@ -161,45 +161,23 @@ interface LongContextRaw {
 }
 
 function parseLongContextPricing(text: string): Record<string, LongContextRaw> {
-  const lcIdx = text.search(/Long context pricing\s+When using/i);
+  // Find the "Long context pricing" section (anchor text varies over time)
+  const lcIdx = text.search(/Long context pricing\s+Claude/i);
   if (lcIdx === -1) return {};
 
   const lcText = text.substring(lcIdx, lcIdx + 2000);
   const result: Record<string, LongContextRaw> = {};
 
-  const priceRegex = /(?:Input|Output):\s*\$([\d.]+)\s*\/\s*MTok/g;
+  // Current page format: a table row like
+  //   "Claude Sonnet 4.5 / 4 $3 / MTok $15 / MTok $6 / MTok $22.50 / MTok"
+  // The first two prices are ≤200k (standard input, standard output),
+  // the next two are >200k (long context input, long context output).
+  const priceRegex = /\$([\d.]+)\s*\/\s*MTok/g;
 
-  // Opus 4.6
-  let opusSearchFrom = 0;
-  while (true) {
-    const opusIdx = lcText.indexOf('Claude Opus 4.6', opusSearchFrom);
-    if (opusIdx === -1) break;
-    const opusWindow = lcText.substring(opusIdx, opusIdx + 400);
-    if (!/Input:\s*\$/.test(opusWindow)) {
-      opusSearchFrom = opusIdx + 16;
-      continue;
-    }
-    const prices: number[] = [];
-    let pm: RegExpExecArray | null;
-    priceRegex.lastIndex = 0;
-    while ((pm = priceRegex.exec(opusWindow)) !== null && prices.length < 4) {
-      prices.push(parseFloat(pm[1]));
-    }
-    if (prices.length === 4) {
-      result['claude-opus-4-6'] = {
-        standardInput: prices[0],
-        longContextInput: prices[1],
-        standardOutput: prices[2],
-        longContextOutput: prices[3],
-      };
-    }
-    break;
-  }
-
-  // Sonnet 4.6 / 4.5 / 4
-  const sonnetIdx = lcText.search(/Claude Sonnet 4\.6/i);
-  if (sonnetIdx !== -1) {
-    const sonnetWindow = lcText.substring(sonnetIdx, sonnetIdx + 400);
+  // Look for Sonnet 4.5 / 4 long context pricing table row
+  const sonnetRowIdx = lcText.search(/Claude Sonnet 4\.5\s*\/\s*4\b/i);
+  if (sonnetRowIdx !== -1) {
+    const sonnetWindow = lcText.substring(sonnetRowIdx, sonnetRowIdx + 400);
     const prices: number[] = [];
     let pm: RegExpExecArray | null;
     priceRegex.lastIndex = 0;
@@ -209,13 +187,51 @@ function parseLongContextPricing(text: string): Record<string, LongContextRaw> {
     if (prices.length === 4) {
       const lc: LongContextRaw = {
         standardInput: prices[0],
-        longContextInput: prices[1],
-        standardOutput: prices[2],
+        longContextInput: prices[2],
+        standardOutput: prices[1],
         longContextOutput: prices[3],
       };
-      for (const sid of ['claude-sonnet-4-6', 'claude-sonnet-4-5', 'claude-sonnet-4']) {
+      for (const sid of ['claude-sonnet-4-5', 'claude-sonnet-4']) {
         result[sid] = { ...lc };
       }
+    }
+  }
+
+  // Look for individual model rows (e.g. "Claude Opus 4.6 $X $Y $Z $W")
+  // Only add if they have an actual price table (not just prose mentions)
+  for (const [pattern, slugs] of [
+    [/Claude Opus 4\.6/i, ['claude-opus-4-6']] as const,
+    [/Claude Sonnet 4\.6/i, ['claude-sonnet-4-6']] as const,
+  ]) {
+    let searchFrom = 0;
+    while (true) {
+      const matchIdx = lcText.substring(searchFrom).search(pattern);
+      if (matchIdx === -1) break;
+      const absIdx = searchFrom + matchIdx;
+      const window = lcText.substring(absIdx, absIdx + 400);
+      // Only match if the window contains a price table ($/MTok pattern)
+      if (!/\$[\d.]+\s*\/\s*MTok/.test(window)) {
+        searchFrom = absIdx + 20;
+        continue;
+      }
+      const prices: number[] = [];
+      let pm: RegExpExecArray | null;
+      priceRegex.lastIndex = 0;
+      while ((pm = priceRegex.exec(window)) !== null && prices.length < 4) {
+        prices.push(parseFloat(pm[1]));
+      }
+      if (prices.length === 4) {
+        const lc: LongContextRaw = {
+          standardInput: prices[0],
+          longContextInput: prices[2],
+          standardOutput: prices[1],
+          longContextOutput: prices[3],
+        };
+        for (const sid of slugs) {
+          result[sid] = { ...lc };
+        }
+      }
+      break;
     }
   }
 
@@ -324,9 +340,9 @@ const SECTION_PROMPTS: Record<string, { schema: string; example: string; instruc
     schema:
       '{ "model-id": { "standardInput": number, "longContextInput": number, "standardOutput": number, "longContextOutput": number } }',
     example:
-      '{ "claude-opus-4-6": { "standardInput": 5, "longContextInput": 10, "standardOutput": 25, "longContextOutput": 37.5 } }',
+      '{ "claude-sonnet-4-5": { "standardInput": 3, "longContextInput": 6, "standardOutput": 15, "longContextOutput": 22.5 } }',
     instructions:
-      'Extract long context pricing (>200K input tokens). Each model row has 4 values: standard input, long context input, standard output, long context output in $/MTok. For rows like "Sonnet 4.6 / 4.5 / 4", create separate entries for each model.',
+      'Extract long context pricing (>200K input tokens) ONLY for models that have a premium pricing tier. Models like Opus 4.6 and Sonnet 4.6 that include the full 1M context at standard pricing should NOT be included. Each model row has 4 values: standard input, long context input, standard output, long context output in $/MTok. For combined rows like "Sonnet 4.5 / 4", create separate entries for each model (e.g. "claude-sonnet-4-5" and "claude-sonnet-4").',
   },
   fastModePricing: {
     schema: '{ "model-id": { "fastModeInput": number, "fastModeOutput": number, "multiplier": string } }',
