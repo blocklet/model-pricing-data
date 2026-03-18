@@ -9,6 +9,12 @@
  * Supports:
  *  - Anthropic API (claude-haiku-4-5) via ANTHROPIC_API_KEY
  *  - OpenAI API (gpt-4o-mini) via OPENAI_API_KEY
+ *
+ * Custom endpoints:
+ *  - ANTHROPIC_BASE_URL: override Anthropic API base (e.g. DashScope proxy)
+ *  - ANTHROPIC_MODEL: override model name (e.g. qwen3.5-plus)
+ *  - OPENAI_BASE_URL: override OpenAI API base
+ *  - OPENAI_MODEL: override model name
  */
 
 import { createHash } from 'crypto';
@@ -185,13 +191,17 @@ export async function callLlmFallback(
     let model: string;
 
     if (hasAnthropic) {
-      model = 'claude-haiku-4-5-20251001';
+      const baseUrl = (process.env.ANTHROPIC_BASE_URL || 'https://api.anthropic.com').replace(/\/+$/, '');
+      model = process.env.ANTHROPIC_MODEL || 'claude-haiku-4-5-20251001';
       console.error(
         `  [llm] Calling ${model} for ${provider} (${htmlContent.length} chars)...`,
       );
+      if (baseUrl !== 'https://api.anthropic.com') {
+        console.error(`  [llm] Using custom base URL: ${baseUrl}`);
+      }
 
       const resp = await postJson<AnthropicResponse>(
-        'https://api.anthropic.com/v1/messages',
+        `${baseUrl}/v1/messages`,
         {
           model,
           max_tokens: 4096,
@@ -214,13 +224,17 @@ export async function callLlmFallback(
       const jsonMatch = text.match(/\{[\s\S]*\}/);
       content = jsonMatch ? jsonMatch[0] : text;
     } else {
-      model = 'gpt-4o-mini';
+      const baseUrl = (process.env.OPENAI_BASE_URL || 'https://api.openai.com').replace(/\/+$/, '');
+      model = process.env.OPENAI_MODEL || 'gpt-4o-mini';
       console.error(
         `  [llm] Calling ${model} for ${provider} (${htmlContent.length} chars)...`,
       );
+      if (baseUrl !== 'https://api.openai.com') {
+        console.error(`  [llm] Using custom base URL: ${baseUrl}`);
+      }
 
       const resp = await postJson<OpenAiResponse>(
-        'https://api.openai.com/v1/chat/completions',
+        `${baseUrl}/v1/chat/completions`,
         {
           model,
           temperature: 0,
