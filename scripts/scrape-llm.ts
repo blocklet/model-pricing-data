@@ -233,21 +233,42 @@ export async function scrapeLlm(provider: string): Promise<ModelPricing[]> {
   }
   console.error(`  [llm-only] Content: ${content.length} chars`);
 
-  // Call LLM
+  // Call LLM — try with thinking disabled first, retry without if model requires it
   console.error(`  [llm-only] Calling ${model}...`);
   const startTime = Date.now();
-  const resp = await postJson<AnthropicResponse>(
-    `${baseUrl}/v1/messages`,
-    {
-      model,
-      max_tokens: 16384,
-      thinking: { type: 'disabled' },
-      system: buildPrompt(provider),
-      messages: [{ role: 'user', content }],
-    },
-    { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
-    { timeoutMs: 180000 },
-  );
+
+  const baseBody = {
+    model,
+    max_tokens: 16384,
+    system: buildPrompt(provider),
+    messages: [{ role: 'user', content }],
+  };
+  const headers = { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' };
+  const opts = { timeoutMs: 180000 };
+
+  let resp: AnthropicResponse;
+  try {
+    resp = await postJson<AnthropicResponse>(
+      `${baseUrl}/v1/messages`,
+      { ...baseBody, thinking: { type: 'disabled' } },
+      headers,
+      opts,
+    );
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    if (msg.includes('400') && msg.includes('thinking')) {
+      // Model requires thinking enabled — retry without thinking param
+      console.error(`  [llm-only] Model requires thinking, retrying...`);
+      resp = await postJson<AnthropicResponse>(
+        `${baseUrl}/v1/messages`,
+        baseBody,
+        headers,
+        opts,
+      );
+    } else {
+      throw err;
+    }
+  }
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   const text = resp.content?.find(c => c.type === 'text')?.text || '';

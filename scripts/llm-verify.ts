@@ -134,18 +134,35 @@ async function callLlmForProvider(provider: string): Promise<ModelPricing[] | nu
 
     console.error(`  [verify] Calling ${model} for ${provider} (${content.length} chars)...`);
 
-    const resp = await postJson<AnthropicResponse>(
-      `${baseUrl}/v1/messages`,
-      {
-        model,
-        max_tokens: 16384,
-        thinking: { type: 'disabled' },
-        system: LLM_SYSTEM_PROMPT,
-        messages: [{ role: 'user', content }],
-      },
-      { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
-      { timeoutMs: 180000 },
-    );
+    const baseBody = {
+      model,
+      max_tokens: 16384,
+      system: LLM_SYSTEM_PROMPT,
+      messages: [{ role: 'user', content }],
+    };
+    const headers = { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' };
+
+    let resp: AnthropicResponse;
+    try {
+      resp = await postJson<AnthropicResponse>(
+        `${baseUrl}/v1/messages`,
+        { ...baseBody, thinking: { type: 'disabled' } },
+        headers,
+        { timeoutMs: 180000 },
+      );
+    } catch (retryErr) {
+      const retryMsg = retryErr instanceof Error ? retryErr.message : String(retryErr);
+      if (retryMsg.includes('400') && retryMsg.includes('thinking')) {
+        resp = await postJson<AnthropicResponse>(
+          `${baseUrl}/v1/messages`,
+          baseBody,
+          headers,
+          { timeoutMs: 180000 },
+        );
+      } else {
+        throw retryErr;
+      }
+    }
 
     const text = resp.content?.find(c => c.type === 'text')?.text || '';
     const jsonMatch = text.match(/\{[\s\S]*\}/);

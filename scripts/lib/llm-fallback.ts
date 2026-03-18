@@ -200,21 +200,38 @@ export async function callLlmFallback(
         console.error(`  [llm] Using custom base URL: ${baseUrl}`);
       }
 
-      const resp = await postJson<AnthropicResponse>(
-        `${baseUrl}/v1/messages`,
-        {
-          model,
-          max_tokens: 4096,
-          thinking: { type: 'disabled' },
-          system: prompt,
-          messages: [{ role: 'user', content: htmlContent }],
-        },
-        {
-          'x-api-key': process.env.ANTHROPIC_API_KEY!,
-          'anthropic-version': '2023-06-01',
-        },
-        { timeoutMs: 120000 },
-      );
+      const baseBody = {
+        model,
+        max_tokens: 4096,
+        system: prompt,
+        messages: [{ role: 'user', content: htmlContent }],
+      };
+      const headers = {
+        'x-api-key': process.env.ANTHROPIC_API_KEY!,
+        'anthropic-version': '2023-06-01',
+      };
+
+      let resp: AnthropicResponse;
+      try {
+        resp = await postJson<AnthropicResponse>(
+          `${baseUrl}/v1/messages`,
+          { ...baseBody, thinking: { type: 'disabled' } },
+          headers,
+          { timeoutMs: 120000 },
+        );
+      } catch (retryErr) {
+        const retryMsg = retryErr instanceof Error ? retryErr.message : String(retryErr);
+        if (retryMsg.includes('400') && retryMsg.includes('thinking')) {
+          resp = await postJson<AnthropicResponse>(
+            `${baseUrl}/v1/messages`,
+            baseBody,
+            headers,
+            { timeoutMs: 120000 },
+          );
+        } else {
+          throw retryErr;
+        }
+      }
 
       const text = resp.content?.[0]?.text;
       if (!text) {
