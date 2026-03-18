@@ -3,7 +3,17 @@ name: Update Pricing Data
 on:
   schedule:
     - cron: '0 2 * * *'    # Daily at UTC 02:00 (Beijing 10:00)
-  workflow_dispatch:         # Manual trigger
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Scrape mode'
+        required: false
+        default: 'default'
+        type: choice
+        options:
+          - default
+          - llm-only
+          - no-llm
 
 permissions:
   contents: write
@@ -33,7 +43,13 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ANTHROPIC_BASE_URL: ${{ secrets.ANTHROPIC_BASE_URL }}
           ANTHROPIC_MODEL: ${{ secrets.ANTHROPIC_MODEL }}
-        run: npx tsx scripts/index.ts
+        run: |
+          MODE="${{ github.event.inputs.mode || 'default' }}"
+          case "$MODE" in
+            llm-only) npx tsx scripts/index.ts --llm-only ;;
+            no-llm)   npx tsx scripts/index.ts --no-llm ;;
+            *)        npx tsx scripts/index.ts ;;
+          esac
 
       - name: Check for changes
         id: changes
