@@ -1,4 +1,12 @@
 {
+  "minimax/minimax-m2.7": {
+    "displayName": "minimax/minimax-m2.7",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 3e-7,
+    "outputCostPerToken": 0.0000012
+  },
   "openai/gpt-5.4-nano": {
     "displayName": "openai/gpt-5.4-nano",
     "pricingUnit": "per-token",

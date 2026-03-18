@@ -12,7 +12,6 @@
     "modelType": "audio",
     "pricingUnit": "per-token",
     "sourceUrl": "https://docs.x.ai/developers/models",
-    "extractionMethod": "llm",
-    "costPerMinute": 0.25
+    "extractionMethod": "llm"
   }
 }
