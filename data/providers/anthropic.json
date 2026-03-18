@@ -119,14 +119,7 @@
       "inputCostPerToken": 0.0000015,
       "outputCostPerToken": 0.0000075,
       "discountNote": "50% of standard"
-    },
-    "contextTiers": [
-      {
-        "threshold": ">200K",
-        "inputCostPerToken": 0.000015,
-        "outputCostPerToken": 0.0000225
-      }
-    ]
+    }
   },
   "claude-sonnet-4": {
     "displayName": "Claude Sonnet 4",
@@ -145,14 +138,7 @@
       "inputCostPerToken": 0.0000015,
       "outputCostPerToken": 0.0000075,
       "discountNote": "50% of standard"
-    },
-    "contextTiers": [
-      {
-        "threshold": ">200K",
-        "inputCostPerToken": 0.000015,
-        "outputCostPerToken": 0.0000225
-      }
-    ]
+    }
   },
   "claude-sonnet-3.7": {
     "displayName": "Claude Sonnet 3.7",

@@ -444,8 +444,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 3.8e-7,
-    "outputCostPerToken": 0.00000198
+    "inputCostPerToken": 4e-7,
+    "outputCostPerToken": 0.00000175
   },
   "google/gemini-3-flash-preview": {
     "displayName": "google/gemini-3-flash-preview",
