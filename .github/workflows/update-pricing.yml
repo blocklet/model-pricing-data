@@ -38,9 +38,14 @@ jobs:
 
       - name: Scrape pricing data
         env:
+          # API keys (from secrets)
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          ANTHROPIC_BASE_URL: https://coding.dashscope.aliyuncs.com/apps/anthropic
-          ANTHROPIC_MODEL: qwen3.5-plus
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          # Custom endpoints: use secret if set, otherwise default
+          ANTHROPIC_BASE_URL: ${{ secrets.ANTHROPIC_BASE_URL || 'https://coding.dashscope.aliyuncs.com/apps/anthropic' }}
+          ANTHROPIC_MODEL: ${{ secrets.ANTHROPIC_MODEL || 'qwen3.5-plus' }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL || '' }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL || '' }}
         run: |
           MODE="${{ github.event.inputs.mode || 'default' }}"
           case "$MODE" in
