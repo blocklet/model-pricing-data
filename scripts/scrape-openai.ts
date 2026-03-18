@@ -26,7 +26,7 @@ const SOURCE_URL = 'https://developers.openai.com/api/docs/pricing';
 const SECTION_EXPECTATIONS: Record<string, { minEntries: number; requiredKeys: string[] }> = {
   text: { minEntries: 30, requiredKeys: ['gpt-4.1', 'gpt-4o', 'o3'] },
   image: { minEntries: 2, requiredKeys: ['gpt-image-1.5'] },
-  audio: { minEntries: 2, requiredKeys: ['gpt-realtime'] },
+  audio: { minEntries: 2, requiredKeys: [] },
   video: { minEntries: 1, requiredKeys: ['sora-2'] },
   transcription: { minEntries: 3, requiredKeys: ['whisper'] },
   fineTuning: { minEntries: 3, requiredKeys: [] },

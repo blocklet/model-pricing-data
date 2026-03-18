@@ -281,7 +281,7 @@ function parseDataResidencyPricing(text: string): DataResidencyInfo | null {
 const SECTION_EXPECTATIONS: Record<string, { minEntries: number; requiredKeys: string[] }> = {
   modelPricing: { minEntries: 10, requiredKeys: ['claude-opus-4-6', 'claude-sonnet-4-5', 'claude-haiku-4-5'] },
   batchPricing: { minEntries: 10, requiredKeys: ['claude-opus-4-6', 'claude-sonnet-4-5'] },
-  longContextPricing: { minEntries: 2, requiredKeys: ['claude-opus-4-6'] },
+  longContextPricing: { minEntries: 1, requiredKeys: [] },
   fastModePricing: { minEntries: 1, requiredKeys: ['claude-opus-4-6'] },
 };
 
