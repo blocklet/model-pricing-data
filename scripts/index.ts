@@ -7,10 +7,20 @@
  * Usage:
  *   npx tsx scripts/index.ts              # Full scrape + output
  *   npx tsx scripts/index.ts --dry-run    # Scrape without writing files
+ *   npx tsx scripts/index.ts --no-llm     # Disable LLM fallback for scrapers
  *   npx tsx scripts/index.ts --help       # Show this help
  */
 
-import type { PricingData, PricingMeta } from './lib/schema.js';
+import type { ModelPricing, ProviderSource } from './lib/schema.js';
+import { PRICING_URLS } from './lib/pricing-core.js';
+import { scrapeOpenAI } from './scrape-openai.js';
+import { scrapeAnthropic } from './scrape-anthropic.js';
+import { scrapeGoogle } from './scrape-google.js';
+import { scrapeXAI } from './scrape-xai.js';
+import { scrapeDeepSeek } from './scrape-deepseek.js';
+import { fetchOpenRouter } from './fetch-openrouter.js';
+import { mergeAll } from './merge.js';
+import type { MergeInput } from './merge.js';
 
 function printHelp(): void {
   console.log(`
@@ -21,6 +31,7 @@ Usage:
 
 Options:
   --dry-run     Scrape data but don't write files
+  --no-llm      Disable LLM fallback for scrapers that support it
   --help        Show this help message
 
 Output:
@@ -29,6 +40,58 @@ Output:
   data/providers/*.json       Per-provider JSON files
 `);
 }
+
+// ─── Scraper Definitions ─────────────────────────────────────────────────────
+
+interface ScraperDef {
+  provider: string;
+  label: string;
+  method: string;
+  fn: () => Promise<ModelPricing[]>;
+}
+
+function buildScrapers(noLlm: boolean): ScraperDef[] {
+  return [
+    {
+      provider: 'openai',
+      label: 'OpenAI',
+      method: noLlm ? 'regex' : 'regex+llm',
+      fn: () => scrapeOpenAI({ noLlm }),
+    },
+    {
+      provider: 'anthropic',
+      label: 'Anthropic',
+      method: noLlm ? 'regex' : 'regex+llm',
+      fn: () => scrapeAnthropic({ noLlm }),
+    },
+    {
+      provider: 'google',
+      label: 'Google',
+      method: 'regex',
+      fn: scrapeGoogle,
+    },
+    {
+      provider: 'xai',
+      label: 'xAI',
+      method: 'regex',
+      fn: scrapeXAI,
+    },
+    {
+      provider: 'deepseek',
+      label: 'DeepSeek',
+      method: 'regex',
+      fn: scrapeDeepSeek,
+    },
+    {
+      provider: 'openrouter',
+      label: 'OpenRouter',
+      method: 'api',
+      fn: fetchOpenRouter,
+    },
+  ];
+}
+
+// ─── Main ────────────────────────────────────────────────────────────────────
 
 async function main(): Promise<void> {
   const args = process.argv.slice(2);
@@ -39,28 +102,64 @@ async function main(): Promise<void> {
   }
 
   const dryRun = args.includes('--dry-run');
+  const noLlm = args.includes('--no-llm');
 
-  // Phase 0: just validate schema works
-  const meta: PricingMeta = {
-    generatedAt: new Date().toISOString(),
-    version: '2.0.0',
-    sources: {},
-    totalModels: 0,
-    failedProviders: [],
-  };
+  const scrapers = buildScrapers(noLlm);
 
-  const data: PricingData = {
-    _meta: meta,
-    providers: {},
-  };
+  console.error(`Starting ${scrapers.length} scrapers in parallel...`);
+  const startTime = Date.now();
 
-  console.log('Schema validation OK');
-  console.log(`Generated at: ${data._meta.generatedAt}`);
+  // Run all scrapers in parallel
+  const results = await Promise.allSettled(
+    scrapers.map((s) => s.fn()),
+  );
+
+  const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+  console.error(`All scrapers completed in ${elapsed}s\n`);
+
+  // Collect results, track failures
+  const inputs: MergeInput[] = [];
+  const failedProviders: string[] = [];
+
+  for (let i = 0; i < scrapers.length; i++) {
+    const scraper = scrapers[i];
+    const result = results[i];
+
+    if (result.status === 'fulfilled') {
+      const entries = result.value;
+      const source: ProviderSource = {
+        url: PRICING_URLS[scraper.provider] || '',
+        modelCount: entries.length,
+        method: scraper.method,
+        fetchedAt: new Date().toISOString(),
+      };
+
+      inputs.push({ provider: scraper.provider, entries, source });
+      console.error(`  ${scraper.label}: ${entries.length} models`);
+    } else {
+      failedProviders.push(scraper.provider);
+      console.error(`  ${scraper.label}: FAILED - ${result.reason?.message || result.reason}`);
+    }
+  }
+
+  console.error('');
+
+  // Merge all sources
+  const data = mergeAll(inputs, failedProviders);
+
+  // Summary
+  const providerCount = Object.keys(data.providers).length;
+  console.error(`Merged: ${data._meta.totalModels} models across ${providerCount} providers`);
+  if (failedProviders.length > 0) {
+    console.error(`Failed providers: ${failedProviders.join(', ')}`);
+  }
 
   if (dryRun) {
-    console.log('Dry run mode - no files written');
+    console.log(JSON.stringify(data._meta, null, 2));
   } else {
-    console.log('TODO: Implement scraping in Phase 1-4');
+    // Phase 4 will add file writing
+    console.log(JSON.stringify(data._meta, null, 2));
+    console.error('\nTODO: File writing will be added in Phase 4');
   }
 }
 
