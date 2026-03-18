@@ -1,0 +1,50 @@
+{
+  "deepseek-chat-(v3.2-non-thinking)::chatCompletion": {
+    "displayName": "DeepSeek Chat (V3.2 Non-thinking)",
+    "modelType": "chatCompletion",
+    "pricingUnit": "per-token",
+    "inputCostPerToken": 2.8e-7,
+    "outputCostPerToken": 4.2e-7,
+    "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing",
+    "extractionMethod": "regex",
+    "caching": {
+      "read": 2.8e-8
+    }
+  },
+  "deepseek-chat-(v3.2-non-thinking)": {
+    "displayName": "DeepSeek Chat (V3.2 Non-thinking)",
+    "modelType": "chatCompletion",
+    "pricingUnit": "per-token",
+    "inputCostPerToken": 2.8e-7,
+    "outputCostPerToken": 4.2e-7,
+    "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing",
+    "extractionMethod": "regex",
+    "caching": {
+      "read": 2.8e-8
+    }
+  },
+  "deepseek-reasoner-(v3.2-thinking)::chatCompletion": {
+    "displayName": "DeepSeek Reasoner (V3.2 Thinking)",
+    "modelType": "chatCompletion",
+    "pricingUnit": "per-token",
+    "inputCostPerToken": 2.8e-7,
+    "outputCostPerToken": 4.2e-7,
+    "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing",
+    "extractionMethod": "regex",
+    "caching": {
+      "read": 2.8e-8
+    }
+  },
+  "deepseek-reasoner-(v3.2-thinking)": {
+    "displayName": "DeepSeek Reasoner (V3.2 Thinking)",
+    "modelType": "chatCompletion",
+    "pricingUnit": "per-token",
+    "inputCostPerToken": 2.8e-7,
+    "outputCostPerToken": 4.2e-7,
+    "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing",
+    "extractionMethod": "regex",
+    "caching": {
+      "read": 2.8e-8
+    }
+  }
+}

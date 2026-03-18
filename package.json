@@ -4,9 +4,18 @@
   "description": "AI model pricing data from official provider pages, updated daily",
   "type": "module",
   "scripts": {
+    "start": "tsx scripts/index.ts",
     "scrape": "tsx scripts/index.ts",
-    "typecheck": "tsc --noEmit",
-    "lint": "eslint scripts/"
+    "scrape:dry": "tsx scripts/index.ts --dry-run",
+    "scrape:no-llm": "tsx scripts/index.ts --no-llm",
+    "scrape:openai": "tsx scripts/scrape-openai.ts --json",
+    "scrape:anthropic": "tsx scripts/scrape-anthropic.ts --json",
+    "scrape:google": "tsx scripts/scrape-google.ts --json",
+    "scrape:xai": "tsx scripts/scrape-xai.ts --json",
+    "scrape:deepseek": "tsx scripts/scrape-deepseek.ts --json",
+    "scrape:openrouter": "tsx scripts/fetch-openrouter.ts --json",
+    "diff": "tsx scripts/utils/diff-summary.ts",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {},
   "devDependencies": {
