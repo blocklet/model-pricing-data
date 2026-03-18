@@ -21,6 +21,8 @@ import { scrapeDeepSeek } from './scrape-deepseek.js';
 import { fetchOpenRouter } from './fetch-openrouter.js';
 import { mergeAll } from './merge.js';
 import type { MergeInput } from './merge.js';
+import { toLiteLLMFormat } from './utils/to-litellm-format.js';
+import { writeOutput } from './utils/write-output.js';
 
 function printHelp(): void {
   console.log(`
@@ -154,12 +156,16 @@ async function main(): Promise<void> {
     console.error(`Failed providers: ${failedProviders.join(', ')}`);
   }
 
+  // Convert to LiteLLM format
+  const litellm = toLiteLLMFormat(data);
+
   if (dryRun) {
     console.log(JSON.stringify(data._meta, null, 2));
   } else {
-    // Phase 4 will add file writing
-    console.log(JSON.stringify(data._meta, null, 2));
-    console.error('\nTODO: File writing will be added in Phase 4');
+    await writeOutput(data, litellm);
+    console.log(`Written: data/pricing.json (${data._meta.totalModels} models)`);
+    console.log(`Written: data/pricing-litellm.json (${Object.keys(litellm).length} entries)`);
+    console.log(`Written: data/providers/*.json (${providerCount} providers)`);
   }
 }
 
