@@ -8,6 +8,7 @@
     "scrape": "tsx scripts/index.ts",
     "scrape:dry": "tsx scripts/index.ts --dry-run",
     "scrape:no-llm": "tsx scripts/index.ts --no-llm",
+    "scrape:llm-only": "tsx scripts/index.ts --llm-only",
     "scrape:openai": "tsx scripts/scrape-openai.ts --json",
     "scrape:anthropic": "tsx scripts/scrape-anthropic.ts --json",
     "scrape:google": "tsx scripts/scrape-google.ts --json",

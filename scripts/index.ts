@@ -24,6 +24,7 @@ import type { MergeInput } from './merge.js';
 import { toLiteLLMFormat } from './utils/to-litellm-format.js';
 import { writeOutput } from './utils/write-output.js';
 import { verifyScraperResults } from './llm-verify.js';
+import { scrapeLlm } from './scrape-llm.js';
 
 function printHelp(): void {
   console.log(`
@@ -34,8 +35,14 @@ Usage:
 
 Options:
   --dry-run     Scrape data but don't write files
-  --no-llm      Disable LLM fallback for scrapers that support it
+  --no-llm      Disable LLM entirely (pure regex, no fallback, no verify)
+  --llm-only    Use LLM as primary extractor (skip regex)
   --help        Show this help message
+
+Modes:
+  (default)     Regex-first + LLM fallback + LLM verify on count drift
+  --no-llm      Pure regex, fastest, no API key needed
+  --llm-only    Pure LLM extraction, requires ANTHROPIC_API_KEY
 
 Output:
   data/pricing.json           Full pricing data (providers grouped)
@@ -106,49 +113,93 @@ async function main(): Promise<void> {
 
   const dryRun = args.includes('--dry-run');
   const noLlm = args.includes('--no-llm');
+  const llmOnly = args.includes('--llm-only');
 
-  const scrapers = buildScrapers(noLlm);
+  if (noLlm && llmOnly) {
+    console.error('Error: --no-llm and --llm-only are mutually exclusive');
+    process.exit(1);
+  }
 
-  console.error(`Starting ${scrapers.length} scrapers in parallel...`);
-  const startTime = Date.now();
-
-  // Run all scrapers in parallel
-  const results = await Promise.allSettled(
-    scrapers.map((s) => s.fn()),
-  );
-
-  const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
-  console.error(`All scrapers completed in ${elapsed}s\n`);
-
-  // Collect results, track failures
   const inputs: MergeInput[] = [];
   const failedProviders: string[] = [];
+  const startTime = Date.now();
 
-  for (let i = 0; i < scrapers.length; i++) {
-    const scraper = scrapers[i];
-    const result = results[i];
+  if (llmOnly) {
+    // ── LLM-only mode: use LLM as primary extractor ──
+    const providers = ['openai', 'anthropic', 'google', 'xai', 'deepseek'];
+    console.error(`[llm-only] Starting LLM extraction for ${providers.length} providers...`);
 
-    if (result.status === 'fulfilled') {
-      const entries = result.value;
-      const source: ProviderSource = {
-        url: PRICING_URLS[scraper.provider] || '',
-        modelCount: entries.length,
-        method: scraper.method,
-        fetchedAt: new Date().toISOString(),
-      };
+    // Run LLM scrapers sequentially (to avoid API rate limits)
+    for (const provider of providers) {
+      try {
+        const entries = await scrapeLlm(provider);
+        const source: ProviderSource = {
+          url: PRICING_URLS[provider] || '',
+          modelCount: entries.length,
+          method: 'llm',
+          fetchedAt: new Date().toISOString(),
+        };
+        inputs.push({ provider, entries, source });
+      } catch (err) {
+        const msg = err instanceof Error ? err.message : String(err);
+        failedProviders.push(provider);
+        console.error(`  [llm-only] ${provider}: FAILED - ${msg}`);
+      }
+    }
 
-      inputs.push({ provider: scraper.provider, entries, source });
-      console.error(`  ${scraper.label}: ${entries.length} models`);
-    } else {
-      failedProviders.push(scraper.provider);
-      console.error(`  ${scraper.label}: FAILED - ${result.reason?.message || result.reason}`);
+    // Still fetch OpenRouter via API (no LLM needed)
+    console.error('  [llm-only] Fetching OpenRouter via API...');
+    try {
+      const entries = await fetchOpenRouter();
+      inputs.push({
+        provider: 'openrouter',
+        entries,
+        source: { url: PRICING_URLS['openrouter'] || '', modelCount: entries.length, method: 'api', fetchedAt: new Date().toISOString() },
+      });
+      console.error(`  [llm-only] OpenRouter: ${entries.length} models`);
+    } catch (err) {
+      failedProviders.push('openrouter');
+      const msg = err instanceof Error ? err.message : String(err);
+      console.error(`  [llm-only] OpenRouter: FAILED - ${msg}`);
+    }
+  } else {
+    // ── Default / no-llm mode: regex-first ──
+    const scrapers = buildScrapers(noLlm);
+    console.error(`Starting ${scrapers.length} scrapers in parallel...`);
+
+    const results = await Promise.allSettled(
+      scrapers.map((s) => s.fn()),
+    );
+
+    for (let i = 0; i < scrapers.length; i++) {
+      const scraper = scrapers[i];
+      const result = results[i];
+
+      if (result.status === 'fulfilled') {
+        const entries = result.value;
+        const source: ProviderSource = {
+          url: PRICING_URLS[scraper.provider] || '',
+          modelCount: entries.length,
+          method: scraper.method,
+          fetchedAt: new Date().toISOString(),
+        };
+
+        inputs.push({ provider: scraper.provider, entries, source });
+        console.error(`  ${scraper.label}: ${entries.length} models`);
+      } else {
+        failedProviders.push(scraper.provider);
+        console.error(`  ${scraper.label}: FAILED - ${result.reason?.message || result.reason}`);
+      }
     }
   }
 
   console.error('');
 
+  const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+  console.error(`All scrapers completed in ${elapsed}s\n`);
+
   // Verify: check for significant model count changes vs previous data
-  if (!noLlm) {
+  if (!noLlm && !llmOnly) {
     const verifyResults = await verifyScraperResults(
       inputs.map(inp => ({ provider: inp.provider, entries: inp.entries })),
     );
