@@ -23,6 +23,7 @@ import { mergeAll } from './merge.js';
 import type { MergeInput } from './merge.js';
 import { toLiteLLMFormat } from './utils/to-litellm-format.js';
 import { writeOutput } from './utils/write-output.js';
+import { verifyScraperResults } from './llm-verify.js';
 
 function printHelp(): void {
   console.log(`
@@ -145,6 +146,29 @@ async function main(): Promise<void> {
   }
 
   console.error('');
+
+  // Verify: check for significant model count changes vs previous data
+  if (!noLlm) {
+    const verifyResults = await verifyScraperResults(
+      inputs.map(inp => ({ provider: inp.provider, entries: inp.entries })),
+    );
+
+    for (const vr of verifyResults) {
+      if (vr.action === 'use-llm' && vr.llmModels) {
+        console.error(`  [verify] ⚠️  ${vr.provider}: ${vr.reason}`);
+        console.error(`  [verify] Replacing regex result with LLM result for ${vr.provider}`);
+        const idx = inputs.findIndex(inp => inp.provider === vr.provider);
+        if (idx >= 0) {
+          inputs[idx].entries = vr.llmModels;
+          inputs[idx].source.modelCount = vr.llmModels.length;
+          inputs[idx].source.method = 'llm-verified';
+        }
+      } else if (vr.action === 'keep-regex') {
+        console.error(`  [verify] ✅ ${vr.provider}: ${vr.reason}`);
+      }
+    }
+    if (verifyResults.length > 0) console.error('');
+  }
 
   // Merge all sources
   const data = mergeAll(inputs, failedProviders);
