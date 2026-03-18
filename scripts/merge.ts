@@ -11,6 +11,8 @@
  * - Default type priority: chatCompletion > lexicon > embedding > others
  */
 
+import fs from 'node:fs';
+import path from 'node:path';
 import type {
   ModelPricing,
   ModelType,
@@ -161,15 +163,99 @@ export function mergeAll(
     }
   }
 
+  // Read previous version from existing pricing.json
+  const prev = loadPreviousMeta();
+  const newVersion = bumpVersion(prev, providers);
+
   const meta: PricingMeta = {
-    generatedAt: new Date().toISOString(),
-    version: '2.0.0',
+    generatedAt: newVersion !== prev?.version ? new Date().toISOString() : (prev?.generatedAt ?? new Date().toISOString()),
+    version: newVersion,
     sources,
     totalModels,
     failedProviders,
   };
 
   return { _meta: meta, providers };
+}
+
+// ─── Version Management ─────────────────────────────────────────────────────
+
+function loadPreviousMeta(): PricingMeta | null {
+  try {
+    const filePath = path.resolve(import.meta.dirname!, '..', 'data', 'pricing.json');
+    const raw = fs.readFileSync(filePath, 'utf-8');
+    const prev = JSON.parse(raw) as PricingData;
+    return prev._meta;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Compare new providers data with previous pricing.json to detect changes.
+ * Returns true if any model was added, removed, or had price changes.
+ */
+function hasDataChanged(
+  prev: PricingMeta | null,
+  newProviders: Record<string, Record<string, ModelPricing>>,
+): boolean {
+  if (!prev) return true;
+
+  try {
+    const filePath = path.resolve(import.meta.dirname!, '..', 'data', 'pricing.json');
+    const raw = fs.readFileSync(filePath, 'utf-8');
+    const prevData = JSON.parse(raw) as PricingData;
+
+    // Quick check: different provider count or total model count
+    const prevProviderKeys = Object.keys(prevData.providers);
+    const newProviderKeys = Object.keys(newProviders);
+    if (prevProviderKeys.length !== newProviderKeys.length) return true;
+
+    for (const provider of newProviderKeys) {
+      const prevModels = prevData.providers[provider];
+      const newModels = newProviders[provider];
+      if (!prevModels) return true;
+
+      const prevKeys = Object.keys(prevModels).filter(k => !k.includes('::'));
+      const newKeys = Object.keys(newModels).filter(k => !k.includes('::'));
+      if (prevKeys.length !== newKeys.length) return true;
+
+      // Check each base model for price changes
+      for (const key of newKeys) {
+        const prevModel = prevModels[key];
+        const newModel = newModels[key];
+        if (!prevModel) return true;
+        if (prevModel.inputCostPerToken !== newModel.inputCostPerToken) return true;
+        if (prevModel.outputCostPerToken !== newModel.outputCostPerToken) return true;
+      }
+    }
+
+    return false;
+  } catch {
+    return true;
+  }
+}
+
+/**
+ * Bump patch version if data changed, keep current version if unchanged.
+ */
+function bumpVersion(
+  prev: PricingMeta | null,
+  newProviders: Record<string, Record<string, ModelPricing>>,
+): string {
+  const baseVersion = prev?.version ?? '2.0.0';
+
+  if (!hasDataChanged(prev, newProviders)) {
+    return baseVersion;
+  }
+
+  // Bump patch: 2.0.0 → 2.0.1, 2.0.5 → 2.0.6
+  const parts = baseVersion.split('.').map(Number);
+  if (parts.length === 3) {
+    parts[2]++;
+    return parts.join('.');
+  }
+  return baseVersion;
 }
 
 function processInput(
