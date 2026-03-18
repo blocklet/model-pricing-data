@@ -192,13 +192,10 @@ export async function callLlmFallback(
 
     if (hasAnthropic) {
       const baseUrl = (process.env.ANTHROPIC_BASE_URL || 'https://api.anthropic.com').replace(/\/+$/, '');
-      model = process.env.ANTHROPIC_MODEL || 'claude-haiku-4-5-20251001';
-      console.error(
-        `  [llm] Calling ${model} for ${provider} (${htmlContent.length} chars)...`,
-      );
-      if (baseUrl !== 'https://api.anthropic.com') {
-        console.error(`  [llm] Using custom base URL: ${baseUrl}`);
-      }
+      model = process.env.ANTHROPIC_MODEL || 'claude-sonnet-4-5';
+      const keyPreview = process.env.ANTHROPIC_API_KEY!.slice(0, 8) + '...' + process.env.ANTHROPIC_API_KEY!.slice(-4);
+      console.error(`  [llm] Calling ${model} for ${provider} (${htmlContent.length} chars)`);
+      console.error(`  [llm] Endpoint: ${baseUrl}/v1/messages  Key: ${keyPreview}`);
 
       const baseBody = {
         model,

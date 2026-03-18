@@ -197,7 +197,9 @@ export async function scrapeLlm(provider: string): Promise<ModelPricing[]> {
   }
 
   const baseUrl = (process.env.ANTHROPIC_BASE_URL || 'https://api.anthropic.com').replace(/\/+$/, '');
-  const model = process.env.ANTHROPIC_MODEL || 'claude-haiku-4-5-20251001';
+  const model = process.env.ANTHROPIC_MODEL || 'claude-sonnet-4-5';
+  const keyPreview = apiKey.slice(0, 8) + '...' + apiKey.slice(-4);
+  console.error(`  [llm-only] Config: model=${model} baseUrl=${baseUrl} key=${keyPreview}`);
 
   const url = LLM_FETCH_URLS[provider] || PRICING_URLS[provider];
   if (!url) {

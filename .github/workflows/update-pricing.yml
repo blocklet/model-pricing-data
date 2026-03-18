@@ -43,7 +43,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           # Custom endpoints: use secret if set, otherwise default
           ANTHROPIC_BASE_URL: ${{ secrets.ANTHROPIC_BASE_URL || 'https://api.anthropic.com' }}
-          ANTHROPIC_MODEL: ${{ secrets.ANTHROPIC_MODEL || 'claude-haiku-4-5-20251001' }}
+          ANTHROPIC_MODEL: ${{ secrets.ANTHROPIC_MODEL || 'claude-sonnet-4-5' }}
           OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL || '' }}
           OPENAI_MODEL: ${{ secrets.OPENAI_MODEL || '' }}
         run: |

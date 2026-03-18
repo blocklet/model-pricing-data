@@ -104,7 +104,7 @@ async function callLlmForProvider(provider: string): Promise<ModelPricing[] | nu
   }
 
   const baseUrl = (process.env.ANTHROPIC_BASE_URL || 'https://api.anthropic.com').replace(/\/+$/, '');
-  const model = process.env.ANTHROPIC_MODEL || 'claude-haiku-4-5-20251001';
+  const model = process.env.ANTHROPIC_MODEL || 'claude-sonnet-4-5';
 
   const url = PROVIDER_URLS[provider];
   if (!url) {
