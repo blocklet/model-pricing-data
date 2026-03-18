@@ -1,0 +1,17 @@
+{
+  "name": "@blocklet/model-pricing-data",
+  "version": "0.1.0",
+  "description": "AI model pricing data from official provider pages, updated daily",
+  "type": "module",
+  "scripts": {
+    "scrape": "tsx scripts/index.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint scripts/"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "tsx": "^4.19.0",
+    "@types/node": "^22.0.0"
+  }
+}
