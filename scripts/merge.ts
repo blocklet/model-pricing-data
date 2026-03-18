@@ -66,54 +66,64 @@ function deriveModelKey(entry: ModelPricing, index: number): string {
 /**
  * Merge entries into a provider's model map, handling type-qualified keys.
  *
- * For each entry:
- * 1. Derive the base key from displayName
- * 2. If the base key already exists and has a different type:
- *    - Higher-priority type takes the base key
- *    - Lower-priority type gets "key::type" qualified key
- * 3. Always store under the type-qualified key too (if modelType is set)
+ * Two-pass strategy:
+ *  Pass 1: Collect best entry per (baseKey, type) pair, track which models have multiple types
+ *  Pass 2: Write to map — base key gets highest-priority type,
+ *          only models with 2+ types get "key::type" qualified keys
  */
 function mergeIntoProviderMap(
   map: Record<string, ModelPricing>,
   entries: ModelPricing[],
 ): void {
+  // Pass 1: Collect best entry per (baseKey, type), preserving section priority
+  const byKeyType = new Map<string, ModelPricing>(); // "baseKey::type" → best entry
+  const typesByKey = new Map<string, Set<string>>();  // baseKey → set of types
+
   for (let i = 0; i < entries.length; i++) {
     const entry = entries[i];
     const baseKey = deriveModelKey(entry, i);
+    const type = entry.modelType ?? 'chatCompletion';
 
-    // Type-qualified key: "modelId::type"
-    // When same modelId + same type appears from different sections,
-    // keep the one with higher section priority (lower _sectionPriority number).
-    // Priority order: text(0) > image(1) > audio(2) > imageGen/video/embedding(3) >
-    //                 transcription(4) > legacy(5) > fineTuning(6)
-    if (entry.modelType) {
-      const qualifiedKey = `${baseKey}::${entry.modelType}`;
-      const existingQualified = map[qualifiedKey];
-      if (!existingQualified ||
-          (entry._sectionPriority ?? 99) < (existingQualified._sectionPriority ?? 99)) {
-        map[qualifiedKey] = entry;
+    // Track types per model
+    if (!typesByKey.has(baseKey)) typesByKey.set(baseKey, new Set());
+    typesByKey.get(baseKey)!.add(type);
+
+    // Keep best entry per (baseKey, type) — prefer higher section priority
+    const compositeKey = `${baseKey}::${type}`;
+    const existing = byKeyType.get(compositeKey);
+    if (!existing || (entry._sectionPriority ?? 99) < (existing._sectionPriority ?? 99)) {
+      byKeyType.set(compositeKey, entry);
+    }
+  }
+
+  // Pass 2: Write to output map
+  for (const [baseKey, types] of typesByKey.entries()) {
+    const isMultiType = types.size > 1;
+
+    // Find best type for base key (highest type priority = lowest number)
+    let bestType: string | undefined;
+    let bestPriority = 999;
+    for (const type of types) {
+      const p = typePriority(type as ModelType);
+      if (p < bestPriority) {
+        bestPriority = p;
+        bestType = type;
       }
     }
 
-    // For the base key, prefer higher-priority types first,
-    // then within same type prefer higher section priority
-    const existing = map[baseKey];
-    if (!existing) {
-      map[baseKey] = entry;
-    } else if (typePriority(entry.modelType) < typePriority(existing.modelType)) {
-      // New entry has higher type priority — it takes the base key,
-      // demote existing to qualified key if it has a type
-      if (existing.modelType) {
-        const demotedKey = `${baseKey}::${existing.modelType}`;
-        if (!map[demotedKey]) {
-          map[demotedKey] = existing;
-        }
+    for (const type of types) {
+      const compositeKey = `${baseKey}::${type}`;
+      const entry = byKeyType.get(compositeKey)!;
+
+      if (type === bestType) {
+        // This type wins the base key
+        map[baseKey] = entry;
       }
-      map[baseKey] = entry;
-    } else if (typePriority(entry.modelType) === typePriority(existing.modelType) &&
-               (entry._sectionPriority ?? 99) < (existing._sectionPriority ?? 99)) {
-      // Same type but new entry from higher-priority section — replace
-      map[baseKey] = entry;
+
+      // Only add ::type qualified key when model has multiple types
+      if (isMultiType) {
+        map[`${baseKey}::${type}`] = entry;
+      }
     }
   }
 }
