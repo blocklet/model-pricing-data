@@ -354,7 +354,7 @@
     "pricingUnit": "per-token",
     "modelType": "audio",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-failed",
     "inputCostPerToken": 0.000032,
     "outputCostPerToken": 0.000064,
     "caching": {
@@ -390,7 +390,7 @@
     "pricingUnit": "per-token",
     "modelType": "audio",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-failed",
     "inputCostPerToken": 0.00001,
     "outputCostPerToken": 0.00002,
     "caching": {
@@ -453,7 +453,7 @@
     "pricingUnit": "per-token",
     "modelType": "audio",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-failed",
     "inputCostPerToken": 0.000032,
     "outputCostPerToken": 0.000064,
     "displayName": "gpt-audio-1.5"

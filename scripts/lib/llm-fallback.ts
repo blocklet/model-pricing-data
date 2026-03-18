@@ -205,6 +205,7 @@ export async function callLlmFallback(
         {
           model,
           max_tokens: 4096,
+          thinking: { type: 'disabled' },
           system: prompt,
           messages: [{ role: 'user', content: htmlContent }],
         },
@@ -212,6 +213,7 @@ export async function callLlmFallback(
           'x-api-key': process.env.ANTHROPIC_API_KEY!,
           'anthropic-version': '2023-06-01',
         },
+        { timeoutMs: 120000 },
       );
 
       const text = resp.content?.[0]?.text;
