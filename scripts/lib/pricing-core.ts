@@ -76,10 +76,24 @@ export function toPerToken(perMTok: number): number {
 }
 
 /**
- * Normalize a model name by lowercasing and stripping whitespace.
+ * Normalize a model name to a canonical key.
+ *
+ * General: lowercase + trim + whitespace → hyphen
+ *
+ * Claude-specific rules:
+ *   - Dots → hyphens  (e.g. "claude-opus-4.6" → "claude-opus-4-6")
+ *   - Bare integer suffix → append "-0" (e.g. "claude-opus-4" → "claude-opus-4-0")
  */
 export function normalizeModelName(name: string): string {
-  return name.toLowerCase().trim().replace(/\s+/g, '-');
+  let key = name.toLowerCase().trim().replace(/\s+/g, '-');
+  if (key.startsWith('claude')) {
+    key = key.replace(/\./g, '-');
+    // Append -0 when trailing segment is a bare integer (no minor version)
+    if (/^.*-\d+$/.test(key) && !/^.*-\d+-\d+$/.test(key)) {
+      key += '-0';
+    }
+  }
+  return key;
 }
 
 /**

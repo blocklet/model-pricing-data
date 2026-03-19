@@ -460,7 +460,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4e-7,
+    "inputCostPerToken": 3.9e-7,
     "outputCostPerToken": 0.00000175
   },
   "google/gemini-3-flash-preview": {
@@ -1069,7 +1069,7 @@
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
     "inputCostPerToken": 2.1e-7,
-    "outputCostPerToken": 7.9e-7
+    "outputCostPerToken": 7.8e-7
   },
   "x-ai/grok-4-fast": {
     "displayName": "x-ai/grok-4-fast",
