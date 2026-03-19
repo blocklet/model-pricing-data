@@ -1,30 +1,37 @@
 {
   "gemini-3.1-pro-preview": {
-    "displayName": "gemini-3.1-pro-preview",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
+    "displayName": "Gemini 3.1 Pro Preview",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-token",
+    "modelType": "chatCompletion",
     "inputCostPerToken": 0.000002,
     "outputCostPerToken": 0.000012,
     "caching": {
-      "read": 2.0000000000000002e-7
+      "read": 2e-7
     },
+    "contextTiers": [
+      {
+        "threshold": ">200K",
+        "inputCostPerToken": 0.000004,
+        "outputCostPerToken": 0.000018
+      }
+    ],
     "batchPricing": {
       "inputCostPerToken": 0.000001,
       "outputCostPerToken": 0.000006
     }
   },
   "gemini-3.1-flash-lite-preview": {
-    "displayName": "gemini-3.1-flash-lite-preview",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
+    "displayName": "Gemini 3.1 Flash-Lite Preview",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-token",
+    "modelType": "chatCompletion",
     "inputCostPerToken": 2.5e-7,
     "outputCostPerToken": 0.0000015,
     "caching": {
-      "read": 2.5000000000000002e-8
+      "read": 2.5e-8
     },
     "batchPricing": {
       "inputCostPerToken": 1.25e-7,
@@ -32,29 +39,25 @@
     }
   },
   "gemini-3.1-flash-image-preview": {
-    "displayName": "gemini-3.1-flash-image-preview",
-    "modelType": "imageGeneration",
-    "pricingUnit": "per-image",
+    "displayName": "Gemini 3.1 Flash Image Preview",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-image",
+    "modelType": "imageGeneration",
     "inputCostPerToken": 5e-7,
     "outputCostPerToken": 0.000003,
-    "batchPricing": {
-      "inputCostPerToken": 2.5e-7,
-      "outputCostPerToken": 0.0000015
-    },
-    "costPerImage": 0.067
+    "costPerImage": 0.045
   },
   "gemini-3-flash-preview": {
-    "displayName": "gemini-3-flash-preview",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
+    "displayName": "Gemini 3 Flash Preview",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-token",
+    "modelType": "chatCompletion",
     "inputCostPerToken": 5e-7,
     "outputCostPerToken": 0.000003,
     "caching": {
-      "read": 5.0000000000000004e-8
+      "read": 5e-8
     },
     "batchPricing": {
       "inputCostPerToken": 2.5e-7,
@@ -62,57 +65,44 @@
     }
   },
   "gemini-3-pro-image-preview": {
-    "displayName": "gemini-3-pro-image-preview",
-    "modelType": "imageGeneration",
-    "pricingUnit": "per-image",
+    "displayName": "Gemini 3 Pro Image Preview",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-image",
+    "modelType": "imageGeneration",
     "inputCostPerToken": 0.000002,
     "outputCostPerToken": 0.000012,
-    "batchPricing": {
-      "inputCostPerToken": 0.000001,
-      "outputCostPerToken": 0.000006
-    },
     "costPerImage": 0.134
   },
-  "gemini-3-pro-preview": {
-    "displayName": "gemini-3-pro-preview",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000002,
-    "outputCostPerToken": 0.000012,
-    "caching": {
-      "read": 2.0000000000000002e-7
-    },
-    "batchPricing": {
-      "inputCostPerToken": 0.000001,
-      "outputCostPerToken": 0.000006
-    }
-  },
   "gemini-2.5-pro": {
-    "displayName": "gemini-2.5-pro",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
+    "displayName": "Gemini 2.5 Pro",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-token",
+    "modelType": "chatCompletion",
     "inputCostPerToken": 0.00000125,
     "outputCostPerToken": 0.00001,
     "caching": {
       "read": 1.25e-7
     },
+    "contextTiers": [
+      {
+        "threshold": ">200K",
+        "inputCostPerToken": 0.0000025,
+        "outputCostPerToken": 0.000015
+      }
+    ],
     "batchPricing": {
       "inputCostPerToken": 6.25e-7,
       "outputCostPerToken": 0.000005
     }
   },
   "gemini-2.5-flash": {
-    "displayName": "gemini-2.5-flash",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
+    "displayName": "Gemini 2.5 Flash",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-token",
+    "modelType": "chatCompletion",
     "inputCostPerToken": 3e-7,
     "outputCostPerToken": 0.0000025,
     "caching": {
@@ -124,206 +114,207 @@
     }
   },
   "gemini-2.5-flash-lite": {
-    "displayName": "gemini-2.5-flash-lite",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
+    "displayName": "Gemini 2.5 Flash-Lite",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 1.0000000000000001e-7,
-    "outputCostPerToken": 4.0000000000000003e-7,
+    "extractionMethod": "regex",
+    "pricingUnit": "per-token",
+    "modelType": "chatCompletion",
+    "inputCostPerToken": 1e-7,
+    "outputCostPerToken": 4e-7,
     "caching": {
       "read": 1e-8
     },
     "batchPricing": {
-      "inputCostPerToken": 5.0000000000000004e-8,
-      "outputCostPerToken": 2.0000000000000002e-7
+      "inputCostPerToken": 5e-8,
+      "outputCostPerToken": 2e-7
     }
   },
-  "gemini-2.5-flash-lite-preview-09-2025": {
-    "displayName": "gemini-2.5-flash-lite-preview-09-2025",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
+  "gemini-2.5-flash-lite-preview": {
+    "displayName": "Gemini 2.5 Flash-Lite Preview",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 1.0000000000000001e-7,
-    "outputCostPerToken": 4.0000000000000003e-7,
+    "extractionMethod": "regex",
+    "pricingUnit": "per-token",
+    "modelType": "chatCompletion",
+    "inputCostPerToken": 1e-7,
+    "outputCostPerToken": 4e-7,
     "caching": {
       "read": 1e-8
     },
     "batchPricing": {
-      "inputCostPerToken": 5.0000000000000004e-8,
-      "outputCostPerToken": 2.0000000000000002e-7
+      "inputCostPerToken": 5e-8,
+      "outputCostPerToken": 2e-7
     }
   },
-  "gemini-2.5-flash-native-audio-preview-12-2025": {
-    "displayName": "gemini-2.5-flash-native-audio-preview-12-2025",
+  "gemini-2.5-flash-native-audio-(live-api)": {
+    "displayName": "Gemini 2.5 Flash Native Audio (Live API)",
+    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-token",
     "modelType": "audio",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
     "inputCostPerToken": 5e-7,
     "outputCostPerToken": 0.000002
   },
   "gemini-2.5-flash-image": {
-    "displayName": "gemini-2.5-flash-image",
-    "modelType": "imageGeneration",
-    "pricingUnit": "per-image",
+    "displayName": "Gemini 2.5 Flash Image",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-image",
+    "modelType": "imageGeneration",
     "inputCostPerToken": 3e-7,
     "costPerImage": 0.039
   },
   "gemini-2.5-flash-preview-tts": {
-    "displayName": "gemini-2.5-flash-preview-tts",
-    "modelType": "audio",
-    "pricingUnit": "per-token",
+    "displayName": "Gemini 2.5 Flash Preview TTS",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-token",
+    "modelType": "audio",
     "inputCostPerToken": 5e-7,
-    "outputCostPerToken": 0.00001,
-    "batchPricing": {
-      "inputCostPerToken": 2.5e-7,
-      "outputCostPerToken": 0.000005
-    }
+    "outputCostPerToken": 0.00001
   },
   "gemini-2.5-pro-preview-tts": {
-    "displayName": "gemini-2.5-pro-preview-tts",
-    "modelType": "audio",
-    "pricingUnit": "per-token",
+    "displayName": "Gemini 2.5 Pro Preview TTS",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-token",
+    "modelType": "audio",
     "inputCostPerToken": 0.000001,
-    "outputCostPerToken": 0.00002,
-    "batchPricing": {
-      "inputCostPerToken": 5e-7,
-      "outputCostPerToken": 0.00001
-    }
+    "outputCostPerToken": 0.00002
   },
   "gemini-2.0-flash": {
-    "displayName": "gemini-2.0-flash",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
+    "displayName": "Gemini 2.0 Flash",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 1.0000000000000001e-7,
-    "outputCostPerToken": 4.0000000000000003e-7,
+    "extractionMethod": "regex",
+    "pricingUnit": "per-token",
+    "modelType": "chatCompletion",
+    "inputCostPerToken": 1e-7,
+    "outputCostPerToken": 4e-7,
     "caching": {
-      "read": 2.5000000000000002e-8
+      "read": 2.5e-8
     },
     "batchPricing": {
-      "inputCostPerToken": 5.0000000000000004e-8,
-      "outputCostPerToken": 2.0000000000000002e-7
-    }
+      "inputCostPerToken": 5e-8,
+      "outputCostPerToken": 2e-7
+    },
+    "deprecated": true
   },
   "gemini-2.0-flash-lite": {
-    "displayName": "gemini-2.0-flash-lite",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
+    "displayName": "Gemini 2.0 Flash-Lite",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-token",
+    "modelType": "chatCompletion",
     "inputCostPerToken": 7.5e-8,
     "outputCostPerToken": 3e-7,
     "batchPricing": {
       "inputCostPerToken": 3.75e-8,
       "outputCostPerToken": 1.5e-7
-    }
+    },
+    "deprecated": true
   },
-  "imagen-4.0-fast-generate-001": {
-    "displayName": "imagen-4.0-fast-generate-001",
-    "modelType": "imageGeneration",
-    "pricingUnit": "per-image",
+  "imagen-4-fast": {
+    "displayName": "Imagen 4 Fast",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-image",
+    "modelType": "imageGeneration",
     "costPerImage": 0.02
   },
-  "imagen-4.0-generate-001": {
-    "displayName": "imagen-4.0-generate-001",
-    "modelType": "imageGeneration",
-    "pricingUnit": "per-image",
+  "imagen-4": {
+    "displayName": "Imagen 4",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-image",
+    "modelType": "imageGeneration",
     "costPerImage": 0.04
   },
-  "imagen-4.0-ultra-generate-001": {
-    "displayName": "imagen-4.0-ultra-generate-001",
-    "modelType": "imageGeneration",
-    "pricingUnit": "per-image",
+  "imagen-4-ultra": {
+    "displayName": "Imagen 4 Ultra",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-image",
+    "modelType": "imageGeneration",
     "costPerImage": 0.06
   },
-  "veo-3.1-generate-preview": {
-    "displayName": "veo-3.1-generate-preview",
-    "modelType": "video",
-    "pricingUnit": "per-second",
+  "veo-3.1": {
+    "displayName": "Veo 3.1",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-second",
+    "modelType": "video",
     "costPerSecond": 0.4
   },
-  "veo-3.1-fast-generate-preview": {
-    "displayName": "veo-3.1-fast-generate-preview",
-    "modelType": "video",
-    "pricingUnit": "per-second",
+  "veo-3.1-fast": {
+    "displayName": "Veo 3.1 Fast",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-second",
+    "modelType": "video",
     "costPerSecond": 0.15
   },
-  "veo-3.0-generate-001": {
-    "displayName": "veo-3.0-generate-001",
-    "modelType": "video",
-    "pricingUnit": "per-second",
+  "veo-3": {
+    "displayName": "Veo 3",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-second",
+    "modelType": "video",
     "costPerSecond": 0.4
   },
-  "veo-3.0-fast-generate-001": {
-    "displayName": "veo-3.0-fast-generate-001",
-    "modelType": "video",
-    "pricingUnit": "per-second",
+  "veo-3-fast": {
+    "displayName": "Veo 3 Fast",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-second",
+    "modelType": "video",
     "costPerSecond": 0.15
   },
-  "veo-2.0-generate-001": {
-    "displayName": "veo-2.0-generate-001",
-    "modelType": "video",
-    "pricingUnit": "per-second",
+  "veo-2": {
+    "displayName": "Veo 2",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-second",
+    "modelType": "video",
     "costPerSecond": 0.35
   },
   "gemini-embedding-2-preview": {
-    "displayName": "gemini-embedding-2-preview",
-    "modelType": "embedding",
-    "pricingUnit": "per-token",
+    "displayName": "Gemini Embedding 2 Preview",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 2.0000000000000002e-7
+    "extractionMethod": "regex",
+    "pricingUnit": "per-token",
+    "modelType": "embedding",
+    "inputCostPerToken": 2e-7
   },
-  "gemini-embedding-001": {
-    "displayName": "gemini-embedding-001",
-    "modelType": "embedding",
-    "pricingUnit": "per-token",
+  "gemini-embedding": {
+    "displayName": "Gemini Embedding",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-token",
+    "modelType": "embedding",
     "inputCostPerToken": 1.5e-7
   },
   "gemini-robotics-er-1.5-preview": {
-    "displayName": "gemini-robotics-er-1.5-preview",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
+    "displayName": "Gemini Robotics-ER 1.5 Preview",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-token",
+    "modelType": "chatCompletion",
     "inputCostPerToken": 3e-7,
     "outputCostPerToken": 0.0000025
   },
-  "gemini-2.5-computer-use-preview-10-2025": {
-    "displayName": "gemini-2.5-computer-use-preview-10-2025",
-    "modelType": "tool",
-    "pricingUnit": "per-token",
+  "gemini-2.5-computer-use-preview": {
+    "displayName": "Gemini 2.5 Computer Use Preview",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "llm",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-token",
+    "modelType": "chatCompletion",
     "inputCostPerToken": 0.00000125,
-    "outputCostPerToken": 0.00001
+    "outputCostPerToken": 0.00001,
+    "contextTiers": [
+      {
+        "threshold": ">200K",
+        "inputCostPerToken": 0.0000025,
+        "outputCostPerToken": 0.000015
+      }
+    ]
   }
 }

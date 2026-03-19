@@ -1,1098 +1,450 @@
 {
-  "gpt-5.4": {
-    "displayName": "gpt-5.4",
+  "unknown-model-0": {
+    "modelId": "gpt-5.4",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.0000025,
-    "outputCostPerToken": 0.000015,
-    "caching": {
-      "read": 2.5e-7
-    }
+    "inputPerMTok": 2.5,
+    "cachedInputPerMTok": 0.25,
+    "outputPerMTok": 15
   },
-  "gpt-5.4-pro": {
-    "displayName": "gpt-5.4-pro",
+  "unknown-model-1": {
+    "modelId": "gpt-5.4-mini",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00003,
-    "outputCostPerToken": 0.00018
+    "inputPerMTok": 0.75,
+    "cachedInputPerMTok": 0.075,
+    "outputPerMTok": 4.5
   },
-  "gpt-5.4-mini": {
-    "displayName": "gpt-5.4-mini",
+  "unknown-model-2": {
+    "modelId": "gpt-5.4-nano",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 7.5e-7,
-    "outputCostPerToken": 0.0000045,
-    "caching": {
-      "read": 7.5e-8
-    }
+    "inputPerMTok": 0.2,
+    "cachedInputPerMTok": 0.02,
+    "outputPerMTok": 1.25
   },
-  "gpt-5.4-nano": {
-    "displayName": "gpt-5.4-nano",
+  "unknown-model-3": {
+    "modelId": "gpt-5.4-pro",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 2.0000000000000002e-7,
-    "outputCostPerToken": 0.00000125,
-    "caching": {
-      "read": 2e-8
-    }
+    "inputPerMTok": 30,
+    "cachedInputPerMTok": null,
+    "outputPerMTok": 180
   },
-  "gpt-5.2": {
-    "displayName": "gpt-5.2",
+  "unknown-model-4": {
+    "modelId": "gpt-5.2",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00000175,
-    "outputCostPerToken": 0.000014,
-    "caching": {
-      "read": 1.75e-7
-    }
+    "inputPerMTok": 1.75,
+    "cachedInputPerMTok": 0.175,
+    "outputPerMTok": 14
   },
-  "gpt-5.1": {
-    "displayName": "gpt-5.1",
+  "unknown-model-5": {
+    "modelId": "gpt-5.2-pro",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00000125,
-    "outputCostPerToken": 0.00001,
-    "caching": {
-      "read": 1.25e-7
-    }
+    "inputPerMTok": 21,
+    "cachedInputPerMTok": null,
+    "outputPerMTok": 168
   },
-  "gpt-5": {
-    "displayName": "gpt-5",
+  "unknown-model-6": {
+    "modelId": "gpt-5.1",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00000125,
-    "outputCostPerToken": 0.00001,
-    "caching": {
-      "read": 1.25e-7
-    }
+    "inputPerMTok": 1.25,
+    "cachedInputPerMTok": 0.125,
+    "outputPerMTok": 10
   },
-  "gpt-5-mini": {
-    "displayName": "gpt-5-mini",
+  "unknown-model-7": {
+    "modelId": "gpt-5",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 2.5e-7,
-    "outputCostPerToken": 0.000002,
-    "caching": {
-      "read": 2.5000000000000002e-8
-    }
+    "inputPerMTok": 1.25,
+    "cachedInputPerMTok": 0.125,
+    "outputPerMTok": 10
   },
-  "gpt-5-nano": {
-    "displayName": "gpt-5-nano",
+  "unknown-model-8": {
+    "modelId": "gpt-5-mini",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 5.0000000000000004e-8,
-    "outputCostPerToken": 4.0000000000000003e-7,
-    "caching": {
-      "read": 5e-9
-    }
+    "inputPerMTok": 0.25,
+    "cachedInputPerMTok": 0.025,
+    "outputPerMTok": 2
   },
-  "gpt-5.3-chat-latest": {
-    "displayName": "gpt-5.3-chat-latest",
+  "unknown-model-9": {
+    "modelId": "gpt-5-nano",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00000175,
-    "outputCostPerToken": 0.000014,
-    "caching": {
-      "read": 1.75e-7
-    }
+    "inputPerMTok": 0.05,
+    "cachedInputPerMTok": 0.005,
+    "outputPerMTok": 0.4
   },
-  "gpt-5.2-chat-latest": {
-    "displayName": "gpt-5.2-chat-latest",
+  "unknown-model-10": {
+    "modelId": "gpt-5-pro",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00000175,
-    "outputCostPerToken": 0.000014,
-    "caching": {
-      "read": 1.75e-7
-    }
+    "inputPerMTok": 15,
+    "cachedInputPerMTok": null,
+    "outputPerMTok": 120
   },
-  "gpt-5.1-chat-latest": {
-    "displayName": "gpt-5.1-chat-latest",
+  "unknown-model-11": {
+    "modelId": "gpt-4.1",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00000125,
-    "outputCostPerToken": 0.00001,
-    "caching": {
-      "read": 1.25e-7
-    }
+    "inputPerMTok": 2,
+    "cachedInputPerMTok": 0.5,
+    "outputPerMTok": 8
   },
-  "gpt-5-chat-latest": {
-    "displayName": "gpt-5-chat-latest",
+  "unknown-model-12": {
+    "modelId": "gpt-4.1-mini",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00000125,
-    "outputCostPerToken": 0.00001,
-    "caching": {
-      "read": 1.25e-7
-    }
+    "inputPerMTok": 0.4,
+    "cachedInputPerMTok": 0.1,
+    "outputPerMTok": 1.6
   },
-  "gpt-5.3-codex": {
-    "displayName": "gpt-5.3-codex",
+  "unknown-model-13": {
+    "modelId": "gpt-4.1-nano",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00000175,
-    "outputCostPerToken": 0.000014,
-    "caching": {
-      "read": 1.75e-7
-    }
+    "inputPerMTok": 0.1,
+    "cachedInputPerMTok": 0.025,
+    "outputPerMTok": 0.4
   },
-  "gpt-5.2-codex": {
-    "displayName": "gpt-5.2-codex",
+  "unknown-model-14": {
+    "modelId": "gpt-4o",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00000175,
-    "outputCostPerToken": 0.000014,
-    "caching": {
-      "read": 1.75e-7
-    }
+    "inputPerMTok": 2.5,
+    "cachedInputPerMTok": 1.25,
+    "outputPerMTok": 10
   },
-  "gpt-5.1-codex-max": {
-    "displayName": "gpt-5.1-codex-max",
+  "unknown-model-15": {
+    "modelId": "gpt-4o-2024-05-13",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00000125,
-    "outputCostPerToken": 0.00001,
-    "caching": {
-      "read": 1.25e-7
-    }
+    "inputPerMTok": 5,
+    "cachedInputPerMTok": null,
+    "outputPerMTok": 15
   },
-  "gpt-5.1-codex": {
-    "displayName": "gpt-5.1-codex",
+  "unknown-model-16": {
+    "modelId": "gpt-4o-mini",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00000125,
-    "outputCostPerToken": 0.00001,
-    "caching": {
-      "read": 1.25e-7
-    }
+    "inputPerMTok": 0.15,
+    "cachedInputPerMTok": 0.075,
+    "outputPerMTok": 0.6
   },
-  "gpt-5-codex": {
-    "displayName": "gpt-5-codex",
+  "unknown-model-17": {
+    "modelId": "o1",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00000125,
-    "outputCostPerToken": 0.00001,
-    "caching": {
-      "read": 1.25e-7
-    }
+    "inputPerMTok": 15,
+    "cachedInputPerMTok": 7.5,
+    "outputPerMTok": 60
   },
-  "gpt-5.2-pro": {
-    "displayName": "gpt-5.2-pro",
+  "unknown-model-18": {
+    "modelId": "o1-pro",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000021,
-    "outputCostPerToken": 0.000168
+    "inputPerMTok": 150,
+    "cachedInputPerMTok": null,
+    "outputPerMTok": 600
   },
-  "gpt-5-pro": {
-    "displayName": "gpt-5-pro",
+  "unknown-model-19": {
+    "modelId": "o3-pro",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000015,
-    "outputCostPerToken": 0.00012
+    "inputPerMTok": 20,
+    "cachedInputPerMTok": null,
+    "outputPerMTok": 80
   },
-  "gpt-4.1": {
-    "displayName": "gpt-4.1",
+  "unknown-model-20": {
+    "modelId": "o3",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000002,
-    "outputCostPerToken": 0.000008,
-    "caching": {
-      "read": 5e-7
-    }
+    "inputPerMTok": 2,
+    "cachedInputPerMTok": 0.5,
+    "outputPerMTok": 8
   },
-  "gpt-4.1-mini": {
-    "displayName": "gpt-4.1-mini",
+  "unknown-model-21": {
+    "modelId": "o4-mini",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 4.0000000000000003e-7,
-    "outputCostPerToken": 0.0000016000000000000001,
-    "caching": {
-      "read": 1.0000000000000001e-7
-    }
+    "inputPerMTok": 1.1,
+    "cachedInputPerMTok": 0.275,
+    "outputPerMTok": 4.4
   },
-  "gpt-4.1-nano": {
-    "displayName": "gpt-4.1-nano",
+  "unknown-model-22": {
+    "modelId": "o3-mini",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 1.0000000000000001e-7,
-    "outputCostPerToken": 4.0000000000000003e-7,
-    "caching": {
-      "read": 2.5000000000000002e-8
-    }
+    "inputPerMTok": 1.1,
+    "cachedInputPerMTok": 0.55,
+    "outputPerMTok": 4.4
   },
-  "gpt-4o": {
-    "displayName": "gpt-4o",
+  "unknown-model-23": {
+    "modelId": "o1-mini",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.0000025,
-    "outputCostPerToken": 0.00001,
-    "caching": {
-      "read": 0.00000125
-    }
+    "inputPerMTok": 1.1,
+    "cachedInputPerMTok": 0.55,
+    "outputPerMTok": 4.4
   },
-  "gpt-4o-2024-05-13": {
-    "displayName": "gpt-4o-2024-05-13",
+  "unknown-model-24": {
+    "modelId": "gpt-4-turbo-2024-04-09",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000005,
-    "outputCostPerToken": 0.000015
+    "inputPerMTok": 10,
+    "cachedInputPerMTok": null,
+    "outputPerMTok": 30
   },
-  "gpt-4o-mini": {
-    "displayName": "gpt-4o-mini",
+  "unknown-model-25": {
+    "modelId": "gpt-4-0125-preview",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 1.5e-7,
-    "outputCostPerToken": 6e-7,
-    "caching": {
-      "read": 7.5e-8
-    }
+    "inputPerMTok": 10,
+    "cachedInputPerMTok": null,
+    "outputPerMTok": 30
   },
-  "gpt-realtime": {
-    "displayName": "gpt-realtime",
+  "unknown-model-26": {
+    "modelId": "gpt-4-1106-preview",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000004,
-    "outputCostPerToken": 0.000016,
-    "caching": {
-      "read": 4.0000000000000003e-7
-    }
+    "inputPerMTok": 10,
+    "cachedInputPerMTok": null,
+    "outputPerMTok": 30
   },
-  "gpt-realtime-1.5": {
-    "displayName": "gpt-realtime-1.5",
+  "unknown-model-27": {
+    "modelId": "gpt-4-1106-vision-preview",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000004,
-    "outputCostPerToken": 0.000016,
-    "caching": {
-      "read": 4.0000000000000003e-7
-    }
+    "inputPerMTok": 10,
+    "cachedInputPerMTok": null,
+    "outputPerMTok": 30
   },
-  "gpt-realtime-1.5::chatCompletion": {
-    "displayName": "gpt-realtime-1.5",
+  "unknown-model-28": {
+    "modelId": "gpt-4-0613",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000004,
-    "outputCostPerToken": 0.000016,
-    "caching": {
-      "read": 4.0000000000000003e-7
-    }
+    "inputPerMTok": 30,
+    "cachedInputPerMTok": null,
+    "outputPerMTok": 60
   },
-  "gpt-realtime-1.5::audio": {
-    "displayName": "gpt-realtime-1.5",
-    "modelType": "audio",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000032,
-    "outputCostPerToken": 0.000064,
-    "caching": {
-      "read": 4.0000000000000003e-7
-    }
-  },
-  "gpt-realtime-mini": {
-    "displayName": "gpt-realtime-mini",
+  "unknown-model-29": {
+    "modelId": "gpt-4-0314",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 6e-7,
-    "outputCostPerToken": 0.0000024,
-    "caching": {
-      "read": 6e-8
-    }
+    "inputPerMTok": 30,
+    "cachedInputPerMTok": null,
+    "outputPerMTok": 60
   },
-  "gpt-realtime-mini::chatCompletion": {
-    "displayName": "gpt-realtime-mini",
+  "unknown-model-30": {
+    "modelId": "gpt-4-32k",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 6e-7,
-    "outputCostPerToken": 0.0000024,
-    "caching": {
-      "read": 6e-8
-    }
+    "inputPerMTok": 60,
+    "cachedInputPerMTok": null,
+    "outputPerMTok": 120
   },
-  "gpt-realtime-mini::audio": {
-    "displayName": "gpt-realtime-mini",
-    "modelType": "audio",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00001,
-    "outputCostPerToken": 0.00002,
-    "caching": {
-      "read": 3e-7
-    }
-  },
-  "gpt-4o-realtime-preview": {
-    "displayName": "gpt-4o-realtime-preview",
+  "unknown-model-31": {
+    "modelId": "gpt-3.5-turbo",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000005,
-    "outputCostPerToken": 0.00002,
-    "caching": {
-      "read": 0.0000025
-    }
+    "inputPerMTok": 0.5,
+    "cachedInputPerMTok": null,
+    "outputPerMTok": 1.5
   },
-  "gpt-4o-mini-realtime-preview": {
-    "displayName": "gpt-4o-mini-realtime-preview",
+  "unknown-model-32": {
+    "modelId": "gpt-3.5-turbo-0125",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 6e-7,
-    "outputCostPerToken": 0.0000024,
-    "caching": {
-      "read": 3e-7
-    }
+    "inputPerMTok": 0.5,
+    "cachedInputPerMTok": null,
+    "outputPerMTok": 1.5
   },
-  "gpt-audio": {
-    "displayName": "gpt-audio",
-    "modelType": "audio",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.0000025,
-    "outputCostPerToken": 0.00001
-  },
-  "gpt-audio-1.5": {
-    "displayName": "gpt-audio-1.5",
-    "modelType": "audio",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.0000025,
-    "outputCostPerToken": 0.00001
-  },
-  "gpt-audio-mini": {
-    "displayName": "gpt-audio-mini",
-    "modelType": "audio",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 6e-7,
-    "outputCostPerToken": 0.0000024
-  },
-  "gpt-4o-audio-preview": {
-    "displayName": "gpt-4o-audio-preview",
-    "modelType": "audio",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.0000025,
-    "outputCostPerToken": 0.00001
-  },
-  "gpt-4o-mini-audio-preview": {
-    "displayName": "gpt-4o-mini-audio-preview",
-    "modelType": "audio",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 1.5e-7,
-    "outputCostPerToken": 6e-7
-  },
-  "o1": {
-    "displayName": "o1",
+  "unknown-model-33": {
+    "modelId": "gpt-3.5-turbo-1106",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000015,
-    "outputCostPerToken": 0.00006,
-    "caching": {
-      "read": 0.0000075
-    }
+    "inputPerMTok": 1,
+    "cachedInputPerMTok": null,
+    "outputPerMTok": 2
   },
-  "o1-pro": {
-    "displayName": "o1-pro",
+  "unknown-model-34": {
+    "modelId": "gpt-3.5-turbo-0613",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00015,
-    "outputCostPerToken": 0.0006
+    "inputPerMTok": 1.5,
+    "cachedInputPerMTok": null,
+    "outputPerMTok": 2
   },
-  "o3-pro": {
-    "displayName": "o3-pro",
+  "unknown-model-35": {
+    "modelId": "gpt-3.5-0301",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00002,
-    "outputCostPerToken": 0.00008
+    "inputPerMTok": 1.5,
+    "cachedInputPerMTok": null,
+    "outputPerMTok": 2
   },
-  "o3": {
-    "displayName": "o3",
+  "unknown-model-36": {
+    "modelId": "gpt-3.5-turbo-instruct",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000002,
-    "outputCostPerToken": 0.000008,
-    "caching": {
-      "read": 5e-7
-    }
+    "inputPerMTok": 1.5,
+    "cachedInputPerMTok": null,
+    "outputPerMTok": 2
   },
-  "o3-deep-research": {
-    "displayName": "o3-deep-research",
+  "unknown-model-37": {
+    "modelId": "gpt-3.5-turbo-16k-0613",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00001,
-    "outputCostPerToken": 0.00004,
-    "caching": {
-      "read": 0.0000025
-    }
+    "inputPerMTok": 3,
+    "cachedInputPerMTok": null,
+    "outputPerMTok": 4
   },
-  "o4-mini": {
-    "displayName": "o4-mini",
+  "unknown-model-38": {
+    "modelId": "davinci-002",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.0000011,
-    "outputCostPerToken": 0.0000044,
-    "caching": {
-      "read": 2.75e-7
-    }
+    "inputPerMTok": 2,
+    "cachedInputPerMTok": null,
+    "outputPerMTok": 2
   },
-  "o4-mini-deep-research": {
-    "displayName": "o4-mini-deep-research",
+  "unknown-model-39": {
+    "modelId": "babbage-002",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000002,
-    "outputCostPerToken": 0.000008,
-    "caching": {
-      "read": 5e-7
-    }
+    "inputPerMTok": 0.4,
+    "cachedInputPerMTok": null,
+    "outputPerMTok": 0.4
   },
-  "o3-mini": {
-    "displayName": "o3-mini",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.0000011,
-    "outputCostPerToken": 0.0000044,
-    "caching": {
-      "read": 5.5e-7
-    }
-  },
-  "o1-mini": {
-    "displayName": "o1-mini",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.0000011,
-    "outputCostPerToken": 0.0000044,
-    "caching": {
-      "read": 5.5e-7
-    }
-  },
-  "gpt-5.1-codex-mini": {
-    "displayName": "gpt-5.1-codex-mini",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 2.5e-7,
-    "outputCostPerToken": 0.000002,
-    "caching": {
-      "read": 2.5000000000000002e-8
-    }
-  },
-  "codex-mini-latest": {
-    "displayName": "codex-mini-latest",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.0000015,
-    "outputCostPerToken": 0.000006,
-    "caching": {
-      "read": 3.75e-7
-    }
-  },
-  "gpt-5-search-api": {
-    "displayName": "gpt-5-search-api",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00000125,
-    "outputCostPerToken": 0.00001,
-    "caching": {
-      "read": 1.25e-7
-    }
-  },
-  "gpt-4o-mini-search-preview": {
-    "displayName": "gpt-4o-mini-search-preview",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 1.5e-7,
-    "outputCostPerToken": 6e-7
-  },
-  "gpt-4o-search-preview": {
-    "displayName": "gpt-4o-search-preview",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.0000025,
-    "outputCostPerToken": 0.00001
-  },
-  "computer-use-preview": {
-    "displayName": "computer-use-preview",
-    "modelType": "tool",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000003,
-    "outputCostPerToken": 0.000012
-  },
-  "gpt-image-1.5": {
-    "displayName": "gpt-image-1.5",
-    "modelType": "imageGeneration",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000005,
-    "outputCostPerToken": 0.00001,
-    "caching": {
-      "read": 0.00000125
-    }
-  },
-  "chatgpt-image-latest": {
-    "displayName": "chatgpt-image-latest",
-    "modelType": "imageGeneration",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000005,
-    "outputCostPerToken": 0.00001,
-    "caching": {
-      "read": 0.00000125
-    }
-  },
-  "gpt-image-1": {
-    "displayName": "gpt-image-1",
-    "modelType": "imageGeneration",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000005,
-    "caching": {
-      "read": 0.00000125
-    }
-  },
-  "gpt-image-1-mini": {
-    "displayName": "gpt-image-1-mini",
-    "modelType": "imageGeneration",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000002,
-    "caching": {
-      "read": 2.0000000000000002e-7
-    }
-  },
-  "sora-2": {
-    "displayName": "sora-2",
-    "modelType": "video",
-    "pricingUnit": "per-second",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "costPerSecond": 0.1
-  },
-  "sora-2-pro": {
-    "displayName": "sora-2-pro",
-    "modelType": "video",
-    "pricingUnit": "per-second",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "costPerSecond": 0.3
-  },
-  "o4-mini-2025-04-16": {
-    "displayName": "o4-mini-2025-04-16",
-    "modelType": "fineTuning",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000004,
-    "outputCostPerToken": 0.000016,
-    "caching": {
-      "read": 0.000001
-    },
-    "trainingCostPerHour": 100
-  },
-  "o4-mini-2025-04-16-with-data-sharing": {
-    "displayName": "o4-mini-2025-04-16-with-data-sharing",
-    "modelType": "fineTuning",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000002,
-    "outputCostPerToken": 0.000008,
-    "caching": {
-      "read": 5e-7
-    },
-    "trainingCostPerHour": 100
-  },
-  "gpt-4.1-2025-04-14": {
-    "displayName": "gpt-4.1-2025-04-14",
-    "modelType": "fineTuning",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000003,
-    "outputCostPerToken": 0.000012,
-    "caching": {
-      "read": 7.5e-7
-    },
-    "trainingCostPerHour": 25
-  },
-  "gpt-4.1-mini-2025-04-14": {
-    "displayName": "gpt-4.1-mini-2025-04-14",
-    "modelType": "fineTuning",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 8.000000000000001e-7,
-    "outputCostPerToken": 0.0000032000000000000003,
-    "caching": {
-      "read": 2.0000000000000002e-7
-    },
-    "trainingCostPerHour": 5
-  },
-  "gpt-4.1-nano-2025-04-14": {
-    "displayName": "gpt-4.1-nano-2025-04-14",
-    "modelType": "fineTuning",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 2.0000000000000002e-7,
-    "outputCostPerToken": 8.000000000000001e-7,
-    "caching": {
-      "read": 5.0000000000000004e-8
-    },
-    "trainingCostPerHour": 1.5
-  },
-  "gpt-4o-2024-08-06": {
-    "displayName": "gpt-4o-2024-08-06",
-    "modelType": "fineTuning",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00000375,
-    "outputCostPerToken": 0.000015,
-    "caching": {
-      "read": 0.000001875
-    },
-    "trainingCostPerHour": 25
-  },
-  "gpt-4o-mini-2024-07-18": {
-    "displayName": "gpt-4o-mini-2024-07-18",
-    "modelType": "fineTuning",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 3e-7,
-    "outputCostPerToken": 0.0000012,
-    "caching": {
-      "read": 1.5e-7
-    },
-    "trainingCostPerHour": 3
-  },
-  "gpt-3.5-turbo": {
-    "displayName": "gpt-3.5-turbo",
-    "modelType": "fineTuning",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000003,
-    "outputCostPerToken": 0.000006,
-    "trainingCostPerHour": 8
-  },
-  "davinci-002": {
-    "displayName": "davinci-002",
-    "modelType": "fineTuning",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000012,
-    "outputCostPerToken": 0.000012,
-    "trainingCostPerHour": 6
-  },
-  "babbage-002": {
-    "displayName": "babbage-002",
-    "modelType": "fineTuning",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.0000016000000000000001,
-    "outputCostPerToken": 0.0000016000000000000001,
-    "trainingCostPerHour": 0.4
-  },
-  "gpt-4o-mini-tts": {
-    "displayName": "gpt-4o-mini-tts",
+  "unknown-model-40": {
+    "modelId": "gpt-4o-transcribe",
     "modelType": "transcription",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 6e-7,
-    "costPerMinute": 0.015
+    "inputPerMTok": 2.5,
+    "outputPerMTok": 10
   },
-  "gpt-4o-transcribe": {
-    "displayName": "gpt-4o-transcribe",
+  "unknown-model-41": {
+    "modelId": "gpt-4o-mini-transcribe",
     "modelType": "transcription",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.0000025,
-    "outputCostPerToken": 0.00001,
-    "costPerMinute": 0.006
+    "inputPerMTok": 1.25,
+    "outputPerMTok": 5
   },
-  "gpt-4o-transcribe-diarize": {
-    "displayName": "gpt-4o-transcribe-diarize",
-    "modelType": "transcription",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.0000025,
-    "outputCostPerToken": 0.00001,
-    "costPerMinute": 0.006
+  "unknown-model-42": {
+    "modelId": "gpt-5.3-chat-latest",
+    "modelType": "chatCompletion",
+    "inputPerMTok": 1.75,
+    "cachedInputPerMTok": 0.175,
+    "outputPerMTok": 14
   },
-  "gpt-4o-mini-transcribe": {
-    "displayName": "gpt-4o-mini-transcribe",
-    "modelType": "transcription",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00000125,
-    "outputCostPerToken": 0.000005,
-    "costPerMinute": 0.003
+  "unknown-model-43": {
+    "modelId": "gpt-5.2-chat-latest",
+    "modelType": "chatCompletion",
+    "inputPerMTok": 1.75,
+    "cachedInputPerMTok": 0.175,
+    "outputPerMTok": 14
   },
-  "gpt-4o-mini-tts-audio": {
-    "displayName": "gpt-4o-mini-tts-audio",
-    "modelType": "transcription",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "outputCostPerToken": 0.000012,
-    "costPerMinute": 0.015
+  "unknown-model-44": {
+    "modelId": "gpt-5.1-chat-latest",
+    "modelType": "chatCompletion",
+    "inputPerMTok": 1.25,
+    "cachedInputPerMTok": 0.125,
+    "outputPerMTok": 10
   },
-  "whisper": {
-    "displayName": "whisper",
-    "modelType": "transcription",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "costPerMinute": 0.006
+  "unknown-model-45": {
+    "modelId": "gpt-5-chat-latest",
+    "modelType": "chatCompletion",
+    "inputPerMTok": 1.25,
+    "cachedInputPerMTok": 0.125,
+    "outputPerMTok": 10
   },
-  "tts": {
-    "displayName": "tts",
-    "modelType": "transcription",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm"
+  "unknown-model-46": {
+    "modelId": "chatgpt-4o-latest",
+    "modelType": "chatCompletion",
+    "inputPerMTok": 5,
+    "cachedInputPerMTok": null,
+    "outputPerMTok": 15
   },
-  "tts-hd": {
-    "displayName": "tts-hd",
-    "modelType": "transcription",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm"
+  "unknown-model-47": {
+    "modelId": "gpt-5.3-codex",
+    "modelType": "chatCompletion",
+    "inputPerMTok": 1.75,
+    "cachedInputPerMTok": 0.175,
+    "outputPerMTok": 14
   },
-  "gpt-image-1.5-generation": {
-    "displayName": "gpt-image-1.5-generation",
-    "modelType": "imageGeneration",
-    "pricingUnit": "per-image",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "costPerImage": 0.034
+  "unknown-model-48": {
+    "modelId": "gpt-5.2-codex",
+    "modelType": "chatCompletion",
+    "inputPerMTok": 1.75,
+    "cachedInputPerMTok": 0.175,
+    "outputPerMTok": 14
   },
-  "gpt-image-1-generation": {
-    "displayName": "gpt-image-1-generation",
-    "modelType": "imageGeneration",
-    "pricingUnit": "per-image",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "costPerImage": 0.042
+  "unknown-model-49": {
+    "modelId": "gpt-5.1-codex-max",
+    "modelType": "chatCompletion",
+    "inputPerMTok": 1.25,
+    "cachedInputPerMTok": 0.125,
+    "outputPerMTok": 10
   },
-  "gpt-image-1-mini-generation": {
-    "displayName": "gpt-image-1-mini-generation",
-    "modelType": "imageGeneration",
-    "pricingUnit": "per-image",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "costPerImage": 0.011
+  "unknown-model-50": {
+    "modelId": "gpt-5.1-codex",
+    "modelType": "chatCompletion",
+    "inputPerMTok": 1.25,
+    "cachedInputPerMTok": 0.125,
+    "outputPerMTok": 10
   },
-  "dall-e-3": {
-    "displayName": "dall-e-3",
-    "modelType": "imageGeneration",
-    "pricingUnit": "per-image",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "costPerImage": 0.04
+  "unknown-model-51": {
+    "modelId": "gpt-5-codex",
+    "modelType": "chatCompletion",
+    "inputPerMTok": 1.25,
+    "cachedInputPerMTok": 0.125,
+    "outputPerMTok": 10
   },
-  "dall-e-3-hd": {
-    "displayName": "dall-e-3-hd",
-    "modelType": "imageGeneration",
-    "pricingUnit": "per-image",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "costPerImage": 0.08
+  "unknown-model-52": {
+    "modelId": "gpt-5.1-codex-mini",
+    "modelType": "chatCompletion",
+    "inputPerMTok": 0.25,
+    "cachedInputPerMTok": 0.025,
+    "outputPerMTok": 2
   },
-  "dall-e-2": {
-    "displayName": "dall-e-2",
-    "modelType": "imageGeneration",
-    "pricingUnit": "per-image",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "costPerImage": 0.018
+  "unknown-model-53": {
+    "modelId": "codex-mini-latest",
+    "modelType": "chatCompletion",
+    "inputPerMTok": 1.5,
+    "cachedInputPerMTok": 0.375,
+    "outputPerMTok": 6
   },
-  "text-embedding-3-small": {
-    "displayName": "text-embedding-3-small",
+  "unknown-model-54": {
+    "modelId": "gpt-5-search-api",
+    "modelType": "chatCompletion",
+    "inputPerMTok": 1.25,
+    "cachedInputPerMTok": 0.125,
+    "outputPerMTok": 10
+  },
+  "unknown-model-55": {
+    "modelId": "gpt-4o-search-preview",
+    "modelType": "chatCompletion",
+    "inputPerMTok": 2.5,
+    "cachedInputPerMTok": null,
+    "outputPerMTok": 10
+  },
+  "unknown-model-56": {
+    "modelId": "gpt-4o-mini-search-preview",
+    "modelType": "chatCompletion",
+    "inputPerMTok": 0.15,
+    "cachedInputPerMTok": null,
+    "outputPerMTok": 0.6
+  },
+  "unknown-model-57": {
+    "modelId": "o3-deep-research",
+    "modelType": "chatCompletion",
+    "inputPerMTok": 10,
+    "cachedInputPerMTok": 2.5,
+    "outputPerMTok": 40
+  },
+  "unknown-model-58": {
+    "modelId": "o4-mini-deep-research",
+    "modelType": "chatCompletion",
+    "inputPerMTok": 2,
+    "cachedInputPerMTok": 0.5,
+    "outputPerMTok": 8
+  },
+  "unknown-model-59": {
+    "modelId": "computer-use-preview",
+    "modelType": "chatCompletion",
+    "inputPerMTok": 3,
+    "cachedInputPerMTok": null,
+    "outputPerMTok": 12
+  },
+  "unknown-model-60": {
+    "modelId": "text-embedding-3-small",
     "modelType": "embedding",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 2e-8
+    "inputPerMTok": 0.02,
+    "outputPerMTok": null
   },
-  "text-embedding-3-large": {
-    "displayName": "text-embedding-3-large",
+  "unknown-model-61": {
+    "modelId": "text-embedding-3-large",
     "modelType": "embedding",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 1.3e-7
+    "inputPerMTok": 0.13,
+    "outputPerMTok": null
   },
-  "text-embedding-ada-002": {
-    "displayName": "text-embedding-ada-002",
+  "unknown-model-62": {
+    "modelId": "text-embedding-ada-002",
     "modelType": "embedding",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 1.0000000000000001e-7
+    "inputPerMTok": 0.1,
+    "outputPerMTok": null
   },
-  "chatgpt-4o-latest": {
-    "displayName": "chatgpt-4o-latest",
+  "unknown-model-63": {
+    "modelId": "omni-moderation-latest",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000005,
-    "outputCostPerToken": 0.000015
+    "inputPerMTok": 0,
+    "outputPerMTok": null
   },
-  "gpt-4-turbo-2024-04-09": {
-    "displayName": "gpt-4-turbo-2024-04-09",
+  "unknown-model-64": {
+    "modelId": "text-moderation-latest",
     "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00001,
-    "outputCostPerToken": 0.00003
-  },
-  "gpt-4-0125-preview": {
-    "displayName": "gpt-4-0125-preview",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00001,
-    "outputCostPerToken": 0.00003
-  },
-  "gpt-4-1106-preview": {
-    "displayName": "gpt-4-1106-preview",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00001,
-    "outputCostPerToken": 0.00003
-  },
-  "gpt-4-1106-vision-preview": {
-    "displayName": "gpt-4-1106-vision-preview",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00001,
-    "outputCostPerToken": 0.00003
-  },
-  "gpt-4-0613": {
-    "displayName": "gpt-4-0613",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00003,
-    "outputCostPerToken": 0.00006
-  },
-  "gpt-4-0314": {
-    "displayName": "gpt-4-0314",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00003,
-    "outputCostPerToken": 0.00006
-  },
-  "gpt-4-32k": {
-    "displayName": "gpt-4-32k",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.00006,
-    "outputCostPerToken": 0.00012
-  },
-  "gpt-3.5-turbo-legacy": {
-    "displayName": "gpt-3.5-turbo-legacy",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 5e-7,
-    "outputCostPerToken": 0.0000015
-  },
-  "gpt-3.5-turbo-0125": {
-    "displayName": "gpt-3.5-turbo-0125",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 5e-7,
-    "outputCostPerToken": 0.0000015
-  },
-  "gpt-3.5-turbo-1106": {
-    "displayName": "gpt-3.5-turbo-1106",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000001,
-    "outputCostPerToken": 0.000002
-  },
-  "gpt-3.5-turbo-0613": {
-    "displayName": "gpt-3.5-turbo-0613",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.0000015,
-    "outputCostPerToken": 0.000002
-  },
-  "gpt-3.5-0301": {
-    "displayName": "gpt-3.5-0301",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.0000015,
-    "outputCostPerToken": 0.000002
-  },
-  "gpt-3.5-turbo-instruct": {
-    "displayName": "gpt-3.5-turbo-instruct",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.0000015,
-    "outputCostPerToken": 0.000002
-  },
-  "gpt-3.5-turbo-16k-0613": {
-    "displayName": "gpt-3.5-turbo-16k-0613",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000003,
-    "outputCostPerToken": 0.000004
-  },
-  "davinci-002-legacy": {
-    "displayName": "davinci-002-legacy",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 0.000002,
-    "outputCostPerToken": 0.000002
-  },
-  "babbage-002-legacy": {
-    "displayName": "babbage-002-legacy",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://platform.openai.com/docs/pricing",
-    "extractionMethod": "llm",
-    "inputCostPerToken": 4.0000000000000003e-7,
-    "outputCostPerToken": 4.0000000000000003e-7
+    "inputPerMTok": 0,
+    "outputPerMTok": null
   }
 }
