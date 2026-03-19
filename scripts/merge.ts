@@ -20,7 +20,7 @@ import type {
   PricingMeta,
   ProviderSource,
 } from './lib/schema.js';
-import { normalizeModelName } from './lib/pricing-core.js';
+import { normalizeModelName, normalizeProvider } from './lib/pricing-core.js';
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -133,6 +133,33 @@ function mergeIntoProviderMap(
 
 const OFFICIAL_PROVIDERS = new Set(['openai', 'anthropic', 'google', 'xai', 'deepseek']);
 
+/**
+ * Filter out OpenRouter entries whose upstream provider already has official data.
+ *
+ * OpenRouter displayNames look like "anthropic/claude-opus-4.6". If the prefix
+ * (e.g. "anthropic") matches an official provider that already has models scraped,
+ * we drop the entry — official data is always authoritative.
+ */
+function filterOfficialDuplicates(
+  entries: ModelPricing[],
+  providers: Record<string, Record<string, ModelPricing>>,
+): ModelPricing[] {
+  return entries.filter((entry) => {
+    const name = entry.displayName ?? '';
+    const slashIdx = name.indexOf('/');
+    if (slashIdx < 0) return true; // no provider prefix, keep
+
+    const prefix = name.slice(0, slashIdx).toLowerCase();
+    // Resolve aliases (e.g. "x-ai" → "xai", "vertex_ai" → "google")
+    const canonical = normalizeProvider(prefix) ?? prefix;
+    // If the prefix matches an official provider that has scraped data, skip
+    if (OFFICIAL_PROVIDERS.has(canonical) && providers[canonical] && Object.keys(providers[canonical]).length > 0) {
+      return false;
+    }
+    return true;
+  });
+}
+
 // ─── Main Merge Function ─────────────────────────────────────────────────────
 
 /**
@@ -159,10 +186,11 @@ export function mergeAll(
   }
 
   // Phase 2: Process non-official providers (e.g. OpenRouter)
-  // These never overwrite official data
+  // Filter out entries whose upstream provider already has official data
   for (const input of inputs) {
     if (OFFICIAL_PROVIDERS.has(input.provider)) continue;
-    processInput(providers, sources, input);
+    const filtered = filterOfficialDuplicates(input.entries, providers);
+    processInput(providers, sources, { ...input, entries: filtered });
   }
 
   // Count total models (base keys only, excluding type-qualified ::keys)
