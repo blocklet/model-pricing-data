@@ -1,6 +1,6 @@
 {
-  "deepseek-chat-(v3.2-non-thinking)": {
-    "displayName": "DeepSeek Chat (V3.2 Non-thinking)",
+  "deepseek-chat": {
+    "displayName": "deepseek-chat",
     "modelType": "chatCompletion",
     "pricingUnit": "per-token",
     "inputCostPerToken": 2.8e-7,
@@ -11,8 +11,8 @@
       "read": 2.8e-8
     }
   },
-  "deepseek-reasoner-(v3.2-thinking)": {
-    "displayName": "DeepSeek Reasoner (V3.2 Thinking)",
+  "deepseek-reasoner": {
+    "displayName": "deepseek-reasoner",
     "modelType": "chatCompletion",
     "pricingUnit": "per-token",
     "inputCostPerToken": 2.8e-7,

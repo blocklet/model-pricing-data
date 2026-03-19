@@ -60,13 +60,13 @@ export async function scrapeDeepSeek(): Promise<ModelPricing[]> {
 
     // Both models share identical pricing
     const modelDefs = [
-      { id: 'deepseek-chat', name: 'DeepSeek Chat (V3.2 Non-thinking)' },
-      { id: 'deepseek-reasoner', name: 'DeepSeek Reasoner (V3.2 Thinking)' },
+      { id: 'deepseek-chat' },
+      { id: 'deepseek-reasoner' },
     ];
 
-    for (const { id, name } of modelDefs) {
+    for (const { id } of modelDefs) {
       const entry: ModelPricing = {
-        displayName: name,
+        displayName: id,
         modelType: 'chatCompletion',
         pricingUnit: 'per-token',
         inputCostPerToken: toPerToken(inputPerMTok),
