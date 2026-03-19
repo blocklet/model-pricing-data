@@ -38,7 +38,7 @@ https://raw.githubusercontent.com/blocklet/model-pricing-data/main/data/pricing.
   "_meta": {
     "generatedAt": "2026-03-18T10:00:00Z",
     "version": "2.0.0",
-    "totalModels": 400,
+    "totalModels": 369,
     "sources": { "..." : "..." },
     "failedProviders": []
   },
