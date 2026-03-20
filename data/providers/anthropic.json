@@ -16,15 +16,7 @@
       "inputCostPerToken": 0.0000025,
       "outputCostPerToken": 0.0000125,
       "discountNote": "50% of standard"
-    },
-    "specialModes": [
-      {
-        "mode": "fast-mode",
-        "inputCostPerToken": 0.00003,
-        "outputCostPerToken": 0.00015,
-        "multiplierNote": "6x standard rates"
-      }
-    ]
+    }
   },
   "claude-opus-4-5": {
     "displayName": "Claude Opus 4.5",
