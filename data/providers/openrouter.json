@@ -165,7 +165,7 @@
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
     "inputCostPerToken": 2e-7,
-    "outputCostPerToken": 0.0000012
+    "outputCostPerToken": 0.00000117
   },
   "z-ai/glm-5": {
     "displayName": "z-ai/glm-5",
@@ -1236,8 +1236,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 3.5e-7,
-    "outputCostPerToken": 5.6e-7
+    "inputCostPerToken": 3e-8,
+    "outputCostPerToken": 1.1e-7
   },
   "allenai/olmo-2-0325-32b-instruct": {
     "displayName": "allenai/olmo-2-0325-32b-instruct",
