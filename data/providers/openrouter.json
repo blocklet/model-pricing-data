@@ -1199,6 +1199,14 @@
     "inputCostPerToken": 8e-7,
     "outputCostPerToken": 0.0000012
   },
+  "nvidia/llama-3.1-nemotron-ultra-253b-v1": {
+    "displayName": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 6e-7,
+    "outputCostPerToken": 0.0000018
+  },
   "meta-llama/llama-4-maverick": {
     "displayName": "meta-llama/llama-4-maverick",
     "pricingUnit": "per-token",
@@ -1606,6 +1614,14 @@
     "extractionMethod": "api",
     "inputCostPerToken": 1.2e-7,
     "outputCostPerToken": 3.9e-7
+  },
+  "mistralai/pixtral-12b": {
+    "displayName": "mistralai/pixtral-12b",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 1.0000000000000001e-7,
+    "outputCostPerToken": 1.0000000000000001e-7
   },
   "cohere/command-r-08-2024": {
     "displayName": "cohere/command-r-08-2024",
