@@ -279,14 +279,6 @@
     "inputCostPerToken": 6e-8,
     "outputCostPerToken": 4e-7
   },
-  "allenai/molmo-2-8b": {
-    "displayName": "allenai/molmo-2-8b",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 2e-7,
-    "outputCostPerToken": 2e-7
-  },
   "allenai/olmo-3.1-32b-instruct": {
     "displayName": "allenai/olmo-3.1-32b-instruct",
     "pricingUnit": "per-token",
@@ -486,22 +478,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 1.5e-7,
     "outputCostPerToken": 5e-7
-  },
-  "allenai/olmo-3-7b-instruct": {
-    "displayName": "allenai/olmo-3-7b-instruct",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 1e-7,
-    "outputCostPerToken": 2e-7
-  },
-  "allenai/olmo-3-7b-think": {
-    "displayName": "allenai/olmo-3-7b-think",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 1.2e-7,
-    "outputCostPerToken": 2e-7
   },
   "deepcogito/cogito-v2.1-671b": {
     "displayName": "deepcogito/cogito-v2.1-671b",
@@ -1012,8 +988,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.5e-7,
-    "outputCostPerToken": 8.5e-7
+    "inputCostPerToken": 3e-7,
+    "outputCostPerToken": 0.0000011
   },
   "morph/morph-v3-large": {
     "displayName": "morph/morph-v3-large",
