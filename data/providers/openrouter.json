@@ -1,4 +1,12 @@
 {
+  "reka/reka-edge": {
+    "displayName": "reka/reka-edge",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 2e-7,
+    "outputCostPerToken": 2e-7
+  },
   "xiaomi/mimo-v2-omni": {
     "displayName": "xiaomi/mimo-v2-omni",
     "pricingUnit": "per-token",
