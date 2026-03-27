@@ -4,8 +4,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2e-7,
-    "outputCostPerToken": 2e-7
+    "inputCostPerToken": 1e-7,
+    "outputCostPerToken": 1e-7
   },
   "xiaomi/mimo-v2-omni": {
     "displayName": "xiaomi/mimo-v2-omni",
@@ -1559,6 +1559,14 @@
     "inputCostPerToken": 1.7e-7,
     "outputCostPerToken": 4.3e-7
   },
+  "meta-llama/llama-3.2-1b-instruct": {
+    "displayName": "meta-llama/llama-3.2-1b-instruct",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 2.7e-8,
+    "outputCostPerToken": 2e-7
+  },
   "meta-llama/llama-3.2-3b-instruct:free": {
     "displayName": "meta-llama/llama-3.2-3b-instruct:free",
     "pricingUnit": "per-token",
@@ -1574,14 +1582,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 5.1e-8,
     "outputCostPerToken": 3.4e-7
-  },
-  "meta-llama/llama-3.2-1b-instruct": {
-    "displayName": "meta-llama/llama-3.2-1b-instruct",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 2.7e-8,
-    "outputCostPerToken": 2e-7
   },
   "meta-llama/llama-3.2-11b-vision-instruct": {
     "displayName": "meta-llama/llama-3.2-11b-vision-instruct",
@@ -1599,14 +1599,6 @@
     "inputCostPerToken": 1.2e-7,
     "outputCostPerToken": 3.9e-7
   },
-  "cohere/command-r-plus-08-2024": {
-    "displayName": "cohere/command-r-plus-08-2024",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 0.0000025,
-    "outputCostPerToken": 0.00001
-  },
   "cohere/command-r-08-2024": {
     "displayName": "cohere/command-r-08-2024",
     "pricingUnit": "per-token",
@@ -1614,6 +1606,14 @@
     "extractionMethod": "api",
     "inputCostPerToken": 1.5e-7,
     "outputCostPerToken": 6e-7
+  },
+  "cohere/command-r-plus-08-2024": {
+    "displayName": "cohere/command-r-plus-08-2024",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0.0000025,
+    "outputCostPerToken": 0.00001
   },
   "sao10k/l3.1-euryale-70b": {
     "displayName": "sao10k/l3.1-euryale-70b",

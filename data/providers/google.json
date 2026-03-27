@@ -38,6 +38,15 @@
       "outputCostPerToken": 7.5e-7
     }
   },
+  "gemini-3.1-flash-live-preview": {
+    "displayName": "Gemini 3.1 Flash Live Preview",
+    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-token",
+    "modelType": "chatCompletion",
+    "inputCostPerToken": 7.5e-7,
+    "outputCostPerToken": 0.0000045
+  },
   "gemini-3.1-flash-image-preview": {
     "displayName": "Gemini 3.1 Flash Image Preview",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
