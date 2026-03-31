@@ -1,4 +1,12 @@
 {
+  "qwen/qwen3.6-plus-preview:free": {
+    "displayName": "qwen/qwen3.6-plus-preview:free",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0,
+    "outputCostPerToken": 0
+  },
   "kwaipilot/kat-coder-pro-v2": {
     "displayName": "kwaipilot/kat-coder-pro-v2",
     "pricingUnit": "per-token",
@@ -502,14 +510,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 0.00000125,
     "outputCostPerToken": 0.00000125
-  },
-  "kwaipilot/kat-coder-pro": {
-    "displayName": "kwaipilot/kat-coder-pro",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 2.07e-7,
-    "outputCostPerToken": 8.28e-7
   },
   "moonshotai/kimi-k2-thinking": {
     "displayName": "moonshotai/kimi-k2-thinking",
@@ -1238,6 +1238,14 @@
     "extractionMethod": "api",
     "inputCostPerToken": 0.0000025,
     "outputCostPerToken": 0.00001
+  },
+  "rekaai/reka-flash-3": {
+    "displayName": "rekaai/reka-flash-3",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 1e-7,
+    "outputCostPerToken": 2e-7
   },
   "thedrummer/skyfall-36b-v2": {
     "displayName": "thedrummer/skyfall-36b-v2",
