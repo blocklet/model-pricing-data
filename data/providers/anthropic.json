@@ -164,11 +164,6 @@
       "write-5min": 0.00000125,
       "write-1h": 0.000002,
       "read": 1e-7
-    },
-    "batchPricing": {
-      "inputCostPerToken": 5e-7,
-      "outputCostPerToken": 0.0000025,
-      "discountNote": "50% of standard"
     }
   },
   "claude-haiku-3-5": {
