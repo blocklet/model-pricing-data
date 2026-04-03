@@ -1,4 +1,12 @@
 {
+  "qwen/qwen3.6-plus:free": {
+    "displayName": "qwen/qwen3.6-plus:free",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0,
+    "outputCostPerToken": 0
+  },
   "z-ai/glm-5v-turbo": {
     "displayName": "z-ai/glm-5v-turbo",
     "pricingUnit": "per-token",
@@ -12,16 +20,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.5e-7,
-    "outputCostPerToken": 9e-7
-  },
-  "qwen/qwen3.6-plus-preview:free": {
-    "displayName": "qwen/qwen3.6-plus-preview:free",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 0,
-    "outputCostPerToken": 0
+    "inputCostPerToken": 2.2e-7,
+    "outputCostPerToken": 8.5e-7
   },
   "kwaipilot/kat-coder-pro-v2": {
     "displayName": "kwaipilot/kat-coder-pro-v2",
@@ -204,7 +204,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.2e-7,
+    "inputCostPerToken": 1.18e-7,
     "outputCostPerToken": 0.000001
   },
   "z-ai/glm-5": {
@@ -268,8 +268,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4e-7,
-    "outputCostPerToken": 0.00000199
+    "inputCostPerToken": 3.827e-7,
+    "outputCostPerToken": 0.000001909
   },
   "upstage/solar-pro-3": {
     "displayName": "upstage/solar-pro-3",
@@ -590,22 +590,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 1.04e-7,
     "outputCostPerToken": 4.16e-7
-  },
-  "liquid/lfm2-8b-a1b": {
-    "displayName": "liquid/lfm2-8b-a1b",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 1e-8,
-    "outputCostPerToken": 2e-8
-  },
-  "liquid/lfm-2.2-6b": {
-    "displayName": "liquid/lfm-2.2-6b",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 1e-8,
-    "outputCostPerToken": 2e-8
   },
   "ibm-granite/granite-4.0-h-micro": {
     "displayName": "ibm-granite/granite-4.0-h-micro",
