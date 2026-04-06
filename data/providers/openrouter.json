@@ -367,14 +367,6 @@
     "inputCostPerToken": 1e-7,
     "outputCostPerToken": 3e-7
   },
-  "allenai/olmo-3.1-32b-think": {
-    "displayName": "allenai/olmo-3.1-32b-think",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 1.5e-7,
-    "outputCostPerToken": 5e-7
-  },
   "xiaomi/mimo-v2-flash": {
     "displayName": "xiaomi/mimo-v2-flash",
     "pricingUnit": "per-token",
