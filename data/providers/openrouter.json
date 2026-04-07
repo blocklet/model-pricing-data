@@ -1527,16 +1527,16 @@
     "inputCostPerToken": 0.0000012,
     "outputCostPerToken": 0.0000012
   },
-  "inflection/inflection-3-pi": {
-    "displayName": "inflection/inflection-3-pi",
+  "inflection/inflection-3-productivity": {
+    "displayName": "inflection/inflection-3-productivity",
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
     "inputCostPerToken": 0.0000025,
     "outputCostPerToken": 0.00001
   },
-  "inflection/inflection-3-productivity": {
-    "displayName": "inflection/inflection-3-productivity",
+  "inflection/inflection-3-pi": {
+    "displayName": "inflection/inflection-3-pi",
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
@@ -1591,14 +1591,6 @@
     "inputCostPerToken": 1.2e-7,
     "outputCostPerToken": 3.9e-7
   },
-  "cohere/command-r-08-2024": {
-    "displayName": "cohere/command-r-08-2024",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 1.5e-7,
-    "outputCostPerToken": 6e-7
-  },
   "cohere/command-r-plus-08-2024": {
     "displayName": "cohere/command-r-plus-08-2024",
     "pricingUnit": "per-token",
@@ -1606,6 +1598,14 @@
     "extractionMethod": "api",
     "inputCostPerToken": 0.0000025,
     "outputCostPerToken": 0.00001
+  },
+  "cohere/command-r-08-2024": {
+    "displayName": "cohere/command-r-08-2024",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 1.5e-7,
+    "outputCostPerToken": 6e-7
   },
   "sao10k/l3.1-euryale-70b": {
     "displayName": "sao10k/l3.1-euryale-70b",
