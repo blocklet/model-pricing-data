@@ -259,7 +259,7 @@
     "extractionMethod": "regex",
     "pricingUnit": "per-second",
     "modelType": "video",
-    "costPerSecond": 0.15
+    "costPerSecond": 0.1
   },
   "veo-3": {
     "displayName": "Veo 3",
