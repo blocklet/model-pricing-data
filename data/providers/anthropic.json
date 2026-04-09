@@ -43,12 +43,12 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/pricing",
     "extractionMethod": "regex",
-    "inputCostPerToken": 0.000015,
-    "outputCostPerToken": 0.000075,
+    "inputCostPerToken": 0.0000075,
+    "outputCostPerToken": 0.0000015,
     "caching": {
-      "write-5min": 0.00001875,
-      "write-1h": 0.00003,
-      "read": 0.0000015
+      "write-5min": 0.0000375,
+      "write-1h": 0.0000075,
+      "read": 0.0000375
     },
     "batchPricing": {
       "inputCostPerToken": 0.0000075,

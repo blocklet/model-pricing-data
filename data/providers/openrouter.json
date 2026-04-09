@@ -4,16 +4,16 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0.00000126,
-    "outputCostPerToken": 0.00000396
+    "inputCostPerToken": 0.000001395,
+    "outputCostPerToken": 0.0000044
   },
   "qwen/qwen3.6-plus": {
     "displayName": "qwen/qwen3.6-plus",
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 5e-7,
-    "outputCostPerToken": 0.000003
+    "inputCostPerToken": 3.25e-7,
+    "outputCostPerToken": 0.00000195
   },
   "z-ai/glm-5v-turbo": {
     "displayName": "z-ai/glm-5v-turbo",
@@ -247,14 +247,6 @@
     "inputCostPerToken": 0,
     "outputCostPerToken": 0
   },
-  "stepfun/step-3.5-flash:free": {
-    "displayName": "stepfun/step-3.5-flash:free",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 0,
-    "outputCostPerToken": 0
-  },
   "stepfun/step-3.5-flash": {
     "displayName": "stepfun/step-3.5-flash",
     "pricingUnit": "per-token",
@@ -356,7 +348,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.7e-7,
+    "inputCostPerToken": 2.9e-7,
     "outputCostPerToken": 9.5e-7
   },
   "z-ai/glm-4.7": {
@@ -532,8 +524,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4.7e-7,
-    "outputCostPerToken": 0.000002
+    "inputCostPerToken": 6e-7,
+    "outputCostPerToken": 0.0000025
   },
   "amazon/nova-premier-v1": {
     "displayName": "amazon/nova-premier-v1",
