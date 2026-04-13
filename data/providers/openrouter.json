@@ -236,8 +236,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.2e-7,
-    "outputCostPerToken": 7.5e-7
+    "inputCostPerToken": 1.5e-7,
+    "outputCostPerToken": 8e-7
   },
   "openrouter/free": {
     "displayName": "openrouter/free",
@@ -1150,14 +1150,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 3e-8,
     "outputCostPerToken": 9e-8
-  },
-  "eleutherai/llemma_7b": {
-    "displayName": "eleutherai/llemma_7b",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 8e-7,
-    "outputCostPerToken": 0.0000012
   },
   "alfredpros/codellama-7b-instruct-solidity": {
     "displayName": "alfredpros/codellama-7b-instruct-solidity",
