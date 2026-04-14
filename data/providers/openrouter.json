@@ -1,4 +1,12 @@
 {
+  "openrouter/elephant-alpha": {
+    "displayName": "openrouter/elephant-alpha",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0,
+    "outputCostPerToken": 0
+  },
   "z-ai/glm-5.1": {
     "displayName": "z-ai/glm-5.1",
     "pricingUnit": "per-token",
