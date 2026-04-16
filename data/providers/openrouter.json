@@ -1079,6 +1079,14 @@
     "inputCostPerToken": 5e-7,
     "outputCostPerToken": 8e-7
   },
+  "meta-llama/llama-guard-4-12b:free": {
+    "displayName": "meta-llama/llama-guard-4-12b:free",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0,
+    "outputCostPerToken": 0
+  },
   "meta-llama/llama-guard-4-12b": {
     "displayName": "meta-llama/llama-guard-4-12b",
     "pricingUnit": "per-token",
