@@ -892,8 +892,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.495e-7,
-    "outputCostPerToken": 0.000001495
+    "inputCostPerToken": 1.3e-7,
+    "outputCostPerToken": 6e-7
   },
   "z-ai/glm-4-32b": {
     "displayName": "z-ai/glm-4-32b",
@@ -1175,14 +1175,6 @@
     "inputCostPerToken": 3.5e-7,
     "outputCostPerToken": 5.6e-7
   },
-  "allenai/olmo-2-0325-32b-instruct": {
-    "displayName": "allenai/olmo-2-0325-32b-instruct",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 5e-8,
-    "outputCostPerToken": 2e-7
-  },
   "cohere/command-a": {
     "displayName": "cohere/command-a",
     "pricingUnit": "per-token",
@@ -1308,8 +1300,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 8e-7,
-    "outputCostPerToken": 8e-7
+    "inputCostPerToken": 2.5e-7,
+    "outputCostPerToken": 7.5e-7
   },
   "qwen/qwen-plus": {
     "displayName": "qwen/qwen-plus",
