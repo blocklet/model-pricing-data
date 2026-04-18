@@ -108,8 +108,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1e-7,
-    "outputCostPerToken": 5e-7
+    "inputCostPerToken": 9e-8,
+    "outputCostPerToken": 4.5e-7
   },
   "bytedance-seed/seed-2.0-lite": {
     "displayName": "bytedance-seed/seed-2.0-lite",
@@ -124,7 +124,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 5e-8,
+    "inputCostPerToken": 1e-7,
     "outputCostPerToken": 1.5e-7
   },
   "inception/mercury-2": {
@@ -276,8 +276,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 3.827e-7,
-    "outputCostPerToken": 0.00000172
+    "inputCostPerToken": 0,
+    "outputCostPerToken": 0
   },
   "upstage/solar-pro-3": {
     "displayName": "upstage/solar-pro-3",
@@ -1079,14 +1079,6 @@
     "inputCostPerToken": 5e-7,
     "outputCostPerToken": 8e-7
   },
-  "meta-llama/llama-guard-4-12b:free": {
-    "displayName": "meta-llama/llama-guard-4-12b:free",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 0,
-    "outputCostPerToken": 0
-  },
   "meta-llama/llama-guard-4-12b": {
     "displayName": "meta-llama/llama-guard-4-12b",
     "pricingUnit": "per-token",
@@ -1158,14 +1150,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 8e-8,
     "outputCostPerToken": 3e-7
-  },
-  "qwen/qwen2.5-vl-32b-instruct": {
-    "displayName": "qwen/qwen2.5-vl-32b-instruct",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 2e-7,
-    "outputCostPerToken": 6e-7
   },
   "mistralai/mistral-small-3.1-24b-instruct": {
     "displayName": "mistralai/mistral-small-3.1-24b-instruct",
@@ -1479,16 +1463,16 @@
     "inputCostPerToken": 0.0000012,
     "outputCostPerToken": 0.0000012
   },
-  "inflection/inflection-3-productivity": {
-    "displayName": "inflection/inflection-3-productivity",
+  "inflection/inflection-3-pi": {
+    "displayName": "inflection/inflection-3-pi",
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
     "inputCostPerToken": 0.0000025,
     "outputCostPerToken": 0.00001
   },
-  "inflection/inflection-3-pi": {
-    "displayName": "inflection/inflection-3-pi",
+  "inflection/inflection-3-productivity": {
+    "displayName": "inflection/inflection-3-productivity",
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
@@ -1502,22 +1486,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 1.7e-7,
     "outputCostPerToken": 4.3e-7
-  },
-  "meta-llama/llama-3.2-3b-instruct:free": {
-    "displayName": "meta-llama/llama-3.2-3b-instruct:free",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 0,
-    "outputCostPerToken": 0
-  },
-  "meta-llama/llama-3.2-3b-instruct": {
-    "displayName": "meta-llama/llama-3.2-3b-instruct",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 5.1e-8,
-    "outputCostPerToken": 3.4e-7
   },
   "meta-llama/llama-3.2-1b-instruct": {
     "displayName": "meta-llama/llama-3.2-1b-instruct",
@@ -1534,6 +1502,22 @@
     "extractionMethod": "api",
     "inputCostPerToken": 2.45e-7,
     "outputCostPerToken": 2.45e-7
+  },
+  "meta-llama/llama-3.2-3b-instruct:free": {
+    "displayName": "meta-llama/llama-3.2-3b-instruct:free",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0,
+    "outputCostPerToken": 0
+  },
+  "meta-llama/llama-3.2-3b-instruct": {
+    "displayName": "meta-llama/llama-3.2-3b-instruct",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 5.1e-8,
+    "outputCostPerToken": 3.4e-7
   },
   "qwen/qwen-2.5-72b-instruct": {
     "displayName": "qwen/qwen-2.5-72b-instruct",
