@@ -276,8 +276,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0,
-    "outputCostPerToken": 0
+    "inputCostPerToken": 3.827e-7,
+    "outputCostPerToken": 0.00000172
   },
   "upstage/solar-pro-3": {
     "displayName": "upstage/solar-pro-3",
@@ -1372,8 +1372,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1e-7,
-    "outputCostPerToken": 3.2e-7
+    "inputCostPerToken": 1.2e-7,
+    "outputCostPerToken": 3.8e-7
   },
   "amazon/nova-lite-v1": {
     "displayName": "amazon/nova-lite-v1",
