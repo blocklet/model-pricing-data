@@ -1,19 +1,35 @@
 {
-  "moonshotai/kimi-k2.6": {
-    "displayName": "moonshotai/kimi-k2.6",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 6e-7,
-    "outputCostPerToken": 0.0000028
-  },
-  "openrouter/elephant-alpha": {
-    "displayName": "openrouter/elephant-alpha",
+  "inclusionai/ling-2.6-flash:free": {
+    "displayName": "inclusionai/ling-2.6-flash:free",
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
     "inputCostPerToken": 0,
     "outputCostPerToken": 0
+  },
+  "~anthropic/claude-opus-latest": {
+    "displayName": "~anthropic/claude-opus-latest",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0.000005,
+    "outputCostPerToken": 0.000025
+  },
+  "openrouter/pareto-code": {
+    "displayName": "openrouter/pareto-code",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": -1,
+    "outputCostPerToken": -1
+  },
+  "moonshotai/kimi-k2.6": {
+    "displayName": "moonshotai/kimi-k2.6",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 8e-7,
+    "outputCostPerToken": 0.0000035
   },
   "z-ai/glm-5.1": {
     "displayName": "z-ai/glm-5.1",
@@ -236,8 +252,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 7.2e-7,
-    "outputCostPerToken": 0.0000023
+    "inputCostPerToken": 6.5e-7,
+    "outputCostPerToken": 0.00000208
   },
   "qwen/qwen3-max-thinking": {
     "displayName": "qwen/qwen3-max-thinking",
@@ -1380,8 +1396,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.2e-7,
-    "outputCostPerToken": 3.8e-7
+    "inputCostPerToken": 1e-7,
+    "outputCostPerToken": 3.2e-7
   },
   "amazon/nova-lite-v1": {
     "displayName": "amazon/nova-lite-v1",
