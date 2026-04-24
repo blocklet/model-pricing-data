@@ -3,8 +3,8 @@
     "displayName": "deepseek-chat",
     "modelType": "chatCompletion",
     "pricingUnit": "per-token",
-    "inputCostPerToken": 2.8e-7,
-    "outputCostPerToken": 4.2e-7,
+    "inputCostPerToken": 1.4e-7,
+    "outputCostPerToken": 2.8e-7,
     "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing",
     "extractionMethod": "regex",
     "caching": {
@@ -15,8 +15,8 @@
     "displayName": "deepseek-reasoner",
     "modelType": "chatCompletion",
     "pricingUnit": "per-token",
-    "inputCostPerToken": 2.8e-7,
-    "outputCostPerToken": 4.2e-7,
+    "inputCostPerToken": 1.4e-7,
+    "outputCostPerToken": 2.8e-7,
     "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing",
     "extractionMethod": "regex",
     "caching": {
