@@ -1,4 +1,40 @@
 {
+  "gpt-5.5": {
+    "pricingUnit": "per-token",
+    "modelType": "chatCompletion",
+    "sourceUrl": "https://developers.openai.com/api/docs/pricing",
+    "extractionMethod": "regex",
+    "inputCostPerToken": 0.000005,
+    "outputCostPerToken": 0.00003,
+    "caching": {
+      "read": 5e-7
+    },
+    "contextTiers": [
+      {
+        "threshold": ">272K",
+        "inputCostPerToken": 0.00001,
+        "cachedInputCostPerToken": 0.000001,
+        "outputCostPerToken": 0.000045
+      }
+    ],
+    "displayName": "gpt-5.5"
+  },
+  "gpt-5.5-pro": {
+    "pricingUnit": "per-token",
+    "modelType": "chatCompletion",
+    "sourceUrl": "https://developers.openai.com/api/docs/pricing",
+    "extractionMethod": "regex",
+    "inputCostPerToken": 0.00003,
+    "outputCostPerToken": 0.00018,
+    "contextTiers": [
+      {
+        "threshold": ">272K",
+        "inputCostPerToken": 0.00006,
+        "outputCostPerToken": 0.00027
+      }
+    ],
+    "displayName": "gpt-5.5-pro"
+  },
   "gpt-5.4": {
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
