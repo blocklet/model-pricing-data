@@ -8,7 +8,7 @@
     "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing",
     "extractionMethod": "regex",
     "caching": {
-      "read": 2.8e-8
+      "read": 2.8e-9
     }
   },
   "deepseek-reasoner": {
@@ -20,7 +20,7 @@
     "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing",
     "extractionMethod": "regex",
     "caching": {
-      "read": 2.8e-8
+      "read": 2.8e-9
     }
   }
 }
