@@ -323,15 +323,6 @@
       "outputCostPerToken": 0.0000025
     }
   },
-  "gemini-robotics-er-1.5-preview": {
-    "displayName": "Gemini Robotics-ER 1.5 Preview",
-    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "regex",
-    "pricingUnit": "per-token",
-    "modelType": "chatCompletion",
-    "inputCostPerToken": 3e-7,
-    "outputCostPerToken": 0.0000025
-  },
   "gemini-2.5-computer-use-preview": {
     "displayName": "Gemini 2.5 Computer Use Preview",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
