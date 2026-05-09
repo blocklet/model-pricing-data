@@ -1,4 +1,12 @@
 {
+  "inclusionai/ring-2.6-1t:free": {
+    "displayName": "inclusionai/ring-2.6-1t:free",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0,
+    "outputCostPerToken": 0
+  },
   "baidu/cobuddy:free": {
     "displayName": "baidu/cobuddy:free",
     "pricingUnit": "per-token",
@@ -159,13 +167,13 @@
     "inputCostPerToken": 3e-7,
     "outputCostPerToken": 0.0000025
   },
-  "tencent/hy3-preview:free": {
-    "displayName": "tencent/hy3-preview:free",
+  "tencent/hy3-preview": {
+    "displayName": "tencent/hy3-preview",
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0,
-    "outputCostPerToken": 0
+    "inputCostPerToken": 6.6e-8,
+    "outputCostPerToken": 2.6e-7
   },
   "xiaomi/mimo-v2.5-pro": {
     "displayName": "xiaomi/mimo-v2.5-pro",
@@ -572,16 +580,16 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 3.8e-7,
-    "outputCostPerToken": 0.00000174
+    "inputCostPerToken": 4e-7,
+    "outputCostPerToken": 0.00000175
   },
   "xiaomi/mimo-v2-flash": {
     "displayName": "xiaomi/mimo-v2-flash",
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 9e-8,
-    "outputCostPerToken": 2.9e-7
+    "inputCostPerToken": 1e-7,
+    "outputCostPerToken": 3e-7
   },
   "nvidia/nemotron-3-nano-30b-a3b:free": {
     "displayName": "nvidia/nemotron-3-nano-30b-a3b:free",
@@ -1183,14 +1191,6 @@
     "inputCostPerToken": 1.4e-7,
     "outputCostPerToken": 5.7e-7
   },
-  "tngtech/deepseek-r1t2-chimera": {
-    "displayName": "tngtech/deepseek-r1t2-chimera",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 3e-7,
-    "outputCostPerToken": 0.0000011
-  },
   "morph/morph-v3-large": {
     "displayName": "morph/morph-v3-large",
     "pricingUnit": "per-token",
@@ -1317,7 +1317,7 @@
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
     "inputCostPerToken": 8e-8,
-    "outputCostPerToken": 2.4e-7
+    "outputCostPerToken": 2.8e-7
   },
   "qwen/qwen3-235b-a22b": {
     "displayName": "qwen/qwen3-235b-a22b",
