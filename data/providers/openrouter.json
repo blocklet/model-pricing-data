@@ -500,8 +500,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4.4e-7,
-    "outputCostPerToken": 0.000002
+    "inputCostPerToken": 4e-7,
+    "outputCostPerToken": 0.00000198
   },
   "upstage/solar-pro-3": {
     "displayName": "upstage/solar-pro-3",
