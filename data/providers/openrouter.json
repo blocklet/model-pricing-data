@@ -868,8 +868,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 3.9e-7,
-    "outputCostPerToken": 0.0000019
+    "inputCostPerToken": 4.3e-7,
+    "outputCostPerToken": 0.00000174
   },
   "thedrummer/cydonia-24b-v4.1": {
     "displayName": "thedrummer/cydonia-24b-v4.1",
@@ -996,8 +996,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4e-7,
-    "outputCostPerToken": 0.000002
+    "inputCostPerToken": 6e-7,
+    "outputCostPerToken": 0.0000025
   },
   "qwen/qwen3-30b-a3b-thinking-2507": {
     "displayName": "qwen/qwen3-30b-a3b-thinking-2507",
