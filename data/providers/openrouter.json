@@ -348,8 +348,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 9e-8,
-    "outputCostPerToken": 4.5e-7
+    "inputCostPerToken": 1e-7,
+    "outputCostPerToken": 5e-7
   },
   "bytedance-seed/seed-2.0-lite": {
     "displayName": "bytedance-seed/seed-2.0-lite",
@@ -1773,7 +1773,7 @@
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
     "inputCostPerToken": 2e-8,
-    "outputCostPerToken": 3e-8
+    "outputCostPerToken": 4e-8
   },
   "sao10k/l3-euryale-70b": {
     "displayName": "sao10k/l3-euryale-70b",
