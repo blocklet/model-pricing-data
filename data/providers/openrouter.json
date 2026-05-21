@@ -148,7 +148,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.5e-7,
+    "inputCostPerToken": 1.49e-7,
     "outputCostPerToken": 0.000001
   },
   "qwen/qwen3.6-max-preview": {
@@ -172,8 +172,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 3e-7,
-    "outputCostPerToken": 0.0000025
+    "inputCostPerToken": 7.5e-8,
+    "outputCostPerToken": 6.25e-7
   },
   "tencent/hy3-preview": {
     "displayName": "tencent/hy3-preview",
@@ -500,7 +500,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1e-7,
+    "inputCostPerToken": 9e-8,
     "outputCostPerToken": 3e-7
   },
   "arcee-ai/trinity-large-preview": {
