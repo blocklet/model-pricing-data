@@ -919,14 +919,6 @@
     "inputCostPerToken": 6.5e-7,
     "outputCostPerToken": 0.00000325
   },
-  "alibaba/tongyi-deepresearch-30b-a3b": {
-    "displayName": "alibaba/tongyi-deepresearch-30b-a3b",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 9e-8,
-    "outputCostPerToken": 4.5e-7
-  },
   "qwen/qwen3-coder-flash": {
     "displayName": "qwen/qwen3-coder-flash",
     "pricingUnit": "per-token",
