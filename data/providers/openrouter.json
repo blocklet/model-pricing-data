@@ -4,8 +4,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0.0000025,
-    "outputCostPerToken": 0.0000075
+    "inputCostPerToken": 0.00000125,
+    "outputCostPerToken": 0.00000375
   },
   "perceptron/perceptron-mk1": {
     "displayName": "perceptron/perceptron-mk1",
@@ -173,7 +173,7 @@
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
     "inputCostPerToken": 3e-7,
-    "outputCostPerToken": 0.0000032
+    "outputCostPerToken": 0.000002
   },
   "inclusionai/ling-2.6-1t": {
     "displayName": "inclusionai/ling-2.6-1t",
@@ -196,16 +196,16 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0.000001,
-    "outputCostPerToken": 0.000003
+    "inputCostPerToken": 4.35e-7,
+    "outputCostPerToken": 8.7e-7
   },
   "xiaomi/mimo-v2.5": {
     "displayName": "xiaomi/mimo-v2.5",
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4e-7,
-    "outputCostPerToken": 0.000002
+    "inputCostPerToken": 1.4e-7,
+    "outputCostPerToken": 2.8e-7
   },
   "inclusionai/ling-2.6-flash": {
     "displayName": "inclusionai/ling-2.6-flash",
@@ -270,14 +270,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 0.0000012,
     "outputCostPerToken": 0.000004
-  },
-  "arcee-ai/trinity-large-thinking:free": {
-    "displayName": "arcee-ai/trinity-large-thinking:free",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 0,
-    "outputCostPerToken": 0
   },
   "arcee-ai/trinity-large-thinking": {
     "displayName": "arcee-ai/trinity-large-thinking",
@@ -1100,8 +1092,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.3e-7,
-    "outputCostPerToken": 8.5e-7
+    "inputCostPerToken": 1.25e-7,
+    "outputCostPerToken": 8.4e-7
   },
   "qwen/qwen3-235b-a22b-thinking-2507": {
     "displayName": "qwen/qwen3-235b-a22b-thinking-2507",
