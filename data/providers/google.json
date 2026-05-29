@@ -63,8 +63,8 @@
     "inputCostPerToken": 7.5e-7,
     "outputCostPerToken": 0.0000045
   },
-  "gemini-3.1-flash-image-preview": {
-    "displayName": "Gemini 3.1 Flash Image Preview",
+  "gemini-3.1-flash-image": {
+    "displayName": "Gemini 3.1 Flash Image",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
     "extractionMethod": "regex",
     "pricingUnit": "per-image",
@@ -98,8 +98,8 @@
       "outputCostPerToken": 0.0000015
     }
   },
-  "gemini-3-pro-image-preview": {
-    "displayName": "Gemini 3 Pro Image Preview",
+  "gemini-3.1-pro-image": {
+    "displayName": "Gemini 3.1 Pro Image",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
     "extractionMethod": "regex",
     "pricingUnit": "per-image",
