@@ -316,7 +316,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.79e-7,
+    "inputCostPerToken": 2.6e-7,
     "outputCostPerToken": 0.0000012
   },
   "mistralai/mistral-small-2603": {
@@ -388,7 +388,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.39e-7,
+    "inputCostPerToken": 1.4e-7,
     "outputCostPerToken": 0.000001
   },
   "qwen/qwen3.5-27b": {
@@ -447,14 +447,6 @@
     "inputCostPerToken": 3.9e-7,
     "outputCostPerToken": 0.00000234
   },
-  "minimax/minimax-m2.5:free": {
-    "displayName": "minimax/minimax-m2.5:free",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 0,
-    "outputCostPerToken": 0
-  },
   "minimax/minimax-m2.5": {
     "displayName": "minimax/minimax-m2.5",
     "pricingUnit": "per-token",
@@ -510,14 +502,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 4e-7,
     "outputCostPerToken": 0.0000019
-  },
-  "upstage/solar-pro-3": {
-    "displayName": "upstage/solar-pro-3",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 1.5e-7,
-    "outputCostPerToken": 6e-7
   },
   "minimax/minimax-m2-her": {
     "displayName": "minimax/minimax-m2-her",
@@ -831,14 +815,6 @@
     "inputCostPerToken": 1e-7,
     "outputCostPerToken": 4e-7
   },
-  "baidu/ernie-4.5-21b-a3b-thinking": {
-    "displayName": "baidu/ernie-4.5-21b-a3b-thinking",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 7e-8,
-    "outputCostPerToken": 2.8e-7
-  },
   "qwen/qwen3-vl-30b-a3b-thinking": {
     "displayName": "qwen/qwen3-vl-30b-a3b-thinking",
     "pricingUnit": "per-token",
@@ -1015,14 +991,6 @@
     "inputCostPerToken": 4e-7,
     "outputCostPerToken": 0.000002
   },
-  "baidu/ernie-4.5-21b-a3b": {
-    "displayName": "baidu/ernie-4.5-21b-a3b",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 7e-8,
-    "outputCostPerToken": 2.8e-7
-  },
   "baidu/ernie-4.5-vl-28b-a3b": {
     "displayName": "baidu/ernie-4.5-vl-28b-a3b",
     "pricingUnit": "per-token",
@@ -1100,8 +1068,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.495e-7,
-    "outputCostPerToken": 0.000001495
+    "inputCostPerToken": 1e-7,
+    "outputCostPerToken": 1e-7
   },
   "z-ai/glm-4-32b": {
     "displayName": "z-ai/glm-4-32b",
@@ -1326,14 +1294,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 4.55e-7,
     "outputCostPerToken": 0.00000182
-  },
-  "alfredpros/codellama-7b-instruct-solidity": {
-    "displayName": "alfredpros/codellama-7b-instruct-solidity",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 8e-7,
-    "outputCostPerToken": 0.0000012
   },
   "meta-llama/llama-4-maverick": {
     "displayName": "meta-llama/llama-4-maverick",
@@ -1822,14 +1782,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": -1,
     "outputCostPerToken": -1
-  },
-  "mistralai/mistral-7b-instruct-v0.1": {
-    "displayName": "mistralai/mistral-7b-instruct-v0.1",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 1.1e-7,
-    "outputCostPerToken": 1.9e-7
   },
   "mancer/weaver": {
     "displayName": "mancer/weaver",
