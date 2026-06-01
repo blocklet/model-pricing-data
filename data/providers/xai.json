@@ -1291,14 +1291,6 @@
       }
     ]
   },
-  "grok-imagine-image-quality": {
-    "displayName": "grok-imagine-image-quality",
-    "modelType": "imageGeneration",
-    "pricingUnit": "per-image",
-    "sourceUrl": "https://docs.x.ai/developers/models",
-    "extractionMethod": "regex",
-    "costPerImage": 0.05
-  },
   "grok-imagine-image": {
     "displayName": "grok-imagine-image",
     "modelType": "imageGeneration",
@@ -1306,6 +1298,14 @@
     "sourceUrl": "https://docs.x.ai/developers/models",
     "extractionMethod": "regex",
     "costPerImage": 0.02
+  },
+  "grok-imagine-image-quality": {
+    "displayName": "grok-imagine-image-quality",
+    "modelType": "imageGeneration",
+    "pricingUnit": "per-image",
+    "sourceUrl": "https://docs.x.ai/developers/models",
+    "extractionMethod": "regex",
+    "costPerImage": 0.05
   },
   "grok-imagine-video": {
     "displayName": "grok-imagine-video",

@@ -1326,13 +1326,13 @@
     "model_type": "chatCompletion",
     "source_url": "https://docs.x.ai/developers/models"
   },
-  "grok-imagine-image-quality": {
+  "grok-imagine-image": {
     "litellm_provider": "xai",
     "source": "official",
     "model_type": "imageGeneration",
     "source_url": "https://docs.x.ai/developers/models"
   },
-  "grok-imagine-image": {
+  "grok-imagine-image-quality": {
     "litellm_provider": "xai",
     "source": "official",
     "model_type": "imageGeneration",
@@ -1368,6 +1368,13 @@
     "model_type": "chatCompletion",
     "source_url": "https://api-docs.deepseek.com/quick_start/pricing"
   },
+  "openrouter/minimax/minimax-m3": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 3e-7,
+    "output_cost_per_token": 0.0000012,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
   "openrouter/stepfun/step-3.7-flash": {
     "litellm_provider": "openrouter",
     "source": "official",
@@ -1392,8 +1399,8 @@
   "openrouter/inclusionai/ring-2.6-1t": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 7.5e-8,
-    "output_cost_per_token": 6.25e-7,
+    "input_cost_per_token": 3e-7,
+    "output_cost_per_token": 0.0000025,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/ibm-granite/granite-4.1-8b": {
@@ -1627,20 +1634,6 @@
     "output_cost_per_token": 1e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
-  "openrouter/xiaomi/mimo-v2-omni": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 4e-7,
-    "output_cost_per_token": 0.000002,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
-  "openrouter/xiaomi/mimo-v2-pro": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 0.000001,
-    "output_cost_per_token": 0.000003,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
   "openrouter/minimax/minimax-m2.7": {
     "litellm_provider": "openrouter",
     "source": "official",
@@ -1807,6 +1800,13 @@
     "source": "official",
     "input_cost_per_token": 4e-7,
     "output_cost_per_token": 0.0000019,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
+  "openrouter/upstage/solar-pro-3": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 1.5e-7,
+    "output_cost_per_token": 6e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/minimax/minimax-m2-her": {
@@ -2355,20 +2355,6 @@
     "output_cost_per_token": 0.0000023,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
-  "openrouter/mistralai/devstral-medium": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 4e-7,
-    "output_cost_per_token": 0.000002,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
-  "openrouter/mistralai/devstral-small": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 1e-7,
-    "output_cost_per_token": 3e-7,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
   "openrouter/cognitivecomputations/dolphin-mistral-24b-venice-edition:free": {
     "litellm_provider": "openrouter",
     "source": "official",
@@ -2698,21 +2684,7 @@
     "output_cost_per_token": 0.0000032,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
-  "openrouter/mistralai/mistral-large-2411": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 0.000002,
-    "output_cost_per_token": 0.000006,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
   "openrouter/mistralai/mistral-large-2407": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 0.000002,
-    "output_cost_per_token": 0.000006,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
-  "openrouter/mistralai/pixtral-large-2411": {
     "litellm_provider": "openrouter",
     "source": "official",
     "input_cost_per_token": 0.000002,
@@ -2747,14 +2719,14 @@
     "output_cost_per_token": 1e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
-  "openrouter/inflection/inflection-3-productivity": {
+  "openrouter/inflection/inflection-3-pi": {
     "litellm_provider": "openrouter",
     "source": "official",
     "input_cost_per_token": 0.0000025,
     "output_cost_per_token": 0.00001,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
-  "openrouter/inflection/inflection-3-pi": {
+  "openrouter/inflection/inflection-3-productivity": {
     "litellm_provider": "openrouter",
     "source": "official",
     "input_cost_per_token": 0.0000025,
@@ -2775,6 +2747,13 @@
     "output_cost_per_token": 2.01e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
+  "openrouter/meta-llama/llama-3.2-11b-vision-instruct": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 2.45e-7,
+    "output_cost_per_token": 2.45e-7,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
   "openrouter/meta-llama/llama-3.2-3b-instruct:free": {
     "litellm_provider": "openrouter",
     "source": "official",
@@ -2789,13 +2768,6 @@
     "output_cost_per_token": 3.35e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
-  "openrouter/meta-llama/llama-3.2-11b-vision-instruct": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 2.45e-7,
-    "output_cost_per_token": 2.45e-7,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
   "openrouter/qwen/qwen-2.5-72b-instruct": {
     "litellm_provider": "openrouter",
     "source": "official",
@@ -2803,18 +2775,18 @@
     "output_cost_per_token": 4e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
-  "openrouter/cohere/command-r-plus-08-2024": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 0.0000025,
-    "output_cost_per_token": 0.00001,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
   "openrouter/cohere/command-r-08-2024": {
     "litellm_provider": "openrouter",
     "source": "official",
     "input_cost_per_token": 1.5e-7,
     "output_cost_per_token": 6e-7,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
+  "openrouter/cohere/command-r-plus-08-2024": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 0.0000025,
+    "output_cost_per_token": 0.00001,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/sao10k/l3.1-euryale-70b": {
@@ -2852,18 +2824,18 @@
     "output_cost_per_token": 5e-8,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
-  "openrouter/meta-llama/llama-3.1-70b-instruct": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 4e-7,
-    "output_cost_per_token": 4e-7,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
   "openrouter/meta-llama/llama-3.1-8b-instruct": {
     "litellm_provider": "openrouter",
     "source": "official",
     "input_cost_per_token": 2e-8,
     "output_cost_per_token": 5e-8,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
+  "openrouter/meta-llama/llama-3.1-70b-instruct": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 4e-7,
+    "output_cost_per_token": 4e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/mistralai/mistral-nemo": {
