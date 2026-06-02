@@ -308,7 +308,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.6e-7,
+    "inputCostPerToken": 2.79e-7,
     "outputCostPerToken": 0.0000012
   },
   "mistralai/mistral-small-2603": {
@@ -453,7 +453,7 @@
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
     "inputCostPerToken": 6e-7,
-    "outputCostPerToken": 0.00000192
+    "outputCostPerToken": 0.00000208
   },
   "qwen/qwen3-max-thinking": {
     "displayName": "qwen/qwen3-max-thinking",
@@ -1036,8 +1036,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 9e-8,
-    "outputCostPerToken": 3e-7
+    "inputCostPerToken": 4.28e-8,
+    "outputCostPerToken": 1.716e-7
   },
   "z-ai/glm-4.5": {
     "displayName": "z-ai/glm-4.5",
