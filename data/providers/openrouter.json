@@ -1719,22 +1719,6 @@
     "inputCostPerToken": 2e-8,
     "outputCostPerToken": 3e-8
   },
-  "sao10k/l3-euryale-70b": {
-    "displayName": "sao10k/l3-euryale-70b",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 0.00000148,
-    "outputCostPerToken": 0.00000148
-  },
-  "nousresearch/hermes-2-pro-llama-3-8b": {
-    "displayName": "nousresearch/hermes-2-pro-llama-3-8b",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 1.4e-7,
-    "outputCostPerToken": 1.4e-7
-  },
   "meta-llama/llama-3-8b-instruct": {
     "displayName": "meta-llama/llama-3-8b-instruct",
     "pricingUnit": "per-token",
