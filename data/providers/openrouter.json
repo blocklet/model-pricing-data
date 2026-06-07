@@ -220,8 +220,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.9e-7,
-    "outputCostPerToken": 0.0000032
+    "inputCostPerToken": 2.89e-7,
+    "outputCostPerToken": 0.0000024
   },
   "inclusionai/ling-2.6-1t": {
     "displayName": "inclusionai/ling-2.6-1t",
@@ -1031,14 +1031,6 @@
     "inputCostPerToken": 4e-7,
     "outputCostPerToken": 0.000002
   },
-  "baidu/ernie-4.5-vl-28b-a3b": {
-    "displayName": "baidu/ernie-4.5-vl-28b-a3b",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 1.4e-7,
-    "outputCostPerToken": 5.6e-7
-  },
   "z-ai/glm-4.5v": {
     "displayName": "z-ai/glm-4.5v",
     "pricingUnit": "per-token",
@@ -1230,14 +1222,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 4e-7,
     "outputCostPerToken": 0.000002
-  },
-  "arcee-ai/spotlight": {
-    "displayName": "arcee-ai/spotlight",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 1.8e-7,
-    "outputCostPerToken": 1.8e-7
   },
   "arcee-ai/maestro-reasoning": {
     "displayName": "arcee-ai/maestro-reasoning",
@@ -1724,8 +1708,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4e-8,
-    "outputCostPerToken": 4e-8
+    "inputCostPerToken": 1.4e-7,
+    "outputCostPerToken": 1.4e-7
   },
   "meta-llama/llama-3-70b-instruct": {
     "displayName": "meta-llama/llama-3-70b-instruct",
