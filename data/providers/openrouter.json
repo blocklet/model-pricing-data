@@ -396,7 +396,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4e-8,
+    "inputCostPerToken": 1e-7,
     "outputCostPerToken": 1.5e-7
   },
   "inception/mercury-2": {
@@ -852,7 +852,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1e-7,
+    "inputCostPerToken": 4e-7,
     "outputCostPerToken": 4e-7
   },
   "qwen/qwen3-vl-30b-a3b-thinking": {
@@ -1140,7 +1140,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 7.1e-8,
+    "inputCostPerToken": 9e-8,
     "outputCostPerToken": 1e-7
   },
   "switchpoint/router": {
@@ -1260,8 +1260,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 9e-8,
-    "outputCostPerToken": 4.5e-7
+    "inputCostPerToken": 1.2e-7,
+    "outputCostPerToken": 5e-7
   },
   "qwen/qwen3-8b": {
     "displayName": "qwen/qwen3-8b",
@@ -1308,7 +1308,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 8e-8,
+    "inputCostPerToken": 1e-7,
     "outputCostPerToken": 3e-7
   },
   "mistralai/mistral-small-3.1-24b-instruct": {
@@ -1612,8 +1612,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.45e-7,
-    "outputCostPerToken": 2.45e-7
+    "inputCostPerToken": 3.45e-7,
+    "outputCostPerToken": 3.45e-7
   },
   "qwen/qwen-2.5-72b-instruct": {
     "displayName": "qwen/qwen-2.5-72b-instruct",
@@ -1652,8 +1652,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 3e-7,
-    "outputCostPerToken": 3e-7
+    "inputCostPerToken": 7e-7,
+    "outputCostPerToken": 7e-7
   },
   "nousresearch/hermes-3-llama-3.1-405b:free": {
     "displayName": "nousresearch/hermes-3-llama-3.1-405b:free",
