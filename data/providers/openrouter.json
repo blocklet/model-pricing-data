@@ -1,4 +1,12 @@
 {
+  "~anthropic/claude-fable-latest": {
+    "displayName": "~anthropic/claude-fable-latest",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0.00001,
+    "outputCostPerToken": 0.00005
+  },
   "nex-agi/nex-n2-pro:free": {
     "displayName": "nex-agi/nex-n2-pro:free",
     "pricingUnit": "per-token",
@@ -319,14 +327,6 @@
     "inputCostPerToken": 3.25e-7,
     "outputCostPerToken": 0.00000195
   },
-  "z-ai/glm-5v-turbo": {
-    "displayName": "z-ai/glm-5v-turbo",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 0.0000012,
-    "outputCostPerToken": 0.000004
-  },
   "arcee-ai/trinity-large-thinking": {
     "displayName": "arcee-ai/trinity-large-thinking",
     "pricingUnit": "per-token",
@@ -356,8 +356,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.79e-7,
-    "outputCostPerToken": 0.0000012
+    "inputCostPerToken": 2.7e-7,
+    "outputCostPerToken": 0.00000108
   },
   "mistralai/mistral-small-2603": {
     "displayName": "mistralai/mistral-small-2603",
@@ -493,7 +493,7 @@
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
     "inputCostPerToken": 1.5e-7,
-    "outputCostPerToken": 0.00000115
+    "outputCostPerToken": 9e-7
   },
   "z-ai/glm-5": {
     "displayName": "z-ai/glm-5",
@@ -1079,14 +1079,6 @@
     "inputCostPerToken": 6e-7,
     "outputCostPerToken": 0.0000022
   },
-  "z-ai/glm-4.5-air:free": {
-    "displayName": "z-ai/glm-4.5-air:free",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 0,
-    "outputCostPerToken": 0
-  },
   "z-ai/glm-4.5-air": {
     "displayName": "z-ai/glm-4.5-air",
     "pricingUnit": "per-token",
@@ -1097,14 +1089,6 @@
   },
   "qwen/qwen3-235b-a22b-thinking-2507": {
     "displayName": "qwen/qwen3-235b-a22b-thinking-2507",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 1e-7,
-    "outputCostPerToken": 1e-7
-  },
-  "z-ai/glm-4-32b": {
-    "displayName": "z-ai/glm-4-32b",
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
@@ -1222,14 +1206,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 4e-7,
     "outputCostPerToken": 0.000002
-  },
-  "arcee-ai/maestro-reasoning": {
-    "displayName": "arcee-ai/maestro-reasoning",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 9e-7,
-    "outputCostPerToken": 0.0000033
   },
   "arcee-ai/virtuoso-large": {
     "displayName": "arcee-ai/virtuoso-large",
