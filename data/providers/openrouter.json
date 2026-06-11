@@ -295,14 +295,6 @@
     "inputCostPerToken": -1,
     "outputCostPerToken": -1
   },
-  "moonshotai/kimi-k2.6:free": {
-    "displayName": "moonshotai/kimi-k2.6:free",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 0,
-    "outputCostPerToken": 0
-  },
   "moonshotai/kimi-k2.6": {
     "displayName": "moonshotai/kimi-k2.6",
     "pricingUnit": "per-token",
