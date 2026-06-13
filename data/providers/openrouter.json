@@ -1,4 +1,12 @@
 {
+  "moonshotai/kimi-k2.7-code": {
+    "displayName": "moonshotai/kimi-k2.7-code",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 9.5e-7,
+    "outputCostPerToken": 0.000004
+  },
   "~anthropic/claude-fable-latest": {
     "displayName": "~anthropic/claude-fable-latest",
     "pricingUnit": "per-token",
@@ -172,8 +180,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 6.7e-7,
-    "outputCostPerToken": 0.00000339
+    "inputCostPerToken": 6.8e-7,
+    "outputCostPerToken": 0.00000341
   },
   "~google/gemini-flash-latest": {
     "displayName": "~google/gemini-flash-latest",
@@ -236,8 +244,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.89e-7,
-    "outputCostPerToken": 0.0000024
+    "inputCostPerToken": 2.885e-7,
+    "outputCostPerToken": 0.00000317
   },
   "inclusionai/ling-2.6-1t": {
     "displayName": "inclusionai/ling-2.6-1t",
@@ -300,8 +308,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 6.7e-7,
-    "outputCostPerToken": 0.00000339
+    "inputCostPerToken": 6.8e-7,
+    "outputCostPerToken": 0.00000341
   },
   "z-ai/glm-5.1": {
     "displayName": "z-ai/glm-5.1",
@@ -532,8 +540,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4e-7,
-    "outputCostPerToken": 0.0000019
+    "inputCostPerToken": 3.75e-7,
+    "outputCostPerToken": 0.000002025
   },
   "upstage/solar-pro-3": {
     "displayName": "upstage/solar-pro-3",
@@ -1334,14 +1342,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 2e-7,
     "outputCostPerToken": 6e-7
-  },
-  "meta-llama/llama-guard-3-8b": {
-    "displayName": "meta-llama/llama-guard-3-8b",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 4.84e-7,
-    "outputCostPerToken": 3e-8
   },
   "aion-labs/aion-1.0": {
     "displayName": "aion-labs/aion-1.0",
