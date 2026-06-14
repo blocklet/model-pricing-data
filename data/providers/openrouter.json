@@ -1,11 +1,19 @@
 {
+  "openrouter/fusion": {
+    "displayName": "openrouter/fusion",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": -1,
+    "outputCostPerToken": -1
+  },
   "moonshotai/kimi-k2.7-code": {
     "displayName": "moonshotai/kimi-k2.7-code",
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 9.5e-7,
-    "outputCostPerToken": 0.000004
+    "inputCostPerToken": 7.5e-7,
+    "outputCostPerToken": 0.0000035
   },
   "~anthropic/claude-fable-latest": {
     "displayName": "~anthropic/claude-fable-latest",
@@ -78,14 +86,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 0.00000125,
     "outputCostPerToken": 0.00000375
-  },
-  "openrouter/fusion": {
-    "displayName": "openrouter/fusion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": -1,
-    "outputCostPerToken": -1
   },
   "perceptron/perceptron-mk1": {
     "displayName": "perceptron/perceptron-mk1",
