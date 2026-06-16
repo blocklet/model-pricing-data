@@ -255,30 +255,6 @@
     },
     "deprecated": true
   },
-  "imagen-4-fast": {
-    "displayName": "Imagen 4 Fast",
-    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "regex",
-    "pricingUnit": "per-image",
-    "modelType": "imageGeneration",
-    "costPerImage": 0.02
-  },
-  "imagen-4": {
-    "displayName": "Imagen 4",
-    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "regex",
-    "pricingUnit": "per-image",
-    "modelType": "imageGeneration",
-    "costPerImage": 0.04
-  },
-  "imagen-4-ultra": {
-    "displayName": "Imagen 4 Ultra",
-    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "regex",
-    "pricingUnit": "per-image",
-    "modelType": "imageGeneration",
-    "costPerImage": 0.06
-  },
   "veo-3.1": {
     "displayName": "Veo 3.1",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
@@ -289,22 +265,6 @@
   },
   "veo-3.1-fast": {
     "displayName": "Veo 3.1 Fast",
-    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "regex",
-    "pricingUnit": "per-second",
-    "modelType": "video",
-    "costPerSecond": 0.1
-  },
-  "veo-3": {
-    "displayName": "Veo 3",
-    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "regex",
-    "pricingUnit": "per-second",
-    "modelType": "video",
-    "costPerSecond": 0.4
-  },
-  "veo-3-fast": {
-    "displayName": "Veo 3 Fast",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
     "extractionMethod": "regex",
     "pricingUnit": "per-second",
