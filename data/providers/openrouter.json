@@ -1,4 +1,12 @@
 {
+  "z-ai/glm-5.2": {
+    "displayName": "z-ai/glm-5.2",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0.0000014,
+    "outputCostPerToken": 0.0000044
+  },
   "openrouter/fusion": {
     "displayName": "openrouter/fusion",
     "pricingUnit": "per-token",
@@ -12,7 +20,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 7.5e-7,
+    "inputCostPerToken": 7.4e-7,
     "outputCostPerToken": 0.0000035
   },
   "~anthropic/claude-fable-latest": {
@@ -53,7 +61,7 @@
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
     "inputCostPerToken": 5e-7,
-    "outputCostPerToken": 0.0000025
+    "outputCostPerToken": 0.0000022
   },
   "qwen/qwen3.7-plus": {
     "displayName": "qwen/qwen3.7-plus",
@@ -260,8 +268,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 6.3e-8,
-    "outputCostPerToken": 2.1e-7
+    "inputCostPerToken": 6.6e-8,
+    "outputCostPerToken": 2.6e-7
   },
   "xiaomi/mimo-v2.5-pro": {
     "displayName": "xiaomi/mimo-v2.5-pro",
@@ -1076,7 +1084,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.25e-7,
+    "inputCostPerToken": 1.3e-7,
     "outputCostPerToken": 8.5e-7
   },
   "qwen/qwen3-235b-a22b-thinking-2507": {
