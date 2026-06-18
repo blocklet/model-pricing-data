@@ -68,11 +68,6 @@
       "write-5min": 0.00001875,
       "write-1h": 0.00003,
       "read": 0.0000015
-    },
-    "batchPricing": {
-      "inputCostPerToken": 0.0000075,
-      "outputCostPerToken": 0.0000375,
-      "discountNote": "50% of standard"
     }
   },
   "claude-sonnet-4-6": {
@@ -146,8 +141,8 @@
       "read": 1e-7
     },
     "batchPricing": {
-      "inputCostPerToken": 5e-7,
-      "outputCostPerToken": 0.0000025,
+      "inputCostPerToken": 0.000001,
+      "outputCostPerToken": 0.000005,
       "discountNote": "50% of standard"
     }
   },
