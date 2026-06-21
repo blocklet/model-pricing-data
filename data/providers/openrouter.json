@@ -212,7 +212,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 6.7e-7,
+    "inputCostPerToken": 6.6e-7,
     "outputCostPerToken": 0.0000035
   },
   "~google/gemini-flash-latest": {
@@ -292,8 +292,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 6.6e-8,
-    "outputCostPerToken": 2.6e-7
+    "inputCostPerToken": 6.3e-8,
+    "outputCostPerToken": 2.1e-7
   },
   "xiaomi/mimo-v2.5-pro": {
     "displayName": "xiaomi/mimo-v2.5-pro",
@@ -340,7 +340,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 6.7e-7,
+    "inputCostPerToken": 6.6e-7,
     "outputCostPerToken": 0.0000035
   },
   "z-ai/glm-5.1": {
@@ -364,8 +364,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.2e-7,
-    "outputCostPerToken": 8.5e-7
+    "inputCostPerToken": 2.5e-7,
+    "outputCostPerToken": 8e-7
   },
   "kwaipilot/kat-coder-pro-v2": {
     "displayName": "kwaipilot/kat-coder-pro-v2",
