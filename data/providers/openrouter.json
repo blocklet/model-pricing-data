@@ -12,8 +12,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0.0000012,
-    "outputCostPerToken": 0.0000041
+    "inputCostPerToken": 0.000001,
+    "outputCostPerToken": 0.000004
   },
   "openrouter/fusion": {
     "displayName": "openrouter/fusion",
@@ -46,6 +46,14 @@
     "extractionMethod": "api",
     "inputCostPerToken": 0,
     "outputCostPerToken": 0
+  },
+  "nex-agi/nex-n2-pro": {
+    "displayName": "nex-agi/nex-n2-pro",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 5e-7,
+    "outputCostPerToken": 0.0000025
   },
   "nvidia/nemotron-3.5-content-safety:free": {
     "displayName": "nvidia/nemotron-3.5-content-safety:free",
