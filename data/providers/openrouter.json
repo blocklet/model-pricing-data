@@ -1,4 +1,12 @@
 {
+  "sakana/fugu-ultra": {
+    "displayName": "sakana/fugu-ultra",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0.000005,
+    "outputCostPerToken": 0.00003
+  },
   "cohere/north-mini-code:free": {
     "displayName": "cohere/north-mini-code:free",
     "pricingUnit": "per-token",
@@ -1599,14 +1607,6 @@
     "inputCostPerToken": 3.6e-7,
     "outputCostPerToken": 4e-7
   },
-  "cohere/command-r-plus-08-2024": {
-    "displayName": "cohere/command-r-plus-08-2024",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 0.0000025,
-    "outputCostPerToken": 0.00001
-  },
   "cohere/command-r-08-2024": {
     "displayName": "cohere/command-r-08-2024",
     "pricingUnit": "per-token",
@@ -1614,6 +1614,14 @@
     "extractionMethod": "api",
     "inputCostPerToken": 1.5e-7,
     "outputCostPerToken": 6e-7
+  },
+  "cohere/command-r-plus-08-2024": {
+    "displayName": "cohere/command-r-plus-08-2024",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0.0000025,
+    "outputCostPerToken": 0.00001
   },
   "sao10k/l3.1-euryale-70b": {
     "displayName": "sao10k/l3.1-euryale-70b",
