@@ -404,8 +404,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.4e-7,
-    "outputCostPerToken": 9.6e-7
+    "inputCostPerToken": 1.8e-7,
+    "outputCostPerToken": 7.2e-7
   },
   "mistralai/mistral-small-2603": {
     "displayName": "mistralai/mistral-small-2603",
@@ -436,8 +436,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 9e-8,
-    "outputCostPerToken": 4.5e-7
+    "inputCostPerToken": 8.5e-8,
+    "outputCostPerToken": 4e-7
   },
   "bytedance-seed/seed-2.0-lite": {
     "displayName": "bytedance-seed/seed-2.0-lite",
@@ -540,8 +540,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.5e-7,
-    "outputCostPerToken": 9e-7
+    "inputCostPerToken": 1.2e-7,
+    "outputCostPerToken": 4.8e-7
   },
   "z-ai/glm-5": {
     "displayName": "z-ai/glm-5",
