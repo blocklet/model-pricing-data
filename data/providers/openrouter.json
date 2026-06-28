@@ -284,8 +284,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.885e-7,
-    "outputCostPerToken": 0.00000265
+    "inputCostPerToken": 2.596e-7,
+    "outputCostPerToken": 0.000002385
   },
   "inclusionai/ling-2.6-1t": {
     "displayName": "inclusionai/ling-2.6-1t",
