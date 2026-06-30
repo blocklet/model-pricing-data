@@ -72,8 +72,8 @@
     "inputCostPerToken": 7.5e-7,
     "outputCostPerToken": 0.0000045
   },
-  "gemini-3.1-flash-image": {
-    "displayName": "Gemini 3.1 Flash Image",
+  "gemini-3.1-flash-image-(nano-banana-2)": {
+    "displayName": "Gemini 3.1 Flash Image (Nano Banana 2)",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
     "extractionMethod": "regex",
     "pricingUnit": "per-image",
@@ -107,8 +107,8 @@
       "outputCostPerToken": 0.0000015
     }
   },
-  "gemini-3-pro-image": {
-    "displayName": "Gemini 3 Pro Image",
+  "gemini-3-pro-image-(nano-banana-pro)": {
+    "displayName": "Gemini 3 Pro Image (Nano Banana Pro)",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
     "extractionMethod": "regex",
     "pricingUnit": "per-image",
@@ -197,8 +197,8 @@
     "inputCostPerToken": 5e-7,
     "outputCostPerToken": 0.000002
   },
-  "gemini-2.5-flash-image": {
-    "displayName": "Gemini 2.5 Flash Image",
+  "gemini-2.5-flash-image-(nano-banana)": {
+    "displayName": "Gemini 2.5 Flash Image (Nano Banana)",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
     "extractionMethod": "regex",
     "pricingUnit": "per-image",
