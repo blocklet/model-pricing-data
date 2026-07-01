@@ -40,6 +40,15 @@
       "outputCostPerToken": 7.5e-7
     }
   },
+  "gemini-omni-flash-preview": {
+    "displayName": "Gemini Omni Flash Preview",
+    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-token",
+    "modelType": "chatCompletion",
+    "inputCostPerToken": 0.0000015,
+    "outputCostPerToken": 0.000009
+  },
   "gemini-3.1-pro-preview": {
     "displayName": "Gemini 3.1 Pro Preview",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
@@ -81,6 +90,16 @@
     "inputCostPerToken": 5e-7,
     "outputCostPerToken": 0.000003,
     "costPerImage": 0.045
+  },
+  "gemini-3.1-flash-lite-image": {
+    "displayName": "Gemini 3.1 Flash Lite Image",
+    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-image",
+    "modelType": "imageGeneration",
+    "inputCostPerToken": 2.5e-7,
+    "outputCostPerToken": 0.0000015,
+    "costPerImage": 0.039
   },
   "gemini-3.1-flash-tts-preview": {
     "displayName": "Gemini 3.1 Flash TTS Preview",
