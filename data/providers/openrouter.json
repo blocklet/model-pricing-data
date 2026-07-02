@@ -652,8 +652,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.9e-7,
-    "outputCostPerToken": 9.5e-7
+    "inputCostPerToken": 3e-7,
+    "outputCostPerToken": 0.0000012
   },
   "z-ai/glm-4.7": {
     "displayName": "z-ai/glm-4.7",
@@ -821,7 +821,7 @@
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
     "inputCostPerToken": 2.55e-7,
-    "outputCostPerToken": 0.000001
+    "outputCostPerToken": 0.00000102
   },
   "qwen/qwen3-vl-32b-instruct": {
     "displayName": "qwen/qwen3-vl-32b-instruct",
@@ -1004,8 +1004,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 8e-8,
-    "outputCostPerToken": 4e-7
+    "inputCostPerToken": 1.3e-7,
+    "outputCostPerToken": 0.00000156
   },
   "nousresearch/hermes-4-70b": {
     "displayName": "nousresearch/hermes-4-70b",
@@ -1244,8 +1244,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 5e-8,
-    "outputCostPerToken": 4e-7
+    "inputCostPerToken": 1.17e-7,
+    "outputCostPerToken": 4.55e-7
   },
   "qwen/qwen3-14b": {
     "displayName": "qwen/qwen3-14b",
