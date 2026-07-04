@@ -36,8 +36,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 9.3e-7,
-    "outputCostPerToken": 0.000003
+    "inputCostPerToken": 9.1e-7,
+    "outputCostPerToken": 0.00000286
   },
   "openrouter/fusion": {
     "displayName": "openrouter/fusion",
@@ -364,8 +364,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 9.75e-7,
-    "outputCostPerToken": 0.0000043
+    "inputCostPerToken": 9.66e-7,
+    "outputCostPerToken": 0.000003036
   },
   "qwen/qwen3.6-plus": {
     "displayName": "qwen/qwen3.6-plus",
@@ -444,8 +444,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 8.5e-8,
-    "outputCostPerToken": 4e-7
+    "inputCostPerToken": 8e-8,
+    "outputCostPerToken": 4.5e-7
   },
   "bytedance-seed/seed-2.0-lite": {
     "displayName": "bytedance-seed/seed-2.0-lite",
