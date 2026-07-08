@@ -708,87 +708,6 @@
     "model_type": "chatCompletion",
     "source_url": "https://ai.google.dev/gemini-api/docs/pricing"
   },
-  "grok-4.20-0309-non-reasoning": {
-    "litellm_provider": "xai",
-    "source": "official",
-    "input_cost_per_token": 0.00000125,
-    "output_cost_per_token": 0.0000025,
-    "cache_read_input_token_cost": 2e-7,
-    "model_type": "chatCompletion",
-    "source_url": "https://docs.x.ai/developers/models"
-  },
-  "grok-4.20-non-reasoning": {
-    "litellm_provider": "xai",
-    "source": "official",
-    "input_cost_per_token": 0.00000125,
-    "output_cost_per_token": 0.0000025,
-    "cache_read_input_token_cost": 2e-7,
-    "model_type": "chatCompletion",
-    "source_url": "https://docs.x.ai/developers/models"
-  },
-  "grok-4.20-non-reasoning-latest": {
-    "litellm_provider": "xai",
-    "source": "official",
-    "input_cost_per_token": 0.00000125,
-    "output_cost_per_token": 0.0000025,
-    "cache_read_input_token_cost": 2e-7,
-    "model_type": "chatCompletion",
-    "source_url": "https://docs.x.ai/developers/models"
-  },
-  "grok-4.20-beta-non-reasoning": {
-    "litellm_provider": "xai",
-    "source": "official",
-    "input_cost_per_token": 0.00000125,
-    "output_cost_per_token": 0.0000025,
-    "cache_read_input_token_cost": 2e-7,
-    "model_type": "chatCompletion",
-    "source_url": "https://docs.x.ai/developers/models"
-  },
-  "grok-4.20-beta-latest-non-reasoning": {
-    "litellm_provider": "xai",
-    "source": "official",
-    "input_cost_per_token": 0.00000125,
-    "output_cost_per_token": 0.0000025,
-    "cache_read_input_token_cost": 2e-7,
-    "model_type": "chatCompletion",
-    "source_url": "https://docs.x.ai/developers/models"
-  },
-  "grok-4.20-experimental-beta-0304-non-reasoning": {
-    "litellm_provider": "xai",
-    "source": "official",
-    "input_cost_per_token": 0.00000125,
-    "output_cost_per_token": 0.0000025,
-    "cache_read_input_token_cost": 2e-7,
-    "model_type": "chatCompletion",
-    "source_url": "https://docs.x.ai/developers/models"
-  },
-  "grok-4.20-experimental-beta-non-reasoning-latest": {
-    "litellm_provider": "xai",
-    "source": "official",
-    "input_cost_per_token": 0.00000125,
-    "output_cost_per_token": 0.0000025,
-    "cache_read_input_token_cost": 2e-7,
-    "model_type": "chatCompletion",
-    "source_url": "https://docs.x.ai/developers/models"
-  },
-  "grok-4.20-beta-0309-non-reasoning": {
-    "litellm_provider": "xai",
-    "source": "official",
-    "input_cost_per_token": 0.00000125,
-    "output_cost_per_token": 0.0000025,
-    "cache_read_input_token_cost": 2e-7,
-    "model_type": "chatCompletion",
-    "source_url": "https://docs.x.ai/developers/models"
-  },
-  "grok-4.20-non-reasoning-gv2": {
-    "litellm_provider": "xai",
-    "source": "official",
-    "input_cost_per_token": 0.00000125,
-    "output_cost_per_token": 0.0000025,
-    "cache_read_input_token_cost": 2e-7,
-    "model_type": "chatCompletion",
-    "source_url": "https://docs.x.ai/developers/models"
-  },
   "grok-4.20-0309-reasoning": {
     "litellm_provider": "xai",
     "source": "official",
@@ -933,69 +852,6 @@
     "model_type": "chatCompletion",
     "source_url": "https://docs.x.ai/developers/models"
   },
-  "grok-4.3": {
-    "litellm_provider": "xai",
-    "source": "official",
-    "input_cost_per_token": 0.00000125,
-    "output_cost_per_token": 0.0000025,
-    "cache_read_input_token_cost": 2e-7,
-    "model_type": "chatCompletion",
-    "source_url": "https://docs.x.ai/developers/models"
-  },
-  "grok-4.3-latest": {
-    "litellm_provider": "xai",
-    "source": "official",
-    "input_cost_per_token": 0.00000125,
-    "output_cost_per_token": 0.0000025,
-    "cache_read_input_token_cost": 2e-7,
-    "model_type": "chatCompletion",
-    "source_url": "https://docs.x.ai/developers/models"
-  },
-  "grok-latest": {
-    "litellm_provider": "xai",
-    "source": "official",
-    "input_cost_per_token": 0.00000125,
-    "output_cost_per_token": 0.0000025,
-    "cache_read_input_token_cost": 2e-7,
-    "model_type": "chatCompletion",
-    "source_url": "https://docs.x.ai/developers/models"
-  },
-  "grok-build-0.1": {
-    "litellm_provider": "xai",
-    "source": "official",
-    "input_cost_per_token": 0.000001,
-    "output_cost_per_token": 0.000002,
-    "cache_read_input_token_cost": 2e-7,
-    "model_type": "chatCompletion",
-    "source_url": "https://docs.x.ai/developers/models"
-  },
-  "grok-code-fast-1": {
-    "litellm_provider": "xai",
-    "source": "official",
-    "input_cost_per_token": 0.000001,
-    "output_cost_per_token": 0.000002,
-    "cache_read_input_token_cost": 2e-7,
-    "model_type": "chatCompletion",
-    "source_url": "https://docs.x.ai/developers/models"
-  },
-  "grok-code-fast": {
-    "litellm_provider": "xai",
-    "source": "official",
-    "input_cost_per_token": 0.000001,
-    "output_cost_per_token": 0.000002,
-    "cache_read_input_token_cost": 2e-7,
-    "model_type": "chatCompletion",
-    "source_url": "https://docs.x.ai/developers/models"
-  },
-  "grok-code-fast-1-0825": {
-    "litellm_provider": "xai",
-    "source": "official",
-    "input_cost_per_token": 0.000001,
-    "output_cost_per_token": 0.000002,
-    "cache_read_input_token_cost": 2e-7,
-    "model_type": "chatCompletion",
-    "source_url": "https://docs.x.ai/developers/models"
-  },
   "grok-4.20-multi-agent-0309": {
     "litellm_provider": "xai",
     "source": "official",
@@ -1059,6 +915,150 @@
     "model_type": "chatCompletion",
     "source_url": "https://docs.x.ai/developers/models"
   },
+  "grok-4.20-0309-non-reasoning": {
+    "litellm_provider": "xai",
+    "source": "official",
+    "input_cost_per_token": 0.00000125,
+    "output_cost_per_token": 0.0000025,
+    "cache_read_input_token_cost": 2e-7,
+    "model_type": "chatCompletion",
+    "source_url": "https://docs.x.ai/developers/models"
+  },
+  "grok-4.20-non-reasoning": {
+    "litellm_provider": "xai",
+    "source": "official",
+    "input_cost_per_token": 0.00000125,
+    "output_cost_per_token": 0.0000025,
+    "cache_read_input_token_cost": 2e-7,
+    "model_type": "chatCompletion",
+    "source_url": "https://docs.x.ai/developers/models"
+  },
+  "grok-4.20-non-reasoning-latest": {
+    "litellm_provider": "xai",
+    "source": "official",
+    "input_cost_per_token": 0.00000125,
+    "output_cost_per_token": 0.0000025,
+    "cache_read_input_token_cost": 2e-7,
+    "model_type": "chatCompletion",
+    "source_url": "https://docs.x.ai/developers/models"
+  },
+  "grok-4.20-beta-non-reasoning": {
+    "litellm_provider": "xai",
+    "source": "official",
+    "input_cost_per_token": 0.00000125,
+    "output_cost_per_token": 0.0000025,
+    "cache_read_input_token_cost": 2e-7,
+    "model_type": "chatCompletion",
+    "source_url": "https://docs.x.ai/developers/models"
+  },
+  "grok-4.20-beta-latest-non-reasoning": {
+    "litellm_provider": "xai",
+    "source": "official",
+    "input_cost_per_token": 0.00000125,
+    "output_cost_per_token": 0.0000025,
+    "cache_read_input_token_cost": 2e-7,
+    "model_type": "chatCompletion",
+    "source_url": "https://docs.x.ai/developers/models"
+  },
+  "grok-4.20-experimental-beta-0304-non-reasoning": {
+    "litellm_provider": "xai",
+    "source": "official",
+    "input_cost_per_token": 0.00000125,
+    "output_cost_per_token": 0.0000025,
+    "cache_read_input_token_cost": 2e-7,
+    "model_type": "chatCompletion",
+    "source_url": "https://docs.x.ai/developers/models"
+  },
+  "grok-4.20-experimental-beta-non-reasoning-latest": {
+    "litellm_provider": "xai",
+    "source": "official",
+    "input_cost_per_token": 0.00000125,
+    "output_cost_per_token": 0.0000025,
+    "cache_read_input_token_cost": 2e-7,
+    "model_type": "chatCompletion",
+    "source_url": "https://docs.x.ai/developers/models"
+  },
+  "grok-4.20-beta-0309-non-reasoning": {
+    "litellm_provider": "xai",
+    "source": "official",
+    "input_cost_per_token": 0.00000125,
+    "output_cost_per_token": 0.0000025,
+    "cache_read_input_token_cost": 2e-7,
+    "model_type": "chatCompletion",
+    "source_url": "https://docs.x.ai/developers/models"
+  },
+  "grok-4.20-non-reasoning-gv2": {
+    "litellm_provider": "xai",
+    "source": "official",
+    "input_cost_per_token": 0.00000125,
+    "output_cost_per_token": 0.0000025,
+    "cache_read_input_token_cost": 2e-7,
+    "model_type": "chatCompletion",
+    "source_url": "https://docs.x.ai/developers/models"
+  },
+  "grok-4.3": {
+    "litellm_provider": "xai",
+    "source": "official",
+    "input_cost_per_token": 0.00000125,
+    "output_cost_per_token": 0.0000025,
+    "cache_read_input_token_cost": 2e-7,
+    "model_type": "chatCompletion",
+    "source_url": "https://docs.x.ai/developers/models"
+  },
+  "grok-4.3-latest": {
+    "litellm_provider": "xai",
+    "source": "official",
+    "input_cost_per_token": 0.00000125,
+    "output_cost_per_token": 0.0000025,
+    "cache_read_input_token_cost": 2e-7,
+    "model_type": "chatCompletion",
+    "source_url": "https://docs.x.ai/developers/models"
+  },
+  "grok-latest": {
+    "litellm_provider": "xai",
+    "source": "official",
+    "input_cost_per_token": 0.00000125,
+    "output_cost_per_token": 0.0000025,
+    "cache_read_input_token_cost": 2e-7,
+    "model_type": "chatCompletion",
+    "source_url": "https://docs.x.ai/developers/models"
+  },
+  "grok-build-0.1": {
+    "litellm_provider": "xai",
+    "source": "official",
+    "input_cost_per_token": 0.000001,
+    "output_cost_per_token": 0.000002,
+    "cache_read_input_token_cost": 2e-7,
+    "model_type": "chatCompletion",
+    "source_url": "https://docs.x.ai/developers/models"
+  },
+  "grok-code-fast-1": {
+    "litellm_provider": "xai",
+    "source": "official",
+    "input_cost_per_token": 0.000001,
+    "output_cost_per_token": 0.000002,
+    "cache_read_input_token_cost": 2e-7,
+    "model_type": "chatCompletion",
+    "source_url": "https://docs.x.ai/developers/models"
+  },
+  "grok-code-fast": {
+    "litellm_provider": "xai",
+    "source": "official",
+    "input_cost_per_token": 0.000001,
+    "output_cost_per_token": 0.000002,
+    "cache_read_input_token_cost": 2e-7,
+    "model_type": "chatCompletion",
+    "source_url": "https://docs.x.ai/developers/models"
+  },
+  "grok-code-fast-1-0825": {
+    "litellm_provider": "xai",
+    "source": "official",
+    "input_cost_per_token": 0.000001,
+    "output_cost_per_token": 0.000002,
+    "cache_read_input_token_cost": 2e-7,
+    "model_type": "chatCompletion",
+    "source_url": "https://docs.x.ai/developers/models"
+  },
   "grok-imagine-image-quality": {
     "litellm_provider": "xai",
     "source": "official",
@@ -1071,13 +1071,13 @@
     "model_type": "imageGeneration",
     "source_url": "https://docs.x.ai/developers/models"
   },
-  "grok-imagine-video": {
+  "grok-imagine-video-1.5": {
     "litellm_provider": "xai",
     "source": "official",
     "model_type": "video",
     "source_url": "https://docs.x.ai/developers/models"
   },
-  "grok-imagine-video-1.5": {
+  "grok-imagine-video": {
     "litellm_provider": "xai",
     "source": "official",
     "model_type": "video",
@@ -1101,6 +1101,20 @@
     "model_type": "chatCompletion",
     "source_url": "https://api-docs.deepseek.com/quick_start/pricing"
   },
+  "openrouter/aion-labs/aion-3.0-mini": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 7e-7,
+    "output_cost_per_token": 0.0000014,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
+  "openrouter/aion-labs/aion-3.0": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 0.000003,
+    "output_cost_per_token": 0.000006,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
   "openrouter/tencent/hy3:free": {
     "litellm_provider": "openrouter",
     "source": "official",
@@ -1111,8 +1125,8 @@
   "openrouter/tencent/hy3": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 1.4e-7,
-    "output_cost_per_token": 5.8e-7,
+    "input_cost_per_token": 2e-7,
+    "output_cost_per_token": 8e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/poolside/laguna-xs-2.1:free": {
@@ -1153,8 +1167,8 @@
   "openrouter/z-ai/glm-5.2": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 9.086e-7,
-    "output_cost_per_token": 0.0000028556,
+    "input_cost_per_token": 9.3e-7,
+    "output_cost_per_token": 0.000003,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/openrouter/fusion": {
@@ -2319,20 +2333,6 @@
     "output_cost_per_token": 6e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
-  "openrouter/aion-labs/aion-1.0": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 0.000004,
-    "output_cost_per_token": 0.000008,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
-  "openrouter/aion-labs/aion-1.0-mini": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 7e-7,
-    "output_cost_per_token": 0.0000014,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
   "openrouter/aion-labs/aion-rp-llama-3.1-8b": {
     "litellm_provider": "openrouter",
     "source": "official",
@@ -2473,14 +2473,14 @@
     "output_cost_per_token": 1e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
-  "openrouter/inflection/inflection-3-pi": {
+  "openrouter/inflection/inflection-3-productivity": {
     "litellm_provider": "openrouter",
     "source": "official",
     "input_cost_per_token": 0.0000025,
     "output_cost_per_token": 0.00001,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
-  "openrouter/inflection/inflection-3-productivity": {
+  "openrouter/inflection/inflection-3-pi": {
     "litellm_provider": "openrouter",
     "source": "official",
     "input_cost_per_token": 0.0000025,
@@ -2492,6 +2492,13 @@
     "source": "official",
     "input_cost_per_token": 2.5e-7,
     "output_cost_per_token": 5e-7,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
+  "openrouter/meta-llama/llama-3.2-1b-instruct": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 2.7e-8,
+    "output_cost_per_token": 2.01e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/meta-llama/llama-3.2-3b-instruct:free": {
@@ -2513,13 +2520,6 @@
     "source": "official",
     "input_cost_per_token": 3.45e-7,
     "output_cost_per_token": 3.45e-7,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
-  "openrouter/meta-llama/llama-3.2-1b-instruct": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 2.7e-8,
-    "output_cost_per_token": 2.01e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/qwen/qwen-2.5-72b-instruct": {
@@ -2578,18 +2578,18 @@
     "output_cost_per_token": 5e-8,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
-  "openrouter/meta-llama/llama-3.1-8b-instruct": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 2e-8,
-    "output_cost_per_token": 3e-8,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
   "openrouter/meta-llama/llama-3.1-70b-instruct": {
     "litellm_provider": "openrouter",
     "source": "official",
     "input_cost_per_token": 4e-7,
     "output_cost_per_token": 4e-7,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
+  "openrouter/meta-llama/llama-3.1-8b-instruct": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 2e-8,
+    "output_cost_per_token": 3e-8,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/mistralai/mistral-nemo": {
