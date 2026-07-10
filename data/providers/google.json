@@ -91,8 +91,8 @@
     "outputCostPerToken": 0.000003,
     "costPerImage": 0.045
   },
-  "gemini-3.1-flash-lite-image": {
-    "displayName": "Gemini 3.1 Flash Lite Image",
+  "gemini-3.1-flash-lite-image-(nano-banana-2-lite)": {
+    "displayName": "Gemini 3.1 Flash Lite Image (Nano Banana 2 Lite)",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
     "extractionMethod": "regex",
     "pricingUnit": "per-image",

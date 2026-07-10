@@ -84,8 +84,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 9e-7,
-    "outputCostPerToken": 0.00000308
+    "inputCostPerToken": 5.4e-7,
+    "outputCostPerToken": 0.00000176
   },
   "openrouter/fusion": {
     "displayName": "openrouter/fusion",
@@ -100,8 +100,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 7.4e-7,
-    "outputCostPerToken": 0.0000035
+    "inputCostPerToken": 7.2e-7,
+    "outputCostPerToken": 0.00000349
   },
   "~anthropic/claude-fable-latest": {
     "displayName": "~anthropic/claude-fable-latest",
@@ -215,22 +215,6 @@
     "inputCostPerToken": 0,
     "outputCostPerToken": 0
   },
-  "poolside/laguna-xs.2:free": {
-    "displayName": "poolside/laguna-xs.2:free",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 0,
-    "outputCostPerToken": 0
-  },
-  "poolside/laguna-xs.2": {
-    "displayName": "poolside/laguna-xs.2",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 1e-7,
-    "outputCostPerToken": 2e-7
-  },
   "poolside/laguna-m.1:free": {
     "displayName": "poolside/laguna-m.1:free",
     "pricingUnit": "per-token",
@@ -276,7 +260,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 6.5e-7,
+    "inputCostPerToken": 6.6e-7,
     "outputCostPerToken": 0.00000341
   },
   "~google/gemini-flash-latest": {
@@ -404,7 +388,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 6.5e-7,
+    "inputCostPerToken": 6.6e-7,
     "outputCostPerToken": 0.00000341
   },
   "z-ai/glm-5.1": {
@@ -460,8 +444,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.8e-7,
-    "outputCostPerToken": 7.2e-7
+    "inputCostPerToken": 2.4e-7,
+    "outputCostPerToken": 9.6e-7
   },
   "mistralai/mistral-small-2603": {
     "displayName": "mistralai/mistral-small-2603",
@@ -559,14 +543,6 @@
     "inputCostPerToken": 6.5e-8,
     "outputCostPerToken": 2.6e-7
   },
-  "liquid/lfm-2-24b-a2b": {
-    "displayName": "liquid/lfm-2-24b-a2b",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 3e-8,
-    "outputCostPerToken": 1.2e-7
-  },
   "aion-labs/aion-2.0": {
     "displayName": "aion-labs/aion-2.0",
     "pricingUnit": "per-token",
@@ -596,8 +572,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.2e-7,
-    "outputCostPerToken": 4.8e-7
+    "inputCostPerToken": 1.5e-7,
+    "outputCostPerToken": 9e-7
   },
   "z-ai/glm-5": {
     "displayName": "z-ai/glm-5",
@@ -1207,6 +1183,14 @@
     "inputCostPerToken": 0,
     "outputCostPerToken": 0
   },
+  "cognitivecomputations/dolphin-mistral-24b-venice-edition": {
+    "displayName": "cognitivecomputations/dolphin-mistral-24b-venice-edition",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 2e-7,
+    "outputCostPerToken": 9e-7
+  },
   "tencent/hunyuan-a13b-instruct": {
     "displayName": "tencent/hunyuan-a13b-instruct",
     "pricingUnit": "per-token",
@@ -1567,16 +1551,16 @@
     "inputCostPerToken": 4e-8,
     "outputCostPerToken": 1e-7
   },
-  "inflection/inflection-3-pi": {
-    "displayName": "inflection/inflection-3-pi",
+  "inflection/inflection-3-productivity": {
+    "displayName": "inflection/inflection-3-productivity",
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
     "inputCostPerToken": 0.0000025,
     "outputCostPerToken": 0.00001
   },
-  "inflection/inflection-3-productivity": {
-    "displayName": "inflection/inflection-3-productivity",
+  "inflection/inflection-3-pi": {
+    "displayName": "inflection/inflection-3-pi",
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
@@ -1590,22 +1574,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 2.5e-7,
     "outputCostPerToken": 5e-7
-  },
-  "meta-llama/llama-3.2-3b-instruct:free": {
-    "displayName": "meta-llama/llama-3.2-3b-instruct:free",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 0,
-    "outputCostPerToken": 0
-  },
-  "meta-llama/llama-3.2-3b-instruct": {
-    "displayName": "meta-llama/llama-3.2-3b-instruct",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 5e-8,
-    "outputCostPerToken": 3.3e-7
   },
   "meta-llama/llama-3.2-1b-instruct": {
     "displayName": "meta-llama/llama-3.2-1b-instruct",
@@ -1622,6 +1590,22 @@
     "extractionMethod": "api",
     "inputCostPerToken": 3.45e-7,
     "outputCostPerToken": 3.45e-7
+  },
+  "meta-llama/llama-3.2-3b-instruct:free": {
+    "displayName": "meta-llama/llama-3.2-3b-instruct:free",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0,
+    "outputCostPerToken": 0
+  },
+  "meta-llama/llama-3.2-3b-instruct": {
+    "displayName": "meta-llama/llama-3.2-3b-instruct",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 5e-8,
+    "outputCostPerToken": 3.3e-7
   },
   "qwen/qwen-2.5-72b-instruct": {
     "displayName": "qwen/qwen-2.5-72b-instruct",

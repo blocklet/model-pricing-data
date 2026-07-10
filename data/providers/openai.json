@@ -1,11 +1,46 @@
 {
+  "gpt-5.6-sol": {
+    "pricingUnit": "per-token",
+    "modelType": "chatCompletion",
+    "sourceUrl": "https://developers.openai.com/api/docs/pricing",
+    "extractionMethod": "regex",
+    "inputCostPerToken": 0.000005,
+    "outputCostPerToken": 0.00000625,
+    "caching": {
+      "read": 5e-7
+    },
+    "displayName": "gpt-5.6-sol"
+  },
+  "gpt-5.6-terra": {
+    "pricingUnit": "per-token",
+    "modelType": "chatCompletion",
+    "sourceUrl": "https://developers.openai.com/api/docs/pricing",
+    "extractionMethod": "regex",
+    "inputCostPerToken": 0.0000025,
+    "outputCostPerToken": 0.000003125,
+    "caching": {
+      "read": 2.5e-7
+    },
+    "displayName": "gpt-5.6-terra"
+  },
+  "gpt-5.6-luna": {
+    "pricingUnit": "per-token",
+    "modelType": "chatCompletion",
+    "sourceUrl": "https://developers.openai.com/api/docs/pricing",
+    "extractionMethod": "regex",
+    "inputCostPerToken": 0.000001,
+    "outputCostPerToken": 0.00000125,
+    "caching": {
+      "read": 1e-7
+    },
+    "displayName": "gpt-5.6-luna"
+  },
   "gpt-5.5": {
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
     "extractionMethod": "regex",
     "inputCostPerToken": 0.000005,
-    "outputCostPerToken": 0.00003,
     "caching": {
       "read": 5e-7
     },
@@ -13,8 +48,7 @@
       {
         "threshold": ">272K",
         "inputCostPerToken": 0.00001,
-        "cachedInputCostPerToken": 0.000001,
-        "outputCostPerToken": 0.000045
+        "cachedInputCostPerToken": 0.000001
       }
     ],
     "displayName": "gpt-5.5"
@@ -25,12 +59,10 @@
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
     "extractionMethod": "regex",
     "inputCostPerToken": 0.00003,
-    "outputCostPerToken": 0.00018,
     "contextTiers": [
       {
         "threshold": ">272K",
-        "inputCostPerToken": 0.00006,
-        "outputCostPerToken": 0.00027
+        "inputCostPerToken": 0.00006
       }
     ],
     "displayName": "gpt-5.5-pro"
@@ -41,7 +73,6 @@
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
     "extractionMethod": "regex",
     "inputCostPerToken": 0.0000025,
-    "outputCostPerToken": 0.000015,
     "caching": {
       "read": 2.5e-7
     },
@@ -49,8 +80,7 @@
       {
         "threshold": ">272K",
         "inputCostPerToken": 0.000005,
-        "cachedInputCostPerToken": 5e-7,
-        "outputCostPerToken": 0.0000225
+        "cachedInputCostPerToken": 5e-7
       }
     ],
     "displayName": "gpt-5.4"
@@ -61,7 +91,6 @@
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
     "extractionMethod": "regex",
     "inputCostPerToken": 7.5e-7,
-    "outputCostPerToken": 0.0000045,
     "caching": {
       "read": 7.5e-8
     },
@@ -73,7 +102,6 @@
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
     "extractionMethod": "regex",
     "inputCostPerToken": 2e-7,
-    "outputCostPerToken": 0.00000125,
     "caching": {
       "read": 2e-8
     },
@@ -85,12 +113,10 @@
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
     "extractionMethod": "regex",
     "inputCostPerToken": 0.00003,
-    "outputCostPerToken": 0.00018,
     "contextTiers": [
       {
         "threshold": ">272K",
-        "inputCostPerToken": 0.00006,
-        "outputCostPerToken": 0.00027
+        "inputCostPerToken": 0.00006
       }
     ],
     "displayName": "gpt-5.4-pro"
