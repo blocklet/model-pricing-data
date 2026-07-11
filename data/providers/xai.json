@@ -1,6 +1,6 @@
 {
-  "grok-4.20-multi-agent-0309": {
-    "displayName": "grok-4.20-multi-agent-0309",
+  "grok-4.20-0309-non-reasoning": {
+    "displayName": "grok-4.20-0309-non-reasoning",
     "modelType": "chatCompletion",
     "pricingUnit": "per-token",
     "sourceUrl": "https://docs.x.ai/developers/models",
@@ -18,8 +18,8 @@
       }
     ]
   },
-  "grok-4.20-multi-agent": {
-    "displayName": "grok-4.20-multi-agent",
+  "grok-4.20-non-reasoning": {
+    "displayName": "grok-4.20-non-reasoning",
     "modelType": "chatCompletion",
     "pricingUnit": "per-token",
     "sourceUrl": "https://docs.x.ai/developers/models",
@@ -37,8 +37,8 @@
       }
     ]
   },
-  "grok-4.20-multi-agent-latest": {
-    "displayName": "grok-4.20-multi-agent-latest",
+  "grok-4.20-non-reasoning-latest": {
+    "displayName": "grok-4.20-non-reasoning-latest",
     "modelType": "chatCompletion",
     "pricingUnit": "per-token",
     "sourceUrl": "https://docs.x.ai/developers/models",
@@ -56,8 +56,8 @@
       }
     ]
   },
-  "grok-4.20-multi-agent-beta-latest": {
-    "displayName": "grok-4.20-multi-agent-beta-latest",
+  "grok-4.20-beta-non-reasoning": {
+    "displayName": "grok-4.20-beta-non-reasoning",
     "modelType": "chatCompletion",
     "pricingUnit": "per-token",
     "sourceUrl": "https://docs.x.ai/developers/models",
@@ -75,8 +75,8 @@
       }
     ]
   },
-  "grok-4.20-multi-agent-experimental-beta-0304": {
-    "displayName": "grok-4.20-multi-agent-experimental-beta-0304",
+  "grok-4.20-beta-latest-non-reasoning": {
+    "displayName": "grok-4.20-beta-latest-non-reasoning",
     "modelType": "chatCompletion",
     "pricingUnit": "per-token",
     "sourceUrl": "https://docs.x.ai/developers/models",
@@ -94,8 +94,8 @@
       }
     ]
   },
-  "grok-4.20-multi-agent-experimental-beta-latest": {
-    "displayName": "grok-4.20-multi-agent-experimental-beta-latest",
+  "grok-4.20-experimental-beta-0304-non-reasoning": {
+    "displayName": "grok-4.20-experimental-beta-0304-non-reasoning",
     "modelType": "chatCompletion",
     "pricingUnit": "per-token",
     "sourceUrl": "https://docs.x.ai/developers/models",
@@ -113,8 +113,46 @@
       }
     ]
   },
-  "grok-4.20-multi-agent-beta-0309": {
-    "displayName": "grok-4.20-multi-agent-beta-0309",
+  "grok-4.20-experimental-beta-non-reasoning-latest": {
+    "displayName": "grok-4.20-experimental-beta-non-reasoning-latest",
+    "modelType": "chatCompletion",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://docs.x.ai/developers/models",
+    "extractionMethod": "regex",
+    "inputCostPerToken": 0.00000125,
+    "outputCostPerToken": 0.0000025,
+    "caching": {
+      "read": 2e-7
+    },
+    "contextTiers": [
+      {
+        "threshold": ">128K",
+        "inputCostPerToken": 0.0000025,
+        "outputCostPerToken": 0.000005
+      }
+    ]
+  },
+  "grok-4.20-beta-0309-non-reasoning": {
+    "displayName": "grok-4.20-beta-0309-non-reasoning",
+    "modelType": "chatCompletion",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://docs.x.ai/developers/models",
+    "extractionMethod": "regex",
+    "inputCostPerToken": 0.00000125,
+    "outputCostPerToken": 0.0000025,
+    "caching": {
+      "read": 2e-7
+    },
+    "contextTiers": [
+      {
+        "threshold": ">128K",
+        "inputCostPerToken": 0.0000025,
+        "outputCostPerToken": 0.000005
+      }
+    ]
+  },
+  "grok-4.20-non-reasoning-gv2": {
+    "displayName": "grok-4.20-non-reasoning-gv2",
     "modelType": "chatCompletion",
     "pricingUnit": "per-token",
     "sourceUrl": "https://docs.x.ai/developers/models",
@@ -205,63 +243,6 @@
         "threshold": ">128K",
         "inputCostPerToken": 0.000002,
         "outputCostPerToken": 0.000004
-      }
-    ]
-  },
-  "grok-4.5": {
-    "displayName": "grok-4.5",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://docs.x.ai/developers/models",
-    "extractionMethod": "regex",
-    "inputCostPerToken": 0.000002,
-    "outputCostPerToken": 0.000006,
-    "caching": {
-      "read": 5e-7
-    },
-    "contextTiers": [
-      {
-        "threshold": ">128K",
-        "inputCostPerToken": 0.000004,
-        "outputCostPerToken": 0.000012
-      }
-    ]
-  },
-  "grok-4.5-latest": {
-    "displayName": "grok-4.5-latest",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://docs.x.ai/developers/models",
-    "extractionMethod": "regex",
-    "inputCostPerToken": 0.000002,
-    "outputCostPerToken": 0.000006,
-    "caching": {
-      "read": 5e-7
-    },
-    "contextTiers": [
-      {
-        "threshold": ">128K",
-        "inputCostPerToken": 0.000004,
-        "outputCostPerToken": 0.000012
-      }
-    ]
-  },
-  "grok-build-latest": {
-    "displayName": "grok-build-latest",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://docs.x.ai/developers/models",
-    "extractionMethod": "regex",
-    "inputCostPerToken": 0.000002,
-    "outputCostPerToken": 0.000006,
-    "caching": {
-      "read": 5e-7
-    },
-    "contextTiers": [
-      {
-        "threshold": ">128K",
-        "inputCostPerToken": 0.000004,
-        "outputCostPerToken": 0.000012
       }
     ]
   },
@@ -569,177 +550,6 @@
       }
     ]
   },
-  "grok-4.20-0309-non-reasoning": {
-    "displayName": "grok-4.20-0309-non-reasoning",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://docs.x.ai/developers/models",
-    "extractionMethod": "regex",
-    "inputCostPerToken": 0.00000125,
-    "outputCostPerToken": 0.0000025,
-    "caching": {
-      "read": 2e-7
-    },
-    "contextTiers": [
-      {
-        "threshold": ">128K",
-        "inputCostPerToken": 0.0000025,
-        "outputCostPerToken": 0.000005
-      }
-    ]
-  },
-  "grok-4.20-non-reasoning": {
-    "displayName": "grok-4.20-non-reasoning",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://docs.x.ai/developers/models",
-    "extractionMethod": "regex",
-    "inputCostPerToken": 0.00000125,
-    "outputCostPerToken": 0.0000025,
-    "caching": {
-      "read": 2e-7
-    },
-    "contextTiers": [
-      {
-        "threshold": ">128K",
-        "inputCostPerToken": 0.0000025,
-        "outputCostPerToken": 0.000005
-      }
-    ]
-  },
-  "grok-4.20-non-reasoning-latest": {
-    "displayName": "grok-4.20-non-reasoning-latest",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://docs.x.ai/developers/models",
-    "extractionMethod": "regex",
-    "inputCostPerToken": 0.00000125,
-    "outputCostPerToken": 0.0000025,
-    "caching": {
-      "read": 2e-7
-    },
-    "contextTiers": [
-      {
-        "threshold": ">128K",
-        "inputCostPerToken": 0.0000025,
-        "outputCostPerToken": 0.000005
-      }
-    ]
-  },
-  "grok-4.20-beta-non-reasoning": {
-    "displayName": "grok-4.20-beta-non-reasoning",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://docs.x.ai/developers/models",
-    "extractionMethod": "regex",
-    "inputCostPerToken": 0.00000125,
-    "outputCostPerToken": 0.0000025,
-    "caching": {
-      "read": 2e-7
-    },
-    "contextTiers": [
-      {
-        "threshold": ">128K",
-        "inputCostPerToken": 0.0000025,
-        "outputCostPerToken": 0.000005
-      }
-    ]
-  },
-  "grok-4.20-beta-latest-non-reasoning": {
-    "displayName": "grok-4.20-beta-latest-non-reasoning",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://docs.x.ai/developers/models",
-    "extractionMethod": "regex",
-    "inputCostPerToken": 0.00000125,
-    "outputCostPerToken": 0.0000025,
-    "caching": {
-      "read": 2e-7
-    },
-    "contextTiers": [
-      {
-        "threshold": ">128K",
-        "inputCostPerToken": 0.0000025,
-        "outputCostPerToken": 0.000005
-      }
-    ]
-  },
-  "grok-4.20-experimental-beta-0304-non-reasoning": {
-    "displayName": "grok-4.20-experimental-beta-0304-non-reasoning",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://docs.x.ai/developers/models",
-    "extractionMethod": "regex",
-    "inputCostPerToken": 0.00000125,
-    "outputCostPerToken": 0.0000025,
-    "caching": {
-      "read": 2e-7
-    },
-    "contextTiers": [
-      {
-        "threshold": ">128K",
-        "inputCostPerToken": 0.0000025,
-        "outputCostPerToken": 0.000005
-      }
-    ]
-  },
-  "grok-4.20-experimental-beta-non-reasoning-latest": {
-    "displayName": "grok-4.20-experimental-beta-non-reasoning-latest",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://docs.x.ai/developers/models",
-    "extractionMethod": "regex",
-    "inputCostPerToken": 0.00000125,
-    "outputCostPerToken": 0.0000025,
-    "caching": {
-      "read": 2e-7
-    },
-    "contextTiers": [
-      {
-        "threshold": ">128K",
-        "inputCostPerToken": 0.0000025,
-        "outputCostPerToken": 0.000005
-      }
-    ]
-  },
-  "grok-4.20-beta-0309-non-reasoning": {
-    "displayName": "grok-4.20-beta-0309-non-reasoning",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://docs.x.ai/developers/models",
-    "extractionMethod": "regex",
-    "inputCostPerToken": 0.00000125,
-    "outputCostPerToken": 0.0000025,
-    "caching": {
-      "read": 2e-7
-    },
-    "contextTiers": [
-      {
-        "threshold": ">128K",
-        "inputCostPerToken": 0.0000025,
-        "outputCostPerToken": 0.000005
-      }
-    ]
-  },
-  "grok-4.20-non-reasoning-gv2": {
-    "displayName": "grok-4.20-non-reasoning-gv2",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://docs.x.ai/developers/models",
-    "extractionMethod": "regex",
-    "inputCostPerToken": 0.00000125,
-    "outputCostPerToken": 0.0000025,
-    "caching": {
-      "read": 2e-7
-    },
-    "contextTiers": [
-      {
-        "threshold": ">128K",
-        "inputCostPerToken": 0.0000025,
-        "outputCostPerToken": 0.000005
-      }
-    ]
-  },
   "grok-4.3": {
     "displayName": "grok-4.3",
     "modelType": "chatCompletion",
@@ -797,6 +607,196 @@
       }
     ]
   },
+  "grok-4.20-multi-agent-0309": {
+    "displayName": "grok-4.20-multi-agent-0309",
+    "modelType": "chatCompletion",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://docs.x.ai/developers/models",
+    "extractionMethod": "regex",
+    "inputCostPerToken": 0.00000125,
+    "outputCostPerToken": 0.0000025,
+    "caching": {
+      "read": 2e-7
+    },
+    "contextTiers": [
+      {
+        "threshold": ">128K",
+        "inputCostPerToken": 0.0000025,
+        "outputCostPerToken": 0.000005
+      }
+    ]
+  },
+  "grok-4.20-multi-agent": {
+    "displayName": "grok-4.20-multi-agent",
+    "modelType": "chatCompletion",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://docs.x.ai/developers/models",
+    "extractionMethod": "regex",
+    "inputCostPerToken": 0.00000125,
+    "outputCostPerToken": 0.0000025,
+    "caching": {
+      "read": 2e-7
+    },
+    "contextTiers": [
+      {
+        "threshold": ">128K",
+        "inputCostPerToken": 0.0000025,
+        "outputCostPerToken": 0.000005
+      }
+    ]
+  },
+  "grok-4.20-multi-agent-latest": {
+    "displayName": "grok-4.20-multi-agent-latest",
+    "modelType": "chatCompletion",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://docs.x.ai/developers/models",
+    "extractionMethod": "regex",
+    "inputCostPerToken": 0.00000125,
+    "outputCostPerToken": 0.0000025,
+    "caching": {
+      "read": 2e-7
+    },
+    "contextTiers": [
+      {
+        "threshold": ">128K",
+        "inputCostPerToken": 0.0000025,
+        "outputCostPerToken": 0.000005
+      }
+    ]
+  },
+  "grok-4.20-multi-agent-beta-latest": {
+    "displayName": "grok-4.20-multi-agent-beta-latest",
+    "modelType": "chatCompletion",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://docs.x.ai/developers/models",
+    "extractionMethod": "regex",
+    "inputCostPerToken": 0.00000125,
+    "outputCostPerToken": 0.0000025,
+    "caching": {
+      "read": 2e-7
+    },
+    "contextTiers": [
+      {
+        "threshold": ">128K",
+        "inputCostPerToken": 0.0000025,
+        "outputCostPerToken": 0.000005
+      }
+    ]
+  },
+  "grok-4.20-multi-agent-experimental-beta-0304": {
+    "displayName": "grok-4.20-multi-agent-experimental-beta-0304",
+    "modelType": "chatCompletion",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://docs.x.ai/developers/models",
+    "extractionMethod": "regex",
+    "inputCostPerToken": 0.00000125,
+    "outputCostPerToken": 0.0000025,
+    "caching": {
+      "read": 2e-7
+    },
+    "contextTiers": [
+      {
+        "threshold": ">128K",
+        "inputCostPerToken": 0.0000025,
+        "outputCostPerToken": 0.000005
+      }
+    ]
+  },
+  "grok-4.20-multi-agent-experimental-beta-latest": {
+    "displayName": "grok-4.20-multi-agent-experimental-beta-latest",
+    "modelType": "chatCompletion",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://docs.x.ai/developers/models",
+    "extractionMethod": "regex",
+    "inputCostPerToken": 0.00000125,
+    "outputCostPerToken": 0.0000025,
+    "caching": {
+      "read": 2e-7
+    },
+    "contextTiers": [
+      {
+        "threshold": ">128K",
+        "inputCostPerToken": 0.0000025,
+        "outputCostPerToken": 0.000005
+      }
+    ]
+  },
+  "grok-4.20-multi-agent-beta-0309": {
+    "displayName": "grok-4.20-multi-agent-beta-0309",
+    "modelType": "chatCompletion",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://docs.x.ai/developers/models",
+    "extractionMethod": "regex",
+    "inputCostPerToken": 0.00000125,
+    "outputCostPerToken": 0.0000025,
+    "caching": {
+      "read": 2e-7
+    },
+    "contextTiers": [
+      {
+        "threshold": ">128K",
+        "inputCostPerToken": 0.0000025,
+        "outputCostPerToken": 0.000005
+      }
+    ]
+  },
+  "grok-4.5": {
+    "displayName": "grok-4.5",
+    "modelType": "chatCompletion",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://docs.x.ai/developers/models",
+    "extractionMethod": "regex",
+    "inputCostPerToken": 0.000002,
+    "outputCostPerToken": 0.000006,
+    "caching": {
+      "read": 5e-7
+    },
+    "contextTiers": [
+      {
+        "threshold": ">128K",
+        "inputCostPerToken": 0.000004,
+        "outputCostPerToken": 0.000012
+      }
+    ]
+  },
+  "grok-4.5-latest": {
+    "displayName": "grok-4.5-latest",
+    "modelType": "chatCompletion",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://docs.x.ai/developers/models",
+    "extractionMethod": "regex",
+    "inputCostPerToken": 0.000002,
+    "outputCostPerToken": 0.000006,
+    "caching": {
+      "read": 5e-7
+    },
+    "contextTiers": [
+      {
+        "threshold": ">128K",
+        "inputCostPerToken": 0.000004,
+        "outputCostPerToken": 0.000012
+      }
+    ]
+  },
+  "grok-build-latest": {
+    "displayName": "grok-build-latest",
+    "modelType": "chatCompletion",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://docs.x.ai/developers/models",
+    "extractionMethod": "regex",
+    "inputCostPerToken": 0.000002,
+    "outputCostPerToken": 0.000006,
+    "caching": {
+      "read": 5e-7
+    },
+    "contextTiers": [
+      {
+        "threshold": ">128K",
+        "inputCostPerToken": 0.000004,
+        "outputCostPerToken": 0.000012
+      }
+    ]
+  },
   "grok-imagine-image-quality": {
     "displayName": "grok-imagine-image-quality",
     "modelType": "imageGeneration",
@@ -813,14 +813,6 @@
     "extractionMethod": "regex",
     "costPerImage": 0.02
   },
-  "grok-imagine-video-1.5": {
-    "displayName": "grok-imagine-video-1.5",
-    "modelType": "video",
-    "pricingUnit": "per-second",
-    "sourceUrl": "https://docs.x.ai/developers/models",
-    "extractionMethod": "regex",
-    "costPerSecond": 0.08
-  },
   "grok-imagine-video": {
     "displayName": "grok-imagine-video",
     "modelType": "video",
@@ -828,5 +820,13 @@
     "sourceUrl": "https://docs.x.ai/developers/models",
     "extractionMethod": "regex",
     "costPerSecond": 0.05
+  },
+  "grok-imagine-video-1.5": {
+    "displayName": "grok-imagine-video-1.5",
+    "modelType": "video",
+    "pricingUnit": "per-second",
+    "sourceUrl": "https://docs.x.ai/developers/models",
+    "extractionMethod": "regex",
+    "costPerSecond": 0.08
   }
 }
