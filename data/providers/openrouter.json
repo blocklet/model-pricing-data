@@ -84,8 +84,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 5.6e-7,
-    "outputCostPerToken": 0.00000176
+    "inputCostPerToken": 4.2e-7,
+    "outputCostPerToken": 0.00000132
   },
   "openrouter/fusion": {
     "displayName": "openrouter/fusion",
@@ -917,7 +917,7 @@
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
     "inputCostPerToken": 4.3e-7,
-    "outputCostPerToken": 0.00000174
+    "outputCostPerToken": 0.00000175
   },
   "thedrummer/cydonia-24b-v4.1": {
     "displayName": "thedrummer/cydonia-24b-v4.1",
@@ -1157,7 +1157,7 @@
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
     "inputCostPerToken": 9e-8,
-    "outputCostPerToken": 1e-7
+    "outputCostPerToken": 5.5e-7
   },
   "moonshotai/kimi-k2": {
     "displayName": "moonshotai/kimi-k2",
@@ -1308,8 +1308,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.5e-7,
-    "outputCostPerToken": 6e-7
+    "inputCostPerToken": 2e-7,
+    "outputCostPerToken": 8e-7
   },
   "meta-llama/llama-4-scout": {
     "displayName": "meta-llama/llama-4-scout",
