@@ -1,4 +1,20 @@
 {
+  "kwaipilot/kat-coder-air-v2.5": {
+    "displayName": "kwaipilot/kat-coder-air-v2.5",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 1.5e-7,
+    "outputCostPerToken": 6e-7
+  },
+  "kwaipilot/kat-coder-pro-v2.5": {
+    "displayName": "kwaipilot/kat-coder-pro-v2.5",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 7.4e-7,
+    "outputCostPerToken": 0.00000296
+  },
   "~x-ai/grok-latest": {
     "displayName": "~x-ai/grok-latest",
     "pricingUnit": "per-token",
@@ -84,8 +100,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 9.3e-7,
-    "outputCostPerToken": 0.000003
+    "inputCostPerToken": 9.044e-7,
+    "outputCostPerToken": 0.0000028424
   },
   "openrouter/fusion": {
     "displayName": "openrouter/fusion",
@@ -1422,14 +1438,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 7e-8,
     "outputCostPerToken": 1.4e-7
-  },
-  "sao10k/l3.1-70b-hanami-x1": {
-    "displayName": "sao10k/l3.1-70b-hanami-x1",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 0.000003,
-    "outputCostPerToken": 0.000003
   },
   "sao10k/l3.3-euryale-70b": {
     "displayName": "sao10k/l3.3-euryale-70b",
