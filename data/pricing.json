@@ -1,46 +1,46 @@
 {
   "_meta": {
-    "generatedAt": "2026-07-15T02:59:48.752Z",
-    "version": "2.0.119",
+    "generatedAt": "2026-07-16T03:00:06.124Z",
+    "version": "2.0.120",
     "sources": {
       "openai": {
         "url": "https://platform.openai.com/docs/pricing",
         "modelCount": 45,
         "method": "regex+llm",
-        "fetchedAt": "2026-07-15T02:59:48.745Z"
+        "fetchedAt": "2026-07-16T03:00:06.117Z"
       },
       "anthropic": {
         "url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
         "modelCount": 9,
         "method": "regex+llm",
-        "fetchedAt": "2026-07-15T02:59:48.746Z"
+        "fetchedAt": "2026-07-16T03:00:06.117Z"
       },
       "google": {
         "url": "https://ai.google.dev/gemini-api/docs/pricing",
         "modelCount": 28,
         "method": "regex",
-        "fetchedAt": "2026-07-15T02:59:48.746Z"
+        "fetchedAt": "2026-07-16T03:00:06.117Z"
       },
       "xai": {
         "url": "https://docs.x.ai/developers/models",
         "modelCount": 46,
         "method": "regex",
-        "fetchedAt": "2026-07-15T02:59:48.746Z"
+        "fetchedAt": "2026-07-16T03:00:06.117Z"
       },
       "deepseek": {
         "url": "https://api-docs.deepseek.com/quick_start/pricing",
         "modelCount": 2,
         "method": "regex",
-        "fetchedAt": "2026-07-15T02:59:48.746Z"
+        "fetchedAt": "2026-07-16T03:00:06.117Z"
       },
       "openrouter": {
         "url": "https://openrouter.ai/models",
-        "modelCount": 217,
+        "modelCount": 216,
         "method": "api",
-        "fetchedAt": "2026-07-15T02:59:48.746Z"
+        "fetchedAt": "2026-07-16T03:00:06.117Z"
       }
     },
-    "totalModels": 347,
+    "totalModels": 346,
     "failedProviders": []
   },
   "providers": {
@@ -1228,6 +1228,272 @@
           }
         ]
       },
+      "grok-build-0.1": {
+        "displayName": "grok-build-0.1",
+        "modelType": "chatCompletion",
+        "pricingUnit": "per-token",
+        "sourceUrl": "https://docs.x.ai/developers/models",
+        "extractionMethod": "regex",
+        "inputCostPerToken": 0.000001,
+        "outputCostPerToken": 0.000002,
+        "caching": {
+          "read": 2e-7
+        },
+        "contextTiers": [
+          {
+            "threshold": ">128K",
+            "inputCostPerToken": 0.000002,
+            "outputCostPerToken": 0.000004
+          }
+        ]
+      },
+      "grok-code-fast-1": {
+        "displayName": "grok-code-fast-1",
+        "modelType": "chatCompletion",
+        "pricingUnit": "per-token",
+        "sourceUrl": "https://docs.x.ai/developers/models",
+        "extractionMethod": "regex",
+        "inputCostPerToken": 0.000001,
+        "outputCostPerToken": 0.000002,
+        "caching": {
+          "read": 2e-7
+        },
+        "contextTiers": [
+          {
+            "threshold": ">128K",
+            "inputCostPerToken": 0.000002,
+            "outputCostPerToken": 0.000004
+          }
+        ]
+      },
+      "grok-code-fast": {
+        "displayName": "grok-code-fast",
+        "modelType": "chatCompletion",
+        "pricingUnit": "per-token",
+        "sourceUrl": "https://docs.x.ai/developers/models",
+        "extractionMethod": "regex",
+        "inputCostPerToken": 0.000001,
+        "outputCostPerToken": 0.000002,
+        "caching": {
+          "read": 2e-7
+        },
+        "contextTiers": [
+          {
+            "threshold": ">128K",
+            "inputCostPerToken": 0.000002,
+            "outputCostPerToken": 0.000004
+          }
+        ]
+      },
+      "grok-code-fast-1-0825": {
+        "displayName": "grok-code-fast-1-0825",
+        "modelType": "chatCompletion",
+        "pricingUnit": "per-token",
+        "sourceUrl": "https://docs.x.ai/developers/models",
+        "extractionMethod": "regex",
+        "inputCostPerToken": 0.000001,
+        "outputCostPerToken": 0.000002,
+        "caching": {
+          "read": 2e-7
+        },
+        "contextTiers": [
+          {
+            "threshold": ">128K",
+            "inputCostPerToken": 0.000002,
+            "outputCostPerToken": 0.000004
+          }
+        ]
+      },
+      "grok-4.20-multi-agent-0309": {
+        "displayName": "grok-4.20-multi-agent-0309",
+        "modelType": "chatCompletion",
+        "pricingUnit": "per-token",
+        "sourceUrl": "https://docs.x.ai/developers/models",
+        "extractionMethod": "regex",
+        "inputCostPerToken": 0.00000125,
+        "outputCostPerToken": 0.0000025,
+        "caching": {
+          "read": 2e-7
+        },
+        "contextTiers": [
+          {
+            "threshold": ">128K",
+            "inputCostPerToken": 0.0000025,
+            "outputCostPerToken": 0.000005
+          }
+        ]
+      },
+      "grok-4.20-multi-agent": {
+        "displayName": "grok-4.20-multi-agent",
+        "modelType": "chatCompletion",
+        "pricingUnit": "per-token",
+        "sourceUrl": "https://docs.x.ai/developers/models",
+        "extractionMethod": "regex",
+        "inputCostPerToken": 0.00000125,
+        "outputCostPerToken": 0.0000025,
+        "caching": {
+          "read": 2e-7
+        },
+        "contextTiers": [
+          {
+            "threshold": ">128K",
+            "inputCostPerToken": 0.0000025,
+            "outputCostPerToken": 0.000005
+          }
+        ]
+      },
+      "grok-4.20-multi-agent-latest": {
+        "displayName": "grok-4.20-multi-agent-latest",
+        "modelType": "chatCompletion",
+        "pricingUnit": "per-token",
+        "sourceUrl": "https://docs.x.ai/developers/models",
+        "extractionMethod": "regex",
+        "inputCostPerToken": 0.00000125,
+        "outputCostPerToken": 0.0000025,
+        "caching": {
+          "read": 2e-7
+        },
+        "contextTiers": [
+          {
+            "threshold": ">128K",
+            "inputCostPerToken": 0.0000025,
+            "outputCostPerToken": 0.000005
+          }
+        ]
+      },
+      "grok-4.20-multi-agent-beta-latest": {
+        "displayName": "grok-4.20-multi-agent-beta-latest",
+        "modelType": "chatCompletion",
+        "pricingUnit": "per-token",
+        "sourceUrl": "https://docs.x.ai/developers/models",
+        "extractionMethod": "regex",
+        "inputCostPerToken": 0.00000125,
+        "outputCostPerToken": 0.0000025,
+        "caching": {
+          "read": 2e-7
+        },
+        "contextTiers": [
+          {
+            "threshold": ">128K",
+            "inputCostPerToken": 0.0000025,
+            "outputCostPerToken": 0.000005
+          }
+        ]
+      },
+      "grok-4.20-multi-agent-experimental-beta-0304": {
+        "displayName": "grok-4.20-multi-agent-experimental-beta-0304",
+        "modelType": "chatCompletion",
+        "pricingUnit": "per-token",
+        "sourceUrl": "https://docs.x.ai/developers/models",
+        "extractionMethod": "regex",
+        "inputCostPerToken": 0.00000125,
+        "outputCostPerToken": 0.0000025,
+        "caching": {
+          "read": 2e-7
+        },
+        "contextTiers": [
+          {
+            "threshold": ">128K",
+            "inputCostPerToken": 0.0000025,
+            "outputCostPerToken": 0.000005
+          }
+        ]
+      },
+      "grok-4.20-multi-agent-experimental-beta-latest": {
+        "displayName": "grok-4.20-multi-agent-experimental-beta-latest",
+        "modelType": "chatCompletion",
+        "pricingUnit": "per-token",
+        "sourceUrl": "https://docs.x.ai/developers/models",
+        "extractionMethod": "regex",
+        "inputCostPerToken": 0.00000125,
+        "outputCostPerToken": 0.0000025,
+        "caching": {
+          "read": 2e-7
+        },
+        "contextTiers": [
+          {
+            "threshold": ">128K",
+            "inputCostPerToken": 0.0000025,
+            "outputCostPerToken": 0.000005
+          }
+        ]
+      },
+      "grok-4.20-multi-agent-beta-0309": {
+        "displayName": "grok-4.20-multi-agent-beta-0309",
+        "modelType": "chatCompletion",
+        "pricingUnit": "per-token",
+        "sourceUrl": "https://docs.x.ai/developers/models",
+        "extractionMethod": "regex",
+        "inputCostPerToken": 0.00000125,
+        "outputCostPerToken": 0.0000025,
+        "caching": {
+          "read": 2e-7
+        },
+        "contextTiers": [
+          {
+            "threshold": ">128K",
+            "inputCostPerToken": 0.0000025,
+            "outputCostPerToken": 0.000005
+          }
+        ]
+      },
+      "grok-4.3": {
+        "displayName": "grok-4.3",
+        "modelType": "chatCompletion",
+        "pricingUnit": "per-token",
+        "sourceUrl": "https://docs.x.ai/developers/models",
+        "extractionMethod": "regex",
+        "inputCostPerToken": 0.00000125,
+        "outputCostPerToken": 0.0000025,
+        "caching": {
+          "read": 2e-7
+        },
+        "contextTiers": [
+          {
+            "threshold": ">128K",
+            "inputCostPerToken": 0.0000025,
+            "outputCostPerToken": 0.000005
+          }
+        ]
+      },
+      "grok-4.3-latest": {
+        "displayName": "grok-4.3-latest",
+        "modelType": "chatCompletion",
+        "pricingUnit": "per-token",
+        "sourceUrl": "https://docs.x.ai/developers/models",
+        "extractionMethod": "regex",
+        "inputCostPerToken": 0.00000125,
+        "outputCostPerToken": 0.0000025,
+        "caching": {
+          "read": 2e-7
+        },
+        "contextTiers": [
+          {
+            "threshold": ">128K",
+            "inputCostPerToken": 0.0000025,
+            "outputCostPerToken": 0.000005
+          }
+        ]
+      },
+      "grok-latest": {
+        "displayName": "grok-latest",
+        "modelType": "chatCompletion",
+        "pricingUnit": "per-token",
+        "sourceUrl": "https://docs.x.ai/developers/models",
+        "extractionMethod": "regex",
+        "inputCostPerToken": 0.00000125,
+        "outputCostPerToken": 0.0000025,
+        "caching": {
+          "read": 2e-7
+        },
+        "contextTiers": [
+          {
+            "threshold": ">128K",
+            "inputCostPerToken": 0.0000025,
+            "outputCostPerToken": 0.000005
+          }
+        ]
+      },
       "grok-4.20-0309-reasoning": {
         "displayName": "grok-4.20-0309-reasoning",
         "modelType": "chatCompletion",
@@ -1589,271 +1855,13 @@
           }
         ]
       },
-      "grok-4.20-multi-agent-0309": {
-        "displayName": "grok-4.20-multi-agent-0309",
-        "modelType": "chatCompletion",
-        "pricingUnit": "per-token",
+      "grok-imagine-image-quality": {
+        "displayName": "grok-imagine-image-quality",
+        "modelType": "imageGeneration",
+        "pricingUnit": "per-image",
         "sourceUrl": "https://docs.x.ai/developers/models",
         "extractionMethod": "regex",
-        "inputCostPerToken": 0.00000125,
-        "outputCostPerToken": 0.0000025,
-        "caching": {
-          "read": 2e-7
-        },
-        "contextTiers": [
-          {
-            "threshold": ">128K",
-            "inputCostPerToken": 0.0000025,
-            "outputCostPerToken": 0.000005
-          }
-        ]
-      },
-      "grok-4.20-multi-agent": {
-        "displayName": "grok-4.20-multi-agent",
-        "modelType": "chatCompletion",
-        "pricingUnit": "per-token",
-        "sourceUrl": "https://docs.x.ai/developers/models",
-        "extractionMethod": "regex",
-        "inputCostPerToken": 0.00000125,
-        "outputCostPerToken": 0.0000025,
-        "caching": {
-          "read": 2e-7
-        },
-        "contextTiers": [
-          {
-            "threshold": ">128K",
-            "inputCostPerToken": 0.0000025,
-            "outputCostPerToken": 0.000005
-          }
-        ]
-      },
-      "grok-4.20-multi-agent-latest": {
-        "displayName": "grok-4.20-multi-agent-latest",
-        "modelType": "chatCompletion",
-        "pricingUnit": "per-token",
-        "sourceUrl": "https://docs.x.ai/developers/models",
-        "extractionMethod": "regex",
-        "inputCostPerToken": 0.00000125,
-        "outputCostPerToken": 0.0000025,
-        "caching": {
-          "read": 2e-7
-        },
-        "contextTiers": [
-          {
-            "threshold": ">128K",
-            "inputCostPerToken": 0.0000025,
-            "outputCostPerToken": 0.000005
-          }
-        ]
-      },
-      "grok-4.20-multi-agent-beta-latest": {
-        "displayName": "grok-4.20-multi-agent-beta-latest",
-        "modelType": "chatCompletion",
-        "pricingUnit": "per-token",
-        "sourceUrl": "https://docs.x.ai/developers/models",
-        "extractionMethod": "regex",
-        "inputCostPerToken": 0.00000125,
-        "outputCostPerToken": 0.0000025,
-        "caching": {
-          "read": 2e-7
-        },
-        "contextTiers": [
-          {
-            "threshold": ">128K",
-            "inputCostPerToken": 0.0000025,
-            "outputCostPerToken": 0.000005
-          }
-        ]
-      },
-      "grok-4.20-multi-agent-experimental-beta-0304": {
-        "displayName": "grok-4.20-multi-agent-experimental-beta-0304",
-        "modelType": "chatCompletion",
-        "pricingUnit": "per-token",
-        "sourceUrl": "https://docs.x.ai/developers/models",
-        "extractionMethod": "regex",
-        "inputCostPerToken": 0.00000125,
-        "outputCostPerToken": 0.0000025,
-        "caching": {
-          "read": 2e-7
-        },
-        "contextTiers": [
-          {
-            "threshold": ">128K",
-            "inputCostPerToken": 0.0000025,
-            "outputCostPerToken": 0.000005
-          }
-        ]
-      },
-      "grok-4.20-multi-agent-experimental-beta-latest": {
-        "displayName": "grok-4.20-multi-agent-experimental-beta-latest",
-        "modelType": "chatCompletion",
-        "pricingUnit": "per-token",
-        "sourceUrl": "https://docs.x.ai/developers/models",
-        "extractionMethod": "regex",
-        "inputCostPerToken": 0.00000125,
-        "outputCostPerToken": 0.0000025,
-        "caching": {
-          "read": 2e-7
-        },
-        "contextTiers": [
-          {
-            "threshold": ">128K",
-            "inputCostPerToken": 0.0000025,
-            "outputCostPerToken": 0.000005
-          }
-        ]
-      },
-      "grok-4.20-multi-agent-beta-0309": {
-        "displayName": "grok-4.20-multi-agent-beta-0309",
-        "modelType": "chatCompletion",
-        "pricingUnit": "per-token",
-        "sourceUrl": "https://docs.x.ai/developers/models",
-        "extractionMethod": "regex",
-        "inputCostPerToken": 0.00000125,
-        "outputCostPerToken": 0.0000025,
-        "caching": {
-          "read": 2e-7
-        },
-        "contextTiers": [
-          {
-            "threshold": ">128K",
-            "inputCostPerToken": 0.0000025,
-            "outputCostPerToken": 0.000005
-          }
-        ]
-      },
-      "grok-build-0.1": {
-        "displayName": "grok-build-0.1",
-        "modelType": "chatCompletion",
-        "pricingUnit": "per-token",
-        "sourceUrl": "https://docs.x.ai/developers/models",
-        "extractionMethod": "regex",
-        "inputCostPerToken": 0.000001,
-        "outputCostPerToken": 0.000002,
-        "caching": {
-          "read": 2e-7
-        },
-        "contextTiers": [
-          {
-            "threshold": ">128K",
-            "inputCostPerToken": 0.000002,
-            "outputCostPerToken": 0.000004
-          }
-        ]
-      },
-      "grok-code-fast-1": {
-        "displayName": "grok-code-fast-1",
-        "modelType": "chatCompletion",
-        "pricingUnit": "per-token",
-        "sourceUrl": "https://docs.x.ai/developers/models",
-        "extractionMethod": "regex",
-        "inputCostPerToken": 0.000001,
-        "outputCostPerToken": 0.000002,
-        "caching": {
-          "read": 2e-7
-        },
-        "contextTiers": [
-          {
-            "threshold": ">128K",
-            "inputCostPerToken": 0.000002,
-            "outputCostPerToken": 0.000004
-          }
-        ]
-      },
-      "grok-code-fast": {
-        "displayName": "grok-code-fast",
-        "modelType": "chatCompletion",
-        "pricingUnit": "per-token",
-        "sourceUrl": "https://docs.x.ai/developers/models",
-        "extractionMethod": "regex",
-        "inputCostPerToken": 0.000001,
-        "outputCostPerToken": 0.000002,
-        "caching": {
-          "read": 2e-7
-        },
-        "contextTiers": [
-          {
-            "threshold": ">128K",
-            "inputCostPerToken": 0.000002,
-            "outputCostPerToken": 0.000004
-          }
-        ]
-      },
-      "grok-code-fast-1-0825": {
-        "displayName": "grok-code-fast-1-0825",
-        "modelType": "chatCompletion",
-        "pricingUnit": "per-token",
-        "sourceUrl": "https://docs.x.ai/developers/models",
-        "extractionMethod": "regex",
-        "inputCostPerToken": 0.000001,
-        "outputCostPerToken": 0.000002,
-        "caching": {
-          "read": 2e-7
-        },
-        "contextTiers": [
-          {
-            "threshold": ">128K",
-            "inputCostPerToken": 0.000002,
-            "outputCostPerToken": 0.000004
-          }
-        ]
-      },
-      "grok-4.3": {
-        "displayName": "grok-4.3",
-        "modelType": "chatCompletion",
-        "pricingUnit": "per-token",
-        "sourceUrl": "https://docs.x.ai/developers/models",
-        "extractionMethod": "regex",
-        "inputCostPerToken": 0.00000125,
-        "outputCostPerToken": 0.0000025,
-        "caching": {
-          "read": 2e-7
-        },
-        "contextTiers": [
-          {
-            "threshold": ">128K",
-            "inputCostPerToken": 0.0000025,
-            "outputCostPerToken": 0.000005
-          }
-        ]
-      },
-      "grok-4.3-latest": {
-        "displayName": "grok-4.3-latest",
-        "modelType": "chatCompletion",
-        "pricingUnit": "per-token",
-        "sourceUrl": "https://docs.x.ai/developers/models",
-        "extractionMethod": "regex",
-        "inputCostPerToken": 0.00000125,
-        "outputCostPerToken": 0.0000025,
-        "caching": {
-          "read": 2e-7
-        },
-        "contextTiers": [
-          {
-            "threshold": ">128K",
-            "inputCostPerToken": 0.0000025,
-            "outputCostPerToken": 0.000005
-          }
-        ]
-      },
-      "grok-latest": {
-        "displayName": "grok-latest",
-        "modelType": "chatCompletion",
-        "pricingUnit": "per-token",
-        "sourceUrl": "https://docs.x.ai/developers/models",
-        "extractionMethod": "regex",
-        "inputCostPerToken": 0.00000125,
-        "outputCostPerToken": 0.0000025,
-        "caching": {
-          "read": 2e-7
-        },
-        "contextTiers": [
-          {
-            "threshold": ">128K",
-            "inputCostPerToken": 0.0000025,
-            "outputCostPerToken": 0.000005
-          }
-        ]
+        "costPerImage": 0.05
       },
       "grok-imagine-image": {
         "displayName": "grok-imagine-image",
@@ -1862,14 +1870,6 @@
         "sourceUrl": "https://docs.x.ai/developers/models",
         "extractionMethod": "regex",
         "costPerImage": 0.02
-      },
-      "grok-imagine-image-quality": {
-        "displayName": "grok-imagine-image-quality",
-        "modelType": "imageGeneration",
-        "pricingUnit": "per-image",
-        "sourceUrl": "https://docs.x.ai/developers/models",
-        "extractionMethod": "regex",
-        "costPerImage": 0.05
       },
       "grok-imagine-video": {
         "displayName": "grok-imagine-video",
@@ -1960,8 +1960,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 1.4e-7,
-        "outputCostPerToken": 5.8e-7
+        "inputCostPerToken": 2e-7,
+        "outputCostPerToken": 8e-7
       },
       "tencent/hy3:free": {
         "displayName": "tencent/hy3:free",
@@ -2016,8 +2016,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 9.044e-7,
-        "outputCostPerToken": 0.0000028424
+        "inputCostPerToken": 9.618e-7,
+        "outputCostPerToken": 0.0000030228
       },
       "openrouter/fusion": {
         "displayName": "openrouter/fusion",
@@ -2064,8 +2064,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 5e-7,
-        "outputCostPerToken": 0.0000022
+        "inputCostPerToken": 6e-7,
+        "outputCostPerToken": 0.0000036
       },
       "nvidia/nemotron-3-ultra-550b-a55b:free": {
         "displayName": "nvidia/nemotron-3-ultra-550b-a55b:free",
@@ -2104,8 +2104,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 0.00000125,
-        "outputCostPerToken": 0.00000375
+        "inputCostPerToken": 0.000001475,
+        "outputCostPerToken": 0.000004425
       },
       "perceptron/perceptron-mk1": {
         "displayName": "perceptron/perceptron-mk1",
@@ -2256,8 +2256,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 2.89e-7,
-        "outputCostPerToken": 0.0000024
+        "inputCostPerToken": 4.5e-7,
+        "outputCostPerToken": 0.0000027
       },
       "inclusionai/ling-2.6-1t": {
         "displayName": "inclusionai/ling-2.6-1t",
@@ -2288,7 +2288,7 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 1.05e-7,
+        "inputCostPerToken": 1.4e-7,
         "outputCostPerToken": 2.8e-7
       },
       "inclusionai/ling-2.6-flash": {
@@ -2376,8 +2376,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 2.4e-7,
-        "outputCostPerToken": 9.6e-7
+        "inputCostPerToken": 3e-7,
+        "outputCostPerToken": 0.0000012
       },
       "mistralai/mistral-small-2603": {
         "displayName": "mistralai/mistral-small-2603",
@@ -2400,8 +2400,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 8e-8,
-        "outputCostPerToken": 4.5e-7
+        "inputCostPerToken": 2.1e-7,
+        "outputCostPerToken": 4.55e-7
       },
       "nvidia/nemotron-3-super-120b-a12b:free": {
         "displayName": "nvidia/nemotron-3-super-120b-a12b:free",
@@ -2496,8 +2496,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 3.85e-7,
-        "outputCostPerToken": 0.00000245
+        "inputCostPerToken": 4.5e-7,
+        "outputCostPerToken": 0.000003
       },
       "minimax/minimax-m2.5": {
         "displayName": "minimax/minimax-m2.5",
@@ -2512,8 +2512,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 6e-7,
-        "outputCostPerToken": 0.00000192
+        "inputCostPerToken": 9.5e-7,
+        "outputCostPerToken": 0.00000315
       },
       "qwen/qwen3-max-thinking": {
         "displayName": "qwen/qwen3-max-thinking",
@@ -2552,8 +2552,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 3.75e-7,
-        "outputCostPerToken": 0.000002025
+        "inputCostPerToken": 5.7e-7,
+        "outputCostPerToken": 0.00000285
       },
       "upstage/solar-pro-3": {
         "displayName": "upstage/solar-pro-3",
@@ -2832,8 +2832,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 4.3e-7,
-        "outputCostPerToken": 0.00000175
+        "inputCostPerToken": 5e-7,
+        "outputCostPerToken": 0.000002
       },
       "thedrummer/cydonia-24b-v4.1": {
         "displayName": "thedrummer/cydonia-24b-v4.1",
@@ -2864,8 +2864,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 2e-7,
-        "outputCostPerToken": 8.8e-7
+        "inputCostPerToken": 2.1e-7,
+        "outputCostPerToken": 0.0000019
       },
       "qwen/qwen3-max": {
         "displayName": "qwen/qwen3-max",
@@ -2904,7 +2904,7 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 9e-8,
+        "inputCostPerToken": 1e-7,
         "outputCostPerToken": 0.0000011
       },
       "qwen/qwen3-next-80b-a3b-instruct:free": {
@@ -3016,8 +3016,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 4.815e-8,
-        "outputCostPerToken": 1.9305e-7
+        "inputCostPerToken": 1e-7,
+        "outputCostPerToken": 3e-7
       },
       "z-ai/glm-4.5": {
         "displayName": "z-ai/glm-4.5",
@@ -3048,8 +3048,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 2.2e-7,
-        "outputCostPerToken": 0.0000018
+        "inputCostPerToken": 3e-7,
+        "outputCostPerToken": 0.000001
       },
       "qwen/qwen3-coder:free": {
         "displayName": "qwen/qwen3-coder:free",
@@ -3136,15 +3136,15 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 7.5e-8,
-        "outputCostPerToken": 2e-7
+        "inputCostPerToken": 1e-7,
+        "outputCostPerToken": 3e-7
       },
       "minimax/minimax-m1": {
         "displayName": "minimax/minimax-m1",
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 4e-7,
+        "inputCostPerToken": 5.5e-7,
         "outputCostPerToken": 0.0000022
       },
       "mistralai/mistral-medium-3": {
@@ -3162,14 +3162,6 @@
         "extractionMethod": "api",
         "inputCostPerToken": 7.5e-7,
         "outputCostPerToken": 0.0000012
-      },
-      "arcee-ai/coder-large": {
-        "displayName": "arcee-ai/coder-large",
-        "pricingUnit": "per-token",
-        "sourceUrl": "https://openrouter.ai/api/v1/models",
-        "extractionMethod": "api",
-        "inputCostPerToken": 5e-7,
-        "outputCostPerToken": 8e-7
       },
       "meta-llama/llama-guard-4-12b": {
         "displayName": "meta-llama/llama-guard-4-12b",
@@ -3200,7 +3192,7 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 1e-7,
+        "inputCostPerToken": 1.2e-7,
         "outputCostPerToken": 2.4e-7
       },
       "qwen/qwen3-32b": {
@@ -3312,8 +3304,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 2.5e-7,
-        "outputCostPerToken": 7.5e-7
+        "inputCostPerToken": 8e-7,
+        "outputCostPerToken": 0.000001
       },
       "qwen/qwen-plus": {
         "displayName": "qwen/qwen-plus",
@@ -3376,8 +3368,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 1e-7,
-        "outputCostPerToken": 3.2e-7
+        "inputCostPerToken": 1.3e-7,
+        "outputCostPerToken": 4e-7
       },
       "meta-llama/llama-3.3-70b-instruct:free": {
         "displayName": "meta-llama/llama-3.3-70b-instruct:free",
@@ -3584,8 +3576,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 2e-8,
-        "outputCostPerToken": 3e-8
+        "inputCostPerToken": 5e-8,
+        "outputCostPerToken": 8e-8
       },
       "mistralai/mistral-nemo": {
         "displayName": "mistralai/mistral-nemo",
@@ -3593,7 +3585,7 @@
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
         "inputCostPerToken": 2e-8,
-        "outputCostPerToken": 3e-8
+        "outputCostPerToken": 4e-8
       },
       "mistralai/mixtral-8x22b-instruct": {
         "displayName": "mistralai/mixtral-8x22b-instruct",
