@@ -1,4 +1,20 @@
 {
+  "thinkingmachines/inkling": {
+    "displayName": "thinkingmachines/inkling",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0.000001,
+    "outputCostPerToken": 0.00000405
+  },
+  "openrouter/auto-beta": {
+    "displayName": "openrouter/auto-beta",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": -1,
+    "outputCostPerToken": -1
+  },
   "moonshotai/kimi-k3": {
     "displayName": "moonshotai/kimi-k3",
     "pricingUnit": "per-token",
@@ -116,8 +132,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0.000001218,
-    "outputCostPerToken": 0.000003828
+    "inputCostPerToken": 4.158e-7,
+    "outputCostPerToken": 0.0000013068
   },
   "openrouter/fusion": {
     "displayName": "openrouter/fusion",
@@ -132,8 +148,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 7.5e-7,
-    "outputCostPerToken": 0.0000035
+    "inputCostPerToken": 0.000001,
+    "outputCostPerToken": 0.0000044
   },
   "~anthropic/claude-fable-latest": {
     "displayName": "~anthropic/claude-fable-latest",
@@ -556,8 +572,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.95e-7,
-    "outputCostPerToken": 0.00000156
+    "inputCostPerToken": 2.6e-7,
+    "outputCostPerToken": 0.0000026
   },
   "qwen/qwen3.5-122b-a10b": {
     "displayName": "qwen/qwen3.5-122b-a10b",
@@ -684,7 +700,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 6e-8,
+    "inputCostPerToken": 6.05e-8,
     "outputCostPerToken": 4e-7
   },
   "bytedance-seed/seed-1.6-flash": {
@@ -902,14 +918,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 1.17e-7,
     "outputCostPerToken": 4.55e-7
-  },
-  "nvidia/llama-3.3-nemotron-super-49b-v1.5": {
-    "displayName": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 4e-7,
-    "outputCostPerToken": 4e-7
   },
   "qwen/qwen3-vl-30b-a3b-thinking": {
     "displayName": "qwen/qwen3-vl-30b-a3b-thinking",
@@ -1276,8 +1284,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.2e-7,
-    "outputCostPerToken": 5e-7
+    "inputCostPerToken": 1.3e-7,
+    "outputCostPerToken": 5.2e-7
   },
   "qwen/qwen3-8b": {
     "displayName": "qwen/qwen3-8b",
@@ -1292,7 +1300,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1e-7,
+    "inputCostPerToken": 1.2e-7,
     "outputCostPerToken": 2.4e-7
   },
   "qwen/qwen3-32b": {
@@ -1567,14 +1575,6 @@
     "inputCostPerToken": 2.5e-7,
     "outputCostPerToken": 5e-7
   },
-  "meta-llama/llama-3.2-11b-vision-instruct": {
-    "displayName": "meta-llama/llama-3.2-11b-vision-instruct",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 3.45e-7,
-    "outputCostPerToken": 3.45e-7
-  },
   "meta-llama/llama-3.2-1b-instruct": {
     "displayName": "meta-llama/llama-3.2-1b-instruct",
     "pricingUnit": "per-token",
@@ -1724,8 +1724,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 7.5e-7,
-    "outputCostPerToken": 0.000001
+    "inputCostPerToken": 5e-7,
+    "outputCostPerToken": 7.5e-7
   },
   "undi95/remm-slerp-l2-13b": {
     "displayName": "undi95/remm-slerp-l2-13b",
