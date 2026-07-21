@@ -1,4 +1,12 @@
 {
+  "meituan/longcat-2.0": {
+    "displayName": "meituan/longcat-2.0",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 3e-7,
+    "outputCostPerToken": 0.0000012
+  },
   "thinkingmachines/inkling": {
     "displayName": "thinkingmachines/inkling",
     "pricingUnit": "per-token",
@@ -76,16 +84,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2e-7,
-    "outputCostPerToken": 8e-7
-  },
-  "tencent/hy3:free": {
-    "displayName": "tencent/hy3:free",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 0,
-    "outputCostPerToken": 0
+    "inputCostPerToken": 1.4e-7,
+    "outputCostPerToken": 5.8e-7
   },
   "poolside/laguna-xs-2.1": {
     "displayName": "poolside/laguna-xs-2.1",
@@ -132,8 +132,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.716e-7,
-    "outputCostPerToken": 8.536e-7
+    "inputCostPerToken": 9.73e-7,
+    "outputCostPerToken": 0.000003058
   },
   "openrouter/fusion": {
     "displayName": "openrouter/fusion",
@@ -148,8 +148,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 8.5e-7,
-    "outputCostPerToken": 0.0000038
+    "inputCostPerToken": 8.2e-7,
+    "outputCostPerToken": 0.00000375
   },
   "~anthropic/claude-fable-latest": {
     "displayName": "~anthropic/claude-fable-latest",
@@ -516,8 +516,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 8.5e-8,
-    "outputCostPerToken": 4e-7
+    "inputCostPerToken": 8e-8,
+    "outputCostPerToken": 4.5e-7
   },
   "nvidia/nemotron-3-super-120b-a12b:free": {
     "displayName": "nvidia/nemotron-3-super-120b-a12b:free",
@@ -1012,8 +1012,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1e-7,
-    "outputCostPerToken": 0.0000011
+    "inputCostPerToken": 9.75e-8,
+    "outputCostPerToken": 7.8e-7
   },
   "qwen/qwen-plus-2025-07-28": {
     "displayName": "qwen/qwen-plus-2025-07-28",
