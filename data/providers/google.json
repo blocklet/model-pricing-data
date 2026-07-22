@@ -1,4 +1,20 @@
 {
+  "gemini-3.6-flash": {
+    "displayName": "Gemini 3.6 Flash",
+    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-token",
+    "modelType": "chatCompletion",
+    "inputCostPerToken": 0.0000015,
+    "outputCostPerToken": 0.0000075,
+    "caching": {
+      "read": 1.5e-7
+    },
+    "batchPricing": {
+      "inputCostPerToken": 7.5e-7,
+      "outputCostPerToken": 0.00000375
+    }
+  },
   "gemini-3.5-flash": {
     "displayName": "Gemini 3.5 Flash",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
@@ -23,6 +39,22 @@
     "modelType": "chatCompletion",
     "inputCostPerToken": 0.0000035,
     "outputCostPerToken": 0.000021
+  },
+  "gemini-3.5-flash-lite": {
+    "displayName": "Gemini 3.5 Flash-Lite",
+    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-token",
+    "modelType": "chatCompletion",
+    "inputCostPerToken": 3e-7,
+    "outputCostPerToken": 0.0000025,
+    "caching": {
+      "read": 3e-8
+    },
+    "batchPricing": {
+      "inputCostPerToken": 1.5e-7,
+      "outputCostPerToken": 0.00000125
+    }
   },
   "gemini-3.1-flash-lite": {
     "displayName": "Gemini 3.1 Flash-Lite",

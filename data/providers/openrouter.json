@@ -1,4 +1,20 @@
 {
+  "poolside/laguna-s-2.1": {
+    "displayName": "poolside/laguna-s-2.1",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 1e-7,
+    "outputCostPerToken": 2e-7
+  },
+  "poolside/laguna-s-2.1:free": {
+    "displayName": "poolside/laguna-s-2.1:free",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0,
+    "outputCostPerToken": 0
+  },
   "meituan/longcat-2.0": {
     "displayName": "meituan/longcat-2.0",
     "pricingUnit": "per-token",
@@ -54,6 +70,14 @@
     "extractionMethod": "api",
     "inputCostPerToken": 7.4e-7,
     "outputCostPerToken": 0.00000296
+  },
+  "x-ai/grok-4.5": {
+    "displayName": "x-ai/grok-4.5",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0.000002,
+    "outputCostPerToken": 0.000006
   },
   "~x-ai/grok-latest": {
     "displayName": "~x-ai/grok-latest",
@@ -132,8 +156,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 9.73e-7,
-    "outputCostPerToken": 0.000003058
+    "inputCostPerToken": 8.218e-7,
+    "outputCostPerToken": 0.0000025828
   },
   "openrouter/fusion": {
     "displayName": "openrouter/fusion",
@@ -223,6 +247,14 @@
     "inputCostPerToken": 0.000001475,
     "outputCostPerToken": 0.000004425
   },
+  "x-ai/grok-build-0.1": {
+    "displayName": "x-ai/grok-build-0.1",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0.000001,
+    "outputCostPerToken": 0.000002
+  },
   "perceptron/perceptron-mk1": {
     "displayName": "perceptron/perceptron-mk1",
     "pricingUnit": "per-token",
@@ -238,6 +270,14 @@
     "extractionMethod": "api",
     "inputCostPerToken": 7.5e-8,
     "outputCostPerToken": 6.25e-7
+  },
+  "x-ai/grok-4.3": {
+    "displayName": "x-ai/grok-4.3",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0.00000125,
+    "outputCostPerToken": 0.0000025
   },
   "ibm-granite/granite-4.1-8b": {
     "displayName": "ibm-granite/granite-4.1-8b",
@@ -317,7 +357,7 @@
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
     "inputCostPerToken": 0.0000015,
-    "outputCostPerToken": 0.000009
+    "outputCostPerToken": 0.0000075
   },
   "~anthropic/claude-sonnet-latest": {
     "displayName": "~anthropic/claude-sonnet-latest",
@@ -470,6 +510,22 @@
     "extractionMethod": "api",
     "inputCostPerToken": 2.5e-7,
     "outputCostPerToken": 8e-7
+  },
+  "x-ai/grok-4.20-multi-agent": {
+    "displayName": "x-ai/grok-4.20-multi-agent",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0.00000125,
+    "outputCostPerToken": 0.0000025
+  },
+  "x-ai/grok-4.20": {
+    "displayName": "x-ai/grok-4.20",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0.00000125,
+    "outputCostPerToken": 0.0000025
   },
   "kwaipilot/kat-coder-pro-v2": {
     "displayName": "kwaipilot/kat-coder-pro-v2",
@@ -1012,8 +1068,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 9.75e-8,
-    "outputCostPerToken": 7.8e-7
+    "inputCostPerToken": 1e-7,
+    "outputCostPerToken": 0.0000011
   },
   "qwen/qwen-plus-2025-07-28": {
     "displayName": "qwen/qwen-plus-2025-07-28",
