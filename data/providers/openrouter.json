@@ -156,8 +156,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 8.218e-7,
-    "outputCostPerToken": 0.0000025828
+    "inputCostPerToken": 8.26e-7,
+    "outputCostPerToken": 0.000002596
   },
   "openrouter/fusion": {
     "displayName": "openrouter/fusion",
@@ -204,8 +204,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 6e-7,
-    "outputCostPerToken": 0.0000036
+    "inputCostPerToken": 5e-7,
+    "outputCostPerToken": 0.0000022
   },
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
     "displayName": "nvidia/nemotron-3-ultra-550b-a55b:free",
@@ -412,8 +412,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4.5e-7,
-    "outputCostPerToken": 0.0000027
+    "inputCostPerToken": 6e-7,
+    "outputCostPerToken": 0.0000036
   },
   "inclusionai/ling-2.6-1t": {
     "displayName": "inclusionai/ling-2.6-1t",
@@ -756,7 +756,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 6.05e-8,
+    "inputCostPerToken": 6e-8,
     "outputCostPerToken": 4e-7
   },
   "bytedance-seed/seed-1.6-flash": {
@@ -988,8 +988,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.3e-7,
-    "outputCostPerToken": 5.2e-7
+    "inputCostPerToken": 1.5e-7,
+    "outputCostPerToken": 6e-7
   },
   "z-ai/glm-4.6": {
     "displayName": "z-ai/glm-4.6",
@@ -1068,8 +1068,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1e-7,
-    "outputCostPerToken": 0.0000011
+    "inputCostPerToken": 1.5e-7,
+    "outputCostPerToken": 0.0000012
   },
   "qwen/qwen-plus-2025-07-28": {
     "displayName": "qwen/qwen-plus-2025-07-28",
@@ -1332,8 +1332,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.2e-7,
-    "outputCostPerToken": 2.4e-7
+    "inputCostPerToken": 2.275e-7,
+    "outputCostPerToken": 9.1e-7
   },
   "qwen/qwen3-32b": {
     "displayName": "qwen/qwen3-32b",
@@ -1612,8 +1612,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 5.09e-8,
-    "outputCostPerToken": 3.35e-7
+    "inputCostPerToken": 5e-8,
+    "outputCostPerToken": 3.3e-7
   },
   "qwen/qwen-2.5-72b-instruct": {
     "displayName": "qwen/qwen-2.5-72b-instruct",
