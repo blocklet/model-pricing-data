@@ -1,4 +1,12 @@
 {
+  "inclusionai/ling-3.0-flash:free": {
+    "displayName": "inclusionai/ling-3.0-flash:free",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0,
+    "outputCostPerToken": 0
+  },
   "poolside/laguna-s-2.1": {
     "displayName": "poolside/laguna-s-2.1",
     "pricingUnit": "per-token",
@@ -156,8 +164,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 8.26e-7,
-    "outputCostPerToken": 0.000002596
+    "inputCostPerToken": 7.798e-7,
+    "outputCostPerToken": 0.0000024508
   },
   "openrouter/fusion": {
     "displayName": "openrouter/fusion",
@@ -172,8 +180,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 8.2e-7,
-    "outputCostPerToken": 0.00000375
+    "inputCostPerToken": 7.1e-7,
+    "outputCostPerToken": 0.0000035
   },
   "~anthropic/claude-fable-latest": {
     "displayName": "~anthropic/claude-fable-latest",
@@ -412,8 +420,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 6e-7,
-    "outputCostPerToken": 0.0000036
+    "inputCostPerToken": 2.88e-7,
+    "outputCostPerToken": 0.0000024
   },
   "inclusionai/ling-2.6-1t": {
     "displayName": "inclusionai/ling-2.6-1t",
@@ -548,8 +556,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.5e-7,
-    "outputCostPerToken": 0.000001
+    "inputCostPerToken": 3e-7,
+    "outputCostPerToken": 0.0000012
   },
   "mistralai/mistral-small-2603": {
     "displayName": "mistralai/mistral-small-2603",
@@ -628,8 +636,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.6e-7,
-    "outputCostPerToken": 0.0000026
+    "inputCostPerToken": 1.95e-7,
+    "outputCostPerToken": 0.00000156
   },
   "qwen/qwen3.5-122b-a10b": {
     "displayName": "qwen/qwen3.5-122b-a10b",
@@ -1204,8 +1212,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 3e-7,
-    "outputCostPerToken": 0.000001
+    "inputCostPerToken": 3.8e-7,
+    "outputCostPerToken": 0.00000155
   },
   "bytedance/ui-tars-1.5-7b": {
     "displayName": "bytedance/ui-tars-1.5-7b",
