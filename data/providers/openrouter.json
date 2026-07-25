@@ -116,8 +116,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.4e-7,
-    "outputCostPerToken": 5.8e-7
+    "inputCostPerToken": 1.32e-7,
+    "outputCostPerToken": 5.28e-7
   },
   "poolside/laguna-xs-2.1": {
     "displayName": "poolside/laguna-xs-2.1",
@@ -164,8 +164,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 7.798e-7,
-    "outputCostPerToken": 0.0000024508
+    "inputCostPerToken": 7.952e-7,
+    "outputCostPerToken": 0.0000024992
   },
   "openrouter/fusion": {
     "displayName": "openrouter/fusion",
@@ -180,7 +180,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 7.1e-7,
+    "inputCostPerToken": 7.8e-7,
     "outputCostPerToken": 0.0000035
   },
   "~anthropic/claude-fable-latest": {
@@ -212,8 +212,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 5e-7,
-    "outputCostPerToken": 0.0000022
+    "inputCostPerToken": 6e-7,
+    "outputCostPerToken": 0.0000036
   },
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
     "displayName": "nvidia/nemotron-3-ultra-550b-a55b:free",
@@ -420,7 +420,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.88e-7,
+    "inputCostPerToken": 2.89e-7,
     "outputCostPerToken": 0.0000024
   },
   "inclusionai/ling-2.6-1t": {
@@ -556,8 +556,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 3e-7,
-    "outputCostPerToken": 0.0000012
+    "inputCostPerToken": 2.5e-7,
+    "outputCostPerToken": 0.000001
   },
   "mistralai/mistral-small-2603": {
     "displayName": "mistralai/mistral-small-2603",
@@ -580,8 +580,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 8e-8,
-    "outputCostPerToken": 4.5e-7
+    "inputCostPerToken": 8.5e-8,
+    "outputCostPerToken": 4e-7
   },
   "nvidia/nemotron-3-super-120b-a12b:free": {
     "displayName": "nvidia/nemotron-3-super-120b-a12b:free",
@@ -948,8 +948,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 3e-7,
-    "outputCostPerToken": 0.0000012
+    "inputCostPerToken": 2.55e-7,
+    "outputCostPerToken": 0.00000102
   },
   "qwen/qwen3-vl-32b-instruct": {
     "displayName": "qwen/qwen3-vl-32b-instruct",
@@ -1076,8 +1076,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.5e-7,
-    "outputCostPerToken": 0.0000012
+    "inputCostPerToken": 1e-7,
+    "outputCostPerToken": 0.0000011
   },
   "qwen/qwen-plus-2025-07-28": {
     "displayName": "qwen/qwen-plus-2025-07-28",
@@ -1212,8 +1212,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 3.8e-7,
-    "outputCostPerToken": 0.00000155
+    "inputCostPerToken": 3e-7,
+    "outputCostPerToken": 0.000001
   },
   "bytedance/ui-tars-1.5-7b": {
     "displayName": "bytedance/ui-tars-1.5-7b",
