@@ -164,8 +164,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 7.196e-7,
-    "outputCostPerToken": 0.0000022616
+    "inputCostPerToken": 6.692e-7,
+    "outputCostPerToken": 0.0000021032
   },
   "openrouter/fusion": {
     "displayName": "openrouter/fusion",
@@ -180,7 +180,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 7.8e-7,
+    "inputCostPerToken": 7.3e-7,
     "outputCostPerToken": 0.0000035
   },
   "~anthropic/claude-fable-latest": {
@@ -1324,8 +1324,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.3e-7,
-    "outputCostPerToken": 5.2e-7
+    "inputCostPerToken": 1.2e-7,
+    "outputCostPerToken": 5e-7
   },
   "qwen/qwen3-8b": {
     "displayName": "qwen/qwen3-8b",
@@ -1583,22 +1583,6 @@
     "inputCostPerToken": 4e-8,
     "outputCostPerToken": 1e-7
   },
-  "inflection/inflection-3-pi": {
-    "displayName": "inflection/inflection-3-pi",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 0.0000025,
-    "outputCostPerToken": 0.00001
-  },
-  "inflection/inflection-3-productivity": {
-    "displayName": "inflection/inflection-3-productivity",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 0.0000025,
-    "outputCostPerToken": 0.00001
-  },
   "thedrummer/rocinante-12b": {
     "displayName": "thedrummer/rocinante-12b",
     "pricingUnit": "per-token",
@@ -1620,8 +1604,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 5.09e-8,
-    "outputCostPerToken": 3.35e-7
+    "inputCostPerToken": 5e-8,
+    "outputCostPerToken": 3.3e-7
   },
   "qwen/qwen-2.5-72b-instruct": {
     "displayName": "qwen/qwen-2.5-72b-instruct",

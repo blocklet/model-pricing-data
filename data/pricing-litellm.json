@@ -912,8 +912,8 @@
   "openrouter/z-ai/glm-5.2": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 7.196e-7,
-    "output_cost_per_token": 0.0000022616,
+    "input_cost_per_token": 6.692e-7,
+    "output_cost_per_token": 0.0000021032,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/openrouter/fusion": {
@@ -926,7 +926,7 @@
   "openrouter/moonshotai/kimi-k2.7-code": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 7.8e-7,
+    "input_cost_per_token": 7.3e-7,
     "output_cost_per_token": 0.0000035,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
@@ -1927,8 +1927,8 @@
   "openrouter/qwen/qwen3-30b-a3b": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 1.3e-7,
-    "output_cost_per_token": 5.2e-7,
+    "input_cost_per_token": 1.2e-7,
+    "output_cost_per_token": 5e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/qwen/qwen3-8b": {
@@ -2155,20 +2155,6 @@
     "output_cost_per_token": 1e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
-  "openrouter/inflection/inflection-3-pi": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 0.0000025,
-    "output_cost_per_token": 0.00001,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
-  "openrouter/inflection/inflection-3-productivity": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 0.0000025,
-    "output_cost_per_token": 0.00001,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
   "openrouter/thedrummer/rocinante-12b": {
     "litellm_provider": "openrouter",
     "source": "official",
@@ -2186,8 +2172,8 @@
   "openrouter/meta-llama/llama-3.2-3b-instruct": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 5.09e-8,
-    "output_cost_per_token": 3.35e-7,
+    "input_cost_per_token": 5e-8,
+    "output_cost_per_token": 3.3e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/qwen/qwen-2.5-72b-instruct": {
