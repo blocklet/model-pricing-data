@@ -1,4 +1,12 @@
 {
+  "qwen/qwen3.7-flash": {
+    "displayName": "qwen/qwen3.7-flash",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 3e-8,
+    "outputCostPerToken": 1.3e-7
+  },
   "inclusionai/ling-3.0-flash:free": {
     "displayName": "inclusionai/ling-3.0-flash:free",
     "pricingUnit": "per-token",
@@ -164,8 +172,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 6.692e-7,
-    "outputCostPerToken": 0.0000021032
+    "inputCostPerToken": 7.308e-7,
+    "outputCostPerToken": 0.0000022968
   },
   "openrouter/fusion": {
     "displayName": "openrouter/fusion",
