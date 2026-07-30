@@ -172,8 +172,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 7.602e-7,
-    "outputCostPerToken": 0.0000023892
+    "inputCostPerToken": 6.769e-7,
+    "outputCostPerToken": 0.0000021274
   },
   "openrouter/fusion": {
     "displayName": "openrouter/fusion",
@@ -268,8 +268,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0.00000125,
-    "outputCostPerToken": 0.00000375
+    "inputCostPerToken": 0.000001475,
+    "outputCostPerToken": 0.000004425
   },
   "x-ai/grok-build-0.1": {
     "displayName": "x-ai/grok-build-0.1",
@@ -412,8 +412,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0.00000104,
-    "outputCostPerToken": 0.00000624
+    "inputCostPerToken": 0.000001027,
+    "outputCostPerToken": 0.000006162
   },
   "qwen/qwen3.6-27b": {
     "displayName": "qwen/qwen3.6-27b",
@@ -628,7 +628,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.5e-7,
+    "inputCostPerToken": 1.4e-7,
     "outputCostPerToken": 0.000001
   },
   "qwen/qwen3.5-27b": {
@@ -708,8 +708,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.8e-7,
-    "outputCostPerToken": 9e-7
+    "inputCostPerToken": 1.2e-7,
+    "outputCostPerToken": 8e-7
   },
   "openrouter/free": {
     "displayName": "openrouter/free",
@@ -1580,8 +1580,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4e-8,
-    "outputCostPerToken": 1e-7
+    "inputCostPerToken": 1e-7,
+    "outputCostPerToken": 2e-7
   },
   "thedrummer/rocinante-12b": {
     "displayName": "thedrummer/rocinante-12b",
