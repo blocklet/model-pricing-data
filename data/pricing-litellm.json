@@ -11,18 +11,18 @@
   "gpt-5.6-terra": {
     "litellm_provider": "openai",
     "source": "official",
-    "input_cost_per_token": 0.0000025,
-    "output_cost_per_token": 0.000003125,
-    "cache_read_input_token_cost": 2.5e-7,
+    "input_cost_per_token": 0.000002,
+    "output_cost_per_token": 0.0000025,
+    "cache_read_input_token_cost": 2e-7,
     "model_type": "chatCompletion",
     "source_url": "https://developers.openai.com/api/docs/pricing"
   },
   "gpt-5.6-luna": {
     "litellm_provider": "openai",
     "source": "official",
-    "input_cost_per_token": 0.000001,
-    "output_cost_per_token": 0.00000125,
-    "cache_read_input_token_cost": 1e-7,
+    "input_cost_per_token": 2e-7,
+    "output_cost_per_token": 2.5e-7,
+    "cache_read_input_token_cost": 2e-8,
     "model_type": "chatCompletion",
     "source_url": "https://developers.openai.com/api/docs/pricing"
   },
@@ -733,6 +733,25 @@
     "model_type": "embedding",
     "source_url": "https://ai.google.dev/gemini-api/docs/pricing"
   },
+  "gemini-robotics-er-2-preview": {
+    "litellm_provider": "google",
+    "source": "official",
+    "input_cost_per_token": 0.000002,
+    "output_cost_per_token": 0.00001,
+    "cache_read_input_token_cost": 2e-7,
+    "batch_input_cost_per_token": 0.000001,
+    "batch_output_cost_per_token": 0.000005,
+    "model_type": "chatCompletion",
+    "source_url": "https://ai.google.dev/gemini-api/docs/pricing"
+  },
+  "gemini-robotics-er-2-streaming-preview": {
+    "litellm_provider": "google",
+    "source": "official",
+    "input_cost_per_token": 0.000002,
+    "output_cost_per_token": 0.00001,
+    "model_type": "chatCompletion",
+    "source_url": "https://ai.google.dev/gemini-api/docs/pricing"
+  },
   "gemini-robotics-er-1.6-preview": {
     "litellm_provider": "google",
     "source": "official",
@@ -786,8 +805,8 @@
   "openrouter/poolside/laguna-s-2.1": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 1e-7,
-    "output_cost_per_token": 2e-7,
+    "input_cost_per_token": 9e-8,
+    "output_cost_per_token": 1.8e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/poolside/laguna-s-2.1:free": {
@@ -919,8 +938,8 @@
   "openrouter/z-ai/glm-5.2": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 6.769e-7,
-    "output_cost_per_token": 0.0000021274,
+    "input_cost_per_token": 9.66e-7,
+    "output_cost_per_token": 0.000003036,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/openrouter/fusion": {
@@ -961,8 +980,8 @@
   "openrouter/nvidia/nemotron-3-ultra-550b-a55b": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 5e-7,
-    "output_cost_per_token": 0.0000022,
+    "input_cost_per_token": 6e-7,
+    "output_cost_per_token": 0.0000036,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/nvidia/nemotron-3-ultra-550b-a55b:free": {
@@ -1080,8 +1099,8 @@
   "openrouter/~moonshotai/kimi-latest": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 0.000003,
-    "output_cost_per_token": 0.000015,
+    "input_cost_per_token": 0.0000029,
+    "output_cost_per_token": 0.000014,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/~google/gemini-flash-latest": {
@@ -1192,8 +1211,8 @@
   "openrouter/moonshotai/kimi-k2.6": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 6.46e-7,
-    "output_cost_per_token": 0.00000272,
+    "input_cost_per_token": 9.5e-7,
+    "output_cost_per_token": 0.000004,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/z-ai/glm-5.1": {
@@ -1822,8 +1841,8 @@
   "openrouter/qwen/qwen3-235b-a22b-thinking-2507": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 3e-7,
-    "output_cost_per_token": 0.000003,
+    "input_cost_per_token": 2.3e-7,
+    "output_cost_per_token": 0.0000023,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/qwen/qwen3-coder": {
