@@ -1,43 +1,43 @@
 {
   "_meta": {
-    "generatedAt": "2026-08-04T03:00:07.026Z",
-    "version": "2.0.139",
+    "generatedAt": "2026-08-05T02:59:48.789Z",
+    "version": "2.0.140",
     "sources": {
       "openai": {
         "url": "https://platform.openai.com/docs/pricing",
         "modelCount": 36,
         "method": "regex+llm",
-        "fetchedAt": "2026-08-04T03:00:07.020Z"
+        "fetchedAt": "2026-08-05T02:59:48.780Z"
       },
       "anthropic": {
         "url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
         "modelCount": 9,
         "method": "regex+llm",
-        "fetchedAt": "2026-08-04T03:00:07.020Z"
+        "fetchedAt": "2026-08-05T02:59:48.780Z"
       },
       "google": {
         "url": "https://ai.google.dev/gemini-api/docs/pricing",
         "modelCount": 32,
         "method": "regex",
-        "fetchedAt": "2026-08-04T03:00:07.020Z"
+        "fetchedAt": "2026-08-05T02:59:48.780Z"
       },
       "xai": {
         "url": "https://docs.x.ai/developers/models",
         "modelCount": 0,
         "method": "regex",
-        "fetchedAt": "2026-08-04T03:00:07.020Z"
+        "fetchedAt": "2026-08-05T02:59:48.780Z"
       },
       "deepseek": {
         "url": "https://api-docs.deepseek.com/quick_start/pricing",
         "modelCount": 2,
         "method": "regex",
-        "fetchedAt": "2026-08-04T03:00:07.020Z"
+        "fetchedAt": "2026-08-05T02:59:48.780Z"
       },
       "openrouter": {
         "url": "https://openrouter.ai/models",
         "modelCount": 219,
         "method": "api",
-        "fetchedAt": "2026-08-04T03:00:07.020Z"
+        "fetchedAt": "2026-08-05T02:59:48.780Z"
       }
     },
     "totalModels": 298,
@@ -1630,8 +1630,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 2.5e-7,
-        "outputCostPerToken": 0.000001
+        "inputCostPerToken": 2.7e-7,
+        "outputCostPerToken": 0.00000108
       },
       "mistralai/mistral-small-2603": {
         "displayName": "mistralai/mistral-small-2603",
@@ -2350,8 +2350,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 7.5e-8,
-        "outputCostPerToken": 2e-7
+        "inputCostPerToken": 9.375e-8,
+        "outputCostPerToken": 2.5e-7
       },
       "minimax/minimax-m1": {
         "displayName": "minimax/minimax-m1",
@@ -2518,8 +2518,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 8e-7,
-        "outputCostPerToken": 0.000001
+        "inputCostPerToken": 2.5e-7,
+        "outputCostPerToken": 7.5e-7
       },
       "qwen/qwen-plus": {
         "displayName": "qwen/qwen-plus",
