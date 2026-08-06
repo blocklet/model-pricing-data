@@ -715,6 +715,13 @@
     "model_type": "chatCompletion",
     "source_url": "https://api-docs.deepseek.com/quick_start/pricing"
   },
+  "openrouter/meta/muse-spark-1.2": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 0.00000125,
+    "output_cost_per_token": 0.00000425,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
   "openrouter/qwen/qwen3.8-max": {
     "litellm_provider": "openrouter",
     "source": "official",
@@ -741,6 +748,13 @@
     "source": "official",
     "input_cost_per_token": 3e-8,
     "output_cost_per_token": 1.3e-7,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
+  "openrouter/inclusionai/ling-3.0-flash": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 7.5e-8,
+    "output_cost_per_token": 2.2e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/inclusionai/ling-3.0-flash:free": {
@@ -900,7 +914,7 @@
   "openrouter/moonshotai/kimi-k2.7-code": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 7.3e-7,
+    "input_cost_per_token": 7e-7,
     "output_cost_per_token": 0.0000035,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
@@ -1159,8 +1173,8 @@
   "openrouter/z-ai/glm-5.1": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 9.66e-7,
-    "output_cost_per_token": 0.000003036,
+    "input_cost_per_token": 9.52e-7,
+    "output_cost_per_token": 0.000002992,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/qwen/qwen3.6-plus": {
@@ -1327,7 +1341,7 @@
   "openrouter/minimax/minimax-m2.5": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 1.5e-7,
+    "input_cost_per_token": 2.2e-7,
     "output_cost_per_token": 9e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
@@ -1796,8 +1810,8 @@
   "openrouter/qwen/qwen3-235b-a22b-2507": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 1.495e-7,
-    "output_cost_per_token": 5.98e-7,
+    "input_cost_per_token": 9e-8,
+    "output_cost_per_token": 5.5e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/moonshotai/kimi-k2": {
