@@ -746,7 +746,7 @@
   "openrouter/thinkingmachines/inkling-small": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 5e-7,
+    "input_cost_per_token": 4.5e-7,
     "output_cost_per_token": 0.0000012,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
@@ -788,7 +788,7 @@
   "openrouter/thinkingmachines/inkling": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 0.000001,
+    "input_cost_per_token": 9.5e-7,
     "output_cost_per_token": 0.00000405,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
@@ -907,8 +907,8 @@
   "openrouter/z-ai/glm-5.2": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 5.446e-7,
-    "output_cost_per_token": 0.0000017116,
+    "input_cost_per_token": 4.186e-7,
+    "output_cost_per_token": 0.0000013156,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/z-ai/glm-5.2:batch": {
@@ -1089,7 +1089,7 @@
   "openrouter/~moonshotai/kimi-latest": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 0.0000029,
+    "input_cost_per_token": 0.0000025,
     "output_cost_per_token": 0.000014,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
@@ -1201,8 +1201,8 @@
   "openrouter/moonshotai/kimi-k2.6": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 5.89e-7,
-    "output_cost_per_token": 0.00000248,
+    "input_cost_per_token": 5.795e-7,
+    "output_cost_per_token": 0.00000244,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/z-ai/glm-5.1": {
@@ -1285,8 +1285,8 @@
   "openrouter/nvidia/nemotron-3-super-120b-a12b": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 3e-7,
-    "output_cost_per_token": 9e-7,
+    "input_cost_per_token": 8.5e-8,
+    "output_cost_per_token": 4e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/nvidia/nemotron-3-super-120b-a12b:free": {
