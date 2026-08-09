@@ -28,8 +28,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 9e-8,
-    "outputCostPerToken": 1.8e-7
+    "inputCostPerToken": 7.9996e-8,
+    "outputCostPerToken": 2.52e-7
   },
   "thinkingmachines/inkling-small": {
     "displayName": "thinkingmachines/inkling-small",
@@ -220,8 +220,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4.186e-7,
-    "outputCostPerToken": 0.0000013156
+    "inputCostPerToken": 9.8e-8,
+    "outputCostPerToken": 3.08e-7
   },
   "z-ai/glm-5.2:batch": {
     "displayName": "z-ai/glm-5.2:batch",
@@ -428,7 +428,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0.0000025,
+    "inputCostPerToken": 0.0000028,
     "outputCostPerToken": 0.000014
   },
   "~google/gemini-flash-latest": {
@@ -476,7 +476,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.4e-7,
+    "inputCostPerToken": 1.5e-7,
     "outputCostPerToken": 0.000001
   },
   "qwen/qwen3.6-max-preview": {
@@ -628,8 +628,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.7e-7,
-    "outputCostPerToken": 0.00000108
+    "inputCostPerToken": 3e-7,
+    "outputCostPerToken": 0.0000012
   },
   "mistralai/mistral-small-2603": {
     "displayName": "mistralai/mistral-small-2603",
@@ -652,8 +652,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 8.5e-8,
-    "outputCostPerToken": 4e-7
+    "inputCostPerToken": 3e-7,
+    "outputCostPerToken": 9e-7
   },
   "nvidia/nemotron-3-super-120b-a12b:free": {
     "displayName": "nvidia/nemotron-3-super-120b-a12b:free",
@@ -748,8 +748,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 3.9e-7,
-    "outputCostPerToken": 0.00000234
+    "inputCostPerToken": 5e-7,
+    "outputCostPerToken": 0.0000036
   },
   "minimax/minimax-m2.5": {
     "displayName": "minimax/minimax-m2.5",
