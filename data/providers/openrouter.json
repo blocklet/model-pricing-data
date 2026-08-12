@@ -1,4 +1,36 @@
 {
+  "liquid/lfm-2.5-2.6b:free": {
+    "displayName": "liquid/lfm-2.5-2.6b:free",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0,
+    "outputCostPerToken": 0
+  },
+  "nvidia/nemotron-3.5-lightning": {
+    "displayName": "nvidia/nemotron-3.5-lightning",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 1e-7,
+    "outputCostPerToken": 2.5e-7
+  },
+  "nvidia/nemotron-3.5-lightning:free": {
+    "displayName": "nvidia/nemotron-3.5-lightning:free",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0,
+    "outputCostPerToken": 0
+  },
+  "sakana/sakana-namazu": {
+    "displayName": "sakana/sakana-namazu",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 9.5e-7,
+    "outputCostPerToken": 0.000004
+  },
   "upstage/solar-pro4": {
     "displayName": "upstage/solar-pro4",
     "pricingUnit": "per-token",
@@ -44,8 +76,16 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 7.98e-8,
-    "outputCostPerToken": 1.596e-7
+    "inputCostPerToken": 7.2e-8,
+    "outputCostPerToken": 1.44e-7
+  },
+  "bytedance-seed/seed-2.0-code": {
+    "displayName": "bytedance-seed/seed-2.0-code",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 5e-7,
+    "outputCostPerToken": 0.000003
   },
   "thinkingmachines/inkling-small": {
     "displayName": "thinkingmachines/inkling-small",
@@ -236,8 +276,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 7.6e-7,
-    "outputCostPerToken": 0.00000242
+    "inputCostPerToken": 4.2e-7,
+    "outputCostPerToken": 0.0000014
   },
   "z-ai/glm-5.2:batch": {
     "displayName": "z-ai/glm-5.2:batch",
@@ -1084,8 +1124,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 5e-7,
-    "outputCostPerToken": 0.000002
+    "inputCostPerToken": 5.5e-7,
+    "outputCostPerToken": 0.0000022
   },
   "thedrummer/cydonia-24b-v4.1": {
     "displayName": "thedrummer/cydonia-24b-v4.1",
@@ -1116,8 +1156,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.1e-7,
-    "outputCostPerToken": 0.0000019
+    "inputCostPerToken": 2.6e-7,
+    "outputCostPerToken": 0.00000104
   },
   "qwen/qwen3-max": {
     "displayName": "qwen/qwen3-max",
