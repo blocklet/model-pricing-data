@@ -79,14 +79,6 @@
     "inputCostPerToken": 3.5e-7,
     "outputCostPerToken": 0.0000015
   },
-  "inclusionai/ling-3.0-tiny:free": {
-    "displayName": "inclusionai/ling-3.0-tiny:free",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 0,
-    "outputCostPerToken": 0
-  },
   "meta/muse-spark-1.2": {
     "displayName": "meta/muse-spark-1.2",
     "pricingUnit": "per-token",
@@ -300,8 +292,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 5e-7,
-    "outputCostPerToken": 0.00000315
+    "inputCostPerToken": 6.3e-7,
+    "outputCostPerToken": 0.00000198
   },
   "z-ai/glm-5.2:batch": {
     "displayName": "z-ai/glm-5.2:batch",
@@ -516,8 +508,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0.0000015,
-    "outputCostPerToken": 0.0000075
+    "inputCostPerToken": 3.75e-7,
+    "outputCostPerToken": 0.000001875
   },
   "~anthropic/claude-sonnet-latest": {
     "displayName": "~anthropic/claude-sonnet-latest",
@@ -828,8 +820,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4.5e-7,
-    "outputCostPerToken": 0.000003
+    "inputCostPerToken": 5e-7,
+    "outputCostPerToken": 0.0000036
   },
   "minimax/minimax-m2.5": {
     "displayName": "minimax/minimax-m2.5",
@@ -1140,16 +1132,16 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.5e-7,
-    "outputCostPerToken": 6e-7
+    "inputCostPerToken": 1.3e-7,
+    "outputCostPerToken": 5.2e-7
   },
   "z-ai/glm-4.6": {
     "displayName": "z-ai/glm-4.6",
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 5e-7,
-    "outputCostPerToken": 0.000002
+    "inputCostPerToken": 5.5e-7,
+    "outputCostPerToken": 0.0000022
   },
   "thedrummer/cydonia-24b-v4.1": {
     "displayName": "thedrummer/cydonia-24b-v4.1",
@@ -1220,7 +1212,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 9e-8,
+    "inputCostPerToken": 1e-7,
     "outputCostPerToken": 0.0000011
   },
   "qwen/qwen-plus-2025-07-28": {
