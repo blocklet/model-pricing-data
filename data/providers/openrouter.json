@@ -7,6 +7,14 @@
     "inputCostPerToken": 4.5e-7,
     "outputCostPerToken": 0.0000032
   },
+  "dots-studio/dots-3-note-preview:free": {
+    "displayName": "dots-studio/dots-3-note-preview:free",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0,
+    "outputCostPerToken": 0
+  },
   "bytedance-seed/seed-2-1-turbo": {
     "displayName": "bytedance-seed/seed-2-1-turbo",
     "pricingUnit": "per-token",
@@ -108,8 +116,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 7.98e-8,
-    "outputCostPerToken": 1.596e-7
+    "inputCostPerToken": 6.75e-8,
+    "outputCostPerToken": 1.35e-7
   },
   "thinkingmachines/inkling-small": {
     "displayName": "thinkingmachines/inkling-small",
@@ -300,8 +308,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4.9e-7,
-    "outputCostPerToken": 0.00000154
+    "inputCostPerToken": 4.62e-7,
+    "outputCostPerToken": 0.000001452
   },
   "z-ai/glm-5.2:batch": {
     "displayName": "z-ai/glm-5.2:batch",
@@ -572,8 +580,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 6e-7,
-    "outputCostPerToken": 0.0000036
+    "inputCostPerToken": 3e-7,
+    "outputCostPerToken": 0.000002
   },
   "inclusionai/ling-2.6-1t": {
     "displayName": "inclusionai/ling-2.6-1t",
@@ -588,8 +596,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 6.3e-8,
-    "outputCostPerToken": 2.1e-7
+    "inputCostPerToken": 1.8e-7,
+    "outputCostPerToken": 6e-7
   },
   "xiaomi/mimo-v2.5-pro": {
     "displayName": "xiaomi/mimo-v2.5-pro",
@@ -1236,8 +1244,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4e-7,
-    "outputCostPerToken": 0.0000012
+    "inputCostPerToken": 2.6e-7,
+    "outputCostPerToken": 7.8e-7
   },
   "nvidia/nemotron-nano-9b-v2:free": {
     "displayName": "nvidia/nemotron-nano-9b-v2:free",

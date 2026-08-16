@@ -733,6 +733,13 @@
     "output_cost_per_token": 0.0000032,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
+  "openrouter/dots-studio/dots-3-note-preview:free": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 0,
+    "output_cost_per_token": 0,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
   "openrouter/bytedance-seed/seed-2-1-turbo": {
     "litellm_provider": "openrouter",
     "source": "official",
@@ -820,8 +827,8 @@
   "openrouter/~deepseek/deepseek-v4-flash-latest": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 7.98e-8,
-    "output_cost_per_token": 1.596e-7,
+    "input_cost_per_token": 6.75e-8,
+    "output_cost_per_token": 1.35e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/thinkingmachines/inkling-small": {
@@ -988,8 +995,8 @@
   "openrouter/z-ai/glm-5.2": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 4.9e-7,
-    "output_cost_per_token": 0.00000154,
+    "input_cost_per_token": 4.62e-7,
+    "output_cost_per_token": 0.000001452,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/z-ai/glm-5.2:batch": {
@@ -1226,8 +1233,8 @@
   "openrouter/qwen/qwen3.6-27b": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 6e-7,
-    "output_cost_per_token": 0.0000036,
+    "input_cost_per_token": 3e-7,
+    "output_cost_per_token": 0.000002,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/inclusionai/ling-2.6-1t": {
@@ -1240,8 +1247,8 @@
   "openrouter/tencent/hy3-preview": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 6.3e-8,
-    "output_cost_per_token": 2.1e-7,
+    "input_cost_per_token": 1.8e-7,
+    "output_cost_per_token": 6e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/xiaomi/mimo-v2.5-pro": {
@@ -1807,8 +1814,8 @@
   "openrouter/qwen/qwen-plus-2025-07-28:thinking": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 4e-7,
-    "output_cost_per_token": 0.0000012,
+    "input_cost_per_token": 2.6e-7,
+    "output_cost_per_token": 7.8e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/nvidia/nemotron-nano-9b-v2:free": {
