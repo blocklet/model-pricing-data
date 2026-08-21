@@ -726,6 +726,27 @@
     "model_type": "chatCompletion",
     "source_url": "https://api-docs.deepseek.com/quick_start/pricing"
   },
+  "openrouter/stealth/ox-alpha": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 0,
+    "output_cost_per_token": 0,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
+  "openrouter/tencent/hy-mt2-1.8b": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 4.4e-8,
+    "output_cost_per_token": 1.77e-7,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
+  "openrouter/tencent/hy-mt2-30b-a3b": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 7.4e-8,
+    "output_cost_per_token": 2.95e-7,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
   "openrouter/~z-ai/glm-latest": {
     "litellm_provider": "openrouter",
     "source": "official",
@@ -820,8 +841,8 @@
   "openrouter/meta/muse-glimmer-30b": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 3.5e-7,
-    "output_cost_per_token": 0.0000015,
+    "input_cost_per_token": 3e-7,
+    "output_cost_per_token": 0.0000011,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/meta/muse-spark-1.2": {
@@ -1037,8 +1058,8 @@
   "openrouter/moonshotai/kimi-k2.7-code": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 7.1e-7,
-    "output_cost_per_token": 0.0000035,
+    "input_cost_per_token": 6.7e-7,
+    "output_cost_per_token": 0.0000034,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/moonshotai/kimi-k2.7-code:batch": {
@@ -2252,6 +2273,13 @@
     "output_cost_per_token": 0.000005,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
+  "openrouter/mistralai/ministral-8b": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 1.1e-7,
+    "output_cost_per_token": 1.1e-7,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
   "openrouter/qwen/qwen-2.5-7b-instruct": {
     "litellm_provider": "openrouter",
     "source": "official",
@@ -2376,6 +2404,13 @@
     "source": "official",
     "input_cost_per_token": -1,
     "output_cost_per_token": -1,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
+  "openrouter/mancer/weaver": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 5e-7,
+    "output_cost_per_token": 7.5e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/undi95/remm-slerp-l2-13b": {

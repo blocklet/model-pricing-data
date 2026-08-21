@@ -1,4 +1,28 @@
 {
+  "stealth/ox-alpha": {
+    "displayName": "stealth/ox-alpha",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0,
+    "outputCostPerToken": 0
+  },
+  "tencent/hy-mt2-1.8b": {
+    "displayName": "tencent/hy-mt2-1.8b",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 4.4e-8,
+    "outputCostPerToken": 1.77e-7
+  },
+  "tencent/hy-mt2-30b-a3b": {
+    "displayName": "tencent/hy-mt2-30b-a3b",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 7.4e-8,
+    "outputCostPerToken": 2.95e-7
+  },
   "~z-ai/glm-latest": {
     "displayName": "~z-ai/glm-latest",
     "pricingUnit": "per-token",
@@ -108,8 +132,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 3.5e-7,
-    "outputCostPerToken": 0.0000015
+    "inputCostPerToken": 3e-7,
+    "outputCostPerToken": 0.0000011
   },
   "meta/muse-spark-1.2": {
     "displayName": "meta/muse-spark-1.2",
@@ -356,8 +380,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 7.1e-7,
-    "outputCostPerToken": 0.0000035
+    "inputCostPerToken": 6.7e-7,
+    "outputCostPerToken": 0.0000034
   },
   "moonshotai/kimi-k2.7-code:batch": {
     "displayName": "moonshotai/kimi-k2.7-code:batch",
@@ -1743,6 +1767,14 @@
     "inputCostPerToken": 0.000003,
     "outputCostPerToken": 0.000005
   },
+  "mistralai/ministral-8b": {
+    "displayName": "mistralai/ministral-8b",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 1.1e-7,
+    "outputCostPerToken": 1.1e-7
+  },
   "qwen/qwen-2.5-7b-instruct": {
     "displayName": "qwen/qwen-2.5-7b-instruct",
     "pricingUnit": "per-token",
@@ -1886,6 +1918,14 @@
     "extractionMethod": "api",
     "inputCostPerToken": -1,
     "outputCostPerToken": -1
+  },
+  "mancer/weaver": {
+    "displayName": "mancer/weaver",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 5e-7,
+    "outputCostPerToken": 7.5e-7
   },
   "undi95/remm-slerp-l2-13b": {
     "displayName": "undi95/remm-slerp-l2-13b",
