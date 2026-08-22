@@ -4,10 +4,10 @@
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
     "extractionMethod": "regex",
-    "inputCostPerToken": 0.000005,
-    "outputCostPerToken": 0.00000625,
+    "inputCostPerToken": 0.000004,
+    "outputCostPerToken": 0.000005,
     "caching": {
-      "read": 5e-7
+      "read": 4e-7
     },
     "displayName": "gpt-5.6-sol"
   },
