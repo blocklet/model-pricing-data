@@ -172,8 +172,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 6e-8,
-    "outputCostPerToken": 1.8e-7
+    "inputCostPerToken": 4e-8,
+    "outputCostPerToken": 8e-8
   },
   "thinkingmachines/inkling-small": {
     "displayName": "thinkingmachines/inkling-small",
@@ -660,8 +660,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 6e-7,
-    "outputCostPerToken": 0.0000036
+    "inputCostPerToken": 3.2e-7,
+    "outputCostPerToken": 0.0000032
   },
   "inclusionai/ling-2.6-1t": {
     "displayName": "inclusionai/ling-2.6-1t",
@@ -796,8 +796,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 3e-7,
-    "outputCostPerToken": 0.0000012
+    "inputCostPerToken": 2.4e-7,
+    "outputCostPerToken": 9.6e-7
   },
   "mistralai/mistral-small-2603": {
     "displayName": "mistralai/mistral-small-2603",
@@ -916,8 +916,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 3.9e-7,
-    "outputCostPerToken": 0.00000234
+    "inputCostPerToken": 5e-7,
+    "outputCostPerToken": 0.0000036
   },
   "minimax/minimax-m2.5": {
     "displayName": "minimax/minimax-m2.5",
