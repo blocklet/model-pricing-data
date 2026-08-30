@@ -771,8 +771,8 @@
   "openrouter/~z-ai/glm-latest": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 0.0000012,
-    "output_cost_per_token": 0.000004,
+    "input_cost_per_token": 0.0000011875,
+    "output_cost_per_token": 0.00000418,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/tencent/hy-mt2-7b": {
@@ -905,7 +905,7 @@
     "litellm_provider": "openrouter",
     "source": "official",
     "input_cost_per_token": 3e-8,
-    "output_cost_per_token": 1e-7,
+    "output_cost_per_token": 1.4e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/thinkingmachines/inkling-small": {
@@ -967,7 +967,7 @@
   "openrouter/thinkingmachines/inkling": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 9.5e-7,
+    "input_cost_per_token": 0.000001,
     "output_cost_per_token": 0.00000405,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
@@ -1282,8 +1282,8 @@
   "openrouter/~moonshotai/kimi-latest": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 0.0000025,
-    "output_cost_per_token": 0.000014,
+    "input_cost_per_token": 0.00000255,
+    "output_cost_per_token": 0.00001275,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/~google/gemini-flash-latest": {
@@ -1387,8 +1387,8 @@
   "openrouter/z-ai/glm-5.1": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 0.00000126,
-    "output_cost_per_token": 0.00000396,
+    "input_cost_per_token": 9.66e-7,
+    "output_cost_per_token": 0.000003036,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/qwen/qwen3.6-plus": {
@@ -1905,7 +1905,7 @@
   "openrouter/qwen/qwen3-next-80b-a3b-instruct": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 1e-7,
+    "input_cost_per_token": 9e-8,
     "output_cost_per_token": 0.0000011,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
@@ -2144,7 +2144,7 @@
     "litellm_provider": "openrouter",
     "source": "official",
     "input_cost_per_token": 2e-7,
-    "output_cost_per_token": 8e-7,
+    "output_cost_per_token": 6.96e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/meta-llama/llama-4-scout": {

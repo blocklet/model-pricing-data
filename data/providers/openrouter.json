@@ -68,8 +68,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0.0000012,
-    "outputCostPerToken": 0.000004
+    "inputCostPerToken": 0.0000011875,
+    "outputCostPerToken": 0.00000418
   },
   "tencent/hy-mt2-7b": {
     "displayName": "tencent/hy-mt2-7b",
@@ -221,7 +221,7 @@
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
     "inputCostPerToken": 3e-8,
-    "outputCostPerToken": 1e-7
+    "outputCostPerToken": 1.4e-7
   },
   "thinkingmachines/inkling-small": {
     "displayName": "thinkingmachines/inkling-small",
@@ -292,7 +292,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 9.5e-7,
+    "inputCostPerToken": 0.000001,
     "outputCostPerToken": 0.00000405
   },
   "thinkingmachines/inkling:batch": {
@@ -652,8 +652,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0.0000025,
-    "outputCostPerToken": 0.000014
+    "inputCostPerToken": 0.00000255,
+    "outputCostPerToken": 0.00001275
   },
   "~google/gemini-flash-latest": {
     "displayName": "~google/gemini-flash-latest",
@@ -772,8 +772,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0.00000126,
-    "outputCostPerToken": 0.00000396
+    "inputCostPerToken": 9.66e-7,
+    "outputCostPerToken": 0.000003036
   },
   "qwen/qwen3.6-plus": {
     "displayName": "qwen/qwen3.6-plus",
@@ -1364,7 +1364,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1e-7,
+    "inputCostPerToken": 9e-8,
     "outputCostPerToken": 0.0000011
   },
   "qwen/qwen-plus-2025-07-28": {
@@ -1637,7 +1637,7 @@
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
     "inputCostPerToken": 2e-7,
-    "outputCostPerToken": 8e-7
+    "outputCostPerToken": 6.96e-7
   },
   "meta-llama/llama-4-scout": {
     "displayName": "meta-llama/llama-4-scout",
