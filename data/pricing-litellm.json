@@ -905,7 +905,7 @@
     "litellm_provider": "openrouter",
     "source": "official",
     "input_cost_per_token": 3e-8,
-    "output_cost_per_token": 1.4e-7,
+    "output_cost_per_token": 1.6e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/thinkingmachines/inkling-small": {
@@ -1408,8 +1408,8 @@
   "openrouter/arcee-ai/trinity-large-thinking": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 2.2e-7,
-    "output_cost_per_token": 8.5e-7,
+    "input_cost_per_token": 2.5e-7,
+    "output_cost_per_token": 8e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/x-ai/grok-4.20-multi-agent": {
@@ -1618,8 +1618,8 @@
   "openrouter/moonshotai/kimi-k2.5": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 6e-7,
-    "output_cost_per_token": 0.000003,
+    "input_cost_per_token": 4.5e-7,
+    "output_cost_per_token": 0.00000225,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/upstage/solar-pro-3": {
@@ -1688,8 +1688,8 @@
   "openrouter/mistralai/devstral-2512": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 4.4e-7,
-    "output_cost_per_token": 0.0000022,
+    "input_cost_per_token": 4e-7,
+    "output_cost_per_token": 0.000002,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/relace/relace-search": {

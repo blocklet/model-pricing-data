@@ -221,7 +221,7 @@
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
     "inputCostPerToken": 3e-8,
-    "outputCostPerToken": 1.4e-7
+    "outputCostPerToken": 1.6e-7
   },
   "thinkingmachines/inkling-small": {
     "displayName": "thinkingmachines/inkling-small",
@@ -796,8 +796,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.2e-7,
-    "outputCostPerToken": 8.5e-7
+    "inputCostPerToken": 2.5e-7,
+    "outputCostPerToken": 8e-7
   },
   "x-ai/grok-4.20-multi-agent": {
     "displayName": "x-ai/grok-4.20-multi-agent",
@@ -1036,8 +1036,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 6e-7,
-    "outputCostPerToken": 0.000003
+    "inputCostPerToken": 4.5e-7,
+    "outputCostPerToken": 0.00000225
   },
   "upstage/solar-pro-3": {
     "displayName": "upstage/solar-pro-3",
@@ -1116,8 +1116,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4.4e-7,
-    "outputCostPerToken": 0.0000022
+    "inputCostPerToken": 4e-7,
+    "outputCostPerToken": 0.000002
   },
   "relace/relace-search": {
     "displayName": "relace/relace-search",
