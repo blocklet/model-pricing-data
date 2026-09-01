@@ -1,43 +1,43 @@
 {
   "_meta": {
-    "generatedAt": "2026-08-31T02:06:22.514Z",
-    "version": "2.0.166",
+    "generatedAt": "2026-09-01T02:07:41.833Z",
+    "version": "2.0.167",
     "sources": {
       "openai": {
         "url": "https://platform.openai.com/docs/pricing",
         "modelCount": 36,
         "method": "regex+llm",
-        "fetchedAt": "2026-08-31T02:06:22.508Z"
+        "fetchedAt": "2026-09-01T02:07:41.826Z"
       },
       "anthropic": {
         "url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
         "modelCount": 9,
         "method": "regex+llm",
-        "fetchedAt": "2026-08-31T02:06:22.508Z"
+        "fetchedAt": "2026-09-01T02:07:41.826Z"
       },
       "google": {
         "url": "https://ai.google.dev/gemini-api/docs/pricing",
         "modelCount": 32,
         "method": "regex",
-        "fetchedAt": "2026-08-31T02:06:22.508Z"
+        "fetchedAt": "2026-09-01T02:07:41.826Z"
       },
       "xai": {
         "url": "https://docs.x.ai/developers/models",
         "modelCount": 0,
         "method": "regex",
-        "fetchedAt": "2026-08-31T02:06:22.508Z"
+        "fetchedAt": "2026-09-01T02:07:41.826Z"
       },
       "deepseek": {
         "url": "https://api-docs.deepseek.com/quick_start/pricing",
         "modelCount": 2,
         "method": "regex",
-        "fetchedAt": "2026-08-31T02:06:22.508Z"
+        "fetchedAt": "2026-09-01T02:07:41.826Z"
       },
       "openrouter": {
         "url": "https://openrouter.ai/models",
         "modelCount": 251,
         "method": "api",
-        "fetchedAt": "2026-08-31T02:06:22.508Z"
+        "fetchedAt": "2026-09-01T02:07:41.826Z"
       }
     },
     "totalModels": 330,
@@ -1045,6 +1045,14 @@
       }
     },
     "openrouter": {
+      "ibm-granite/granite-4.2-8b": {
+        "displayName": "ibm-granite/granite-4.2-8b",
+        "pricingUnit": "per-token",
+        "sourceUrl": "https://openrouter.ai/api/v1/models",
+        "extractionMethod": "api",
+        "inputCostPerToken": 1e-7,
+        "outputCostPerToken": 1.5e-7
+      },
       "tencent/hy4-preview": {
         "displayName": "tencent/hy4-preview",
         "pricingUnit": "per-token",
@@ -1114,8 +1122,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 0.0000011875,
-        "outputCostPerToken": 0.00000418
+        "inputCostPerToken": 0.00000117,
+        "outputCostPerToken": 0.00000396
       },
       "tencent/hy-mt2-7b": {
         "displayName": "tencent/hy-mt2-7b",
@@ -1266,7 +1274,7 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 3e-8,
+        "inputCostPerToken": 5e-8,
         "outputCostPerToken": 1.6e-7
       },
       "thinkingmachines/inkling-small": {
@@ -1388,14 +1396,6 @@
         "extractionMethod": "api",
         "inputCostPerToken": 0.00000125,
         "outputCostPerToken": 0.00000425
-      },
-      "kwaipilot/kat-coder-air-v2.5": {
-        "displayName": "kwaipilot/kat-coder-air-v2.5",
-        "pricingUnit": "per-token",
-        "sourceUrl": "https://openrouter.ai/api/v1/models",
-        "extractionMethod": "api",
-        "inputCostPerToken": 1.5e-7,
-        "outputCostPerToken": 6e-7
       },
       "kwaipilot/kat-coder-pro-v2.5": {
         "displayName": "kwaipilot/kat-coder-pro-v2.5",
@@ -2410,7 +2410,7 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 9e-8,
+        "inputCostPerToken": 1e-7,
         "outputCostPerToken": 0.0000011
       },
       "qwen/qwen-plus-2025-07-28": {
@@ -2554,8 +2554,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 8.75e-8,
-        "outputCostPerToken": 3.5e-7
+        "inputCostPerToken": 9e-8,
+        "outputCostPerToken": 5.5e-7
       },
       "moonshotai/kimi-k2": {
         "displayName": "moonshotai/kimi-k2",
@@ -3050,8 +3050,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 6e-8,
-        "outputCostPerToken": 6e-8
+        "inputCostPerToken": 4e-7,
+        "outputCostPerToken": 6e-7
       }
     }
   }

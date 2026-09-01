@@ -712,6 +712,13 @@
     "model_type": "chatCompletion",
     "source_url": "https://api-docs.deepseek.com/quick_start/pricing"
   },
+  "openrouter/ibm-granite/granite-4.2-8b": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 1e-7,
+    "output_cost_per_token": 1.5e-7,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
   "openrouter/tencent/hy4-preview": {
     "litellm_provider": "openrouter",
     "source": "official",
@@ -771,8 +778,8 @@
   "openrouter/~z-ai/glm-latest": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 0.0000011875,
-    "output_cost_per_token": 0.00000418,
+    "input_cost_per_token": 0.00000117,
+    "output_cost_per_token": 0.00000396,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/tencent/hy-mt2-7b": {
@@ -904,7 +911,7 @@
   "openrouter/~deepseek/deepseek-v4-flash-latest": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 3e-8,
+    "input_cost_per_token": 5e-8,
     "output_cost_per_token": 1.6e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
@@ -1011,13 +1018,6 @@
     "source": "official",
     "input_cost_per_token": 0.00000125,
     "output_cost_per_token": 0.00000425,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
-  "openrouter/kwaipilot/kat-coder-air-v2.5": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 1.5e-7,
-    "output_cost_per_token": 6e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/kwaipilot/kat-coder-pro-v2.5": {
@@ -1905,7 +1905,7 @@
   "openrouter/qwen/qwen3-next-80b-a3b-instruct": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 9e-8,
+    "input_cost_per_token": 1e-7,
     "output_cost_per_token": 0.0000011,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
@@ -2031,8 +2031,8 @@
   "openrouter/qwen/qwen3-235b-a22b-2507": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 8.75e-8,
-    "output_cost_per_token": 3.5e-7,
+    "input_cost_per_token": 9e-8,
+    "output_cost_per_token": 5.5e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/moonshotai/kimi-k2": {
@@ -2465,8 +2465,8 @@
   "openrouter/gryphe/mythomax-l2-13b": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 6e-8,
-    "output_cost_per_token": 6e-8,
+    "input_cost_per_token": 4e-7,
+    "output_cost_per_token": 6e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   }
 }

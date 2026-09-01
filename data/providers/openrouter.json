@@ -1,4 +1,12 @@
 {
+  "ibm-granite/granite-4.2-8b": {
+    "displayName": "ibm-granite/granite-4.2-8b",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 1e-7,
+    "outputCostPerToken": 1.5e-7
+  },
   "tencent/hy4-preview": {
     "displayName": "tencent/hy4-preview",
     "pricingUnit": "per-token",
@@ -68,8 +76,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0.0000011875,
-    "outputCostPerToken": 0.00000418
+    "inputCostPerToken": 0.00000117,
+    "outputCostPerToken": 0.00000396
   },
   "tencent/hy-mt2-7b": {
     "displayName": "tencent/hy-mt2-7b",
@@ -220,7 +228,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 3e-8,
+    "inputCostPerToken": 5e-8,
     "outputCostPerToken": 1.6e-7
   },
   "thinkingmachines/inkling-small": {
@@ -342,14 +350,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 0.00000125,
     "outputCostPerToken": 0.00000425
-  },
-  "kwaipilot/kat-coder-air-v2.5": {
-    "displayName": "kwaipilot/kat-coder-air-v2.5",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 1.5e-7,
-    "outputCostPerToken": 6e-7
   },
   "kwaipilot/kat-coder-pro-v2.5": {
     "displayName": "kwaipilot/kat-coder-pro-v2.5",
@@ -1364,7 +1364,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 9e-8,
+    "inputCostPerToken": 1e-7,
     "outputCostPerToken": 0.0000011
   },
   "qwen/qwen-plus-2025-07-28": {
@@ -1508,8 +1508,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 8.75e-8,
-    "outputCostPerToken": 3.5e-7
+    "inputCostPerToken": 9e-8,
+    "outputCostPerToken": 5.5e-7
   },
   "moonshotai/kimi-k2": {
     "displayName": "moonshotai/kimi-k2",
@@ -2004,7 +2004,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 6e-8,
-    "outputCostPerToken": 6e-8
+    "inputCostPerToken": 4e-7,
+    "outputCostPerToken": 6e-7
   }
 }
