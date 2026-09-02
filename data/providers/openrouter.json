@@ -1,4 +1,12 @@
 {
+  "inception/mercury-2.5-preview": {
+    "displayName": "inception/mercury-2.5-preview",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 4e-8,
+    "outputCostPerToken": 1.5e-7
+  },
   "ibm-granite/granite-4.2-8b": {
     "displayName": "ibm-granite/granite-4.2-8b",
     "pricingUnit": "per-token",
@@ -22,6 +30,14 @@
     "extractionMethod": "api",
     "inputCostPerToken": 0,
     "outputCostPerToken": 0
+  },
+  "~z-ai/glm-flash-latest": {
+    "displayName": "~z-ai/glm-flash-latest",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 7.5e-8,
+    "outputCostPerToken": 2.5e-7
   },
   "qwen/qwen3.8-flash": {
     "displayName": "qwen/qwen3.8-flash",
@@ -132,8 +148,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0.0000025,
-    "outputCostPerToken": 0.00000625
+    "inputCostPerToken": 0.000002,
+    "outputCostPerToken": 0.000006
   },
   "bytedance-seed/seed-2.0-code": {
     "displayName": "bytedance-seed/seed-2.0-code",
@@ -444,8 +460,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0.00000119,
-    "outputCostPerToken": 0.00000374
+    "inputCostPerToken": 9.66e-7,
+    "outputCostPerToken": 0.000003036
   },
   "z-ai/glm-5.2:free": {
     "displayName": "z-ai/glm-5.2:free",
@@ -500,8 +516,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 5e-7,
-    "outputCostPerToken": 0.0000022
+    "inputCostPerToken": 6.25e-7,
+    "outputCostPerToken": 0.000003125
   },
   "nvidia/nemotron-3-ultra-550b-a55b:batch": {
     "displayName": "nvidia/nemotron-3-ultra-550b-a55b:batch",
@@ -855,14 +871,6 @@
     "inputCostPerToken": 1.5e-7,
     "outputCostPerToken": 6e-7
   },
-  "mistralai/mistral-small-2603:batch": {
-    "displayName": "mistralai/mistral-small-2603:batch",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 1.5e-7,
-    "outputCostPerToken": 6e-7
-  },
   "z-ai/glm-5-turbo": {
     "displayName": "z-ai/glm-5-turbo",
     "pricingUnit": "per-token",
@@ -1167,14 +1175,6 @@
     "inputCostPerToken": 1.5e-7,
     "outputCostPerToken": 1.5e-7
   },
-  "mistralai/ministral-8b-2512:batch": {
-    "displayName": "mistralai/ministral-8b-2512:batch",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 1.5e-7,
-    "outputCostPerToken": 1.5e-7
-  },
   "mistralai/ministral-3b-2512": {
     "displayName": "mistralai/ministral-3b-2512",
     "pricingUnit": "per-token",
@@ -1185,14 +1185,6 @@
   },
   "mistralai/mistral-large-2512": {
     "displayName": "mistralai/mistral-large-2512",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 5e-7,
-    "outputCostPerToken": 0.0000015
-  },
-  "mistralai/mistral-large-2512:batch": {
-    "displayName": "mistralai/mistral-large-2512:batch",
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
@@ -1415,14 +1407,6 @@
     "inputCostPerToken": 4e-7,
     "outputCostPerToken": 0.000002
   },
-  "mistralai/mistral-medium-3.1:batch": {
-    "displayName": "mistralai/mistral-medium-3.1:batch",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 4e-7,
-    "outputCostPerToken": 0.000002
-  },
   "z-ai/glm-4.5v": {
     "displayName": "z-ai/glm-4.5v",
     "pricingUnit": "per-token",
@@ -1433,14 +1417,6 @@
   },
   "mistralai/codestral-2508": {
     "displayName": "mistralai/codestral-2508",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 3e-7,
-    "outputCostPerToken": 9e-7
-  },
-  "mistralai/codestral-2508:batch": {
-    "displayName": "mistralai/codestral-2508:batch",
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
@@ -1508,8 +1484,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 9e-8,
-    "outputCostPerToken": 5.5e-7
+    "inputCostPerToken": 8.75e-8,
+    "outputCostPerToken": 3.5e-7
   },
   "moonshotai/kimi-k2": {
     "displayName": "moonshotai/kimi-k2",
@@ -1644,8 +1620,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.1e-7,
-    "outputCostPerToken": 3.4e-7
+    "inputCostPerToken": 1e-7,
+    "outputCostPerToken": 3e-7
   },
   "mistralai/mistral-small-3.1-24b-instruct": {
     "displayName": "mistralai/mistral-small-3.1-24b-instruct",
@@ -1844,7 +1820,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0.000003,
+    "inputCostPerToken": 0.0000025,
     "outputCostPerToken": 0.000005
   },
   "qwen/qwen-2.5-7b-instruct": {
@@ -1988,7 +1964,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 5e-7,
+    "inputCostPerToken": 4e-7,
     "outputCostPerToken": 7.5e-7
   },
   "undi95/remm-slerp-l2-13b": {
@@ -2004,7 +1980,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4e-7,
-    "outputCostPerToken": 6e-7
+    "inputCostPerToken": 6e-8,
+    "outputCostPerToken": 6e-8
   }
 }
