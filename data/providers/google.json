@@ -356,14 +356,14 @@
     "extractionMethod": "regex",
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
-    "inputCostPerToken": 0.000002,
-    "outputCostPerToken": 0.00001,
+    "inputCostPerToken": 0.000001,
+    "outputCostPerToken": 0.000005,
     "caching": {
-      "read": 2e-7
+      "read": 1e-7
     },
     "batchPricing": {
-      "inputCostPerToken": 0.000001,
-      "outputCostPerToken": 0.000005
+      "inputCostPerToken": 5e-7,
+      "outputCostPerToken": 0.0000025
     }
   },
   "gemini-robotics-er-2-streaming-preview": {
@@ -372,8 +372,8 @@
     "extractionMethod": "regex",
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
-    "inputCostPerToken": 0.000002,
-    "outputCostPerToken": 0.00001
+    "inputCostPerToken": 0.000001,
+    "outputCostPerToken": 0.000005
   },
   "gemini-robotics-er-1.6-preview": {
     "displayName": "Gemini Robotics ER 1.6 Preview",
