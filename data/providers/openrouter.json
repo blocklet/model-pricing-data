@@ -1,4 +1,76 @@
 {
+  "inference-net/schematron-v2-turbo": {
+    "displayName": "inference-net/schematron-v2-turbo",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 3e-8,
+    "outputCostPerToken": 1.5e-7
+  },
+  "inference-net/schematron-v2-small": {
+    "displayName": "inference-net/schematron-v2-small",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 5e-8,
+    "outputCostPerToken": 2.3e-7
+  },
+  "~openai/gpt-astra-latest": {
+    "displayName": "~openai/gpt-astra-latest",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0.00001,
+    "outputCostPerToken": 0.00005
+  },
+  "~openai/gpt-sol-latest": {
+    "displayName": "~openai/gpt-sol-latest",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0.000002,
+    "outputCostPerToken": 0.00001
+  },
+  "~openai/gpt-terra-latest": {
+    "displayName": "~openai/gpt-terra-latest",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0.000002,
+    "outputCostPerToken": 0.000012
+  },
+  "~openai/gpt-luna-latest": {
+    "displayName": "~openai/gpt-luna-latest",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 2e-7,
+    "outputCostPerToken": 0.0000012
+  },
+  "sakana/fugu-ultra-v2": {
+    "displayName": "sakana/fugu-ultra-v2",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0.000005,
+    "outputCostPerToken": 0.00003
+  },
+  "sakana/fugu-max": {
+    "displayName": "sakana/fugu-max",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0.000002,
+    "outputCostPerToken": 0.000006
+  },
+  "inclusionai/ling-3.0-flash-vl": {
+    "displayName": "inclusionai/ling-3.0-flash-vl",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 6e-8,
+    "outputCostPerToken": 1.8e-7
+  },
   "inclusionai/ling-3.0-flash-vl:free": {
     "displayName": "inclusionai/ling-3.0-flash-vl:free",
     "pricingUnit": "per-token",
@@ -156,8 +228,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0.000001,
-    "outputCostPerToken": 0.00000341
+    "inputCostPerToken": 8.727e-7,
+    "outputCostPerToken": 0.00000336
   },
   "tencent/hy-mt2-7b": {
     "displayName": "tencent/hy-mt2-7b",
@@ -188,8 +260,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4.2e-7,
-    "outputCostPerToken": 0.000003
+    "inputCostPerToken": 2.14e-7,
+    "outputCostPerToken": 0.00000255
   },
   "dots-studio/dots-3-note-preview:free": {
     "displayName": "dots-studio/dots-3-note-preview:free",
@@ -412,8 +484,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0.00000234,
-    "outputCostPerToken": 0.0000117
+    "inputCostPerToken": 0.00000230272875,
+    "outputCostPerToken": 0.000011550195
   },
   "moonshotai/kimi-k3:batch": {
     "displayName": "moonshotai/kimi-k3:batch",
@@ -516,8 +588,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 9.66e-7,
-    "outputCostPerToken": 0.000003036
+    "inputCostPerToken": 6e-7,
+    "outputCostPerToken": 0.000002
   },
   "z-ai/glm-5.2:batch": {
     "displayName": "z-ai/glm-5.2:batch",
@@ -708,8 +780,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0.00000234,
-    "outputCostPerToken": 0.0000117
+    "inputCostPerToken": 0.00000230272875,
+    "outputCostPerToken": 0.000011550195
   },
   "~google/gemini-flash-latest": {
     "displayName": "~google/gemini-flash-latest",
@@ -721,14 +793,6 @@
   },
   "~anthropic/claude-sonnet-latest": {
     "displayName": "~anthropic/claude-sonnet-latest",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 0.000002,
-    "outputCostPerToken": 0.00001
-  },
-  "~openai/gpt-latest": {
-    "displayName": "~openai/gpt-latest",
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
@@ -1548,8 +1612,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.2e-7,
-    "outputCostPerToken": 8.8e-7
+    "inputCostPerToken": 8.75e-8,
+    "outputCostPerToken": 3.5e-7
   },
   "moonshotai/kimi-k2": {
     "displayName": "moonshotai/kimi-k2",

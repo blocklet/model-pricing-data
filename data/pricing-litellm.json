@@ -672,13 +672,6 @@
     "model_type": "embedding",
     "source_url": "https://ai.google.dev/gemini-api/docs/pricing"
   },
-  "gemini-embedding": {
-    "litellm_provider": "google",
-    "source": "official",
-    "input_cost_per_token": 1.5e-7,
-    "model_type": "embedding",
-    "source_url": "https://ai.google.dev/gemini-api/docs/pricing"
-  },
   "gemini-robotics-er-2-preview": {
     "litellm_provider": "google",
     "source": "official",
@@ -690,29 +683,11 @@
     "model_type": "chatCompletion",
     "source_url": "https://ai.google.dev/gemini-api/docs/pricing"
   },
-  "gemini-robotics-er-2-streaming-preview": {
-    "litellm_provider": "google",
-    "source": "official",
-    "input_cost_per_token": 0.000001,
-    "output_cost_per_token": 0.000005,
-    "model_type": "chatCompletion",
-    "source_url": "https://ai.google.dev/gemini-api/docs/pricing"
-  },
-  "gemini-robotics-er-1.6-preview": {
-    "litellm_provider": "google",
-    "source": "official",
-    "input_cost_per_token": 0.000001,
-    "output_cost_per_token": 0.000005,
-    "batch_input_cost_per_token": 5e-7,
-    "batch_output_cost_per_token": 0.0000025,
-    "model_type": "chatCompletion",
-    "source_url": "https://ai.google.dev/gemini-api/docs/pricing"
-  },
   "gemini-2.5-computer-use-preview": {
     "litellm_provider": "google",
     "source": "official",
-    "input_cost_per_token": 0.00000125,
-    "output_cost_per_token": 0.00001,
+    "input_cost_per_token": 0.000001,
+    "output_cost_per_token": 0.000005,
     "model_type": "chatCompletion",
     "source_url": "https://ai.google.dev/gemini-api/docs/pricing"
   },
@@ -733,6 +708,69 @@
     "cache_read_input_token_cost": 3e-9,
     "model_type": "chatCompletion",
     "source_url": "https://api-docs.deepseek.com/quick_start/pricing"
+  },
+  "openrouter/inference-net/schematron-v2-turbo": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 3e-8,
+    "output_cost_per_token": 1.5e-7,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
+  "openrouter/inference-net/schematron-v2-small": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 5e-8,
+    "output_cost_per_token": 2.3e-7,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
+  "openrouter/~openai/gpt-astra-latest": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 0.00001,
+    "output_cost_per_token": 0.00005,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
+  "openrouter/~openai/gpt-sol-latest": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 0.000002,
+    "output_cost_per_token": 0.00001,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
+  "openrouter/~openai/gpt-terra-latest": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 0.000002,
+    "output_cost_per_token": 0.000012,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
+  "openrouter/~openai/gpt-luna-latest": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 2e-7,
+    "output_cost_per_token": 0.0000012,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
+  "openrouter/sakana/fugu-ultra-v2": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 0.000005,
+    "output_cost_per_token": 0.00003,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
+  "openrouter/sakana/fugu-max": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 0.000002,
+    "output_cost_per_token": 0.000006,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
+  "openrouter/inclusionai/ling-3.0-flash-vl": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 6e-8,
+    "output_cost_per_token": 1.8e-7,
+    "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/inclusionai/ling-3.0-flash-vl:free": {
     "litellm_provider": "openrouter",
@@ -870,8 +908,8 @@
   "openrouter/~z-ai/glm-latest": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 0.000001,
-    "output_cost_per_token": 0.00000341,
+    "input_cost_per_token": 8.727e-7,
+    "output_cost_per_token": 0.00000336,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/tencent/hy-mt2-7b": {
@@ -898,8 +936,8 @@
   "openrouter/qwen/qwen3.8-27b": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 4.2e-7,
-    "output_cost_per_token": 0.000003,
+    "input_cost_per_token": 2.14e-7,
+    "output_cost_per_token": 0.00000255,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/dots-studio/dots-3-note-preview:free": {
@@ -1094,8 +1132,8 @@
   "openrouter/moonshotai/kimi-k3": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 0.00000234,
-    "output_cost_per_token": 0.0000117,
+    "input_cost_per_token": 0.00000230272875,
+    "output_cost_per_token": 0.000011550195,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/moonshotai/kimi-k3:batch": {
@@ -1185,8 +1223,8 @@
   "openrouter/z-ai/glm-5.2": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 9.66e-7,
-    "output_cost_per_token": 0.000003036,
+    "input_cost_per_token": 6e-7,
+    "output_cost_per_token": 0.000002,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/z-ai/glm-5.2:batch": {
@@ -1353,8 +1391,8 @@
   "openrouter/~moonshotai/kimi-latest": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 0.00000234,
-    "output_cost_per_token": 0.0000117,
+    "input_cost_per_token": 0.00000230272875,
+    "output_cost_per_token": 0.000011550195,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/~google/gemini-flash-latest": {
@@ -1365,13 +1403,6 @@
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/~anthropic/claude-sonnet-latest": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 0.000002,
-    "output_cost_per_token": 0.00001,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
-  "openrouter/~openai/gpt-latest": {
     "litellm_provider": "openrouter",
     "source": "official",
     "input_cost_per_token": 0.000002,
@@ -2088,8 +2119,8 @@
   "openrouter/qwen/qwen3-235b-a22b-2507": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 2.2e-7,
-    "output_cost_per_token": 8.8e-7,
+    "input_cost_per_token": 8.75e-8,
+    "output_cost_per_token": 3.5e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/moonshotai/kimi-k2": {

@@ -342,14 +342,6 @@
     "modelType": "embedding",
     "inputCostPerToken": 2e-7
   },
-  "gemini-embedding": {
-    "displayName": "Gemini Embedding",
-    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "regex",
-    "pricingUnit": "per-token",
-    "modelType": "embedding",
-    "inputCostPerToken": 1.5e-7
-  },
   "gemini-robotics-er-2-preview": {
     "displayName": "Gemini Robotics ER 2 Preview",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
@@ -366,42 +358,13 @@
       "outputCostPerToken": 0.0000025
     }
   },
-  "gemini-robotics-er-2-streaming-preview": {
-    "displayName": "Gemini Robotics ER 2 Streaming Preview",
-    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "regex",
-    "pricingUnit": "per-token",
-    "modelType": "chatCompletion",
-    "inputCostPerToken": 0.000001,
-    "outputCostPerToken": 0.000005
-  },
-  "gemini-robotics-er-1.6-preview": {
-    "displayName": "Gemini Robotics ER 1.6 Preview",
-    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "regex",
-    "pricingUnit": "per-token",
-    "modelType": "chatCompletion",
-    "inputCostPerToken": 0.000001,
-    "outputCostPerToken": 0.000005,
-    "batchPricing": {
-      "inputCostPerToken": 5e-7,
-      "outputCostPerToken": 0.0000025
-    }
-  },
   "gemini-2.5-computer-use-preview": {
     "displayName": "Gemini 2.5 Computer Use Preview",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
     "extractionMethod": "regex",
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
-    "inputCostPerToken": 0.00000125,
-    "outputCostPerToken": 0.00001,
-    "contextTiers": [
-      {
-        "threshold": ">200K",
-        "inputCostPerToken": 0.0000025,
-        "outputCostPerToken": 0.000015
-      }
-    ]
+    "inputCostPerToken": 0.000001,
+    "outputCostPerToken": 0.000005
   }
 }
