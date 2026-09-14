@@ -228,8 +228,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 8.727e-7,
-    "outputCostPerToken": 0.00000336
+    "inputCostPerToken": 9.36e-7,
+    "outputCostPerToken": 0.000003168
   },
   "tencent/hy-mt2-7b": {
     "displayName": "tencent/hy-mt2-7b",
@@ -244,8 +244,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0.000001092,
-    "outputCostPerToken": 0.000003432
+    "inputCostPerToken": 0.0000014,
+    "outputCostPerToken": 0.0000044
   },
   "z-ai/glm-5.3:batch": {
     "displayName": "z-ai/glm-5.3:batch",
@@ -380,8 +380,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 3e-8,
-    "outputCostPerToken": 7e-8
+    "inputCostPerToken": 3.52e-8,
+    "outputCostPerToken": 1.056e-7
   },
   "thinkingmachines/inkling-small": {
     "displayName": "thinkingmachines/inkling-small",
@@ -588,8 +588,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 6e-7,
-    "outputCostPerToken": 0.000002
+    "inputCostPerToken": 6.832e-7,
+    "outputCostPerToken": 0.0000021472
   },
   "z-ai/glm-5.2:batch": {
     "displayName": "z-ai/glm-5.2:batch",
@@ -644,8 +644,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 6.25e-7,
-    "outputCostPerToken": 0.000003125
+    "inputCostPerToken": 6e-7,
+    "outputCostPerToken": 0.0000024
   },
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
     "displayName": "nvidia/nemotron-3-ultra-550b-a55b:free",
@@ -780,8 +780,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0.000002375,
-    "outputCostPerToken": 0.0000133
+    "inputCostPerToken": 0.0000021,
+    "outputCostPerToken": 0.00001095
   },
   "~google/gemini-flash-latest": {
     "displayName": "~google/gemini-flash-latest",
@@ -1716,8 +1716,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.275e-7,
-    "outputCostPerToken": 9.1e-7
+    "inputCostPerToken": 1.2e-7,
+    "outputCostPerToken": 2.4e-7
   },
   "qwen/qwen3-32b": {
     "displayName": "qwen/qwen3-32b",
