@@ -63,6 +63,15 @@
       "outputCostPerToken": 0.0000045
     }
   },
+  "gemini-3.8-live,-gemini-3.8-live-extended-thinking,-and-gemini-3.1-flash-live-preview": {
+    "displayName": "Gemini 3.8 Live, Gemini 3.8 Live Extended Thinking, and Gemini 3.1 Flash Live Preview",
+    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-token",
+    "modelType": "chatCompletion",
+    "inputCostPerToken": 7.5e-7,
+    "outputCostPerToken": 0.0000045
+  },
   "gemini-3.5-live-translate": {
     "displayName": "Gemini 3.5 Live Translate",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
@@ -162,15 +171,6 @@
       "inputCostPerToken": 0.000001,
       "outputCostPerToken": 0.000006
     }
-  },
-  "gemini-3.1-flash-live-preview": {
-    "displayName": "Gemini 3.1 Flash Live Preview",
-    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "regex",
-    "pricingUnit": "per-token",
-    "modelType": "chatCompletion",
-    "inputCostPerToken": 7.5e-7,
-    "outputCostPerToken": 0.0000045
   },
   "gemini-3.1-flash-image-(nano-banana-2)": {
     "displayName": "Gemini 3.1 Flash Image (Nano Banana 2)",

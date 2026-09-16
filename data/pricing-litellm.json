@@ -465,6 +465,14 @@
     "model_type": "chatCompletion",
     "source_url": "https://ai.google.dev/gemini-api/docs/pricing"
   },
+  "gemini-3.8-live,-gemini-3.8-live-extended-thinking,-and-gemini-3.1-flash-live-preview": {
+    "litellm_provider": "google",
+    "source": "official",
+    "input_cost_per_token": 7.5e-7,
+    "output_cost_per_token": 0.0000045,
+    "model_type": "chatCompletion",
+    "source_url": "https://ai.google.dev/gemini-api/docs/pricing"
+  },
   "gemini-3.5-live-translate": {
     "litellm_provider": "google",
     "source": "official",
@@ -535,14 +543,6 @@
     "cache_read_input_token_cost": 2e-7,
     "batch_input_cost_per_token": 0.000001,
     "batch_output_cost_per_token": 0.000006,
-    "model_type": "chatCompletion",
-    "source_url": "https://ai.google.dev/gemini-api/docs/pricing"
-  },
-  "gemini-3.1-flash-live-preview": {
-    "litellm_provider": "google",
-    "source": "official",
-    "input_cost_per_token": 7.5e-7,
-    "output_cost_per_token": 0.0000045,
     "model_type": "chatCompletion",
     "source_url": "https://ai.google.dev/gemini-api/docs/pricing"
   },
@@ -887,8 +887,8 @@
   "openrouter/z-ai/glm-5.3-flash": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 1.5e-7,
-    "output_cost_per_token": 5e-7,
+    "input_cost_per_token": 1e-7,
+    "output_cost_per_token": 3.333e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/z-ai/glm-5.3-flash:batch": {
@@ -922,8 +922,8 @@
   "openrouter/~z-ai/glm-latest": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 9e-7,
-    "output_cost_per_token": 0.000003,
+    "input_cost_per_token": 8.775e-7,
+    "output_cost_per_token": 0.00000297,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/tencent/hy-mt2-7b": {
@@ -1063,13 +1063,6 @@
     "litellm_provider": "openrouter",
     "source": "official",
     "input_cost_per_token": 4.5e-7,
-    "output_cost_per_token": 0.0000012,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
-  "openrouter/thinkingmachines/inkling-small:batch": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 5e-7,
     "output_cost_per_token": 0.0000012,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
@@ -1248,6 +1241,13 @@
     "output_cost_per_token": 0.0000022,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
+  "openrouter/z-ai/glm-5.2:free": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 0,
+    "output_cost_per_token": 0,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
   "openrouter/openrouter/fusion": {
     "litellm_provider": "openrouter",
     "source": "official",
@@ -1258,8 +1258,8 @@
   "openrouter/moonshotai/kimi-k2.7-code": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 7.1e-7,
-    "output_cost_per_token": 0.0000035,
+    "input_cost_per_token": 7.062e-7,
+    "output_cost_per_token": 0.00000321,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/~anthropic/claude-fable-latest": {
@@ -1286,8 +1286,8 @@
   "openrouter/nvidia/nemotron-3-ultra-550b-a55b": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 6e-7,
-    "output_cost_per_token": 0.0000024,
+    "input_cost_per_token": 6.25e-7,
+    "output_cost_per_token": 0.000003125,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/nvidia/nemotron-3-ultra-550b-a55b:free": {
@@ -2182,14 +2182,14 @@
   "openrouter/mistralai/mistral-small-3.2-24b-instruct": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 7.5e-8,
-    "output_cost_per_token": 2e-7,
+    "input_cost_per_token": 9.375e-8,
+    "output_cost_per_token": 2.5e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/minimax/minimax-m1": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 5.5e-7,
+    "input_cost_per_token": 4e-7,
     "output_cost_per_token": 0.0000022,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
