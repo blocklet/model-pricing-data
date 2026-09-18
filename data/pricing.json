@@ -1,46 +1,46 @@
 {
   "_meta": {
-    "generatedAt": "2026-09-17T02:06:14.396Z",
-    "version": "2.0.183",
+    "generatedAt": "2026-09-18T02:05:16.490Z",
+    "version": "2.0.184",
     "sources": {
       "openai": {
         "url": "https://platform.openai.com/docs/pricing",
         "modelCount": 37,
         "method": "regex+llm",
-        "fetchedAt": "2026-09-17T02:06:14.385Z"
+        "fetchedAt": "2026-09-18T02:05:16.481Z"
       },
       "anthropic": {
         "url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
         "modelCount": 9,
         "method": "regex+llm",
-        "fetchedAt": "2026-09-17T02:06:14.386Z"
+        "fetchedAt": "2026-09-18T02:05:16.481Z"
       },
       "google": {
         "url": "https://ai.google.dev/gemini-api/docs/pricing",
         "modelCount": 30,
         "method": "regex",
-        "fetchedAt": "2026-09-17T02:06:14.386Z"
+        "fetchedAt": "2026-09-18T02:05:16.481Z"
       },
       "xai": {
         "url": "https://docs.x.ai/developers/models",
         "modelCount": 0,
         "method": "regex",
-        "fetchedAt": "2026-09-17T02:06:14.386Z"
+        "fetchedAt": "2026-09-18T02:05:16.481Z"
       },
       "deepseek": {
         "url": "https://api-docs.deepseek.com/quick_start/pricing",
         "modelCount": 2,
         "method": "regex",
-        "fetchedAt": "2026-09-17T02:06:14.386Z"
+        "fetchedAt": "2026-09-18T02:05:16.481Z"
       },
       "openrouter": {
         "url": "https://openrouter.ai/models",
-        "modelCount": 267,
+        "modelCount": 268,
         "method": "api",
-        "fetchedAt": "2026-09-17T02:06:14.386Z"
+        "fetchedAt": "2026-09-18T02:05:16.481Z"
       }
     },
-    "totalModels": 345,
+    "totalModels": 346,
     "failedProviders": []
   },
   "providers": {
@@ -1038,13 +1038,13 @@
       }
     },
     "openrouter": {
-      "stealth/union-alpha": {
-        "displayName": "stealth/union-alpha",
+      "unbiased/pareto": {
+        "displayName": "unbiased/pareto",
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 0,
-        "outputCostPerToken": 0
+        "inputCostPerToken": 0.0000025,
+        "outputCostPerToken": 0.0000075
       },
       "~deepseek/deepseek-pro-latest": {
         "displayName": "~deepseek/deepseek-pro-latest",
@@ -1291,8 +1291,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 8.33e-7,
-        "outputCostPerToken": 0.000002618
+        "inputCostPerToken": 8.775e-7,
+        "outputCostPerToken": 0.00000297
       },
       "tencent/hy-mt2-7b": {
         "displayName": "tencent/hy-mt2-7b",
@@ -1325,6 +1325,14 @@
         "extractionMethod": "api",
         "inputCostPerToken": 2.14e-7,
         "outputCostPerToken": 0.00000255
+      },
+      "qwen/qwen3.8-27b:free": {
+        "displayName": "qwen/qwen3.8-27b:free",
+        "pricingUnit": "per-token",
+        "sourceUrl": "https://openrouter.ai/api/v1/models",
+        "extractionMethod": "api",
+        "inputCostPerToken": 0,
+        "outputCostPerToken": 0
       },
       "dots-studio/dots-3-note-preview:free": {
         "displayName": "dots-studio/dots-3-note-preview:free",
@@ -1419,8 +1427,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 3.5e-7,
-        "outputCostPerToken": 0.0000015
+        "inputCostPerToken": 3e-7,
+        "outputCostPerToken": 0.0000011
       },
       "meta/muse-glimmer-30b:batch": {
         "displayName": "meta/muse-glimmer-30b:batch",
@@ -1443,8 +1451,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 4e-8,
-        "outputCostPerToken": 1e-7
+        "inputCostPerToken": 5.49e-8,
+        "outputCostPerToken": 1.734e-7
       },
       "thinkingmachines/inkling-small": {
         "displayName": "thinkingmachines/inkling-small",
@@ -1539,8 +1547,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 0.000003,
-        "outputCostPerToken": 0.000015
+        "inputCostPerToken": 0.0000021,
+        "outputCostPerToken": 0.00001095
       },
       "moonshotai/kimi-k3:batch": {
         "displayName": "moonshotai/kimi-k3:batch",
@@ -1843,8 +1851,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 0.000002,
-        "outputCostPerToken": 0.0000112
+        "inputCostPerToken": 0.0000021,
+        "outputCostPerToken": 0.00001095
       },
       "~google/gemini-flash-latest": {
         "displayName": "~google/gemini-flash-latest",
@@ -2467,8 +2475,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 4.3e-7,
-        "outputCostPerToken": 0.00000175
+        "inputCostPerToken": 5e-7,
+        "outputCostPerToken": 0.000002
       },
       "thedrummer/cydonia-24b-v4.1": {
         "displayName": "thedrummer/cydonia-24b-v4.1",
