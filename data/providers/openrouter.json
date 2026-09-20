@@ -7,6 +7,14 @@
     "inputCostPerToken": 7.5e-8,
     "outputCostPerToken": 5e-7
   },
+  "z-ai/glm-5.3-flashx": {
+    "displayName": "z-ai/glm-5.3-flashx",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 3.7e-7,
+    "outputCostPerToken": 0.00000125
+  },
   "unbiased/pareto": {
     "displayName": "unbiased/pareto",
     "pricingUnit": "per-token",
@@ -28,8 +36,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.35e-7,
-    "outputCostPerToken": 5.4e-7
+    "inputCostPerToken": 1.3e-7,
+    "outputCostPerToken": 5.2e-7
   },
   "inference-net/schematron-v2-turbo": {
     "displayName": "inference-net/schematron-v2-turbo",
@@ -110,14 +118,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 0,
     "outputCostPerToken": 0
-  },
-  "deepseek/deepseek-v4.1-flash": {
-    "displayName": "deepseek/deepseek-v4.1-flash",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 1.5e-7,
-    "outputCostPerToken": 6e-7
   },
   "inception/mercury-2.5": {
     "displayName": "inception/mercury-2.5",
@@ -247,22 +247,6 @@
     "inputCostPerToken": 1e-7,
     "outputCostPerToken": 2e-7
   },
-  "deepseek/deepseek-v4-flash-vision-exp": {
-    "displayName": "deepseek/deepseek-v4-flash-vision-exp",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 2.156e-7,
-    "outputCostPerToken": 6.468e-7
-  },
-  "deepseek/deepseek-v4-flash-vision-exp:batch": {
-    "displayName": "deepseek/deepseek-v4-flash-vision-exp:batch",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 1.1e-7,
-    "outputCostPerToken": 3.3e-7
-  },
   "tencent/hy-mt2-1.8b": {
     "displayName": "tencent/hy-mt2-1.8b",
     "pricingUnit": "per-token",
@@ -284,8 +268,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 8.918e-7,
-    "outputCostPerToken": 0.0000028028
+    "inputCostPerToken": 8.442e-7,
+    "outputCostPerToken": 0.0000026532
   },
   "tencent/hy-mt2-7b": {
     "displayName": "tencent/hy-mt2-7b",
@@ -300,8 +284,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 9.1e-7,
-    "outputCostPerToken": 0.00000286
+    "inputCostPerToken": 8.96e-7,
+    "outputCostPerToken": 0.000002816
   },
   "z-ai/glm-5.3:batch": {
     "displayName": "z-ai/glm-5.3:batch",
@@ -316,8 +300,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.14e-7,
-    "outputCostPerToken": 0.00000255
+    "inputCostPerToken": 4.2e-7,
+    "outputCostPerToken": 0.000003
   },
   "qwen/qwen3.8-27b:free": {
     "displayName": "qwen/qwen3.8-27b:free",
@@ -366,22 +350,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 5e-7,
     "outputCostPerToken": 0.000003
-  },
-  "deepseek/deepseek-v4-pro-0813": {
-    "displayName": "deepseek/deepseek-v4-pro-0813",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 5.7816e-7,
-    "outputCostPerToken": 0.00000173448
-  },
-  "deepseek/deepseek-v4-pro-0813:batch": {
-    "displayName": "deepseek/deepseek-v4-pro-0813:batch",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 6.6e-7,
-    "outputCostPerToken": 0.00000198
   },
   "x-ai/grok-4.6": {
     "displayName": "x-ai/grok-4.6",
@@ -460,32 +428,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4.972e-8,
-    "outputCostPerToken": 1.4916e-7
-  },
-  "deepseek/deepseek-v4-flash-0731": {
-    "displayName": "deepseek/deepseek-v4-flash-0731",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 5e-8,
-    "outputCostPerToken": 1e-7
-  },
-  "deepseek/deepseek-v4-flash-0731:batch": {
-    "displayName": "deepseek/deepseek-v4-flash-0731:batch",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 1.1e-7,
-    "outputCostPerToken": 3.3e-7
-  },
-  "deepseek/deepseek-v4-flash-0731:free": {
-    "displayName": "deepseek/deepseek-v4-flash-0731:free",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 0,
-    "outputCostPerToken": 0
+    "inputCostPerToken": 4e-8,
+    "outputCostPerToken": 8e-8
   },
   "thinkingmachines/inkling-small": {
     "displayName": "thinkingmachines/inkling-small",
@@ -580,8 +524,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0.0000021,
-    "outputCostPerToken": 0.00001095
+    "inputCostPerToken": 0.0000017,
+    "outputCostPerToken": 0.0000085
   },
   "moonshotai/kimi-k3:batch": {
     "displayName": "moonshotai/kimi-k3:batch",
@@ -884,8 +828,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0.0000021,
-    "outputCostPerToken": 0.00001095
+    "inputCostPerToken": 0.0000017,
+    "outputCostPerToken": 0.0000085
   },
   "~google/gemini-flash-latest": {
     "displayName": "~google/gemini-flash-latest",
@@ -942,22 +886,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 3e-7,
     "outputCostPerToken": 0.000002
-  },
-  "deepseek/deepseek-v4-pro": {
-    "displayName": "deepseek/deepseek-v4-pro",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 6.6555e-7,
-    "outputCostPerToken": 0.0000013311
-  },
-  "deepseek/deepseek-v4-flash": {
-    "displayName": "deepseek/deepseek-v4-flash",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 4.844e-8,
-    "outputCostPerToken": 9.688e-8
   },
   "tencent/hy3-preview": {
     "displayName": "tencent/hy3-preview",
@@ -1164,8 +1092,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.625e-7,
-    "outputCostPerToken": 0.0000013
+    "inputCostPerToken": 3.125e-7,
+    "outputCostPerToken": 0.00000125
   },
   "qwen/qwen3.5-27b": {
     "displayName": "qwen/qwen3.5-27b",
@@ -1423,14 +1351,6 @@
     "inputCostPerToken": 2.5e-7,
     "outputCostPerToken": 7.5e-7
   },
-  "deepseek/deepseek-v3.2": {
-    "displayName": "deepseek/deepseek-v3.2",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 2.69e-7,
-    "outputCostPerToken": 4e-7
-  },
   "moonshotai/kimi-k2-thinking": {
     "displayName": "moonshotai/kimi-k2-thinking",
     "pricingUnit": "per-token",
@@ -1516,8 +1436,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2e-7,
-    "outputCostPerToken": 7e-7
+    "inputCostPerToken": 1.3e-7,
+    "outputCostPerToken": 5.2e-7
   },
   "z-ai/glm-4.6": {
     "displayName": "z-ai/glm-4.6",
@@ -1526,14 +1446,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 4.3e-7,
     "outputCostPerToken": 0.00000175
-  },
-  "deepseek/deepseek-v3.2-exp": {
-    "displayName": "deepseek/deepseek-v3.2-exp",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 2.7e-7,
-    "outputCostPerToken": 4.1e-7
   },
   "thedrummer/cydonia-24b-v4.1": {
     "displayName": "thedrummer/cydonia-24b-v4.1",
@@ -1582,14 +1494,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 6.5e-7,
     "outputCostPerToken": 0.00000325
-  },
-  "deepseek/deepseek-v3.1-terminus": {
-    "displayName": "deepseek/deepseek-v3.1-terminus",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 2.7e-7,
-    "outputCostPerToken": 0.000001
   },
   "qwen/qwen3-coder-flash": {
     "displayName": "qwen/qwen3-coder-flash",
@@ -1646,14 +1550,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 0.000001,
     "outputCostPerToken": 0.000003
-  },
-  "deepseek/deepseek-chat-v3.1": {
-    "displayName": "deepseek/deepseek-chat-v3.1",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 2.5e-7,
-    "outputCostPerToken": 9.5e-7
   },
   "mistralai/mistral-medium-3.1": {
     "displayName": "mistralai/mistral-medium-3.1",
@@ -1823,14 +1719,6 @@
     "inputCostPerToken": 4e-7,
     "outputCostPerToken": 0.0000022
   },
-  "deepseek/deepseek-r1-0528": {
-    "displayName": "deepseek/deepseek-r1-0528",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 5e-7,
-    "outputCostPerToken": 0.00000215
-  },
   "mistralai/mistral-medium-3": {
     "displayName": "mistralai/mistral-medium-3",
     "pricingUnit": "per-token",
@@ -1902,14 +1790,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 1e-7,
     "outputCostPerToken": 3e-7
-  },
-  "deepseek/deepseek-chat-v3-0324": {
-    "displayName": "deepseek/deepseek-chat-v3-0324",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 2.5e-7,
-    "outputCostPerToken": 0.000001
   },
   "mistralai/mistral-small-3.1-24b-instruct": {
     "displayName": "mistralai/mistral-small-3.1-24b-instruct",
@@ -2015,22 +1895,6 @@
     "inputCostPerToken": 0.000001,
     "outputCostPerToken": 0.000001
   },
-  "deepseek/deepseek-r1-distill-llama-70b": {
-    "displayName": "deepseek/deepseek-r1-distill-llama-70b",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 8e-7,
-    "outputCostPerToken": 8e-7
-  },
-  "deepseek/deepseek-r1": {
-    "displayName": "deepseek/deepseek-r1",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 7e-7,
-    "outputCostPerToken": 0.0000025
-  },
   "minimax/minimax-01": {
     "displayName": "minimax/minimax-01",
     "pricingUnit": "per-token",
@@ -2046,14 +1910,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 7e-8,
     "outputCostPerToken": 1.4e-7
-  },
-  "deepseek/deepseek-chat": {
-    "displayName": "deepseek/deepseek-chat",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 3.2e-7,
-    "outputCostPerToken": 8.9e-7
   },
   "sao10k/l3.3-euryale-70b": {
     "displayName": "sao10k/l3.3-euryale-70b",
