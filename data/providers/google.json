@@ -192,6 +192,24 @@
     "outputCostPerToken": 0.0000015,
     "costPerImage": 0.039
   },
+  "gemini-3.8-flash-tts": {
+    "displayName": "Gemini 3.8 Flash TTS",
+    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-token",
+    "modelType": "audio",
+    "inputCostPerToken": 5e-7,
+    "outputCostPerToken": 0.000009
+  },
+  "gemini-3.8-flash-lite-tts": {
+    "displayName": "Gemini 3.8 Flash-Lite TTS",
+    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-token",
+    "modelType": "audio",
+    "inputCostPerToken": 5e-7,
+    "outputCostPerToken": 0.000006
+  },
   "gemini-3.1-flash-tts-preview": {
     "displayName": "Gemini 3.1 Flash TTS Preview",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
