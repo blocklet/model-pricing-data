@@ -1,4 +1,20 @@
 {
+  "gemini-4-argon": {
+    "displayName": "Gemini 4 Argon",
+    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
+    "extractionMethod": "regex",
+    "pricingUnit": "per-token",
+    "modelType": "chatCompletion",
+    "inputCostPerToken": 0.000002,
+    "outputCostPerToken": 0.00001,
+    "caching": {
+      "read": 1e-7
+    },
+    "batchPricing": {
+      "inputCostPerToken": 0.000001,
+      "outputCostPerToken": 0.000005
+    }
+  },
   "gemini-3.8-flash": {
     "displayName": "Gemini 3.8 Flash",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
