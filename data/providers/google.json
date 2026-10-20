@@ -131,7 +131,8 @@
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "inputCostPerToken": 0.0000015,
-    "outputCostPerToken": 0.000009
+    "outputCostPerToken": 0.000009,
+    "deprecated": true
   },
   "gemini-3.1-pro-preview": {
     "displayName": "Gemini 3.1 Pro Preview",
@@ -332,22 +333,6 @@
     "modelType": "audio",
     "inputCostPerToken": 0.000001,
     "outputCostPerToken": 0.00002
-  },
-  "veo-3.1": {
-    "displayName": "Veo 3.1",
-    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "regex",
-    "pricingUnit": "per-second",
-    "modelType": "video",
-    "costPerSecond": 0.4
-  },
-  "veo-3.1-fast": {
-    "displayName": "Veo 3.1 Fast",
-    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "regex",
-    "pricingUnit": "per-second",
-    "modelType": "video",
-    "costPerSecond": 0.1
   },
   "gemini-embedding-2": {
     "displayName": "Gemini Embedding 2",

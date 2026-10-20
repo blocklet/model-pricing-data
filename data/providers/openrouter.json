@@ -1,4 +1,12 @@
 {
+  "minimax/minimax-m3.1-flash:free": {
+    "displayName": "minimax/minimax-m3.1-flash:free",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0,
+    "outputCostPerToken": 0
+  },
   "elorian/glimpse": {
     "displayName": "elorian/glimpse",
     "pricingUnit": "per-token",
@@ -20,8 +28,16 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0.000001,
-    "outputCostPerToken": 0.000003
+    "inputCostPerToken": 3e-7,
+    "outputCostPerToken": 0.000001
+  },
+  "inception/mercury-3": {
+    "displayName": "inception/mercury-3",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 1e-7,
+    "outputCostPerToken": 3.5e-7
   },
   "moondream/moondream3-preview": {
     "displayName": "moondream/moondream3-preview",
@@ -52,8 +68,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1e-7,
-    "outputCostPerToken": 4e-7
+    "inputCostPerToken": 1.5e-7,
+    "outputCostPerToken": 5e-7
   },
   "nvidia/nemotron-3.5-super-vl:free": {
     "displayName": "nvidia/nemotron-3.5-super-vl:free",
@@ -293,7 +309,7 @@
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
     "inputCostPerToken": 5e-8,
-    "outputCostPerToken": 6e-7
+    "outputCostPerToken": 2.4e-8
   },
   "inference-net/schematron-v2-turbo": {
     "displayName": "inference-net/schematron-v2-turbo",
@@ -436,8 +452,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4.8e-8,
-    "outputCostPerToken": 2e-7
+    "inputCostPerToken": 4.72e-8,
+    "outputCostPerToken": 1.6e-7
   },
   "qwen/qwen3.8-flash": {
     "displayName": "qwen/qwen3.8-flash",
@@ -452,8 +468,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4.8e-8,
-    "outputCostPerToken": 2e-7
+    "inputCostPerToken": 4.72e-8,
+    "outputCostPerToken": 1.6e-7
   },
   "z-ai/glm-5.3-flash:batch": {
     "displayName": "z-ai/glm-5.3-flash:batch",
@@ -492,8 +508,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 7.5e-8,
-    "outputCostPerToken": 0.0000022
+    "inputCostPerToken": 5.1e-8,
+    "outputCostPerToken": 0.000006
   },
   "tencent/hy-mt2-7b": {
     "displayName": "tencent/hy-mt2-7b",
@@ -604,8 +620,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 9e-8,
-    "outputCostPerToken": 3.6e-7
+    "inputCostPerToken": 1.5e-7,
+    "outputCostPerToken": 6e-7
   },
   "meta/muse-glimmer-30b": {
     "displayName": "meta/muse-glimmer-30b",
@@ -628,7 +644,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 8.6e-9,
+    "inputCostPerToken": 6.5e-9,
     "outputCostPerToken": 4.5e-7
   },
   "thinkingmachines/inkling-small": {
@@ -716,7 +732,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.49e-7,
+    "inputCostPerToken": 2.39e-7,
     "outputCostPerToken": 0.000011936
   },
   "moonshotai/kimi-k3:batch": {
@@ -996,8 +1012,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.49e-7,
-    "outputCostPerToken": 0.000011936
+    "inputCostPerToken": 2.38e-7,
+    "outputCostPerToken": 0.000016
   },
   "~google/gemini-flash-latest": {
     "displayName": "~google/gemini-flash-latest",
@@ -1036,8 +1052,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.5e-7,
-    "outputCostPerToken": 0.000001
+    "inputCostPerToken": 1e-7,
+    "outputCostPerToken": 9.5e-7
   },
   "qwen/qwen3.6-27b": {
     "displayName": "qwen/qwen3.6-27b",
@@ -1244,8 +1260,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.95e-7,
-    "outputCostPerToken": 0.00000156
+    "inputCostPerToken": 2.7e-7,
+    "outputCostPerToken": 0.00000216
   },
   "qwen/qwen3.5-122b-a10b": {
     "displayName": "qwen/qwen3.5-122b-a10b",
@@ -1284,8 +1300,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 5e-7,
-    "outputCostPerToken": 0.0000036
+    "inputCostPerToken": 3.9e-7,
+    "outputCostPerToken": 0.00000234
   },
   "minimax/minimax-m2.5": {
     "displayName": "minimax/minimax-m2.5",
@@ -1300,8 +1316,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0.000001,
-    "outputCostPerToken": 0.0000032
+    "inputCostPerToken": 6e-7,
+    "outputCostPerToken": 0.00000192
   },
   "qwen/qwen3-coder-next": {
     "displayName": "qwen/qwen3-coder-next",
@@ -1572,8 +1588,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 5e-7,
-    "outputCostPerToken": 0.000002
+    "inputCostPerToken": 5.5e-7,
+    "outputCostPerToken": 0.0000022
   },
   "thedrummer/cydonia-24b-v4.1": {
     "displayName": "thedrummer/cydonia-24b-v4.1",
@@ -1975,14 +1991,6 @@
     "inputCostPerToken": 7e-8,
     "outputCostPerToken": 1.4e-7
   },
-  "sao10k/l3.3-euryale-70b": {
-    "displayName": "sao10k/l3.3-euryale-70b",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 6.5e-7,
-    "outputCostPerToken": 7.5e-7
-  },
   "cohere/command-r7b-12-2024": {
     "displayName": "cohere/command-r7b-12-2024",
     "pricingUnit": "per-token",
@@ -2166,14 +2174,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 0.000002,
     "outputCostPerToken": 0.000006
-  },
-  "microsoft/wizardlm-2-8x22b": {
-    "displayName": "microsoft/wizardlm-2-8x22b",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 6.2e-7,
-    "outputCostPerToken": 6.2e-7
   },
   "mistralai/mistral-large": {
     "displayName": "mistralai/mistral-large",
