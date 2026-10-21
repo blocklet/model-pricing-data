@@ -419,41 +419,5 @@
     "inputCostPerToken": 5e-7,
     "outputCostPerToken": 0.0000015,
     "displayName": "gpt-3.5-turbo-0125"
-  },
-  "gpt-3.5-turbo-1106": {
-    "pricingUnit": "per-token",
-    "modelType": "chatCompletion",
-    "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
-    "inputCostPerToken": 0.000001,
-    "outputCostPerToken": 0.000002,
-    "displayName": "gpt-3.5-turbo-1106"
-  },
-  "gpt-3.5-turbo-instruct": {
-    "pricingUnit": "per-token",
-    "modelType": "chatCompletion",
-    "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
-    "inputCostPerToken": 0.0000015,
-    "outputCostPerToken": 0.000002,
-    "displayName": "gpt-3.5-turbo-instruct"
-  },
-  "davinci-002": {
-    "pricingUnit": "per-token",
-    "modelType": "chatCompletion",
-    "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
-    "inputCostPerToken": 0.000002,
-    "outputCostPerToken": 0.000002,
-    "displayName": "davinci-002"
-  },
-  "babbage-002": {
-    "pricingUnit": "per-token",
-    "modelType": "chatCompletion",
-    "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
-    "inputCostPerToken": 4e-7,
-    "outputCostPerToken": 4e-7,
-    "displayName": "babbage-002"
   }
 }
