@@ -7,13 +7,13 @@
     "inputCostPerToken": 0,
     "outputCostPerToken": 0
   },
-  "minimax/minimax-m3.1-flash:free": {
-    "displayName": "minimax/minimax-m3.1-flash:free",
+  "minimax/minimax-m3.1-flash": {
+    "displayName": "minimax/minimax-m3.1-flash",
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0,
-    "outputCostPerToken": 0
+    "inputCostPerToken": 1.5e-7,
+    "outputCostPerToken": 6e-7
   },
   "elorian/glimpse": {
     "displayName": "elorian/glimpse",
@@ -36,7 +36,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 3e-7,
+    "inputCostPerToken": 2.5e-7,
     "outputCostPerToken": 0.000001
   },
   "inception/mercury-3": {
@@ -308,7 +308,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.235e-7,
+    "inputCostPerToken": 2.25e-7,
     "outputCostPerToken": 0.000008
   },
   "~deepseek/deepseek-flash-latest": {
@@ -460,8 +460,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.46e-8,
-    "outputCostPerToken": 9.78e-8
+    "inputCostPerToken": 5.2e-9,
+    "outputCostPerToken": 1.985e-7
   },
   "qwen/qwen3.8-flash": {
     "displayName": "qwen/qwen3.8-flash",
@@ -476,8 +476,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.46e-8,
-    "outputCostPerToken": 9.78e-8
+    "inputCostPerToken": 5.2e-9,
+    "outputCostPerToken": 1.985e-7
   },
   "z-ai/glm-5.3-flash:batch": {
     "displayName": "z-ai/glm-5.3-flash:batch",
@@ -1021,7 +1021,7 @@
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
     "inputCostPerToken": 2.38e-7,
-    "outputCostPerToken": 0.000024
+    "outputCostPerToken": 0.000016
   },
   "~google/gemini-flash-latest": {
     "displayName": "~google/gemini-flash-latest",
@@ -1812,8 +1812,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 9.375e-8,
-    "outputCostPerToken": 2.5e-7
+    "inputCostPerToken": 7.5e-8,
+    "outputCostPerToken": 2e-7
   },
   "minimax/minimax-m1": {
     "displayName": "minimax/minimax-m1",

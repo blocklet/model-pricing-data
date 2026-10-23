@@ -124,16 +124,6 @@
     "inputCostPerToken": 0.0000015,
     "outputCostPerToken": 0.000009
   },
-  "gemini-omni-flash-preview": {
-    "displayName": "Gemini Omni Flash Preview",
-    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "extractionMethod": "regex",
-    "pricingUnit": "per-token",
-    "modelType": "chatCompletion",
-    "inputCostPerToken": 0.0000015,
-    "outputCostPerToken": 0.000009,
-    "deprecated": true
-  },
   "gemini-3.1-pro-preview": {
     "displayName": "Gemini 3.1 Pro Preview",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
