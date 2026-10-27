@@ -23,6 +23,18 @@
     },
     "displayName": "gpt-6.1-sol"
   },
+  "gpt-6.1-terra": {
+    "pricingUnit": "per-token",
+    "modelType": "chatCompletion",
+    "sourceUrl": "https://developers.openai.com/api/docs/pricing",
+    "extractionMethod": "regex",
+    "inputCostPerToken": 0.000001,
+    "outputCostPerToken": 0.00000125,
+    "caching": {
+      "read": 5e-8
+    },
+    "displayName": "gpt-6.1-terra"
+  },
   "gpt-6-luna": {
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
