@@ -324,8 +324,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 8.12e-9,
-    "outputCostPerToken": 6.23e-8
+    "inputCostPerToken": 3.5e-8,
+    "outputCostPerToken": 5e-7
   },
   "inference-net/schematron-v2-turbo": {
     "displayName": "inference-net/schematron-v2-turbo",
@@ -468,8 +468,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.19e-8,
-    "outputCostPerToken": 1.53e-8
+    "inputCostPerToken": 2.85e-8,
+    "outputCostPerToken": 9.23e-8
   },
   "qwen/qwen3.8-flash": {
     "displayName": "qwen/qwen3.8-flash",
@@ -484,8 +484,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.19e-8,
-    "outputCostPerToken": 1.53e-8
+    "inputCostPerToken": 2.85e-8,
+    "outputCostPerToken": 9.23e-8
   },
   "z-ai/glm-5.3-flash:batch": {
     "displayName": "z-ai/glm-5.3-flash:batch",
@@ -540,8 +540,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 6.99e-8,
-    "outputCostPerToken": 0.0000014
+    "inputCostPerToken": 8e-8,
+    "outputCostPerToken": 0.0000036
   },
   "z-ai/glm-5.3:batch": {
     "displayName": "z-ai/glm-5.3:batch",
@@ -668,7 +668,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4.34e-8,
+    "inputCostPerToken": 5.9e-8,
     "outputCostPerToken": 3e-7
   },
   "thinkingmachines/inkling-small": {
@@ -1572,8 +1572,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 7e-8,
-    "outputCostPerToken": 2.8e-7
+    "inputCostPerToken": 1.5e-7,
+    "outputCostPerToken": 6e-7
   },
   "qwen/qwen3-30b-a3b-instruct-2507": {
     "displayName": "qwen/qwen3-30b-a3b-instruct-2507",
@@ -1956,8 +1956,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 5e-8,
-    "outputCostPerToken": 3.3e-7
+    "inputCostPerToken": 5.09e-8,
+    "outputCostPerToken": 3.35e-7
   },
   "qwen/qwen-2.5-72b-instruct": {
     "displayName": "qwen/qwen-2.5-72b-instruct",
