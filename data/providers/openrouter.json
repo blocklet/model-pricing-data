@@ -1,4 +1,12 @@
 {
+  "z-ai/glm-5.3-flashx-legal": {
+    "displayName": "z-ai/glm-5.3-flashx-legal",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 3.7e-7,
+    "outputCostPerToken": 0.00000125
+  },
   "particle-ai/particle-1": {
     "displayName": "particle-ai/particle-1",
     "pricingUnit": "per-token",
@@ -988,8 +996,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.495e-7,
-    "outputCostPerToken": 0.00000715
+    "inputCostPerToken": 1.824e-7,
+    "outputCostPerToken": 0.0000101583
   },
   "~google/gemini-flash-latest": {
     "displayName": "~google/gemini-flash-latest",
@@ -1524,7 +1532,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 9e-8,
+    "inputCostPerToken": 1e-7,
     "outputCostPerToken": 0.0000011
   },
   "moonshotai/kimi-k2-0905": {
@@ -1876,8 +1884,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1e-7,
-    "outputCostPerToken": 3.2e-7
+    "inputCostPerToken": 2e-7,
+    "outputCostPerToken": 5.2e-7
   },
   "amazon/nova-lite-v1": {
     "displayName": "amazon/nova-lite-v1",
@@ -1990,22 +1998,6 @@
     "extractionMethod": "api",
     "inputCostPerToken": 8.5e-7,
     "outputCostPerToken": 8.5e-7
-  },
-  "nousresearch/hermes-3-llama-3.1-70b": {
-    "displayName": "nousresearch/hermes-3-llama-3.1-70b",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 7e-7,
-    "outputCostPerToken": 7e-7
-  },
-  "nousresearch/hermes-3-llama-3.1-405b": {
-    "displayName": "nousresearch/hermes-3-llama-3.1-405b",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://openrouter.ai/api/v1/models",
-    "extractionMethod": "api",
-    "inputCostPerToken": 0.000001,
-    "outputCostPerToken": 0.000001
   },
   "sao10k/l3-lunaris-8b": {
     "displayName": "sao10k/l3-lunaris-8b",

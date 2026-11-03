@@ -3,7 +3,7 @@
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 0.00001,
     "outputCostPerToken": 0.0000125,
     "caching": {
@@ -15,7 +15,7 @@
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 0.000002,
     "outputCostPerToken": 0.0000025,
     "caching": {
@@ -27,7 +27,7 @@
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 0.000001,
     "outputCostPerToken": 0.00000125,
     "caching": {
@@ -39,7 +39,7 @@
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 1e-7,
     "outputCostPerToken": 1.25e-7,
     "caching": {
@@ -51,7 +51,7 @@
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 0.000002,
     "outputCostPerToken": 0.0000025,
     "caching": {
@@ -63,7 +63,7 @@
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 0.000004,
     "outputCostPerToken": 0.000005,
     "caching": {
@@ -75,7 +75,7 @@
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 0.000002,
     "outputCostPerToken": 0.0000025,
     "caching": {
@@ -87,7 +87,7 @@
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 2e-7,
     "outputCostPerToken": 2.5e-7,
     "caching": {
@@ -99,7 +99,7 @@
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 0.000005,
     "caching": {
       "read": 5e-7
@@ -117,7 +117,7 @@
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 0.00003,
     "contextTiers": [
       {
@@ -131,7 +131,7 @@
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 0.0000025,
     "caching": {
       "read": 2.5e-7
@@ -149,7 +149,7 @@
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 7.5e-7,
     "outputCostPerToken": 0.0000045,
     "caching": {
@@ -161,7 +161,7 @@
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 2e-7,
     "outputCostPerToken": 0.00000125,
     "caching": {
@@ -173,7 +173,7 @@
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 0.00003,
     "contextTiers": [
       {
@@ -187,7 +187,7 @@
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 0.00000175,
     "outputCostPerToken": 0.000014,
     "caching": {
@@ -199,7 +199,7 @@
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 0.000021,
     "outputCostPerToken": 0.000168,
     "displayName": "gpt-5.2-pro"
@@ -208,7 +208,7 @@
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 0.00000125,
     "outputCostPerToken": 0.00001,
     "caching": {
@@ -220,7 +220,7 @@
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 0.00000125,
     "outputCostPerToken": 0.00001,
     "caching": {
@@ -232,7 +232,7 @@
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 2.5e-7,
     "outputCostPerToken": 0.000002,
     "caching": {
@@ -244,7 +244,7 @@
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 5e-8,
     "outputCostPerToken": 4e-7,
     "caching": {
@@ -256,7 +256,7 @@
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 0.000015,
     "outputCostPerToken": 0.00012,
     "displayName": "gpt-5-pro"
@@ -265,7 +265,7 @@
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 0.000002,
     "outputCostPerToken": 0.000008,
     "caching": {
@@ -277,7 +277,7 @@
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 4e-7,
     "outputCostPerToken": 0.0000016,
     "caching": {
@@ -285,23 +285,11 @@
     },
     "displayName": "gpt-4.1-mini"
   },
-  "gpt-4.1-nano": {
-    "pricingUnit": "per-token",
-    "modelType": "chatCompletion",
-    "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
-    "inputCostPerToken": 1e-7,
-    "outputCostPerToken": 4e-7,
-    "caching": {
-      "read": 2.5e-8
-    },
-    "displayName": "gpt-4.1-nano"
-  },
   "gpt-4o": {
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 0.0000025,
     "outputCostPerToken": 0.00001,
     "caching": {
@@ -309,20 +297,11 @@
     },
     "displayName": "gpt-4o"
   },
-  "gpt-4o-2024-05-13": {
-    "pricingUnit": "per-token",
-    "modelType": "chatCompletion",
-    "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
-    "inputCostPerToken": 0.000005,
-    "outputCostPerToken": 0.000015,
-    "displayName": "gpt-4o-2024-05-13"
-  },
   "gpt-4o-mini": {
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 1.5e-7,
     "outputCostPerToken": 6e-7,
     "caching": {
@@ -330,32 +309,11 @@
     },
     "displayName": "gpt-4o-mini"
   },
-  "o1": {
-    "pricingUnit": "per-token",
-    "modelType": "chatCompletion",
-    "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
-    "inputCostPerToken": 0.000015,
-    "outputCostPerToken": 0.00006,
-    "caching": {
-      "read": 0.0000075
-    },
-    "displayName": "o1"
-  },
-  "o1-pro": {
-    "pricingUnit": "per-token",
-    "modelType": "chatCompletion",
-    "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
-    "inputCostPerToken": 0.00015,
-    "outputCostPerToken": 0.0006,
-    "displayName": "o1-pro"
-  },
   "o3-pro": {
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 0.00002,
     "outputCostPerToken": 0.00008,
     "displayName": "o3-pro"
@@ -364,72 +322,12 @@
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",
     "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
+    "extractionMethod": "regex+llm-skipped",
     "inputCostPerToken": 0.000002,
     "outputCostPerToken": 0.000008,
     "caching": {
       "read": 5e-7
     },
     "displayName": "o3"
-  },
-  "o4-mini": {
-    "pricingUnit": "per-token",
-    "modelType": "chatCompletion",
-    "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
-    "inputCostPerToken": 0.0000011,
-    "outputCostPerToken": 0.0000044,
-    "caching": {
-      "read": 2.75e-7
-    },
-    "displayName": "o4-mini"
-  },
-  "o3-mini": {
-    "pricingUnit": "per-token",
-    "modelType": "chatCompletion",
-    "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
-    "inputCostPerToken": 0.0000011,
-    "outputCostPerToken": 0.0000044,
-    "caching": {
-      "read": 5.5e-7
-    },
-    "displayName": "o3-mini"
-  },
-  "gpt-4-turbo-2024-04-09": {
-    "pricingUnit": "per-token",
-    "modelType": "chatCompletion",
-    "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
-    "inputCostPerToken": 0.00001,
-    "outputCostPerToken": 0.00003,
-    "displayName": "gpt-4-turbo-2024-04-09"
-  },
-  "gpt-4-0613": {
-    "pricingUnit": "per-token",
-    "modelType": "chatCompletion",
-    "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
-    "inputCostPerToken": 0.00003,
-    "outputCostPerToken": 0.00006,
-    "displayName": "gpt-4-0613"
-  },
-  "gpt-3.5-turbo": {
-    "pricingUnit": "per-token",
-    "modelType": "chatCompletion",
-    "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
-    "inputCostPerToken": 5e-7,
-    "outputCostPerToken": 0.0000015,
-    "displayName": "gpt-3.5-turbo"
-  },
-  "gpt-3.5-turbo-0125": {
-    "pricingUnit": "per-token",
-    "modelType": "chatCompletion",
-    "sourceUrl": "https://developers.openai.com/api/docs/pricing",
-    "extractionMethod": "regex",
-    "inputCostPerToken": 5e-7,
-    "outputCostPerToken": 0.0000015,
-    "displayName": "gpt-3.5-turbo-0125"
   }
 }

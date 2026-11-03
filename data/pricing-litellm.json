@@ -198,15 +198,6 @@
     "model_type": "chatCompletion",
     "source_url": "https://developers.openai.com/api/docs/pricing"
   },
-  "gpt-4.1-nano": {
-    "litellm_provider": "openai",
-    "source": "official",
-    "input_cost_per_token": 1e-7,
-    "output_cost_per_token": 4e-7,
-    "cache_read_input_token_cost": 2.5e-8,
-    "model_type": "chatCompletion",
-    "source_url": "https://developers.openai.com/api/docs/pricing"
-  },
   "gpt-4o": {
     "litellm_provider": "openai",
     "source": "official",
@@ -216,37 +207,12 @@
     "model_type": "chatCompletion",
     "source_url": "https://developers.openai.com/api/docs/pricing"
   },
-  "gpt-4o-2024-05-13": {
-    "litellm_provider": "openai",
-    "source": "official",
-    "input_cost_per_token": 0.000005,
-    "output_cost_per_token": 0.000015,
-    "model_type": "chatCompletion",
-    "source_url": "https://developers.openai.com/api/docs/pricing"
-  },
   "gpt-4o-mini": {
     "litellm_provider": "openai",
     "source": "official",
     "input_cost_per_token": 1.5e-7,
     "output_cost_per_token": 6e-7,
     "cache_read_input_token_cost": 7.5e-8,
-    "model_type": "chatCompletion",
-    "source_url": "https://developers.openai.com/api/docs/pricing"
-  },
-  "o1": {
-    "litellm_provider": "openai",
-    "source": "official",
-    "input_cost_per_token": 0.000015,
-    "output_cost_per_token": 0.00006,
-    "cache_read_input_token_cost": 0.0000075,
-    "model_type": "chatCompletion",
-    "source_url": "https://developers.openai.com/api/docs/pricing"
-  },
-  "o1-pro": {
-    "litellm_provider": "openai",
-    "source": "official",
-    "input_cost_per_token": 0.00015,
-    "output_cost_per_token": 0.0006,
     "model_type": "chatCompletion",
     "source_url": "https://developers.openai.com/api/docs/pricing"
   },
@@ -264,56 +230,6 @@
     "input_cost_per_token": 0.000002,
     "output_cost_per_token": 0.000008,
     "cache_read_input_token_cost": 5e-7,
-    "model_type": "chatCompletion",
-    "source_url": "https://developers.openai.com/api/docs/pricing"
-  },
-  "o4-mini": {
-    "litellm_provider": "openai",
-    "source": "official",
-    "input_cost_per_token": 0.0000011,
-    "output_cost_per_token": 0.0000044,
-    "cache_read_input_token_cost": 2.75e-7,
-    "model_type": "chatCompletion",
-    "source_url": "https://developers.openai.com/api/docs/pricing"
-  },
-  "o3-mini": {
-    "litellm_provider": "openai",
-    "source": "official",
-    "input_cost_per_token": 0.0000011,
-    "output_cost_per_token": 0.0000044,
-    "cache_read_input_token_cost": 5.5e-7,
-    "model_type": "chatCompletion",
-    "source_url": "https://developers.openai.com/api/docs/pricing"
-  },
-  "gpt-4-turbo-2024-04-09": {
-    "litellm_provider": "openai",
-    "source": "official",
-    "input_cost_per_token": 0.00001,
-    "output_cost_per_token": 0.00003,
-    "model_type": "chatCompletion",
-    "source_url": "https://developers.openai.com/api/docs/pricing"
-  },
-  "gpt-4-0613": {
-    "litellm_provider": "openai",
-    "source": "official",
-    "input_cost_per_token": 0.00003,
-    "output_cost_per_token": 0.00006,
-    "model_type": "chatCompletion",
-    "source_url": "https://developers.openai.com/api/docs/pricing"
-  },
-  "gpt-3.5-turbo": {
-    "litellm_provider": "openai",
-    "source": "official",
-    "input_cost_per_token": 5e-7,
-    "output_cost_per_token": 0.0000015,
-    "model_type": "chatCompletion",
-    "source_url": "https://developers.openai.com/api/docs/pricing"
-  },
-  "gpt-3.5-turbo-0125": {
-    "litellm_provider": "openai",
-    "source": "official",
-    "input_cost_per_token": 5e-7,
-    "output_cost_per_token": 0.0000015,
     "model_type": "chatCompletion",
     "source_url": "https://developers.openai.com/api/docs/pricing"
   },
@@ -696,6 +612,13 @@
     "cache_read_input_token_cost": 3e-9,
     "model_type": "chatCompletion",
     "source_url": "https://api-docs.deepseek.com/quick_start/pricing"
+  },
+  "openrouter/z-ai/glm-5.3-flashx-legal": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 3.7e-7,
+    "output_cost_per_token": 0.00000125,
+    "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/particle-ai/particle-1": {
     "litellm_provider": "openrouter",
@@ -1561,8 +1484,8 @@
   "openrouter/~moonshotai/kimi-latest": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 1.495e-7,
-    "output_cost_per_token": 0.00000715,
+    "input_cost_per_token": 1.824e-7,
+    "output_cost_per_token": 0.0000101583,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/~google/gemini-flash-latest": {
@@ -2030,7 +1953,7 @@
   "openrouter/qwen/qwen3-next-80b-a3b-instruct": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 9e-8,
+    "input_cost_per_token": 1e-7,
     "output_cost_per_token": 0.0000011,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
@@ -2338,8 +2261,8 @@
   "openrouter/meta-llama/llama-3.3-70b-instruct": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 1e-7,
-    "output_cost_per_token": 3.2e-7,
+    "input_cost_per_token": 2e-7,
+    "output_cost_per_token": 5.2e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/amazon/nova-lite-v1": {
@@ -2438,20 +2361,6 @@
     "source": "official",
     "input_cost_per_token": 8.5e-7,
     "output_cost_per_token": 8.5e-7,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
-  "openrouter/nousresearch/hermes-3-llama-3.1-70b": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 7e-7,
-    "output_cost_per_token": 7e-7,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
-  "openrouter/nousresearch/hermes-3-llama-3.1-405b": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 0.000001,
-    "output_cost_per_token": 0.000001,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/sao10k/l3-lunaris-8b": {
