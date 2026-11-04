@@ -1,4 +1,12 @@
 {
+  "stealth/crouton-alpha": {
+    "displayName": "stealth/crouton-alpha",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0,
+    "outputCostPerToken": 0
+  },
   "z-ai/glm-5.3-flashx-legal": {
     "displayName": "z-ai/glm-5.3-flashx-legal",
     "pricingUnit": "per-token",
@@ -295,6 +303,14 @@
     "inputCostPerToken": 0.000002,
     "outputCostPerToken": 0.000006
   },
+  "x-ai/grok-4.7:batch": {
+    "displayName": "x-ai/grok-4.7:batch",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0.0000016,
+    "outputCostPerToken": 0.0000048
+  },
   "qwen/qwen3.8-omni-flash": {
     "displayName": "qwen/qwen3.8-omni-flash",
     "pricingUnit": "per-token",
@@ -333,7 +349,7 @@
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
     "inputCostPerToken": 3.5e-8,
-    "outputCostPerToken": 5e-7
+    "outputCostPerToken": 3.15e-7
   },
   "inference-net/schematron-v2-turbo": {
     "displayName": "inference-net/schematron-v2-turbo",
@@ -461,7 +477,7 @@
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
     "inputCostPerToken": 6e-8,
-    "outputCostPerToken": 1.5e-7
+    "outputCostPerToken": 2.5e-7
   },
   "tencent/hy4-preview": {
     "displayName": "tencent/hy4-preview",
@@ -476,8 +492,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.85e-8,
-    "outputCostPerToken": 9.23e-8
+    "inputCostPerToken": 3.13e-8,
+    "outputCostPerToken": 8.46e-8
   },
   "qwen/qwen3.8-flash": {
     "displayName": "qwen/qwen3.8-flash",
@@ -492,8 +508,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.85e-8,
-    "outputCostPerToken": 9.23e-8
+    "inputCostPerToken": 3.13e-8,
+    "outputCostPerToken": 8.46e-8
   },
   "z-ai/glm-5.3-flash:batch": {
     "displayName": "z-ai/glm-5.3-flash:batch",
@@ -606,6 +622,14 @@
     "extractionMethod": "api",
     "inputCostPerToken": 0.000002,
     "outputCostPerToken": 0.000006
+  },
+  "x-ai/grok-4.6:batch": {
+    "displayName": "x-ai/grok-4.6:batch",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "extractionMethod": "api",
+    "inputCostPerToken": 0.0000016,
+    "outputCostPerToken": 0.0000048
   },
   "liquid/lfm-2.5-2.6b": {
     "displayName": "liquid/lfm-2.5-2.6b",
@@ -741,7 +765,7 @@
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
     "inputCostPerToken": 1.92e-7,
-    "outputCostPerToken": 0.000015
+    "outputCostPerToken": 0.000016
   },
   "moonshotai/kimi-k3:batch": {
     "displayName": "moonshotai/kimi-k3:batch",
@@ -996,8 +1020,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.824e-7,
-    "outputCostPerToken": 0.0000101583
+    "inputCostPerToken": 1.634e-7,
+    "outputCostPerToken": 0.0000101489
   },
   "~google/gemini-flash-latest": {
     "displayName": "~google/gemini-flash-latest",
@@ -1884,8 +1908,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2e-7,
-    "outputCostPerToken": 5.2e-7
+    "inputCostPerToken": 1e-7,
+    "outputCostPerToken": 3.2e-7
   },
   "amazon/nova-lite-v1": {
     "displayName": "amazon/nova-lite-v1",
@@ -2012,8 +2036,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4e-7,
-    "outputCostPerToken": 4e-7
+    "inputCostPerToken": 7.2e-7,
+    "outputCostPerToken": 7.2e-7
   },
   "meta-llama/llama-3.1-8b-instruct": {
     "displayName": "meta-llama/llama-3.1-8b-instruct",
