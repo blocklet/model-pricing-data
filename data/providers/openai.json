@@ -329,5 +329,25 @@
       "read": 5e-7
     },
     "displayName": "o3"
+  },
+  "gpt-4.1-2025-04-14": {
+    "displayName": "gpt-4.1-2025-04-14",
+    "modelType": "fineTuning",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://developers.openai.com/api/docs/pricing",
+    "extractionMethod": "regex+llm-skipped",
+    "trainingCostPerToken": 0.000025,
+    "inputCostPerToken": 0.0000015,
+    "outputCostPerToken": 5e-7
+  },
+  "gpt-4.1-mini-2025-04-14": {
+    "displayName": "gpt-4.1-mini-2025-04-14",
+    "modelType": "fineTuning",
+    "pricingUnit": "per-token",
+    "sourceUrl": "https://developers.openai.com/api/docs/pricing",
+    "extractionMethod": "regex+llm-skipped",
+    "trainingCostPerToken": 0.000005,
+    "inputCostPerToken": 4e-7,
+    "outputCostPerToken": 1e-7
   }
 }
