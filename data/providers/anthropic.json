@@ -110,19 +110,5 @@
       "write-1h": 0.00000125,
       "read": 0.000002
     }
-  },
-  "claude-haiku-3-5": {
-    "displayName": "Claude Haiku 3.5",
-    "modelType": "chatCompletion",
-    "pricingUnit": "per-token",
-    "sourceUrl": "https://docs.anthropic.com/en/docs/about-claude/pricing",
-    "extractionMethod": "regex+llm-skipped",
-    "inputCostPerToken": 8e-7,
-    "outputCostPerToken": 8e-8,
-    "caching": {
-      "write-5min": 0.000004,
-      "write-1h": 0.000001,
-      "read": 0.0000016
-    }
   }
 }
