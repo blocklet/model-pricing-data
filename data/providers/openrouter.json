@@ -548,8 +548,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.84e-8,
-    "outputCostPerToken": 9.23e-8
+    "inputCostPerToken": 3.35e-8,
+    "outputCostPerToken": 8.3e-8
   },
   "qwen/qwen3.8-flash": {
     "displayName": "qwen/qwen3.8-flash",
@@ -564,8 +564,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.5e-7,
-    "outputCostPerToken": 5e-7
+    "inputCostPerToken": 3.35e-8,
+    "outputCostPerToken": 8.3e-8
   },
   "z-ai/glm-5.3-flash:batch": {
     "displayName": "z-ai/glm-5.3-flash:batch",
@@ -692,8 +692,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.165e-7,
-    "outputCostPerToken": 0.00000466
+    "inputCostPerToken": 1.11e-7,
+    "outputCostPerToken": 0.00000444
   },
   "x-ai/grok-4.6": {
     "displayName": "x-ai/grok-4.6",
@@ -1172,16 +1172,16 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4.5e-7,
-    "outputCostPerToken": 0.0000027
+    "inputCostPerToken": 3.2e-7,
+    "outputCostPerToken": 0.0000032
   },
   "deepseek/deepseek-v4-pro": {
     "displayName": "deepseek/deepseek-v4-pro",
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 0.0000016,
-    "outputCostPerToken": 0.0000032
+    "inputCostPerToken": 9e-7,
+    "outputCostPerToken": 0.0000015
   },
   "deepseek/deepseek-v4-flash": {
     "displayName": "deepseek/deepseek-v4-flash",
@@ -1436,8 +1436,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 5e-7,
-    "outputCostPerToken": 0.0000025
+    "inputCostPerToken": 5.32e-7,
+    "outputCostPerToken": 0.000003325
   },
   "writer/palmyra-x5": {
     "displayName": "writer/palmyra-x5",
@@ -2132,8 +2132,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 5.09e-8,
-    "outputCostPerToken": 3.35e-7
+    "inputCostPerToken": 5e-8,
+    "outputCostPerToken": 3.3e-7
   },
   "qwen/qwen-2.5-72b-instruct": {
     "displayName": "qwen/qwen-2.5-72b-instruct",
