@@ -103,12 +103,12 @@
     "model_type": "chatCompletion",
     "source_url": "https://developers.openai.com/api/docs/pricing"
   },
-  "gpt-5.4-nano": {
+  "[object-object]": {
     "litellm_provider": "openai",
     "source": "official",
-    "input_cost_per_token": 2e-7,
-    "output_cost_per_token": 0.00000125,
-    "cache_read_input_token_cost": 2e-8,
+    "input_cost_per_token": 0.000002,
+    "output_cost_per_token": 0.000008,
+    "cache_read_input_token_cost": 5e-7,
     "model_type": "chatCompletion",
     "source_url": "https://developers.openai.com/api/docs/pricing"
   },
@@ -136,112 +136,7 @@
     "model_type": "chatCompletion",
     "source_url": "https://developers.openai.com/api/docs/pricing"
   },
-  "gpt-5.1": {
-    "litellm_provider": "openai",
-    "source": "official",
-    "input_cost_per_token": 0.00000125,
-    "output_cost_per_token": 0.00001,
-    "cache_read_input_token_cost": 1.25e-7,
-    "model_type": "chatCompletion",
-    "source_url": "https://developers.openai.com/api/docs/pricing"
-  },
-  "gpt-5": {
-    "litellm_provider": "openai",
-    "source": "official",
-    "input_cost_per_token": 0.00000125,
-    "output_cost_per_token": 0.00001,
-    "cache_read_input_token_cost": 1.25e-7,
-    "model_type": "chatCompletion",
-    "source_url": "https://developers.openai.com/api/docs/pricing"
-  },
-  "gpt-5-mini": {
-    "litellm_provider": "openai",
-    "source": "official",
-    "input_cost_per_token": 2.5e-7,
-    "output_cost_per_token": 0.000002,
-    "cache_read_input_token_cost": 2.5e-8,
-    "model_type": "chatCompletion",
-    "source_url": "https://developers.openai.com/api/docs/pricing"
-  },
-  "gpt-5-nano": {
-    "litellm_provider": "openai",
-    "source": "official",
-    "input_cost_per_token": 5e-8,
-    "output_cost_per_token": 4e-7,
-    "cache_read_input_token_cost": 5e-9,
-    "model_type": "chatCompletion",
-    "source_url": "https://developers.openai.com/api/docs/pricing"
-  },
-  "gpt-5-pro": {
-    "litellm_provider": "openai",
-    "source": "official",
-    "input_cost_per_token": 0.000015,
-    "output_cost_per_token": 0.00012,
-    "model_type": "chatCompletion",
-    "source_url": "https://developers.openai.com/api/docs/pricing"
-  },
-  "gpt-4.1": {
-    "litellm_provider": "openai",
-    "source": "official",
-    "input_cost_per_token": 0.000002,
-    "output_cost_per_token": 0.000008,
-    "cache_read_input_token_cost": 5e-7,
-    "model_type": "chatCompletion",
-    "source_url": "https://developers.openai.com/api/docs/pricing"
-  },
-  "gpt-4.1-mini": {
-    "litellm_provider": "openai",
-    "source": "official",
-    "input_cost_per_token": 4e-7,
-    "output_cost_per_token": 0.0000016,
-    "cache_read_input_token_cost": 1e-7,
-    "model_type": "chatCompletion",
-    "source_url": "https://developers.openai.com/api/docs/pricing"
-  },
-  "gpt-4o": {
-    "litellm_provider": "openai",
-    "source": "official",
-    "input_cost_per_token": 0.0000025,
-    "output_cost_per_token": 0.00001,
-    "cache_read_input_token_cost": 0.00000125,
-    "model_type": "chatCompletion",
-    "source_url": "https://developers.openai.com/api/docs/pricing"
-  },
-  "gpt-4o-mini": {
-    "litellm_provider": "openai",
-    "source": "official",
-    "input_cost_per_token": 1.5e-7,
-    "output_cost_per_token": 6e-7,
-    "cache_read_input_token_cost": 7.5e-8,
-    "model_type": "chatCompletion",
-    "source_url": "https://developers.openai.com/api/docs/pricing"
-  },
-  "o3-pro": {
-    "litellm_provider": "openai",
-    "source": "official",
-    "input_cost_per_token": 0.00002,
-    "output_cost_per_token": 0.00008,
-    "model_type": "chatCompletion",
-    "source_url": "https://developers.openai.com/api/docs/pricing"
-  },
-  "o3": {
-    "litellm_provider": "openai",
-    "source": "official",
-    "input_cost_per_token": 0.000002,
-    "output_cost_per_token": 0.000008,
-    "cache_read_input_token_cost": 5e-7,
-    "model_type": "chatCompletion",
-    "source_url": "https://developers.openai.com/api/docs/pricing"
-  },
-  "gpt-4.1-2025-04-14": {
-    "litellm_provider": "openai",
-    "source": "official",
-    "input_cost_per_token": 0.0000015,
-    "output_cost_per_token": 5e-7,
-    "model_type": "fineTuning",
-    "source_url": "https://developers.openai.com/api/docs/pricing"
-  },
-  "gpt-4.1-mini-2025-04-14": {
+  "deprecated": {
     "litellm_provider": "openai",
     "source": "official",
     "input_cost_per_token": 4e-7,
@@ -371,6 +266,13 @@
     "model_type": "chatCompletion",
     "source_url": "https://api-docs.deepseek.com/quick_start/pricing"
   },
+  "openrouter/inclusionai/ling-3.2-flash:free": {
+    "litellm_provider": "openrouter",
+    "source": "official",
+    "input_cost_per_token": 0,
+    "output_cost_per_token": 0,
+    "source_url": "https://openrouter.ai/api/v1/models"
+  },
   "openrouter/baidu/ernie-5.5-flash-preview:free": {
     "litellm_provider": "openrouter",
     "source": "official",
@@ -437,8 +339,8 @@
   "openrouter/ricursiveai/ripple-65b-preview": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 2e-7,
-    "output_cost_per_token": 6e-7,
+    "input_cost_per_token": 1e-7,
+    "output_cost_per_token": 3e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/tencent/hy4": {
@@ -479,8 +381,8 @@
   "openrouter/moonshotai/kimi-k3.1-pro": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 2.375e-7,
-    "output_cost_per_token": 0.0000084114,
+    "input_cost_per_token": 0.000002,
+    "output_cost_per_token": 0.00001,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/moonshotai/kimi-k3.1-pro:batch": {
@@ -630,13 +532,6 @@
     "output_cost_per_token": 1.35e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
-  "openrouter/apodex/apodex-1.1-mini:free": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 0,
-    "output_cost_per_token": 0,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
   "openrouter/unbiased/pareto-26.10-preview": {
     "litellm_provider": "openrouter",
     "source": "official",
@@ -766,8 +661,8 @@
   "openrouter/~deepseek/deepseek-flash-latest": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 2.2e-8,
-    "output_cost_per_token": 4e-7,
+    "input_cost_per_token": 3.8e-8,
+    "output_cost_per_token": 5e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/inference-net/schematron-v2-turbo": {
@@ -847,13 +742,6 @@
     "output_cost_per_token": 2.5e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
-  "openrouter/inclusionai/ling-3.0-flash-sante": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 4.2e-8,
-    "output_cost_per_token": 1.232e-7,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
   "openrouter/qwen/qwen3.8-max-0902": {
     "litellm_provider": "openrouter",
     "source": "official",
@@ -886,7 +774,7 @@
     "litellm_provider": "openrouter",
     "source": "official",
     "input_cost_per_token": 6e-8,
-    "output_cost_per_token": 1.5e-7,
+    "output_cost_per_token": 2.5e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/tencent/hy4-preview": {
@@ -894,13 +782,6 @@
     "source": "official",
     "input_cost_per_token": 8.34e-7,
     "output_cost_per_token": 0.000002501,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
-  "openrouter/inclusionai/ling-3.0-flash-fin": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 4.2e-8,
-    "output_cost_per_token": 1.232e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/~z-ai/glm-flash-latest": {
@@ -1027,20 +908,6 @@
     "source": "official",
     "input_cost_per_token": 0.0000016,
     "output_cost_per_token": 0.0000048,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
-  "openrouter/liquid/lfm-2.5-2.6b": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 3.5e-7,
-    "output_cost_per_token": 5e-7,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
-  "openrouter/liquid/lfm-2.5-2.6b:free": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 0,
-    "output_cost_per_token": 0,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/nvidia/nemotron-3.5-lightning": {
@@ -1228,8 +1095,8 @@
   "openrouter/z-ai/glm-5.2:batch": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 3.22e-7,
-    "output_cost_per_token": 9.89e-7,
+    "input_cost_per_token": 3.47e-7,
+    "output_cost_per_token": 0.000001068,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/moonshotai/kimi-k2.7-code": {
@@ -1543,8 +1410,8 @@
   "openrouter/qwen/qwen3.5-9b": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 5.9e-8,
-    "output_cost_per_token": 8.7e-8,
+    "input_cost_per_token": 1.55e-7,
+    "output_cost_per_token": 2.27e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/bytedance-seed/seed-2.0-mini": {
@@ -1607,7 +1474,7 @@
     "litellm_provider": "openrouter",
     "source": "official",
     "input_cost_per_token": 2.7e-7,
-    "output_cost_per_token": 0.00000108,
+    "output_cost_per_token": 9.5e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/z-ai/glm-5": {
@@ -2180,8 +2047,8 @@
   "openrouter/meta-llama/llama-3.2-3b-instruct": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 5e-8,
-    "output_cost_per_token": 3.3e-7,
+    "input_cost_per_token": 5.09e-8,
+    "output_cost_per_token": 3.35e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/qwen/qwen-2.5-72b-instruct": {
