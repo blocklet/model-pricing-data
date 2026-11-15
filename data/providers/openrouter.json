@@ -116,7 +116,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 5e-8,
+    "inputCostPerToken": 6e-8,
     "outputCostPerToken": 5e-7
   },
   "particle-ai/particle-1:free": {
@@ -948,8 +948,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 3.47e-7,
-    "outputCostPerToken": 0.000001068
+    "inputCostPerToken": 3.22e-7,
+    "outputCostPerToken": 9.89e-7
   },
   "moonshotai/kimi-k2.7-code": {
     "displayName": "moonshotai/kimi-k2.7-code",
@@ -1308,8 +1308,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.55e-7,
-    "outputCostPerToken": 2.27e-7
+    "inputCostPerToken": 3.5e-8,
+    "outputCostPerToken": 5.1e-8
   },
   "bytedance-seed/seed-2.0-mini": {
     "displayName": "bytedance-seed/seed-2.0-mini",
@@ -1436,8 +1436,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 6e-7,
-    "outputCostPerToken": 0.0000022
+    "inputCostPerToken": 4e-7,
+    "outputCostPerToken": 0.00000175
   },
   "nvidia/nemotron-3-nano-30b-a3b": {
     "displayName": "nvidia/nemotron-3-nano-30b-a3b",
