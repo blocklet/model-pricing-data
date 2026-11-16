@@ -381,8 +381,8 @@
   "openrouter/moonshotai/kimi-k3.1-pro": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 0.000002,
-    "output_cost_per_token": 0.00001,
+    "input_cost_per_token": 2.403e-7,
+    "output_cost_per_token": 0.0000084023,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/moonshotai/kimi-k3.1-pro:batch": {
@@ -452,7 +452,7 @@
     "litellm_provider": "openrouter",
     "source": "official",
     "input_cost_per_token": 1.5e-7,
-    "output_cost_per_token": 4.7e-7,
+    "output_cost_per_token": 5e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/nvidia/nemotron-3.5-super-vl:free": {
@@ -661,7 +661,7 @@
   "openrouter/~deepseek/deepseek-flash-latest": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 3.8e-8,
+    "input_cost_per_token": 3.6e-8,
     "output_cost_per_token": 5e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
@@ -850,8 +850,8 @@
   "openrouter/z-ai/glm-5.3": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 8.4e-8,
-    "output_cost_per_token": 0.0000036,
+    "input_cost_per_token": 6.99e-8,
+    "output_cost_per_token": 0.0000014,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/z-ai/glm-5.3:batch": {
@@ -1090,13 +1090,6 @@
     "source": "official",
     "input_cost_per_token": 7e-9,
     "output_cost_per_token": 0.0000068,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
-  "openrouter/z-ai/glm-5.2:batch": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 3.22e-7,
-    "output_cost_per_token": 9.89e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/moonshotai/kimi-k2.7-code": {
@@ -1410,8 +1403,8 @@
   "openrouter/qwen/qwen3.5-9b": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 3.5e-8,
-    "output_cost_per_token": 5.1e-8,
+    "input_cost_per_token": 1.3e-7,
+    "output_cost_per_token": 1.91e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/bytedance-seed/seed-2.0-mini": {
@@ -1489,13 +1482,6 @@
     "source": "official",
     "input_cost_per_token": 1.2e-7,
     "output_cost_per_token": 8e-7,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
-  "openrouter/stepfun/step-3.5-flash": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 1e-7,
-    "output_cost_per_token": 3e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/moonshotai/kimi-k2.5": {
@@ -1624,13 +1610,6 @@
     "output_cost_per_token": 7.5e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
-  "openrouter/qwen/qwen3-vl-30b-a3b-thinking": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 2.9e-7,
-    "output_cost_per_token": 0.000001,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
   "openrouter/qwen/qwen3-vl-30b-a3b-instruct": {
     "litellm_provider": "openrouter",
     "source": "official",
@@ -1739,8 +1718,8 @@
   "openrouter/z-ai/glm-4.5-air": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 2e-7,
-    "output_cost_per_token": 0.0000011,
+    "input_cost_per_token": 1.3e-7,
+    "output_cost_per_token": 8.5e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/qwen/qwen3-235b-a22b-thinking-2507": {
@@ -1783,13 +1762,6 @@
     "source": "official",
     "input_cost_per_token": 2e-7,
     "output_cost_per_token": 9e-7,
-    "source_url": "https://openrouter.ai/api/v1/models"
-  },
-  "openrouter/tencent/hunyuan-a13b-instruct": {
-    "litellm_provider": "openrouter",
-    "source": "official",
-    "input_cost_per_token": 1.4e-7,
-    "output_cost_per_token": 5.7e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/morph/morph-v3-large": {
