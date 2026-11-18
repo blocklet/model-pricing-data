@@ -1,4 +1,28 @@
 {
+  "gpt-6.2-astra": {
+    "pricingUnit": "per-token",
+    "modelType": "chatCompletion",
+    "sourceUrl": "https://developers.openai.com/api/docs/pricing",
+    "extractionMethod": "regex+llm-skipped",
+    "inputCostPerToken": 0.000008,
+    "outputCostPerToken": 0.00001,
+    "caching": {
+      "read": 4e-7
+    },
+    "displayName": "gpt-6.2-astra"
+  },
+  "gpt-6.2-sol": {
+    "pricingUnit": "per-token",
+    "modelType": "chatCompletion",
+    "sourceUrl": "https://developers.openai.com/api/docs/pricing",
+    "extractionMethod": "regex+llm-skipped",
+    "inputCostPerToken": 0.000002,
+    "outputCostPerToken": 0.0000025,
+    "caching": {
+      "read": 1e-7
+    },
+    "displayName": "gpt-6.2-sol"
+  },
   "gpt-6-astra": {
     "pricingUnit": "per-token",
     "modelType": "chatCompletion",

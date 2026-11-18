@@ -1,50 +1,74 @@
 {
   "_meta": {
-    "generatedAt": "2026-11-17T02:03:32.831Z",
-    "version": "2.0.244",
+    "generatedAt": "2026-11-18T02:03:26.422Z",
+    "version": "2.0.245",
     "sources": {
       "openai": {
         "url": "https://platform.openai.com/docs/pricing",
-        "modelCount": 17,
+        "modelCount": 19,
         "method": "regex+llm",
-        "fetchedAt": "2026-11-17T02:03:32.824Z"
+        "fetchedAt": "2026-11-18T02:03:26.163Z"
       },
       "anthropic": {
         "url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
         "modelCount": 8,
         "method": "regex+llm",
-        "fetchedAt": "2026-11-17T02:03:32.824Z"
+        "fetchedAt": "2026-11-18T02:03:26.164Z"
       },
       "google": {
         "url": "https://ai.google.dev/gemini-api/docs/pricing",
         "modelCount": 4,
         "method": "regex",
-        "fetchedAt": "2026-11-17T02:03:32.824Z"
+        "fetchedAt": "2026-11-18T02:03:26.164Z"
       },
       "xai": {
         "url": "https://docs.x.ai/developers/models",
         "modelCount": 0,
         "method": "regex",
-        "fetchedAt": "2026-11-17T02:03:32.824Z"
+        "fetchedAt": "2026-11-18T02:03:26.164Z"
       },
       "deepseek": {
         "url": "https://api-docs.deepseek.com/quick_start/pricing",
         "modelCount": 2,
         "method": "regex",
-        "fetchedAt": "2026-11-17T02:03:32.824Z"
+        "fetchedAt": "2026-11-18T02:03:26.164Z"
       },
       "openrouter": {
         "url": "https://openrouter.ai/models",
         "modelCount": 276,
         "method": "api",
-        "fetchedAt": "2026-11-17T02:03:32.824Z"
+        "fetchedAt": "2026-11-18T02:03:26.164Z"
       }
     },
-    "totalModels": 307,
+    "totalModels": 309,
     "failedProviders": []
   },
   "providers": {
     "openai": {
+      "gpt-6.2-astra": {
+        "pricingUnit": "per-token",
+        "modelType": "chatCompletion",
+        "sourceUrl": "https://developers.openai.com/api/docs/pricing",
+        "extractionMethod": "regex+llm-skipped",
+        "inputCostPerToken": 0.000008,
+        "outputCostPerToken": 0.00001,
+        "caching": {
+          "read": 4e-7
+        },
+        "displayName": "gpt-6.2-astra"
+      },
+      "gpt-6.2-sol": {
+        "pricingUnit": "per-token",
+        "modelType": "chatCompletion",
+        "sourceUrl": "https://developers.openai.com/api/docs/pricing",
+        "extractionMethod": "regex+llm-skipped",
+        "inputCostPerToken": 0.000002,
+        "outputCostPerToken": 0.0000025,
+        "caching": {
+          "read": 1e-7
+        },
+        "displayName": "gpt-6.2-sol"
+      },
       "gpt-6-astra": {
         "pricingUnit": "per-token",
         "modelType": "chatCompletion",
@@ -926,8 +950,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 0.00001,
-        "outputCostPerToken": 0.00005
+        "inputCostPerToken": 0.000008,
+        "outputCostPerToken": 0.00004
       },
       "~openai/gpt-sol-latest": {
         "displayName": "~openai/gpt-sol-latest",
@@ -1062,8 +1086,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 3.99e-8,
-        "outputCostPerToken": 7.84e-8
+        "inputCostPerToken": 1.5e-7,
+        "outputCostPerToken": 5e-7
       },
       "z-ai/glm-5.3-flash:batch": {
         "displayName": "z-ai/glm-5.3-flash:batch",
@@ -1134,8 +1158,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 1.5e-7,
-        "outputCostPerToken": 0.000001875
+        "inputCostPerToken": 6e-8,
+        "outputCostPerToken": 0.0000022
       },
       "qwen/qwen3.8-27b:batch": {
         "displayName": "qwen/qwen3.8-27b:batch",
@@ -1406,8 +1430,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 6e-7,
-        "outputCostPerToken": 0.0000035
+        "inputCostPerToken": 7e-7,
+        "outputCostPerToken": 0.00000375
       },
       "~anthropic/claude-fable-latest": {
         "displayName": "~anthropic/claude-fable-latest",
@@ -1782,8 +1806,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 2.6e-7,
-        "outputCostPerToken": 0.0000026
+        "inputCostPerToken": 3e-7,
+        "outputCostPerToken": 0.0000024
       },
       "qwen/qwen3.5-122b-a10b": {
         "displayName": "qwen/qwen3.5-122b-a10b",
@@ -2046,7 +2070,7 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 9e-8,
+        "inputCostPerToken": 1e-7,
         "outputCostPerToken": 0.0000011
       },
       "moonshotai/kimi-k2-0905": {
@@ -2070,8 +2094,8 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 4e-7,
-        "outputCostPerToken": 0.000002
+        "inputCostPerToken": 4.4e-7,
+        "outputCostPerToken": 0.0000022
       },
       "z-ai/glm-4.5v": {
         "displayName": "z-ai/glm-4.5v",
@@ -2206,16 +2230,16 @@
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 1e-7,
-        "outputCostPerToken": 3e-7
+        "inputCostPerToken": 7.5e-8,
+        "outputCostPerToken": 2e-7
       },
       "mistralai/mistral-medium-3": {
         "displayName": "mistralai/mistral-medium-3",
         "pricingUnit": "per-token",
         "sourceUrl": "https://openrouter.ai/api/v1/models",
         "extractionMethod": "api",
-        "inputCostPerToken": 4e-7,
-        "outputCostPerToken": 0.000002
+        "inputCostPerToken": 4.4e-7,
+        "outputCostPerToken": 0.0000022
       },
       "meta-llama/llama-guard-4-12b": {
         "displayName": "meta-llama/llama-guard-4-12b",

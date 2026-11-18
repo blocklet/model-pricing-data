@@ -1,4 +1,22 @@
 {
+  "gpt-6.2-astra": {
+    "litellm_provider": "openai",
+    "source": "official",
+    "input_cost_per_token": 0.000008,
+    "output_cost_per_token": 0.00001,
+    "cache_read_input_token_cost": 4e-7,
+    "model_type": "chatCompletion",
+    "source_url": "https://developers.openai.com/api/docs/pricing"
+  },
+  "gpt-6.2-sol": {
+    "litellm_provider": "openai",
+    "source": "official",
+    "input_cost_per_token": 0.000002,
+    "output_cost_per_token": 0.0000025,
+    "cache_read_input_token_cost": 1e-7,
+    "model_type": "chatCompletion",
+    "source_url": "https://developers.openai.com/api/docs/pricing"
+  },
   "gpt-6-astra": {
     "litellm_provider": "openai",
     "source": "official",
@@ -696,8 +714,8 @@
   "openrouter/~openai/gpt-astra-latest": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 0.00001,
-    "output_cost_per_token": 0.00005,
+    "input_cost_per_token": 0.000008,
+    "output_cost_per_token": 0.00004,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/~openai/gpt-sol-latest": {
@@ -815,8 +833,8 @@
   "openrouter/z-ai/glm-5.3-flash": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 3.99e-8,
-    "output_cost_per_token": 7.84e-8,
+    "input_cost_per_token": 1.5e-7,
+    "output_cost_per_token": 5e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/z-ai/glm-5.3-flash:batch": {
@@ -878,8 +896,8 @@
   "openrouter/qwen/qwen3.8-27b": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 1.5e-7,
-    "output_cost_per_token": 0.000001875,
+    "input_cost_per_token": 6e-8,
+    "output_cost_per_token": 0.0000022,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/qwen/qwen3.8-27b:batch": {
@@ -1116,8 +1134,8 @@
   "openrouter/moonshotai/kimi-k2.7-code": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 6e-7,
-    "output_cost_per_token": 0.0000035,
+    "input_cost_per_token": 7e-7,
+    "output_cost_per_token": 0.00000375,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/~anthropic/claude-fable-latest": {
@@ -1445,8 +1463,8 @@
   "openrouter/qwen/qwen3.5-27b": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 2.6e-7,
-    "output_cost_per_token": 0.0000026,
+    "input_cost_per_token": 3e-7,
+    "output_cost_per_token": 0.0000024,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/qwen/qwen3.5-122b-a10b": {
@@ -1676,7 +1694,7 @@
   "openrouter/qwen/qwen3-next-80b-a3b-instruct": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 9e-8,
+    "input_cost_per_token": 1e-7,
     "output_cost_per_token": 0.0000011,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
@@ -1697,8 +1715,8 @@
   "openrouter/mistralai/mistral-medium-3.1": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 4e-7,
-    "output_cost_per_token": 0.000002,
+    "input_cost_per_token": 4.4e-7,
+    "output_cost_per_token": 0.0000022,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/z-ai/glm-4.5v": {
@@ -1816,15 +1834,15 @@
   "openrouter/mistralai/mistral-small-3.2-24b-instruct": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 1e-7,
-    "output_cost_per_token": 3e-7,
+    "input_cost_per_token": 7.5e-8,
+    "output_cost_per_token": 2e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/mistralai/mistral-medium-3": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 4e-7,
-    "output_cost_per_token": 0.000002,
+    "input_cost_per_token": 4.4e-7,
+    "output_cost_per_token": 0.0000022,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/meta-llama/llama-guard-4-12b": {
