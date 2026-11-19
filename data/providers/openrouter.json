@@ -148,8 +148,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.403e-7,
-    "outputCostPerToken": 0.0000084023
+    "inputCostPerToken": 2.53e-7,
+    "outputCostPerToken": 0.0000088
   },
   "moonshotai/kimi-k3.1-pro:batch": {
     "displayName": "moonshotai/kimi-k3.1-pro:batch",
@@ -188,7 +188,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 3e-7,
+    "inputCostPerToken": 2.5e-7,
     "outputCostPerToken": 0.000001
   },
   "prism-ml/ternary-bonsai-2-9b": {
@@ -468,8 +468,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 3.6e-8,
-    "outputCostPerToken": 5e-7
+    "inputCostPerToken": 3.5e-8,
+    "outputCostPerToken": 1.5e-7
   },
   "inference-net/schematron-v2-turbo": {
     "displayName": "inference-net/schematron-v2-turbo",
@@ -820,7 +820,7 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4.34e-8,
+    "inputCostPerToken": 4.7e-8,
     "outputCostPerToken": 3e-7
   },
   "thinkingmachines/inkling-small": {
@@ -972,8 +972,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 7e-7,
-    "outputCostPerToken": 0.00000375
+    "inputCostPerToken": 6e-7,
+    "outputCostPerToken": 0.0000035
   },
   "~anthropic/claude-fable-latest": {
     "displayName": "~anthropic/claude-fable-latest",
@@ -1204,8 +1204,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4.35e-7,
-    "outputCostPerToken": 8.7e-7
+    "inputCostPerToken": 4.8e-7,
+    "outputCostPerToken": 0.0000018
   },
   "xiaomi/mimo-v2.5": {
     "displayName": "xiaomi/mimo-v2.5",
@@ -1324,8 +1324,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.7e-7,
-    "outputCostPerToken": 2.5e-7
+    "inputCostPerToken": 1.54e-7,
+    "outputCostPerToken": 2.26e-7
   },
   "bytedance-seed/seed-2.0-mini": {
     "displayName": "bytedance-seed/seed-2.0-mini",
@@ -1348,8 +1348,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 3e-7,
-    "outputCostPerToken": 0.0000024
+    "inputCostPerToken": 1.95e-7,
+    "outputCostPerToken": 0.00000156
   },
   "qwen/qwen3.5-122b-a10b": {
     "displayName": "qwen/qwen3.5-122b-a10b",

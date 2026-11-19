@@ -413,8 +413,8 @@
   "openrouter/moonshotai/kimi-k3.1-pro": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 2.403e-7,
-    "output_cost_per_token": 0.0000084023,
+    "input_cost_per_token": 2.53e-7,
+    "output_cost_per_token": 0.0000088,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/moonshotai/kimi-k3.1-pro:batch": {
@@ -448,7 +448,7 @@
   "openrouter/reflection/beam-1.0-501b-a23b": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 3e-7,
+    "input_cost_per_token": 2.5e-7,
     "output_cost_per_token": 0.000001,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
@@ -693,8 +693,8 @@
   "openrouter/~deepseek/deepseek-flash-latest": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 3.6e-8,
-    "output_cost_per_token": 5e-7,
+    "input_cost_per_token": 3.5e-8,
+    "output_cost_per_token": 1.5e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/inference-net/schematron-v2-turbo": {
@@ -1001,7 +1001,7 @@
   "openrouter/~deepseek/deepseek-v4-flash-latest": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 4.34e-8,
+    "input_cost_per_token": 4.7e-8,
     "output_cost_per_token": 3e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
@@ -1134,8 +1134,8 @@
   "openrouter/moonshotai/kimi-k2.7-code": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 7e-7,
-    "output_cost_per_token": 0.00000375,
+    "input_cost_per_token": 6e-7,
+    "output_cost_per_token": 0.0000035,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/~anthropic/claude-fable-latest": {
@@ -1337,8 +1337,8 @@
   "openrouter/xiaomi/mimo-v2.5-pro": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 4.35e-7,
-    "output_cost_per_token": 8.7e-7,
+    "input_cost_per_token": 4.8e-7,
+    "output_cost_per_token": 0.0000018,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/xiaomi/mimo-v2.5": {
@@ -1442,8 +1442,8 @@
   "openrouter/qwen/qwen3.5-9b": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 1.7e-7,
-    "output_cost_per_token": 2.5e-7,
+    "input_cost_per_token": 1.54e-7,
+    "output_cost_per_token": 2.26e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/bytedance-seed/seed-2.0-mini": {
@@ -1463,8 +1463,8 @@
   "openrouter/qwen/qwen3.5-27b": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 3e-7,
-    "output_cost_per_token": 0.0000024,
+    "input_cost_per_token": 1.95e-7,
+    "output_cost_per_token": 0.00000156,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/qwen/qwen3.5-122b-a10b": {
