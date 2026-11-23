@@ -164,8 +164,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 2.53e-7,
-    "outputCostPerToken": 0.0000088
+    "inputCostPerToken": 2.403e-7,
+    "outputCostPerToken": 0.0000084023
   },
   "moonshotai/kimi-k3.1-pro:batch": {
     "displayName": "moonshotai/kimi-k3.1-pro:batch",
@@ -196,8 +196,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1.5e-7,
-    "outputCostPerToken": 6e-7
+    "inputCostPerToken": 3e-7,
+    "outputCostPerToken": 0.0000012
   },
   "deepseek/deepseek-v4.1-flash-1017:batch": {
     "displayName": "deepseek/deepseek-v4.1-flash-1017:batch",
@@ -492,8 +492,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 9.99e-8,
-    "outputCostPerToken": 0.000008
+    "inputCostPerToken": 1.188e-7,
+    "outputCostPerToken": 0.000005
   },
   "~deepseek/deepseek-flash-latest": {
     "displayName": "~deepseek/deepseek-flash-latest",
@@ -1228,8 +1228,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 1e-7,
-    "outputCostPerToken": 9e-7
+    "inputCostPerToken": 5e-8,
+    "outputCostPerToken": 7e-7
   },
   "qwen/qwen3.6-27b": {
     "displayName": "qwen/qwen3.6-27b",
@@ -1500,8 +1500,8 @@
     "pricingUnit": "per-token",
     "sourceUrl": "https://openrouter.ai/api/v1/models",
     "extractionMethod": "api",
-    "inputCostPerToken": 4e-7,
-    "outputCostPerToken": 0.00000175
+    "inputCostPerToken": 6e-7,
+    "outputCostPerToken": 0.0000022
   },
   "nvidia/nemotron-3-nano-30b-a3b": {
     "displayName": "nvidia/nemotron-3-nano-30b-a3b",

@@ -409,8 +409,8 @@
   "openrouter/moonshotai/kimi-k3.1-pro": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 2.53e-7,
-    "output_cost_per_token": 0.0000088,
+    "input_cost_per_token": 2.403e-7,
+    "output_cost_per_token": 0.0000084023,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/moonshotai/kimi-k3.1-pro:batch": {
@@ -437,8 +437,8 @@
   "openrouter/deepseek/deepseek-v4.1-flash-1017": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 1.5e-7,
-    "output_cost_per_token": 6e-7,
+    "input_cost_per_token": 3e-7,
+    "output_cost_per_token": 0.0000012,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
@@ -696,8 +696,8 @@
   "openrouter/~deepseek/deepseek-pro-latest": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 9.99e-8,
-    "output_cost_per_token": 0.000008,
+    "input_cost_per_token": 1.188e-7,
+    "output_cost_per_token": 0.000005,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/~deepseek/deepseek-flash-latest": {
@@ -1340,8 +1340,8 @@
   "openrouter/qwen/qwen3.6-35b-a3b": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 1e-7,
-    "output_cost_per_token": 9e-7,
+    "input_cost_per_token": 5e-8,
+    "output_cost_per_token": 7e-7,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/qwen/qwen3.6-27b": {
@@ -1578,8 +1578,8 @@
   "openrouter/z-ai/glm-4.7": {
     "litellm_provider": "openrouter",
     "source": "official",
-    "input_cost_per_token": 4e-7,
-    "output_cost_per_token": 0.00000175,
+    "input_cost_per_token": 6e-7,
+    "output_cost_per_token": 0.0000022,
     "source_url": "https://openrouter.ai/api/v1/models"
   },
   "openrouter/nvidia/nemotron-3-nano-30b-a3b": {
